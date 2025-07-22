@@ -51,12 +51,12 @@ jobs:
 
     # Step 4: Login to Salesforce using web auth
     - script: |
-        echo Logging into Salesforce using web login...
-        sf org login web --set-default --alias UatOrg
-      displayName: 'Web Login to UatOrg'
+        echo "Authenticating to UatOrg using web login..."
+        sfdx auth:web:login --setalias UatOrg --instanceurl https://orgfarm-6daa760a00-dev-ed.develop.my.salesforce.com/
+      displayName: 'Authenticate to UatOrg'
 
-    # Step 5: Deploy to Salesforce
+    # Step 5: Deploy to UatOrg
     - script: |
-        echo Deploying to UatOrg...
-        sf project deploy start --source-dir changed-metadata --target-org UatOrg
+        echo "Deploying to UatOrg..."
+        sf project deploy start --source-dir force-app --target-org UatOrg
       displayName: 'Deploy to UatOrg'

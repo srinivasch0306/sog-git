@@ -18,30 +18,31 @@ jobs:
       # Step 2: Detect changed files
       - script: |
           echo Getting list of changed files...
-          call git fetch origin
+          git fetch origin
           for /f %%i in ('git rev-parse HEAD~1') do set OLD_COMMIT=%%i
           for /f %%i in ('git rev-parse HEAD') do set NEW_COMMIT=%%i
 
-          call echo Old Commit: %OLD_COMMIT%
-          call echo New Commit: %NEW_COMMIT%
+          echo Old Commit: %OLD_COMMIT%
+          echo New Commit: %NEW_COMMIT%
 
           git diff --name-only %OLD_COMMIT% %NEW_COMMIT% > changed_files.txt
           echo Changed files:
           type changed_files.txt
         displayName: 'Detect changed files'
+        shell: cmd
 
       # Step 3: Prepare changed metadata
       - script: |
           echo Filtering metadata components...
           mkdir changed-metadata
           setlocal EnableDelayedExpansion
-          for /f "delims=" %%f in (changed_files.txt) do (
+          for /f "usebackq delims=" %%f in ("changed_files.txt") do (
             echo Checking %%f
             echo %%f | findstr /R "^force-app\\.*" >nul
             if !errorlevel! == 0 (
               if exist "%%f" (
                 echo Copying %%f
-                mkdir "changed-metadata\%%~dpfxf" >nul 2>&1
+                mkdir "changed-metadata\%%~dpf" >nul 2>&1
                 xcopy /Y /I "%%f" "changed-metadata\%%f"
               )
             )
@@ -49,9 +50,18 @@ jobs:
           echo Listing changed metadata:
           dir changed-metadata /s
         displayName: 'Prepare changed metadata'
+        shell: cmd
 
-      # Step 4: Deploy to UatOrg
+      # Step 4: Login using web auth
+      - script: |
+          echo Logging into Salesforce using web auth...
+          sf org login web --set-default --alias UatOrg
+        displayName: 'Web Login to UatOrg'
+        shell: pwsh
+
+      # Step 5: Deploy to UatOrg
       - script: |
           echo Deploying to UatOrg...
           sf project deploy start --source-dir changed-metadata --target-org UatOrg
         displayName: 'Deploy to UatOrg'
+        shell: pwsh

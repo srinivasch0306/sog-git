@@ -16,13 +16,6 @@
         <label>Add Single Condition Id to Collection</label>
         <locationX>314</locationX>
         <locationY>890</locationY>
-        <assignmentItems>
-            <assignToReference>Condition_Id_Collection</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Condition_Id_Single</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Remove_First_Id_From_Condition_Ids_String</targetReference>
         </connector>

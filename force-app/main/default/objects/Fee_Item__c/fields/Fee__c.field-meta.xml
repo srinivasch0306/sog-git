@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fee__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Fee</label>
+    <referenceTo>MUSW__Fee__c</referenceTo>
+    <relationshipLabel>Fee Items</relationshipLabel>
+    <relationshipName>Fee_Items</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

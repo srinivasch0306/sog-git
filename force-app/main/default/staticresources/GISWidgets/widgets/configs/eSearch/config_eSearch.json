@@ -1,0 +1,326 @@
+{
+  "layers": [
+    {
+      "name": "City of Vancouver Owned Buildings",
+      "url": "https://services3.arcgis.com/qrcTTRTwUoS8N47o/ArcGIS/rest/services/COV_Owned_Buildings/FeatureServer/0",
+      "type": "feature",
+      "zoomScale": 5000,
+      "export2Csv": true,
+      "shareResult": true,
+      "addToAttrib": false,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "Owned_by",
+            "textsearchlabel": "Search by Owned by",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "Owned_by",
+                    "label": "Owned_by",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {},
+                  "prompt": "Owned_by contains ",
+                  "textsearchhint": "Example: 123456",
+                  "sqltext": "Owned_by = '[value]'",
+                  "operation": "stringOperatorContains"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": null,
+      "fields": {
+        "all": true,
+        "field": [
+          {
+            "name": "Owned_by",
+            "alias": "Owned_by"
+          },
+          {
+            "name": "Ownership",
+            "alias": "Ownership"
+          }
+        ]
+      },
+      "layersymbolfrom": "server"
+    },
+    {
+      "name": "Parcel",
+      "url": "MUSW__Parcel__c",
+      "type": "basicgov",
+      "zoomScale": 10000,
+      "export2Csv": true,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "Number",
+            "textsearchlabel": "Search By Parcel Number",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "Number",
+                    "label": "Parcel Number",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {},
+                  "prompt": "Parcel Number contains",
+                  "textsearchhint": "Example: 2 Normal",
+                  "sqltext": "MUSW__Parcel_Number2__c LIKE '%value%'",
+                  "operation": "stringOperatorContains"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": "Name",
+      "fields": {
+        "all": true,
+        "field": [
+          {
+            "name": "Name",
+            "alias": "Name"
+          },
+          {
+            "name": "Number",
+            "alias": "Number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Inspection",
+      "url": "MUSW__Inspection__c",
+      "type": "basicgov",
+      "zoomScale": 10000,
+      "export2Csv": true,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "Number",
+            "textsearchlabel": "Search By Inspection Number",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "Number",
+                    "label": "Name",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {},
+                  "prompt": "Inspection Name contains",
+                  "textsearchhint": "Example: INS-0000123",
+                  "sqltext": "Name LIKE '%[value]%'",
+                  "operation": "stringOperatorContains"
+                },
+                {
+                  "fieldObj": {
+                    "name": "Priority",
+                    "label": "Priority",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {},
+                  "prompt": "Inspection Priority contains",
+                  "textsearchhint": "Example: 2 Normal",
+                  "sqltext": "MUSW__Priority__c LIKE '%[value]%'",
+                  "operation": "stringOperatorContains",
+                  "operator": "AND"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": "Name",
+      "fields": {
+        "all": false,
+        "field": [
+          {
+            "name": "Number",
+            "alias": "Number"
+          },
+          {
+            "name": "Priority",
+            "alias": "Priority"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Permit",
+      "url": "MUSW__Permit2__c",
+      "type": "basicgov",
+      "zoomScale": 10000,
+      "export2Csv": true,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "Number",
+            "textsearchlabel": "Search By Inspection Number",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "Number",
+                    "label": "Name",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {},
+                  "prompt": "Permit Number contains",
+                  "textsearchhint": "Example: BLD-170001",
+                  "sqltext": "Name LIKE '%[value]%'",
+                  "operation": "stringOperatorContains"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": "Name",
+      "fields": {
+        "all": false,
+        "field": [
+          {
+            "name": "Number",
+            "alias": "Number"
+          }
+        ]
+      }
+    }
+  ],
+  "initialView": "graphical",
+  "enablePopupsOnResultClick": true,
+  "limitsearch2mapextentchecked": false,
+  "autozoomtoresults": true,
+  "mouseovergraphics": false,
+  "toleranceforpointgraphicalselection": 6,
+  "disableuvcache": false,
+  "bufferDefaults": {
+    "addtolegend": false,
+    "bufferUnits": {
+      "bufferUnit": [
+        {
+          "name": "UNIT_FOOT",
+          "label": "Feet"
+        },
+        {
+          "name": "UNIT_METER",
+          "label": "Meter"
+        },
+        {
+          "name": "UNIT_YARD",
+          "label": "Yard"
+        }
+      ]
+    },
+    "bufferDefaultValue": 5,
+    "bufferWKID": 102003,
+    "simplefillsymbol": {
+      "color": [
+        1,
+        185,
+        253,
+        128
+      ],
+      "outline": {
+        "color": [
+          1,
+          185,
+          253,
+          204
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "graphicalsearchoptions": {
+    "enablepointselect": true,
+    "enableextentselect": true,
+    "enablecircleselect": true,
+    "enablepolyselect": true,
+    "enablefreehandpolyselect": true,
+    "showbuffergraphicaloption": true,
+    "buffercheckedbydefaultgraphicaloption": false,
+    "keepgraphicalsearchenabled": false
+  },
+  "symbols": {
+    "simplemarkersymbol": null,
+    "picturemarkersymbol": {
+      "url": "images/i_search.png",
+      "height": "20",
+      "width": "20",
+      "type": "esriPMS",
+      "angle": "0"
+    },
+    "simplelinesymbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+        255,
+        0,
+        0,
+        204
+      ],
+      "width": 2
+    },
+    "simplefillsymbol": {
+      "color": [
+        255,
+        0,
+        0,
+        128
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          204
+        ],
+        "width": 2,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "resultFormat": {
+    "attTitlesymbol": {
+      "bold": false,
+      "italic": true,
+      "underline": false,
+      "color": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "attValuesymbol": {
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": [
+        0,
+        0,
+        0,
+        255
+      ]
+    }
+  }
+}

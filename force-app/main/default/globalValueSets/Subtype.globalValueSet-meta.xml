@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Restaurant</fullName>
+        <default>false</default>
+        <label>Restaurant</label>
+    </customValue>
+    <customValue>
+        <fullName>Liquor</fullName>
+        <default>false</default>
+        <label>Liquor</label>
+    </customValue>
+    <customValue>
+        <fullName>Funeral Home</fullName>
+        <default>false</default>
+        <label>Funeral Home</label>
+    </customValue>
+    <customValue>
+        <fullName>Single Family Home</fullName>
+        <default>false</default>
+        <label>Single Family Home</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi Family Dwelling</fullName>
+        <default>false</default>
+        <label>Multi Family Dwelling</label>
+    </customValue>
+    <masterLabel>Subtype</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

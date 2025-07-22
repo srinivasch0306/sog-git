@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_GIS_LOC_Stage__c</fullName>
+    <formula>AND(
+  $UserRole.DeveloperName &lt;&gt; &quot;Permit_Admin&quot;,
+  
+  OR(
+    AND(
+      $UserRole.DeveloperName &lt;&gt; &quot;GIS_Specialist&quot;,
+      $UserRole.DeveloperName &lt;&gt; &quot;Geologist&quot;,
+      $UserRole.DeveloperName &lt;&gt; &quot;Admin_Assistant&quot;
+    ),
+    OR(
+      ISPICKVAL(MUSW__Status__c , &quot;Permit Approval&quot;),
+      ISPICKVAL(MUSW__Status__c , &quot;Ready for Issuance&quot;),
+      ISPICKVAL(MUSW__Status__c , &quot;Permit Issued&quot;),
+      ISPICKVAL(MUSW__Status__c , &quot;Consolidated&quot;),
+      AND(
+        ISPICKVAL(MUSW__Status__c , &quot;Pending&quot;), 
+        $UserRole.DeveloperName &lt;&gt; &quot;Admin_Assistant&quot;
+      ),
+      AND(
+        ISPICKVAL(MUSW__Status__c , &quot;Final Evaluation&quot;), 
+        $UserRole.DeveloperName &lt;&gt; &quot;Geologist&quot;
+      ),
+      AND(
+        OR(  
+          ISPICKVAL(MUSW__Status__c , &quot;Submitted&quot;), 
+          ISPICKVAL(MUSW__Status__c , &quot;In Review&quot;),  
+          ISPICKVAL(MUSW__Status__c , &quot;LOC Package&quot;),
+          ISPICKVAL(MUSW__Status__c , &quot;LOC Issued&quot;),
+          ISPICKVAL(MUSW__Status__c , &quot;LOC Documents Uploaded&quot;),
+          ISPICKVAL(MUSW__Status__c , &quot;Form Assessment&quot;)
+        ),
+        $UserRole.DeveloperName &lt;&gt; &quot;GIS_Specialist&quot;,
+        $UserRole.DeveloperName &lt;&gt; &quot;Geologist&quot;
+      )
+
+    )
+
+  )
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>GIS LOC Stage</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Zoom_Level__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Default zoom level for the map on load</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Please provide the default zoom level for the map on load.  This is required only when webmap is not being used.
+Example: 14</inlineHelpText>
+    <label>Zoom Level</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

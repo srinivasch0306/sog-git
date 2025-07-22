@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__NotesAreRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISPICKVAL(clariti__Status__c, &apos;Rejected&apos;) &amp;&amp; ISBLANK(clariti__Notes__c)) || (clariti__CloseOutBalanceStatus__c  = &apos;Out of Balance&apos; &amp;&amp;
+        ISPICKVAL(clariti__Status__c, &apos;Submitted&apos;) &amp;&amp; ISBLANK(clariti__Notes__c))</errorConditionFormula>
+    <errorDisplayField>clariti__Notes__c</errorDisplayField>
+    <errorMessage>Notes are required.</errorMessage>
+</ValidationRule>

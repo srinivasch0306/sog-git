@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Bond__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Bond</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>MUSW__Bond__c.MUSW__Status__c</field>
+            <operation>equals</operation>
+            <value>Posted</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>MUSW__Bond__c</referenceTo>
+    <relationshipLabel>Permits</relationshipLabel>
+    <relationshipName>Permit_Bonds</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

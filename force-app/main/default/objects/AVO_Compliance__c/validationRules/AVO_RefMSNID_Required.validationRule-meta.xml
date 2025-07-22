@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_RefMSNID_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK( AVO_RefMSNID__c ), OR(ISPICKVAL( AVO_Comp_Ref__c ,&quot;Meter Tampering&quot;), ISPICKVAL(AVO_Comp_Ref__c ,&quot;Incomplete Meter Installation&quot;)))</errorConditionFormula>
+    <errorDisplayField>AVO_RefMSNID__c</errorDisplayField>
+    <errorMessage>RefMSNID is mandatory when Comp_Ref is Meter Tampering or Incomplete Meter Installation.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Deposit__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system populates this field if the refund is coming from a deposit.</description>
+    <label>Deposit</label>
+    <referenceTo>MUSW__Deposit__c</referenceTo>
+    <relationshipLabel>Receipt Refunds</relationshipLabel>
+    <relationshipName>Receipt_Refunds</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

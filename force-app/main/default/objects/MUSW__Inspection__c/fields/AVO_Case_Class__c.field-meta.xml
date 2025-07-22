@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Case_Class__c</fullName>
+    <label>Case Class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Meter Compliance Case</fullName>
+                <default>false</default>
+                <label>Meter Compliance Case</label>
+            </value>
+            <value>
+                <fullName>Non-Initialized Use Case</fullName>
+                <default>false</default>
+                <label>Non-Initialized Use Case</label>
+            </value>
+            <value>
+                <fullName>Permit Violations Compliance Case</fullName>
+                <default>false</default>
+                <label>Permit Violations Compliance Case</label>
+            </value>
+            <value>
+                <fullName>Statutory Compliance Case</fullName>
+                <default>false</default>
+                <label>Statutory Compliance Case</label>
+            </value>
+            <value>
+                <fullName>WWSA Compliance Case</fullName>
+                <default>false</default>
+                <label>WWSA Compliance Case</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

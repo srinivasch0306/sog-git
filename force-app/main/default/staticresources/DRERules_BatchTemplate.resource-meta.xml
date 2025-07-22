@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Private</cacheControl>
+    <contentType>text/plain</contentType>
+    <description>Rename record to DRERules to use in DRE2 &gt; Deploy &gt; Download. Contains Batch Template Rule to allow creation of Batch rules on affected orgs. Ticket DRE2-207.</description>
+</StaticResource>

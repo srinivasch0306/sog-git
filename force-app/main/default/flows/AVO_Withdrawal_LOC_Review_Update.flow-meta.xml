@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Checking_status</name>
+        <label>Checking status</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Completed_to_Form_Assessment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed to Form Assessment</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Metering_Queue</targetReference>
+            </connector>
+            <label>Completed to Form Assessment</label>
+        </rules>
+        <rules>
+            <name>Completed_to_Final_Evaluation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed to Final Evaluation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Final_Evaluation_Review</targetReference>
+            </connector>
+            <label>Completed to Final Evaluation</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Checking_Type_and_Transaction_Type</name>
+        <label>Checking Type and Transaction Type</label>
+        <locationX>578</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Consolidation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Revision</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Consolidate Permit</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Checking_status</targetReference>
+            </connector>
+            <label>Consolidation</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Avo {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Withdrawal LOC Review Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Final_Evaluation_Review</name>
+        <label>Create Final Evaluation Review</label>
+        <locationX>314</locationX>
+        <locationY>755</locationY>
+        <connector>
+            <targetReference>Update_the_permit</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>MUSW__Permit2__c</field>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MUSW__Status__c</field>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MUSW__Type__c</field>
+            <value>
+                <stringValue>Final Evaluation Review</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Final_Evaluation_Review.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>Get_Final_Evaluation_Review_RecordType.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>MUSW__Review__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Metering_Review</name>
+        <label>Create Metering Review</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <inputAssignments>
+            <field>MUSW__Permit2__c</field>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MUSW__Status__c</field>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MUSW__Type__c</field>
+            <value>
+                <stringValue>Metering Review</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Metering_Queue.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>Get_Metering_Review_RecordType.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>MUSW__Review__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Final_Evaluation_Review</name>
+        <label>Get Final Evaluation Review</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Final_Evaluation_Review_RecordType</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Final Evaluation Review</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Final_Evaluation_Review_RecordType</name>
+        <label>Get Final Evaluation Review RecordType</label>
+        <locationX>314</locationX>
+        <locationY>647</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Final_Evaluation_Review</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Final Evaluation Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>MUSW__Review__c</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Metering_Queue</name>
+        <label>Get Metering Queue</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Metering_Review_RecordType</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Metering Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Metering_Review_RecordType</name>
+        <label>Get Metering Review RecordType</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Metering_Review</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Metering Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>MUSW__Review__c</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_the_permit</name>
+        <label>Update the permit</label>
+        <locationX>314</locationX>
+        <locationY>863</locationY>
+        <inputAssignments>
+            <field>MUSW__Status__c</field>
+            <value>
+                <stringValue>Final Evaluation</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.MUSW__Permit2__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Checking_Type_and_Transaction_Type</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND ( 3 OR 4 )</filterLogic>
+        <filters>
+            <field>MUSW__Permit2__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Withdrawal LOC Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed to Form Assessment</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed to Final Evaluation</stringValue>
+            </value>
+        </filters>
+        <object>MUSW__Review__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

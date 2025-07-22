@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__EnableForPaymentBatch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Displays parent object as search criteria in the payment batch parent search picklist</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Enable for Payment Batch</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_Failed_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(MUSW__Type__c, &quot;Meter Installation Review&quot;), 
+ISPICKVAL(MUSW__Status__c, &quot;Failed&quot;),  
+ISBLANK(AVO_Failed_Reason__c) )</errorConditionFormula>
+    <errorMessage>Must enter &quot;Failed Reason&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Irrigation_Type__c</fullName>
+    <label>Irrigation Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Center Pivot/Linear Move</fullName>
+                <default>false</default>
+                <label>Center Pivot/Linear Move</label>
+            </value>
+            <value>
+                <fullName>Drip</fullName>
+                <default>false</default>
+                <label>Drip</label>
+            </value>
+            <value>
+                <fullName>Solid Set Sprinkler</fullName>
+                <default>false</default>
+                <label>Solid Set Sprinkler</label>
+            </value>
+            <value>
+                <fullName>Traveler</fullName>
+                <default>false</default>
+                <label>Traveler</label>
+            </value>
+            <value>
+                <fullName>Non-Irr</fullName>
+                <default>false</default>
+                <label>Non-Irr</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

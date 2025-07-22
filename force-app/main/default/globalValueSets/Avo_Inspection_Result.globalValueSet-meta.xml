@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Pending</fullName>
+        <default>true</default>
+        <label>Pending</label>
+    </customValue>
+    <customValue>
+        <fullName>All Conditions met, OK to refund deposit</fullName>
+        <default>false</default>
+        <label>All Conditions met, OK to refund deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>Conditions outstanding, do not refund deposit until met</fullName>
+        <default>false</default>
+        <label>Conditions outstanding, do not refund deposit until met</label>
+    </customValue>
+    <customValue>
+        <fullName>Action needed, do not refund deposit until met</fullName>
+        <default>false</default>
+        <label>Action needed, do not refund deposit until met</label>
+    </customValue>
+    <customValue>
+        <fullName>Penalties/Fines to be assessed</fullName>
+        <default>false</default>
+        <label>Penalties/Fines to be assessed</label>
+    </customValue>
+    <customValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+    </customValue>
+    <masterLabel>Avo Inspection Result</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

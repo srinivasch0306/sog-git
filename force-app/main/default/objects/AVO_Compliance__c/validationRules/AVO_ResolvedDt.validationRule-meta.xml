@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_ResolvedDt</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( AVO_CompStatus__c, &quot;Resolved&quot; ),
+ISBLANK( AVO_ResolvedDt__c )
+)</errorConditionFormula>
+    <errorDisplayField>AVO_ResolvedDt__c</errorDisplayField>
+    <errorMessage>ResolvedDt must be populated when CompStatus is Resolved.</errorMessage>
+</ValidationRule>

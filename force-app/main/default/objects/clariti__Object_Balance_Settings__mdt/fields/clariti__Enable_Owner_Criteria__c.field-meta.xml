@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Enable_Owner_Criteria__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If selected, this will query for objects owned by the login user and add the outstanding payables to the total balance outstanding.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If selected, this will query for objects owned by the login user and add the outstanding payables to the total balance outstanding.</inlineHelpText>
+    <label>Enable Owner Criteria</label>
+    <type>Checkbox</type>
+</CustomField>

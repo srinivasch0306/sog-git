@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Supported_Objects__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Admins can input a comma-separated list of object API names that the flow can operate on.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Supported Objects</label>
+    <required>true</required>
+    <type>TextArea</type>
+</CustomField>

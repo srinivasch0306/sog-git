@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Payment_greater_than_Fee_Amount</fullName>
+    <active>true</active>
+    <errorConditionFormula>MUSW__Payment_Amount__c &gt; MUSW__Fee_Amount__c</errorConditionFormula>
+    <errorMessage>Applied Payment amount must be less than or equal to the Fee Amount</errorMessage>
+</ValidationRule>

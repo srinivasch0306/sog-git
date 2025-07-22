@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Acre/Feet</fullName>
+        <default>false</default>
+        <label>Acre/Feet</label>
+    </customValue>
+    <customValue>
+        <fullName>Acre/Inches</fullName>
+        <default>false</default>
+        <label>Acre/Inches</label>
+    </customValue>
+    <customValue>
+        <fullName>Gallons</fullName>
+        <default>false</default>
+        <label>Gallons</label>
+    </customValue>
+    <customValue>
+        <fullName>UnKnown</fullName>
+        <default>false</default>
+        <label>UnKnown</label>
+    </customValue>
+    <masterLabel>AVO Unit Of Measure</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

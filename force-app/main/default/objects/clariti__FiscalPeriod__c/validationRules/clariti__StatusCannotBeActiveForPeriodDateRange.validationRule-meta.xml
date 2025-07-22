@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__StatusCannotBeActiveForPeriodDateRange</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(clariti__Status__c, &apos;Active&apos;) &amp;&amp; (clariti__StartDate__c &gt; TODAY() ||  clariti__EndDate__c &lt; TODAY())</errorConditionFormula>
+    <errorDisplayField>clariti__Status__c</errorDisplayField>
+    <errorMessage>Fiscal Period status can only be set to active if the current date falls within the Fiscal Period date range.</errorMessage>
+</ValidationRule>

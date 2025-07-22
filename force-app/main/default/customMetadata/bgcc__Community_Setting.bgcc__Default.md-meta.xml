@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Default</label>
+    <protected>false</protected>
+    <values>
+        <field>bgcc__Attestation_File_Name__c</field>
+        <value xsi:type="xsd:string">communityAssets/communityAttestationDocument.html</value>
+    </values>
+    <values>
+        <field>bgcc__Enable_Owner_Payables__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>bgcc__Permit_Fee_Service_Class__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>bgcc__Setting_Static_Resource_Name__c</field>
+        <value xsi:type="xsd:string">communitysettingBGStaging/communitysettingBGStaging.json</value>
+    </values>
+    <values>
+        <field>bgcc__TermsAndConditions_File_Name__c</field>
+        <value xsi:type="xsd:string">communityAssets/communityAttestationDocument.html</value>
+    </values>
+    <values>
+        <field>bgcc__User_Matching_Service__c</field>
+        <value xsi:type="xsd:string">UserMatchByEmail</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__CloseOutBalanceStatus__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISPICKVAL(clariti__Status__c , &apos;Open&apos;)) &amp;&amp; (clariti__CloseOutCashBalance__c != clariti__CloseOutCashTrayCashBalance__c ) || (clariti__CloseOutCheckBalance__c != clariti__CloseOutCashTrayCheckBalance__c), &apos;Out of Balance&apos;, &apos;Balanced&apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Close Out Balance Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

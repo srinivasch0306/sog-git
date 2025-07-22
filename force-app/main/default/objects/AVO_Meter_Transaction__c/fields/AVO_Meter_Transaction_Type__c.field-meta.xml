@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Meter_Transaction_Type__c</fullName>
+    <label>Meter Transaction Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agricultural Flow Meter Approval</fullName>
+                <default>false</default>
+                <label>Agricultural Flow Meter Approval</label>
+            </value>
+            <value>
+                <fullName>AG Water Metering Installation</fullName>
+                <default>false</default>
+                <label>AG Water Metering Installation</label>
+            </value>
+            <value>
+                <fullName>Meter Application</fullName>
+                <default>false</default>
+                <label>Meter Application</label>
+            </value>
+            <value>
+                <fullName>Meter Installation</fullName>
+                <default>false</default>
+                <label>Meter Installation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

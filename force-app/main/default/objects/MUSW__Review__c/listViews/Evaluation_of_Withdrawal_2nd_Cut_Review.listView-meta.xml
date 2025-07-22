@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evaluation_of_Withdrawal_2nd_Cut_Review</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Evaluation of Withdrawal 2nd Cut</label>
+    <queue>Evaluation_of_Withdrawal_2nd_Cut</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

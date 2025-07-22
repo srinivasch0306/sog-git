@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__FiscalPeriodMustBeOpenOrActive</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+        $CustomMetadata.clariti__FinancialsFeatureEnablementSettings__mdt.clariti__FiscalYearAndPeriodManagement.clariti__Enable__c,
+NOT(ISCHANGED(clariti__FiscalPeriod__c)),
+NOT(ISNEW()),
+NOT(ISPICKVAL(clariti__FiscalPeriod__r.clariti__Status__c,&apos;Open&apos;)),
+NOT(ISPICKVAL(clariti__FiscalPeriod__r.clariti__Status__c,&apos;Active&apos;)),
+NOT(ISBLANK(clariti__FiscalPeriod__c))
+)</errorConditionFormula>
+    <errorMessage>You can not edit a Journal Entry Item that is related to a Fiscal Period that is Closed.</errorMessage>
+</ValidationRule>

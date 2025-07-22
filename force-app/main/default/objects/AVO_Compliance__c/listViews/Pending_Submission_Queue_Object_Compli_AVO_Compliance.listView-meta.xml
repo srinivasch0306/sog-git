@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Submission_Queue_Object_Compli_AVO_Compliance</fullName>
+    <columns>NAME</columns>
+    <columns>AVO_CompStatus__c</columns>
+    <columns>AVO_CompType__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>OWNER.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <label>Pending Submission Queue</label>
+    <queue>Pending_Submission_Queue_Object_Compli</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,1 @@
+trigger DRE2_MUSW_Complaint2_c on MUSW__Complaint2__c (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_MUSW_Complaint2_c', new DRETriggerHandler()); }

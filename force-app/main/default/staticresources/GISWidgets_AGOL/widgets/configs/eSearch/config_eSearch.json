@@ -1,0 +1,510 @@
+{
+  "layers": [
+
+    {
+      "name": "Manitoba Parcels",
+      "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/ROLL_ENTRY/FeatureServer/0",
+      "type": "feature",
+      "bgObject": "MUSW__Parcel__c",
+      "zoomScale": 10000,
+      "export2Csv": true,
+      "shareResult": true,
+      "addToAttrib": false,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "OBJECTID",
+            "textsearchlabel": "Search by Parcel Number",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "OBJECTID",
+                    "label": "Parcel Number",
+                    "shortType": "string",
+                    "type": "esriFieldTypeOID"
+                  },
+                  "valueObj": {},
+                  "prompt": "OBJECTID contains ",
+                  "textsearchhint": "Example: 123456",
+                  "sqltext": "OBJECTID LIKE '%[value]%'",
+                  "operation": "stringOperatorContains"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": null,
+      "fields": {
+        "all": false,
+        "field": [
+        {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "bgField": "MUSW__Parcel_Number2__c"
+        },  
+        {
+          "name" : "Property_Address", 
+          "alias" : "Property_Address"
+        },
+        {
+          "name" : "Roll_No_Txt",
+          "alias" : "Roll_No_Txt"
+        },
+        {
+          "name" : "Municipality",
+          "alias" : "Municipality"
+        },
+        {
+          "name" : "Frontage_or_Area",
+          "alias" : "Frontage_or_Area"
+        },
+        {
+          "name" : "Shape__Area",
+          "alias" : "Shape__Area"
+        }
+        ]
+      },
+      "layersymbolfrom": "server"
+    },
+    {
+      "name": "Kane Parcels",
+      "url": "https://services3.arcgis.com/3VfZSNcjuPi50OQp/arcgis/rest/services/ParcelsKane/FeatureServer/0",
+      "type": "feature",
+      "bgObject": "MUSW__Parcel__c",
+      "zoomScale": 5000,
+      "export2Csv": true,
+      "shareResult": true,
+      "addToAttrib": false,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "PIN",
+            "textsearchlabel": "Search by PIN",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "PIN",
+                    "label": "PIN",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {},
+                  "prompt": "PIN contains ",
+                  "textsearchhint": "Example: 123456",
+                  "sqltext": "PIN LIKE '%[value]%'",
+                  "operation": "stringOperatorContains"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": null,
+      "fields": {
+        "all": false,
+        "field": [
+        {
+            "name": "PIN",
+            "alias": "PIN",
+            "bgField": "MUSW__Parcel_Number__c"
+        },
+        {
+            "name": "TaxCode",
+            "alias": "TaxCode"
+         },
+         {
+            "name": "UseCode",
+            "alias": "UseCode"
+         },
+         {
+            "name": "SiteAddres",
+            "alias": "SiteAddres"
+         },
+         {
+            "name": "SiteCity",
+            "alias": "SiteCity"
+         },
+         {
+            "name": "SiteState",
+            "alias": "SiteState"
+         }
+        ]
+      },
+      "layersymbolfrom": "server"
+    },
+    {
+      "name": "Elgin Addresses",
+      "url": "https://services3.arcgis.com/3VfZSNcjuPi50OQp/arcgis/rest/services/AddressesElgin/FeatureServer/0",
+      "type": "feature",
+      "bgObject": "MUSW__Parcel__c",
+      "zoomScale": 10000,
+      "export2Csv": true,
+      "shareResult": true,
+      "addToAttrib": false,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "Address",
+            "textsearchlabel": "Search By Address",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "Address",
+                    "label": "Address",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {},
+                  "prompt": "Address contains",
+                  "textsearchhint": "Example: 123 Main St.",
+                  "sqltext": "FULL_ADR LIKE '%[value]%'",
+                  "operation": "stringOperatorContains"
+                }
+              ]
+            }
+          },
+          {
+            "alias": "Parcel Number",
+            "textsearchlabel": "Search By Parcel Number",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "Parcel_Num",
+                    "label": "Parcel_Num",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {
+                    "value": ""
+                  },
+                  "prompt": "Parcel Number contains",
+                  "textsearchhint": "0624229009",
+                  "sqltext": "Parcel_Num LIKE '%[value]%'",
+                  "operation": "stringOperatorContains"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": null,
+      "fields": {
+        "all": false,
+        "field": [
+         {
+            "name": "LOCID",
+            "alias": "Location Id",
+            "bgField": "MUSW__Parcel_Number__c"
+         },
+         {
+            "name": "FULL_ADR",
+            "alias": "Full Address"
+         },
+         {
+            "name": "Unit",
+            "alias": "Unit"
+         },
+         {
+            "name": "ZipCode",
+            "alias": "ZipCode"
+         },
+         {
+            "name": "Parcel_Num",
+            "alias": "Parcel Number"
+         }
+        ]
+      },
+      "layersymbolfrom": "server"
+    },        
+    {        
+      "name": "Inspection",        
+      "url": "MUSW__Inspection__c",        
+      "type": "basicgov",        
+      "zoomScale": 10000,
+      "export2Csv": true,
+      "expressions": {        
+        "expression": [        
+          {        
+            "alias": "Number",        
+            "textsearchlabel": "Search By Inspection Number",        
+            "values": {        
+              "value": [        
+                {        
+                  "fieldObj": {        
+                    "name": "Number",        
+                    "label": "Name",        
+                    "shortType": "string",        
+                    "type": "esriFieldTypeString"        
+                  },        
+                  "valueObj": {},        
+                  "prompt": "Inspection Name contains",        
+                  "textsearchhint": "Example: INS-0000123",        
+                  "sqltext": "Name LIKE '%[value]%'",        
+                  "operation": "stringOperatorContains"        
+                },
+                {        
+                  "fieldObj": {        
+                    "name": "Priority",        
+                    "label": "Priority",        
+                    "shortType": "string",        
+                    "type": "esriFieldTypeString"        
+                  },        
+                  "valueObj": {},        
+                  "prompt": "Inspection Priority contains",        
+                  "textsearchhint": "Example: 2 Normal",        
+                  "sqltext": "MUSW__Priority__c LIKE '%[value]%'",        
+                  "operation": "stringOperatorContains",
+                  "operator": "AND"
+                }                
+              ]        
+            }        
+          }        
+        ]        
+      },        
+      "titlefield": "Name",        
+      "fields": {        
+        "all": false,        
+        "field": [
+          {
+            "name": "Number",
+            "alias": "Number"
+          },
+          {
+            "name": "Priority",
+            "alias": "Priority"
+          }
+        ]        
+      }        
+    },
+    {
+      "name" : "Well",
+      "url" : "Well__c",
+      "type" : "basicgov",
+      "zoomScale" : 10000,
+      "export2Csv" : true,
+      "expressions" : {
+        "expression" : [
+          {
+            "alias" : "Name",
+            "textsearchlabel" : "Search by Well Name",
+            "values" : {
+              "value" : [
+                {
+                  "fieldObj" : {
+                    "name" : "Name",
+                    "label" : "Name",
+                    "shortType" : "string",
+                    "type" : "esriFieldTypeString"
+                  },
+                  "valueObj" : {},
+                  "prompt" : "Well Name contains",
+                  "textsearchhint" : "Example - WL-60248",
+                  "sqltext" : "Name LIKE '%[value]%'",
+                  "operation" : "stringOperatorContains"
+                },
+                {
+                  "fieldObj" : {
+                    "name" : "SurfaceOffset",
+                    "label" : "Surface Offset",
+                    "shortType" : "string",
+                    "type" : "esriFieldTypeString"
+                  },
+                  "valueObj" : {},
+                  "prompt" : "Surface Offset contains",
+                  "textsearchhint" : "Example - S 636.1 W 633.7",
+                  "sqltext" : "Surface_Offset__c LIKE '%[value]%'",
+                  "operation" : "stringOperatorContains",
+                  "operator" : "OR"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titleField" : "Name",
+      "fields" : {
+        "all" : false,
+        "field" : [
+          {
+            "name" : "Name",
+            "alias" : "Name"
+          },
+          {
+            "name" : "SurfaceOffset",
+            "alias" : "Surface Offset"
+          }
+        ]
+      }
+    },      
+    {        
+      "name": "Permit",        
+      "url": "MUSW__Permit2__c",        
+      "type": "basicgov",        
+      "zoomScale": 10000,
+      "export2Csv": true,
+      "expressions": {        
+        "expression": [        
+          {        
+            "alias": "Number",        
+            "textsearchlabel": "Search By Inspection Number",        
+            "values": {        
+              "value": [        
+                {        
+                  "fieldObj": {        
+                    "name": "Number",        
+                    "label": "Name",        
+                    "shortType": "string",        
+                    "type": "esriFieldTypeString"        
+                  },        
+                  "valueObj": {},        
+                  "prompt": "Permit Number contains",        
+                  "textsearchhint": "Example: BLD-170001",        
+                  "sqltext": "Name LIKE '%[value]%'",        
+                  "operation": "stringOperatorContains"        
+                }        
+              ]        
+            }        
+          }        
+        ]        
+      },        
+      "titlefield": "Name",        
+      "fields": {        
+        "all": false,        
+        "field": [
+          {
+            "name": "Number",
+            "alias": "Number"
+          }
+        ]        
+      }        
+    }
+  ],
+  "initialView": "graphical",
+  "enablePopupsOnResultClick": true,
+  "limitsearch2mapextentchecked": false,
+  "autozoomtoresults": true,
+  "mouseovergraphics": false,
+  "toleranceforpointgraphicalselection": 6,
+  "disableuvcache": false,
+  "bufferDefaults": {
+    "addtolegend": false,
+    "bufferUnits": {
+      "bufferUnit": [
+        {
+          "name": "UNIT_FOOT",
+          "label": "Feet"
+      }, {
+          "name": "UNIT_METER",
+          "label": "Meter"
+      }, {
+          "name": "UNIT_YARD",
+          "label": "Yard"
+      }
+    ]
+    },
+    "bufferDefaultValue": 5,
+    "bufferWKID": 102003,
+    "simplefillsymbol": {
+      "color": [
+        1,
+        185,
+        253,
+        128
+      ],
+      "outline": {
+        "color": [
+          1,
+          185,
+          253,
+          204
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "graphicalsearchoptions":{
+    "enablepointselect": true,
+    "enableextentselect": true,
+    "enablecircleselect": true,
+    "enablepolyselect": true,
+    "enablefreehandpolyselect": true,
+    "showbuffergraphicaloption": true,
+    "buffercheckedbydefaultgraphicaloption": false,
+    "keepgraphicalsearchenabled": false
+  },
+  "symbols": {
+    "simplemarkersymbol": null,
+    "picturemarkersymbol": {
+      "url": "images/i_search.png",
+      "height": "20",
+      "width": "20",
+      "type": "esriPMS",
+      "angle": "0"
+    },
+    "simplelinesymbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+        255,
+        0,
+        0,
+        204
+      ],
+      "width": 2
+    },
+    "simplefillsymbol": {
+      "color": [
+        255,
+        0,
+        0,
+        128
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          204
+        ],
+        "width": 2,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "resultFormat": {
+    "attTitlesymbol": {
+      "bold": false,
+      "italic": true,
+      "underline": false,
+      "color": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "attValuesymbol": {
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": [
+        0,
+        0,
+        0,
+        255
+      ]
+    }
+  }
+}

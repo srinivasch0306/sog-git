@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Child_Iterate_Query_must_not_have_parent</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(BGBL__Child_Iterate_Query__c , NOT(ISBLANK(BGBL__Parent_Query__c )))</errorConditionFormula>
+    <errorMessage>This is a Child Iterate Query, do not specify Parent Query</errorMessage>
+</ValidationRule>

@@ -1,0 +1,36 @@
+{
+  "layers": [
+	{
+      "url": "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer/0",
+      "label": "Parcel",
+      "type": "feature"
+    },
+	{
+      "url": "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer/1",
+      "label": "LandUse",
+      "type": "feature"
+    },
+    {
+      "url": "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer/2",
+      "label": "Zoning",
+      "type": "feature"
+    },
+	{
+      "url": "MUSW__Permit2__c",
+      "label": "BG Permit2",
+      "type": "basicgov"
+    },
+	{
+      "url": "MUSW__Inspection__c",
+      "label": "BG Inspection",
+      "type": "basicgov"
+    },
+	{
+      "url": "sm1e__smEquipment__c",
+      "label": "Asset Tag",
+      "type": "basicgov"
+    }
+  ],
+  "showLegend": true,
+  "shareResult":false
+}

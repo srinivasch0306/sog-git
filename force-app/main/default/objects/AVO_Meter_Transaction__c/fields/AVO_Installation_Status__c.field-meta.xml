@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Installation_Status__c</fullName>
+    <label>Installation Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Installation Review AG</fullName>
+                <default>false</default>
+                <label>Installation Review AG</label>
+            </value>
+            <value>
+                <fullName>GIS Review</fullName>
+                <default>false</default>
+                <label>GIS Review</label>
+            </value>
+            <value>
+                <fullName>Installation Review</fullName>
+                <default>false</default>
+                <label>Installation Review</label>
+            </value>
+            <value>
+                <fullName>Failed</fullName>
+                <default>false</default>
+                <label>Failed</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Checking_Permit_Type</name>
+        <label>Checking Permit Type</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Type</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Agricultural Water Withdrawal Permit</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Revision</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Agricultural Water Withdrawal Application</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Checking_Review_Type</targetReference>
+            </connector>
+            <label>Type</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Checking_Review_Type</name>
+        <label>Checking Review Type</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Withdrawal_LOC_Review</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Withdrawal LOC Review</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Permit_For_Withdrawal_LOC_Review</targetReference>
+            </connector>
+            <label>Withdrawal LOC Review</label>
+        </rules>
+        <rules>
+            <name>Form_Assessment_Review</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Form Assessment Review</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Permit_For_Form_Assessment_Review</targetReference>
+            </connector>
+            <label>Form Assessment Review</label>
+        </rules>
+        <rules>
+            <name>Final_Evaluation_Review</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Final Evaluation Review</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Permit_For_Final_Evaluation_Review</targetReference>
+            </connector>
+            <label>Final Evaluation Review</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>AVO Update Permit {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Update Permit Fields Upon review Completion</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Permit_For_Final_Evaluation_Review</name>
+        <label>Update Permit For Final Evaluation Review</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>AVO_DateFinalEvaDone__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AVO_FinalEvalDone__c</field>
+            <value>
+                <stringValue>Yes</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.MUSW__Permit2__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Permit_For_Form_Assessment_Review</name>
+        <label>Update Permit For Form Assessment Review</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>AVO_OtherFormsRev__c</field>
+            <value>
+                <stringValue>Yes</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AVO_Returned_Forms_Reviewed_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.MUSW__Permit2__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Permit_For_Withdrawal_LOC_Review</name>
+        <label>Update Permit For Withdrawal LOC Review</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>AVO_DateEval__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AVO_LOCEvalDone__c</field>
+            <value>
+                <stringValue>Yes</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.MUSW__Permit2__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Checking_Permit_Type</targetReference>
+        </connector>
+        <filterLogic>(1 AND 2 AND (4 OR 5 )) OR (1 AND 3 AND (6 OR 2 OR 7 OR 8))</filterLogic>
+        <filters>
+            <field>MUSW__Permit2__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Withdrawal LOC Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Form Assessment Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Final Evaluation Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed to LOC Package</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed to Form Assessment</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed to Final Evaluation</stringValue>
+            </value>
+        </filters>
+        <object>MUSW__Review__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

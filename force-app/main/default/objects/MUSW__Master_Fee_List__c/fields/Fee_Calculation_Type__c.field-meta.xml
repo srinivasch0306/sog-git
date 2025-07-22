@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fee_Calculation_Type__c</fullName>
+    <label>Fee Calculation Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Flat</fullName>
+                <default>true</default>
+                <label>Flat</label>
+            </value>
+            <value>
+                <fullName>Tiered</fullName>
+                <default>false</default>
+                <label>Tiered</label>
+            </value>
+            <value>
+                <fullName>Fee Based</fullName>
+                <default>false</default>
+                <label>Fee Based</label>
+            </value>
+            <value>
+                <fullName>Work Item Based</fullName>
+                <default>false</default>
+                <label>Work Item Based</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

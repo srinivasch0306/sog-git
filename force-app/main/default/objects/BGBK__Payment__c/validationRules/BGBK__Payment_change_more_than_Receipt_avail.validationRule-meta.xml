@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Payment_change_more_than_Receipt_avail</fullName>
+    <active>true</active>
+    <description>If payment amount is changed, and the parent receipt is filled in on this payment, and difference of the old amount to the new amount is greater than what is available on the receipt...error</description>
+    <errorConditionFormula>AND( ISCHANGED(BGBK__Amount__c),   NOT(ISBLANK(BGBK__Receipt__c)), BGBK__Amount__c - PRIORVALUE(BGBK__Amount__c) &gt;    BGBK__Receipt__r.MUSW__Amount_Available__c)</errorConditionFormula>
+    <errorMessage>Cannot increase Payment Amount greater than what is available on Receipt. Reduce Amount or cancel change.</errorMessage>
+</ValidationRule>

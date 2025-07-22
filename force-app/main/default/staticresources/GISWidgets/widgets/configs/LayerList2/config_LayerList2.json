@@ -1,0 +1,795 @@
+{
+  "distanceUnits": [{
+    "unit": "FEET",
+    "abbr": "ft"
+  }, {
+    "unit": "METERS",
+    "abbr": "m"
+  }, {
+    "unit": "YARDS",
+    "abbr": "yd"
+  }],
+  "showLegend": true,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "EnableOrDisablePopup": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": false,
+    "DescriptionOrShowItemDetailsOrDownload": false
+  },
+  "layerOptions": {
+  },
+  "layers": [
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/10",
+      "label": "All_countieswc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "CNTYNAME",
+          "label": "CNTYNAME",
+          "visible": true
+        },
+        {
+          "fieldName": "FIPS",
+          "label": "FIPS",
+          "visible": true
+        },
+        {
+          "fieldName": "SiteRegions",
+          "label": "SiteRegions",
+          "visible": true
+        },
+        {
+          "fieldName": "UTM",
+          "label": "UTM",
+          "visible": true
+        },
+        {
+          "fieldName": "SV_NoInfoPivots",
+          "label": "SV_NoInfoPivots",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Area",
+          "label": "Shape__Area",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Length",
+          "label": "Shape__Length",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/11",
+      "label": "epd_basins_stclipwc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "NAME",
+          "label": "NAME",
+          "visible": true
+        },
+        {
+          "fieldName": "COUNT_",
+          "label": "COUNT_",
+          "visible": true
+        },
+        {
+          "fieldName": "Priority4",
+          "label": "Priority4",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Area",
+          "label": "Shape__Area",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Length",
+          "label": "Shape__Length",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/9",
+      "label": "SuspensionArea_2014wc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "Suspension",
+          "label": "Suspension",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Area",
+          "label": "Shape__Area",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Length",
+          "label": "Shape__Length",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/12",
+      "label": "FRBConsZones2006disswc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "ZoneLable",
+          "label": "ZoneLable",
+          "visible": true
+        }, 
+        {
+          "fieldName": "Shape__Area",
+          "label": "Shape__Area",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Length",
+          "label": "Shape__Length",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/13",
+      "label": "CoastalManagementRegionswc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "Regions",
+          "label": "Regions",
+          "visible": true
+        }, 
+        {
+          "fieldName": "Shape__Area",
+          "label": "Shape__Area",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Length",
+          "label": "Shape__Length",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/14",
+      "label": "Subarea4wc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "Subarea4",
+          "label": "Subarea4",
+          "visible": true
+        }, 
+        {
+          "fieldName": "Source_Nam",
+          "label": "Source_Nam",
+          "visible": true
+        }, 
+        {
+          "fieldName": "Name",
+          "label": "Name",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Area",
+          "label": "Shape__Area",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Length",
+          "label": "Shape__Length",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/5",
+      "label": "WAD_NoInfo_pivotswc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "TID",
+          "label": "TID",
+          "visible": true
+        }, 
+        {
+          "fieldName": "IrrSys",
+          "label": "IrrSys",
+          "visible": true
+        }, 
+        {
+          "fieldName": "Src",
+          "label": "Src",
+          "visible": true
+        },
+        {
+          "fieldName": "MOSID",
+          "label": "MOSID",
+          "visible": true
+        },
+        {
+          "fieldName": "Xinside",
+          "label": "Xinside",
+          "visible": true
+        },
+        {
+          "fieldName": "Yinside",
+          "label": "Yinside",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/4",
+      "label": "WADwc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "SrcID1",
+          "label": "SrcID1",
+          "visible": true
+        }, 
+        {
+          "fieldName": "SrcID2",
+          "label": "SrcID2",
+          "visible": true
+        },
+        {
+          "fieldName": "SrcID3",
+          "label": "SrcID3",
+          "visible": true
+        },
+        {
+          "fieldName": "SrcID4",
+          "label": "SrcID4",
+          "visible": true
+        },
+        {
+          "fieldName": "SrcID5",
+          "label": "SrcID5",
+          "visible": true
+        },
+        {
+          "fieldName": "SrcID6",
+          "label": "SrcID6",
+          "visible": true
+        },
+        {
+          "fieldName": "SrcType_Gen",
+          "label": "SrcType_Gen",
+          "visible": true
+        },
+        {
+          "fieldName": "TID",
+          "label": "TID",
+          "visible": true
+        },
+        {
+          "fieldName": "MOSID1",
+          "label": "MOSID1",
+          "visible": true
+        },
+        {
+          "fieldName": "MOSID2",
+          "label": "MOSID2",
+          "visible": true
+        },
+        {
+          "fieldName": "MOSID3",
+          "label": "MOSID3",
+          "visible": true
+        },
+        {
+          "fieldName": "MOSID4",
+          "label": "MOSID4",
+          "visible": true
+        },
+        {
+          "fieldName": "MOSID5",
+          "label": "MOSID5",
+          "visible": true
+        },
+        {
+          "fieldName": "MOSID6",
+          "label": "MOSID6",
+          "visible": true
+        },
+        {
+          "fieldName": "County",
+          "label": "County",
+          "visible": true
+        },
+        {
+          "fieldName": "Permit",
+          "label": "Permit",
+          "visible": true
+        },
+        {
+          "fieldName": "SubSys",
+          "label": "SubSys",
+          "visible": true
+        },
+        {
+          "fieldName": "SysMake",
+          "label": "SysMake",
+          "visible": true
+        },
+        {
+          "fieldName": "NozzType",
+          "label": "NozzType",
+          "visible": true
+        },
+        {
+          "fieldName": "SysPwr",
+          "label": "SysPwr",
+          "visible": true
+        },
+        {
+          "fieldName": "EndGun",
+          "label": "EndGun",
+          "visible": true
+        },
+        {
+          "fieldName": "EGXoff",
+          "label": "EGXoff",
+          "visible": true
+        },
+        {
+          "fieldName": "VRI",
+          "label": "VRI",
+          "visible": true
+        },
+        {
+          "fieldName": "MetStatus",
+          "label": "MetStatus",
+          "visible": true
+        },
+        {
+          "fieldName": "LastAction",
+          "label": "LastAction",
+          "visible": true
+        },
+        {
+          "fieldName": "IrrStatus",
+          "label": "IrrStatus",
+          "visible": true
+        },
+        {
+          "fieldName": "LandUse",
+          "label": "LandUse",
+          "visible": true
+        },
+        {
+          "fieldName": "Cover",
+          "label": "Cover",
+          "visible": true
+        },
+        {
+          "fieldName": "ComAcre",
+          "label": "ComAcre",
+          "visible": true
+        },
+        {
+          "fieldName": "Src1Type",
+          "label": "Src1Type",
+          "visible": true
+        },
+        {
+          "fieldName": "Src2Type",
+          "label": "Src2Type",
+          "visible": true
+        },
+        {
+          "fieldName": "Src3Type",
+          "label": "Src3Type",
+          "visible": true
+        },
+        {
+          "fieldName": "Src4Type",
+          "label": "Src4Type",
+          "visible": true
+        },
+        {
+          "fieldName": "Src5Type",
+          "label": "Src5Type",
+          "visible": true
+        },
+        {
+          "fieldName": "Src6Type",
+          "label": "Src6Type",
+          "visible": true
+        },
+        {
+          "fieldName": "vSrcDate",
+          "label": "vSrcDate",
+          "visible": true
+        },
+        {
+          "fieldName": "vSrcMeth",
+          "label": "vSrcMeth",
+          "visible": true
+        },
+        {
+          "fieldName": "vIrrDate",
+          "label": "vIrrDate",
+          "visible": true
+        },
+        {
+          "fieldName": "vIrrMeth",
+          "label": "vIrrMeth",
+          "visible": true
+        },
+        {
+          "fieldName": "vMetDate",
+          "label": "vMetDate",
+          "visible": true
+        },
+        {
+          "fieldName": "vMetMeth",
+          "label": "vMetMeth",
+          "visible": true
+        },
+        {
+          "fieldName": "vAcreDate",
+          "label": "vAcreDate",
+          "visible": true
+        },
+        {
+          "fieldName": "vAcresMeth",
+          "label": "vAcresMeth",
+          "visible": true
+        },
+        {
+          "fieldName": "EPD_Co",
+          "label": "EPD_Co",
+          "visible": true
+        },
+        {
+          "fieldName": "Inside_X",
+          "label": "Inside_X",
+          "visible": true
+        },
+        {
+          "fieldName": "Inside_Y",
+          "label": "Inside_Y",
+          "visible": true
+        },
+        {
+          "fieldName": "Marker1",
+          "label": "Marker1",
+          "visible": true
+        },
+        {
+          "fieldName": "Marker2",
+          "label": "Marker2",
+          "visible": true
+        },
+        {
+          "fieldName": "Confirm",
+          "label": "Confirm",
+          "visible": true
+        },
+        {
+          "fieldName": "varCount",
+          "label": "varCount",
+          "visible": true
+        },
+        {
+          "fieldName": "SegVar",
+          "label": "SegVar",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Area",
+          "label": "Shape__Area",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Length",
+          "label": "Shape__Length",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/6",
+      "label": "WAD_FromToXYLinewc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "Src",
+          "label": "Src",
+          "visible": true
+        }, 
+        {
+          "fieldName": "POINT_X",
+          "label": "POINT_X",
+          "visible": true
+        }, 
+        {
+          "fieldName": "POINT_Y",
+          "label": "POINT_Y",
+          "visible": true
+        },
+        {
+          "fieldName": "Xinside",
+          "label": "Xinside",
+          "visible": true
+        },
+        {
+          "fieldName": "Yinside",
+          "label": "Yinside",
+          "visible": true
+        },
+        {
+          "fieldName": "Shape__Length",
+          "label": "Shape__Length",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/0",
+      "label": "Meterswc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "Permit_No",
+          "label": "Permit_No",
+          "visible": true
+        }, 
+        {
+          "fieldName": "Application_ID",
+          "label": "Application_ID",
+          "visible": true
+        }, 
+        {
+          "fieldName": "METER_SERIAL_NUM",
+          "label": "METER_SERIAL_NUM",
+          "visible": true
+        },
+        {
+          "fieldName": "Meter_X_",
+          "label": "Meter_X_",
+          "visible": true
+        },
+        {
+          "fieldName": "Meter__Y_",
+          "label": "Meter__Y_",
+          "visible": true
+        },
+        {
+          "fieldName": "DateInstalled",
+          "label": "DateInstalled",
+          "visible": true
+        },
+        {
+          "fieldName": "Meter_Location",
+          "label": "Meter_Location",
+          "visible": true
+        },
+        {
+          "fieldName": "MSID",
+          "label": "MSID",
+          "visible": true
+        },
+        {
+          "fieldName": "MeterOnSiteID",
+          "label": "MeterOnSiteID",
+          "visible": true
+        },
+        {
+          "fieldName": "READ_METER",
+          "label": "READ_METER",
+          "visible": true
+        },
+        {
+          "fieldName": "GIS_Unique",
+          "label": "GIS_Unique",
+          "visible": true
+        },
+        {
+          "fieldName": "Type_Letter",
+          "label": "Type_Letter",
+          "visible": true
+        },
+        {
+          "fieldName": "Status",
+          "label": "Status",
+          "visible": true
+        },
+        {
+          "fieldName": "DiscoveryDate",
+          "label": "DiscoveryDate",
+          "visible": true
+        },
+        {
+          "fieldName": "RefMSNumber",
+          "label": "RefMSNumber",
+          "visible": true
+        },
+        {
+          "fieldName": "ReplacedDate",
+          "label": "ReplacedDate",
+          "visible": true
+        }
+        ,
+        {
+          "fieldName": "MeterIntStatus",
+          "label": "MeterIntStatus",
+          "visible": true
+        },
+        {
+          "fieldName": "ReasonNotRead",
+          "label": "ReasonNotRead",
+          "visible": true
+        },
+        {
+          "fieldName": "RefMOSID",
+          "label": "RefMOSID",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/1",
+      "label": "GW_Permitswc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "PERMIT_NO",
+          "label": "PERMIT_NO",
+          "visible": true
+        }, 
+        {
+          "fieldName": "Type",
+          "label": "Type",
+          "visible": true
+        }, 
+        {
+          "fieldName": "VERIFIED",
+          "label": "VERIFIED",
+          "visible": true
+        },
+        {
+          "fieldName": "PUMPNO",
+          "label": "PUMPNO",
+          "visible": true
+        },
+        {
+          "fieldName": "Inactive",
+          "label": "Inactive",
+          "visible": true
+        },
+        {
+          "fieldName": "Meter",
+          "label": "Meter",
+          "visible": true
+        },
+        {
+          "fieldName": "APP_ID",
+          "label": "APP_ID",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/2",
+      "label": "SW_Permitswc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "PERMIT_NO",
+          "label": "PERMIT_NO",
+          "visible": true
+        }, 
+        {
+          "fieldName": "PUMPNO",
+          "label": "PUMPNO",
+          "visible": true
+        }, 
+        {
+          "fieldName": "Pound_Fund",
+          "label": "Pound_Fund",
+          "visible": true
+        },
+        {
+          "fieldName": "Type",
+          "label": "Type",
+          "visible": true
+        },
+        {
+          "fieldName": "Pump_Type",
+          "label": "Pump_Type",
+          "visible": true
+        },
+        {
+          "fieldName": "Inactive",
+          "label": "Inactive",
+          "visible": true
+        },
+        {
+          "fieldName": "Meter",
+          "label": "Meter",
+          "visible": true
+        },
+        {
+          "fieldName": "APP_ID",
+          "label": "APP_ID",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://services1.arcgis.com/p0dLjwtOaJHU8zq2/arcgis/rest/services/APU_Web_Map_WFL1/FeatureServer/3",
+      "label": "epd_pending_app_pointswc",
+      "type": "feature",
+      "fieldInfos": 
+      [
+        {
+          "fieldName": "Meter",
+          "label": "Meter",
+          "visible": true
+        }, 
+        {
+          "fieldName": "Type",
+          "label": "Type",
+          "visible": true
+        }, 
+        {
+          "fieldName": "APP_ID",
+          "label": "APP_ID",
+          "visible": true
+        },
+        {
+          "fieldName": "PUMPNO",
+          "label": "PUMPNO",
+          "visible": true
+        },
+        {
+          "fieldName": "VERIFIED",
+          "label": "VERIFIED",
+          "visible": true
+        },
+        {
+          "fieldName": "Pond_Fund",
+          "label": "Pond_Fund",
+          "visible": true
+        },
+        {
+          "fieldName": "PERMIT_NO",
+          "label": "PERMIT_NO",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "MUSW__Permit2__c",
+      "label": "BG Permit",
+      "type": "basicgov"
+    }
+  ]
+}

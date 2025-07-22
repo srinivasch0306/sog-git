@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Compliance Case</fullName>
+        <default>false</default>
+        <label>Compliance Case</label>
+    </customValue>
+    <masterLabel>Avo Compliance Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

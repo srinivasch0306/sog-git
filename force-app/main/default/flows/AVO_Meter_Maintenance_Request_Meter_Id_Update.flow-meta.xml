@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>AVO Meter Maintenance Request Meter Id Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Meter Maintenance Request Meter Id Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Copies new Meter ID to Meter Allocation record</description>
+        <name>Copy_Edited_Meter_Id_to_Child_Meter_Id</name>
+        <label>Copy Edited Meter Id to Child Meter Id</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Update_Meter_Inventory_Status</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Meter_Maintenance_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Meter Allocation</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AVO_Meter_ID__c</field>
+            <value>
+                <elementReference>$Record.AVO_Meter_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>AVO_Meter_Transaction__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Maintenance_Status_to_Pending_Specialist_Allocation</name>
+        <label>Set Maintenance Status to Pending Specialist Allocation</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>Copy_Edited_Meter_Id_to_Child_Meter_Id</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AVO_Maintenance_Status__c</field>
+            <value>
+                <stringValue>Pending Specialist Allocation</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Meter_Inventory_Status</name>
+        <label>Update Meter Inventory Status</label>
+        <locationX>176</locationX>
+        <locationY>539</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AVO_Meter_ID__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AVO_Inventory_Status__c</field>
+            <value>
+                <stringValue>Allocated</stringValue>
+            </value>
+        </inputAssignments>
+        <object>AVO_Meter__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Maintenance_Status_to_Pending_Specialist_Allocation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Meter Maintenance Request</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Meter_ID__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Meter_ID__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Maintenance_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pending Meter Allocation</stringValue>
+            </value>
+        </filters>
+        <object>AVO_Meter_Transaction__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

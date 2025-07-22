@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_5736436</developerName>
+        <masterLabel>Normal permits</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>MUSW__Permit2__c.MUSW__Type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Agricultural Surface Water Pump</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agricultural Water Withdrawal Application</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agricultural Water Withdrawal Permit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agricultural Well Pump</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Application for Permit Consolidation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Permit Relinquishment</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Well and Pump Data</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Well Plug and Abandonment</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AG Water Metering Installation</sourceValue>
+            </sourceValues>
+            <value>BucketWithoutRevision</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_60377702</developerName>
+        <masterLabel>Revision Permit</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>MUSW__Permit2__c.MUSW__Type__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_41105615</developerName>
+        <masterLabel>type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>MUSW__Permit2__c.MUSW__Type__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>MUSW__Permit2__c.AVO_This_Month__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>MUSW__Permit2__c.AVO_This_Month__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_5736436</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Monthly Reports</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MUSW__Permit2__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

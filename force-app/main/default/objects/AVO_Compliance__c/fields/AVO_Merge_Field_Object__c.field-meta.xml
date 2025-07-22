@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Merge_Field_Object__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(AVO_RefApplicationID__c)), &quot;Permit Application&quot;, 
+    IF(NOT(ISBLANK(AVO_RefMeterID__c)), &quot;Meter&quot;, 
+        IF(NOT(ISBLANK(AVO_RefMSNID__c)), &quot;Meter&quot;, 
+        IF(NOT(ISBLANK(AVO_RefPermitAppID__c)), &quot;Permit&quot;, 
+            null
+        )
+    )
+)
+)</formula>
+    <label>Merge Field Object</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Lock_Validation_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(AND(ISPICKVAL(MUSW__Type__c, &quot;Lock&quot;),
+    NOT(ISPICKVAL(MUSW__Apply_To__c, &quot;Current Record&quot;))),
+  AND(ISPICKVAL(MUSW__Type__c, &quot;Lock&quot;),
+    NOT(ISPICKVAL(MUSW__Apply_To__c, &quot;Current Record and Related Objects&quot;)))
+	)</errorConditionFormula>
+    <errorDisplayField>MUSW__Apply_To__c</errorDisplayField>
+    <errorMessage>Locks can only apply to Current Record OR Current Record and Related Objects.</errorMessage>
+</ValidationRule>

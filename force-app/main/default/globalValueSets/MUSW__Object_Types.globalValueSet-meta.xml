@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MUSW__Permit2__c</fullName>
+        <default>false</default>
+        <label>Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>AVO_Withdrawals__c</fullName>
+        <default>false</default>
+        <label>Withdrawals</label>
+    </customValue>
+    <customValue>
+        <fullName>AVO_Meter_Transaction__c</fullName>
+        <default>false</default>
+        <label>Meter Transaction</label>
+    </customValue>
+    <customValue>
+        <fullName>AVO_Compliance__c</fullName>
+        <default>false</default>
+        <label>Compliance</label>
+    </customValue>
+    <customValue>
+        <fullName>Permit2</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Permit2</label>
+    </customValue>
+    <masterLabel>Object Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

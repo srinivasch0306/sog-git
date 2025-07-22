@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Submit_Documents</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Submit Documents</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/s/submit-documents?Permit_Id={!MUSW__Permit2__c.Id}&amp;License_Id={!MUSW__License2__c.Id}&amp;Application_Id={!MUSW__Application2__c.Id}</url>
+</WebLink>

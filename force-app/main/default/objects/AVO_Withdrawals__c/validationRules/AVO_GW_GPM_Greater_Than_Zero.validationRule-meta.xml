@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_GW_GPM_Greater_Than_Zero</fullName>
+    <active>true</active>
+    <description>GW Gallons Per Minute value must be greater than zero.</description>
+    <errorConditionFormula>AVO_GW_Gallons_Per_Minute__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>AVO_GW_Gallons_Per_Minute__c</errorDisplayField>
+    <errorMessage>Value must be greater than zero.</errorMessage>
+</ValidationRule>

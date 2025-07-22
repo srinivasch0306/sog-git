@@ -1,0 +1,1 @@
+trigger DRE2_Attachment on Attachment (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_Attachment', new DRETriggerHandler()); }

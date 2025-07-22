@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGCM__Control__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>is the number issued permanently (ie. locked and will require an extra Issued_Number__c field), or be overwritten only one more time after being set?</inlineHelpText>
+    <label>Control (Deprecated)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Permanent</fullName>
+                <default>true</default>
+                <label>Permanent</label>
+            </value>
+            <value>
+                <fullName>Overwrite Once</fullName>
+                <default>false</default>
+                <label>Overwrite Once</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

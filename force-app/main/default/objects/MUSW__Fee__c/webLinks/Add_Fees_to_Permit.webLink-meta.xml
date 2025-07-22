@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Fees_to_Permit</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Add  Manage Fees</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/cmp/MUSW__JunctionCreate?MUSW__spi={!MUSW__Permit2__c.Id}&amp;MUSW__sn=Fee_Items&amp;MUSW__retURL=/lightning/cmp/MUSW__RecordManager?MUSW__pid={!MUSW__Permit2__c.Id}%26MUSW__sn%3DManage_Fees</url>
+</WebLink>

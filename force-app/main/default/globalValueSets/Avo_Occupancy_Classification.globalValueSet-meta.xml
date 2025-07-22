@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>A-1 Assembly theaters with stage</fullName>
+        <default>false</default>
+        <label>A-1 Assembly, theaters, with stage</label>
+    </customValue>
+    <customValue>
+        <fullName>A-1 Assembly theaters without stage</fullName>
+        <default>false</default>
+        <label>A-1 Assembly, theaters, without stage</label>
+    </customValue>
+    <customValue>
+        <fullName>A-2 Assembly nightclubs</fullName>
+        <default>false</default>
+        <label>A-2 Assembly, nightclubs</label>
+    </customValue>
+    <customValue>
+        <fullName>A-2 Assembly restaurants bars banquet halls</fullName>
+        <default>false</default>
+        <label>A-2 Assembly, restaurants, bars, banquet halls</label>
+    </customValue>
+    <customValue>
+        <fullName>A-3 Assembly churches</fullName>
+        <default>false</default>
+        <label>A-3 Assembly, churches</label>
+    </customValue>
+    <customValue>
+        <fullName>A-3 Assembly general community halls libraries museums</fullName>
+        <default>false</default>
+        <label>A-3 Assembly, general, community halls, libraries, museums</label>
+    </customValue>
+    <customValue>
+        <fullName>A-4 Assembly arenas</fullName>
+        <default>false</default>
+        <label>A-4 Assembly, arenas</label>
+    </customValue>
+    <customValue>
+        <fullName>A-4 Assembly outdoor</fullName>
+        <default>false</default>
+        <label>A-4 Assembly, outdoor</label>
+    </customValue>
+    <customValue>
+        <fullName>B Business</fullName>
+        <default>false</default>
+        <label>B Business</label>
+    </customValue>
+    <customValue>
+        <fullName>E Educational</fullName>
+        <default>false</default>
+        <label>E Educational</label>
+    </customValue>
+    <customValue>
+        <fullName>F-1 Factory and industrial moderate hazard</fullName>
+        <default>false</default>
+        <label>F-1 Factory and industrial, moderate hazard</label>
+    </customValue>
+    <customValue>
+        <fullName>F-2 Factory and industrial low hazard</fullName>
+        <default>false</default>
+        <label>F-2 Factory and industrial, low hazard</label>
+    </customValue>
+    <customValue>
+        <fullName>H-1 High Hazard explosives</fullName>
+        <default>false</default>
+        <label>H-1 High Hazard, explosives</label>
+    </customValue>
+    <customValue>
+        <fullName>H234 High Hazard</fullName>
+        <default>false</default>
+        <label>H234 High Hazard</label>
+    </customValue>
+    <customValue>
+        <fullName>H-5 HPM</fullName>
+        <default>false</default>
+        <label>H-5 HPM</label>
+    </customValue>
+    <customValue>
+        <fullName>I-1 Institutional supervised environment</fullName>
+        <default>false</default>
+        <label>I-1 Institutional, supervised environment</label>
+    </customValue>
+    <customValue>
+        <fullName>I-2 Institutional hospitals</fullName>
+        <default>false</default>
+        <label>I-2 Institutional, hospitals</label>
+    </customValue>
+    <customValue>
+        <fullName>I-2 Institutional nursing homes</fullName>
+        <default>false</default>
+        <label>I-2 Institutional, nursing homes</label>
+    </customValue>
+    <customValue>
+        <fullName>I-3 Institutional restrained</fullName>
+        <default>false</default>
+        <label>I-3 Institutional, restrained</label>
+    </customValue>
+    <customValue>
+        <fullName>I-4 Institutional day care facilities</fullName>
+        <default>false</default>
+        <label>I-4 Institutional, day care facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>M Mercantile</fullName>
+        <default>false</default>
+        <label>M Mercantile</label>
+    </customValue>
+    <customValue>
+        <fullName>R-1 Residential hotels</fullName>
+        <default>false</default>
+        <label>R-1 Residential, hotels</label>
+    </customValue>
+    <customValue>
+        <fullName>R-2 Residential multiple family</fullName>
+        <default>false</default>
+        <label>R-2 Residential, multiple family</label>
+    </customValue>
+    <customValue>
+        <fullName>R-3 Residential one- and two-family</fullName>
+        <default>false</default>
+        <label>R-3 Residential, one- and two-family</label>
+    </customValue>
+    <customValue>
+        <fullName>R-4 Residential care/assisted living facilities</fullName>
+        <default>false</default>
+        <label>R-4 Residential, care/assisted living facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>S-1 Storage moderate hazard</fullName>
+        <default>false</default>
+        <label>S-1 Storage, moderate hazard</label>
+    </customValue>
+    <customValue>
+        <fullName>S-2 Storage low hazard</fullName>
+        <default>false</default>
+        <label>S-2 Storage, low hazard</label>
+    </customValue>
+    <customValue>
+        <fullName>U Utility miscellaneous</fullName>
+        <default>false</default>
+        <label>U Utility, miscellaneous</label>
+    </customValue>
+    <masterLabel>Avo Occupancy Classification</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

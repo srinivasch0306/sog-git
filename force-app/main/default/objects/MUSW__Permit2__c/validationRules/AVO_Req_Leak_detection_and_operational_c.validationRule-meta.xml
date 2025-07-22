@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_Leak_detection_and_operational_c</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+OR(
+RecordType.DeveloperName = &apos;AVO_Agricultural_Water_Withdrawal_Application&apos;, RecordType.DeveloperName = &apos;Application_to_Modify_or_Transfer_an_Agricultural_Water_Withdrawal_Permit&apos;
+),
+ISPICKVAL(AVO_Water_Conservation_Plan__c, &apos;Golf Course and Turf Systems&apos;) , (!AVO_Leak_detcton_and_operational_checks__c)
+
+
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Leak_detcton_and_operational_checks__c</errorDisplayField>
+    <errorMessage>Select Leak detection and operational checks</errorMessage>
+</ValidationRule>

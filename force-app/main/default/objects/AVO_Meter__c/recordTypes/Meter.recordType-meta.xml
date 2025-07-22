@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meter</fullName>
+    <active>true</active>
+    <label>Meter</label>
+    <picklistValues>
+        <picklist>AVO_Battery__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Disposal_Method__c</picklist>
+        <values>
+            <fullName>Crushed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returned To Manufacturer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Inventory_Status__c</picklist>
+        <values>
+            <fullName>Dead On Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deleted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disposal Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disposed Meter - Dead%2FScrapped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double Metered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installed Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Retrieved - To Be Reused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready in Warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stored in Barn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Installation_Status__c</picklist>
+        <values>
+            <fullName>Approved and Active On Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clerical Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dead On Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deleted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double Metered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Moved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending%3A Not Install to Specification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replaced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrieved Meter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Location__c</picklist>
+        <values>
+            <fullName>Alt%2E Leg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pivot Point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Source</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Orientation__c</picklist>
+        <values>
+            <fullName>Diagonal Z</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizontal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vertical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Verified__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Read_Meter__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Reason_Meter_Not_Read__c</picklist>
+        <values>
+            <fullName>BATTERY DEAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLERICAL ERROR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMPLICATED WAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEAD ON SITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Entry Stage Needs Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER DAMAGED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER INSTALLED INCORRECTLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER MISSING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER MOVED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER NOT IN USE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER REPLACED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER UNINSTALLED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MONTHLY METER READING SITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NON AG WATER USE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NON-MAINTAINABLE METER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER %28Please write in other reason%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending%3A Not Install to Specification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RETRIEVED METER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SITE DOUBLE METERED</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Source_Type__c</picklist>
+        <values>
+            <fullName>Pump - Surface Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well - Groundwater</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_State_Purchased__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Updated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Storage_Location__c</picklist>
+        <values>
+            <fullName>Barn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Container</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Kitchen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Left-wall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Right-wall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Telemetry__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Type__c</picklist>
+        <values>
+            <fullName>Meter</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Unit_Of_Measure__c</picklist>
+        <values>
+            <fullName>Acre%2FFeet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acre%2FInches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UnKnown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

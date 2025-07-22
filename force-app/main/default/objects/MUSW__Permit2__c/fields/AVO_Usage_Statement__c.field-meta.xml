@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Usage_Statement__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISPICKVAL( AVO_Golf_Course__c , &quot;Yes&quot;), ISPICKVAL( AVO_Athletics__c , &quot;Yes&quot;)) ,
+&quot;Water withdrawn from the above water source(s) shall be used for the purpose of annual irrigation on the &quot; &amp; TEXT( AVO_Permitted_Acres__c ) &amp; &quot; acres for which this permit is issued on golf course, athletic field(s) and associated landscape within any one year. This Permit does not apply to other commercial or homeowner lawn or landscape.&quot;,
+&quot;Water withdrawn from the above water source(s) shall be used for the purpose of annual irrigation on the &quot; &amp; TEXT( AVO_Permitted_Acres__c ) &amp; &quot; acres for which this permit is issued and/or other farm uses including livestock watering, pond refill, nursery/greenhouses, commercial fish production, or farm preparation of fruits and vegetables.&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Usage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

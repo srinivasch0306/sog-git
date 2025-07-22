@@ -1,0 +1,15 @@
+<apex:page standardController="MUSW__Permit2__c"  extensions="PermitViewController" action="{!init}">
+    
+    <apex:pageMessages ></apex:pageMessages>
+    
+    <apex:outputPanel rendered="{!$User.UITheme != 'PortalDefault'}">
+    
+        <BGBK:Notify recordIds="{!MUSW__Permit2__c.Id},{!MUSW__Permit2__c.MUSW__Parcel__c}"/>
+    
+    </apex:outputPanel>
+        
+    <div class="bg-hide">
+        <apex:detail relatedListHover="true" inlineEdit="true"/>
+    </div>
+    
+</apex:page>

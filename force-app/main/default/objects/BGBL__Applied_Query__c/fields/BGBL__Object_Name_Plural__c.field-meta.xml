@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Object_Name_Plural__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>The parent&apos;s relationship name to this assigned query object. Ensure to include pre &quot;MUSW__&quot; and postfix &quot;__r&quot;. eg. MUSW__listname__r.</inlineHelpText>
+    <label>Object Name (Plural)</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,117 @@
+<apex:page showHeader="false">
+<apex:includeScript value="{!URLFOR($Resource.BGBK__jQuery172,'jquery-1.3.2.min.js')}" />
+<chatter:feed entityId="{!$CurrentPage.parameters.id}" onComplete="showUploadResult();" showPublisher="{!$CurrentPage.parameters.publisher=='true'}"/>  
+
+<br/>
+<br/>
+
+<script type="text/javascript"> 
+
+function initForPublisher()
+{
+    $('#feedwrapper').hide();
+
+    // switch to 'File' tab
+    $('#publisherAttachContentPost').click();
+    
+    // hide SF option from 'File' tab
+    $('.chatterPublisherFileActionContainerLeft').hide();
+    
+    // hide all choice tabs
+    $('.publisherFeedItemTypeChoice').hide();
+
+    // change button name from 'Share' to 'Upload'
+    $('#publishersharebutton').val('Upload');
+    
+    $('#chatterUploadFileAction').click();
+    $('.clearContentPanelButtonContainer').hide();
+}
+
+
+function initForView()
+{
+    // OHIO-10: portal user can not delete file once 'done' button was clicked
+    if({!$CurrentPage.parameters.portalUser=='true' && $CurrentPage.parameters.blockChangeAfterSubmit=='true'}){
+        $('div.feeditemfooter').remove();
+    }
+    else{
+        // replace whole .feeditemfooter with 'delete' link 
+        $( ".feeditemfooter" ).each(function( index ) {
+            var deleteAnchor = $(this).find('.feeditemActionMenu').find('a:contains("Delete")');
+            var outerHTML = $("<div />").append(deleteAnchor.clone()).html();
+            $(this).html(outerHTML);
+        });
+    }
+    
+    // hide 'More Actions'    
+    $('.more-file-actions').css('visibility','hidden');
+    // as well as the annoying .
+    $('.feeditemseparatingdot').css('visibility','hidden');    
+        
+    // modify file title url to allow downloading directly
+    var titleArray = [];
+    var downloadArray = [];
+    $('div.contentFileTitle a').each(function(element){
+        titleArray.push($(this));
+    });
+    
+    $('td.moreFileActions-td a:nth-child(1)').each(function(element){
+        downloadArray.push($(this));
+    });
+    
+    for(var i=0;i<titleArray.length;i++){
+        titleArray[i].attr('href',downloadArray[i].attr('href'));
+    }
+    
+    // all 'a' element should have 'target=_blank' if current target is not specified
+    $('a').each(function(element){
+        if(!$(this).attr('target')){
+            $(this).attr('target','_blank');
+        }
+    });
+    // remove search box
+    $('.feedsupermenu').hide();
+    
+    // remove preview 
+    
+    $('a.contentThumbnail-a').each(function(element){
+        var imageSrc = $(this).children(':first').attr('src');
+        $(this).after(
+            $('<img src="'+ imageSrc+ '" />'));
+    });
+
+    $('a.contentThumbnail-a').remove();
+    
+}
+
+
+function init()
+{
+    if({!$CurrentPage.parameters.publisher=='true'}){
+        initForPublisher();
+    } else{
+        setTimeout(function(){
+            initForView();
+        },50);
+    }
+    
+    // notify parent window its new height of document
+    setTimeout(function(){
+        window.parent.postMessage("submissionUpload#"+$(document).height(), "*");  // notify parent window to change the iframe height
+    },80);
+   
+}
+
+
+function showUploadResult()
+{
+    window.parent.postMessage("fileUploaded", "*");  // notify parent window to switch to view mode
+}
+
+$(document).ready(function() {
+    
+    init();
+});
+</script>
+
+</apex:page>

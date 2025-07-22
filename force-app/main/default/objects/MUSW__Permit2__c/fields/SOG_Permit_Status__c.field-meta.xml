@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOG_Permit_Status__c</fullName>
+    <label>Permit Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACTIVE COMPLIANCE</fullName>
+                <default>false</default>
+                <label>ACTIVE COMPLIANCE</label>
+            </value>
+            <value>
+                <fullName>APPLICATION FORM REVIEW</fullName>
+                <default>false</default>
+                <label>APPLICATION FORM REVIEW</label>
+            </value>
+            <value>
+                <fullName>APPLICATION GIS MAPPING</fullName>
+                <default>false</default>
+                <label>APPLICATION GIS MAPPING</label>
+            </value>
+            <value>
+                <fullName>CANCELLED APPLICATION</fullName>
+                <default>false</default>
+                <label>CANCELLED APPLICATION</label>
+            </value>
+            <value>
+                <fullName>CONFIRM WELL INSPECTION</fullName>
+                <default>false</default>
+                <label>CONFIRM WELL INSPECTION</label>
+            </value>
+            <value>
+                <fullName>CONFIRM XY SITE VERIFICATION</fullName>
+                <default>false</default>
+                <label>CONFIRM XY SITE VERIFICATION</label>
+            </value>
+            <value>
+                <fullName>CONSOLIDATE PERMIT</fullName>
+                <default>false</default>
+                <label>CONSOLIDATE PERMIT</label>
+            </value>
+            <value>
+                <fullName>CORRECT PERMIT</fullName>
+                <default>false</default>
+                <label>CORRECT PERMIT</label>
+            </value>
+            <value>
+                <fullName>DATA ENTRY STAGE</fullName>
+                <default>false</default>
+                <label>DATA ENTRY STAGE</label>
+            </value>
+            <value>
+                <fullName>DECLINED APPROVAL</fullName>
+                <default>false</default>
+                <label>DECLINED APPROVAL</label>
+            </value>
+            <value>
+                <fullName>DENIED APPLICATION</fullName>
+                <default>false</default>
+                <label>DENIED APPLICATION</label>
+            </value>
+            <value>
+                <fullName>DIRECTOR APPROVAL</fullName>
+                <default>false</default>
+                <label>DIRECTOR APPROVAL</label>
+            </value>
+            <value>
+                <fullName>FORM RETURNED</fullName>
+                <default>false</default>
+                <label>FORM RETURNED</label>
+            </value>
+            <value>
+                <fullName>GW /SW FORM ASSESSMENT</fullName>
+                <default>false</default>
+                <label>GW /SW FORM ASSESSMENT</label>
+            </value>
+            <value>
+                <fullName>INSTALLED/WAITING ON FORMS</fullName>
+                <default>false</default>
+                <label>INSTALLED/WAITING ON FORMS</label>
+            </value>
+            <value>
+                <fullName>ISSUE LOG</fullName>
+                <default>false</default>
+                <label>ISSUE LOG</label>
+            </value>
+            <value>
+                <fullName>LOC DOCUMENT PRINTING</fullName>
+                <default>false</default>
+                <label>LOC DOCUMENT PRINTING</label>
+            </value>
+            <value>
+                <fullName>LOC ISSUANCE EVALUATION</fullName>
+                <default>false</default>
+                <label>LOC ISSUANCE EVALUATION</label>
+            </value>
+            <value>
+                <fullName>LOC ISSUED</fullName>
+                <default>false</default>
+                <label>LOC ISSUED</label>
+            </value>
+            <value>
+                <fullName>METER FORM APPROVAL</fullName>
+                <default>false</default>
+                <label>METER FORM APPROVAL</label>
+            </value>
+            <value>
+                <fullName>METER INSTALLATION</fullName>
+                <default>false</default>
+                <label>METER INSTALLATION</label>
+            </value>
+            <value>
+                <fullName>MODIFY AND TRANSFER PERMIT</fullName>
+                <default>false</default>
+                <label>MODIFY AND TRANSFER PERMIT</label>
+            </value>
+            <value>
+                <fullName>MODIFY PERMIT</fullName>
+                <default>false</default>
+                <label>MODIFY PERMIT</label>
+            </value>
+            <value>
+                <fullName>PENDING DIRECTOR SIGNATURE</fullName>
+                <default>false</default>
+                <label>PENDING DIRECTOR SIGNATURE</label>
+            </value>
+            <value>
+                <fullName>PENDING REVISION</fullName>
+                <default>false</default>
+                <label>PENDING REVISION</label>
+            </value>
+            <value>
+                <fullName>PERMIT FINAL EVALUATION</fullName>
+                <default>false</default>
+                <label>PERMIT FINAL EVALUATION</label>
+            </value>
+            <value>
+                <fullName>PERMIT GIS MAPPING</fullName>
+                <default>false</default>
+                <label>PERMIT GIS MAPPING</label>
+            </value>
+            <value>
+                <fullName>PERMIT ISSUED</fullName>
+                <default>false</default>
+                <label>PERMIT ISSUED</label>
+            </value>
+            <value>
+                <fullName>PERMIT NEED METER</fullName>
+                <default>false</default>
+                <label>PERMIT NEED METER</label>
+            </value>
+            <value>
+                <fullName>PERMIT RELINQUISHED</fullName>
+                <default>false</default>
+                <label>PERMIT RELINQUISHED</label>
+            </value>
+            <value>
+                <fullName>PERMIT REVOKED</fullName>
+                <default>false</default>
+                <label>PERMIT REVOKED</label>
+            </value>
+            <value>
+                <fullName>PROGRAM MANAGER APPROVAL</fullName>
+                <default>false</default>
+                <label>PROGRAM MANAGER APPROVAL</label>
+            </value>
+            <value>
+                <fullName>READY FOR APPROVAL</fullName>
+                <default>false</default>
+                <label>READY FOR APPROVAL</label>
+            </value>
+            <value>
+                <fullName>READY FOR ROUTING</fullName>
+                <default>false</default>
+                <label>READY FOR ROUTING</label>
+            </value>
+            <value>
+                <fullName>RELINQUISH PERMIT</fullName>
+                <default>false</default>
+                <label>RELINQUISH PERMIT</label>
+            </value>
+            <value>
+                <fullName>RESOLVED COMPLIANCE</fullName>
+                <default>false</default>
+                <label>RESOLVED COMPLIANCE</label>
+            </value>
+            <value>
+                <fullName>REVISION REQUEST DATA ENTRY STAGE</fullName>
+                <default>false</default>
+                <label>REVISION REQUEST DATA ENTRY STAGE</label>
+            </value>
+            <value>
+                <fullName>REVOKE PERMIT</fullName>
+                <default>false</default>
+                <label>REVOKE PERMIT</label>
+            </value>
+            <value>
+                <fullName>SPLIT PERMIT</fullName>
+                <default>false</default>
+                <label>SPLIT PERMIT</label>
+            </value>
+            <value>
+                <fullName>TIMESHEET MANAGER APPROVAL</fullName>
+                <default>false</default>
+                <label>TIMESHEET MANAGER APPROVAL</label>
+            </value>
+            <value>
+                <fullName>TIMESHEET SUPERVISOR APPROVAL</fullName>
+                <default>false</default>
+                <label>TIMESHEET SUPERVISOR APPROVAL</label>
+            </value>
+            <value>
+                <fullName>TRANSFER PERMIT</fullName>
+                <default>false</default>
+                <label>TRANSFER PERMIT</label>
+            </value>
+            <value>
+                <fullName>UNDOCUMENTED SOURCE</fullName>
+                <default>false</default>
+                <label>UNDOCUMENTED SOURCE</label>
+            </value>
+            <value>
+                <fullName>UNDOCUMENTED SOURCE PENDING ACTION</fullName>
+                <default>false</default>
+                <label>UNDOCUMENTED SOURCE PENDING ACTION</label>
+            </value>
+            <value>
+                <fullName>UNREVOKE PERMIT</fullName>
+                <default>false</default>
+                <label>UNREVOKE PERMIT</label>
+            </value>
+            <value>
+                <fullName>UNREVOKED</fullName>
+                <default>false</default>
+                <label>UNREVOKED</label>
+            </value>
+            <value>
+                <fullName>UPDATE PERMIT</fullName>
+                <default>false</default>
+                <label>UPDATE PERMIT</label>
+            </value>
+            <value>
+                <fullName>WAIVE TRANSACTION</fullName>
+                <default>false</default>
+                <label>WAIVE TRANSACTION</label>
+            </value>
+            <value>
+                <fullName>WATER SUPPLY APPROVAL</fullName>
+                <default>false</default>
+                <label>WATER SUPPLY APPROVAL</label>
+            </value>
+            <value>
+                <fullName>WATERSHED APPROVAL</fullName>
+                <default>false</default>
+                <label>WATERSHED APPROVAL</label>
+            </value>
+            <value>
+                <fullName>WELL INSPECTION REQUEST</fullName>
+                <default>false</default>
+                <label>WELL INSPECTION REQUEST</label>
+            </value>
+            <value>
+                <fullName>WWSA APP READ FOR COUNCIL APPROVAL</fullName>
+                <default>false</default>
+                <label>WWSA APP READ FOR COUNCIL APPROVAL</label>
+            </value>
+            <value>
+                <fullName>XY SITE VERIFICATION</fullName>
+                <default>false</default>
+                <label>XY SITE VERIFICATION</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

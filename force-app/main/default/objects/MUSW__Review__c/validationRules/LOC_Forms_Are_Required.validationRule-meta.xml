@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LOC_Forms_Are_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( RecordType.Name =&apos;AVO Withdrawal LOC Review&apos;,
+ISPICKVAL( MUSW__Status__c ,&apos;Approved&apos;), AVO_AG_SW_Pump_Information_Form__c = false, AVO_Ag_Well_Data_form__c = false, AVO_Consolidated_Conservation_Plan__c = false, AVO_Flow_Meter_Approval_Form__c =false, Irrigation_Efficiency_Certification_Form__c =false, AVO_Low_Flow_Guidance__c =false, AVO_Well_Pad_Requirement__c =false )</errorConditionFormula>
+    <errorMessage>Please indicate which of the LOC forms are required</errorMessage>
+</ValidationRule>

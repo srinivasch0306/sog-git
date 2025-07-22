@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Can_not_change_from_Voided_Invoice</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(BGBK__Status__c), ISPICKVAL(PRIORVALUE(BGBK__Status__c), &apos;Voided&apos;))</errorConditionFormula>
+    <errorMessage>Can not change the Status of a Voided Invoice</errorMessage>
+</ValidationRule>

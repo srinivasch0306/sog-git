@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Scheduled_Start_DateTime__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The &quot;Scheduled Start&quot; field represents the date and time when the inspection is scheduled to begin. This field indicates the planned start time as determined by the scheduling team or system. It may or may not align with the requested start date/time.</description>
+    <label>Scheduled Start</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

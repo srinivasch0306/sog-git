@@ -1,0 +1,479 @@
+<apex:page standardController="MUSW__Fee__c" extensions="CartController" tabStyle="BGBK__Cart__c" recordSetVar="c" action="{!initOrder}" id="p">
+
+    <apex:includeScript value="/support/console/26.0/integration.js"/>
+    
+    <c:BlockIndicator />
+    <div id="preloader2" style="visibility:hidden;"></div>
+
+    <apex:form id="f">
+    
+        <apex:sectionHeader title="Cart" subtitle="{!IF(con != null, con.Name + '`s Cart', 'Your Cart')}" id="h">
+            <apex:pageMessages id="msg" rendered="{!NOT(keepPolling)}"></apex:pageMessages>
+            <div id='errorMsg'></div>
+        </apex:sectionHeader>
+        
+        <apex:pageBlock title="Cart #{!cart.Name}" id="pb">
+        
+            <apex:pageblockbuttons id="topBtns" location="top" rendered="{!!isPortalUser}">
+                <apex:commandbutton id="abandonBtn" action="{!abandon}" value="Abandon Cart" immediate="true" rendered="{!(!isPortalUser && activeTab != 'confirm' && a.Name='Citizen')}" onclick="return confirm('You should abandon a cart only if the payer is no longer paying for it or has left. Are you sure you want to continue?');" />
+                <apex:commandbutton action="{!cancel}" value="Back" immediate="true"/>
+            </apex:pageblockbuttons>
+        
+            <apex:variable var="hasCC" value="false"/>
+            
+            <apex:outputPanel id="totalPaymentPanel">
+                <apex:pageBlockSection columns="2" rendered="{!!isPortalUser}">
+                    <apex:outputText label="Total Outstanding Balance" value="${!totalBalance}" id="totalOutstanding" style="font-size:150%;font-weight:bold;" />
+                    <apex:outputText label="Total Payment Amount" value="${!totalPayment}" id="totalPayment" style="font-size:150%;font-weight:bold;" />
+                </apex:pageBlockSection>
+            </apex:outputPanel>            
+            
+            
+            <apex:tabPanel switchType="client" value="{!activeTab}" id="tab" headerSpacing="5" activeTabClass="activeTab" inactiveTabClass="inactiveTab" disabledTabClass="disabledTab" rendered="{!feeVOs.size >= 0 || invoiceVOs.size >= 0}">
+                
+                <!---- FEES TAB ---->
+                <apex:tab label="Items" name="fees" disabled="{!processSuccessful}" onTabEnter="setSelected();refreshFees();">
+                    <apex:outputPanel rendered="{!isPortalUser}">
+                        <p>To add fees, view <a href="/apex/PermitTabPortal">your permits</a> and click "Add to Payments" on any permits with an outstanding fee.</p>
+                        <p><strong>Note that you must use a valid VISA, MasterCard or Discover credit card to pay online.</strong></p>
+                    </apex:outputPanel>
+                    
+                    <script>
+                    var feeVOList = [];
+                    var invVOList = [];
+                    var depVOList = [];
+                    </script>
+                
+                    <apex:repeat value="{!feeVOs}" var="fee"> 
+                        <script> 
+                        feeVOList.push('{!fee.f.id}' + ','+ '{!fee.isSelected}'); 
+                        </script> 
+                    </apex:repeat>
+                    <apex:repeat value="{!invoiceVOs}" var="inv"> 
+                        <script> 
+                        invVOList.push('{!inv.i.id}' + ','+ '{!inv.isSelected}'); 
+                        </script> 
+                    </apex:repeat>
+                    <apex:repeat value="{!depositVOs}" var="dep"> 
+                        <script> 
+                        depVOList.push('{!dep.deposit.id}' + ','+ '{!dep.isSelected}'); 
+                        </script> 
+                    </apex:repeat>
+                    
+                    <!-- FEES -->
+                    <apex:pageblockSection columns="1" title="Fees" collapsible="false" rendered="{!feeVOs.size > 0}">
+                    <apex:pageBlocktable value="{!feeVOs}" var="fee" style="width:100%">
+                        <apex:column headerValue="Pay" rendered="{!!isPortalUser}">
+                            <apex:facet name="header"> 
+                                <apex:inputCheckbox id="cbFeeAll" styleClass="cbFeeAll" onclick="selectAll(this, 'fee')" />
+                            </apex:facet>
+                            <input type="checkbox" checked="{!IF(fee.isSelected, 'checked', '')}" onclick="check(this,'cbFeeAll')" id="{!fee.f.Id}" rendered="{!!isPortalUser}"/>
+                        </apex:column>
+                    
+                        <apex:repeat value="{!$ObjectType.MUSW__Fee__c.FieldSets.BGBK__Fee_Basic}" var="ff">                
+                            <apex:column headerValue="{!ff.label}" >
+                                <apex:outputField value="{!fee.f[ff]}" rendered="{!ff != 'MUSW__Amount_Waived__c'}"/>
+                                <apex:inputField value="{!fee.f[ff]}" rendered="{!ff  = 'MUSW__Amount_Waived__c'}"/>
+                            </apex:column>
+                        </apex:repeat>
+                        
+                        <apex:column headerValue="Payment Amount" rendered="{!canPayPartial}">
+                            <apex:inputText value="{!fee.paymentAmount}" rendered="{!canPayPartial}"/>
+                        </apex:column>
+                    </apex:pageBlocktable>
+                    </apex:pageblockSection>
+
+                     <!-- DEPOSITS -->
+                    <apex:pageblockSection columns="1" title="Deposits" collapsible="false" rendered="{!depositVOs.size > 0}">
+                        <apex:pageBlocktable value="{!depositVOs}" var="dep" style="width:100%">
+                            <apex:column headerValue="Pay">
+                                <apex:facet name="header"> 
+                                    <apex:inputCheckbox id="cbDepositAll" styleClass="cbDepositAll" onclick="selectAll(this, 'deposit')" />
+                                </apex:facet>
+                                <input type="checkbox" checked="{!IF(dep.isSelected, 'checked', '')}" onclick="check(this,'cbDepositAll')" id="{!dep.deposit.Id}"/> 
+                            </apex:column>
+                            <apex:repeat value="{!$ObjectType.MUSW__Deposit__c.FieldSets.BGBK__Deposit_Basic}" var="ff">     
+
+                                <apex:column headerValue="{!ff.label}" rendered="{!!isPortalUser}">
+                                    <apex:outputField value="{!dep.deposit[ff]}"/>
+                                </apex:column>
+                            </apex:repeat>
+                            <apex:column headerValue="Payment Amount" rendered="{!canPayPartial}">
+                                <apex:inputText value="{!dep.paymentAmount}" rendered="{!canPayPartial}"/>
+                            </apex:column>
+                        </apex:pageBlocktable>
+                    </apex:pageblockSection>
+                    
+                    <!-- INVOICES -->
+                    <apex:pageblockSection columns="1" title="Invoices" collapsible="false" rendered="{!invoiceVOs.size > 0}">
+                    <apex:pageBlocktable value="{!invoiceVOs}" var="inv" style="width:100%">
+                        <apex:column headerValue="Pay">
+                            <apex:facet name="header"> 
+                                <apex:inputCheckbox id="cbInvoiceAll" styleClass="cbInvoiceAll" onclick="selectAll(this, 'invoice')" />
+                            </apex:facet>
+                            <input type="checkbox" checked="{!IF(inv.isSelected, 'checked', '')}" onclick="check(this,'cbInvoiceAll')" id="{!inv.i.Id}"/> 
+                        </apex:column>
+                    
+                        <apex:repeat value="{!$ObjectType.BGBK__Bill__c.FieldSets.BGBK__Invoice_Basic}" var="ff">                
+                            <apex:column headerValue="{!ff.label}" rendered="{!!isPortalUser}">
+                                <apex:outputField value="{!inv.i[ff]}"/>
+                            </apex:column>
+                        </apex:repeat>
+                        <apex:column headerValue="Payment Amount" rendered="{!canPayPartial}">
+                            <apex:inputText value="{!inv.paymentAmount}" rendered="{!canPayPartial}"/>
+                        </apex:column>
+                    </apex:pageBlocktable>
+                    </apex:pageblockSection>
+                
+                    <div class="bg-fees">
+                        <apex:pageBlockSection columns="1" id="totals">
+                            <apex:outputText label="Total Selected" value="${!totalSelected}" id="totalSelected" style="font-weight:bold;font-size:1.5em;" styleClass="bg-float-right" />
+                            <apex:outputPanel styleClass="btn" style="margin-left:18%" onclick="refreshTotalJS(getUnselectedItems());" rendered="{!canCreate && (feeVOs.size > 0 || invoiceVOs.size > 0)}">Refresh Total</apex:outputPanel>
+                            <apex:selectList id="accounts" rendered="{!!isPortalUser}" value="{!accountSelected}" multiselect="false" size="1" label="Account" >
+                                <apex:selectOptions value="{!accounts}"/>
+                                <apex:actionSupport event="onchange" action="{!accountChanged}" reRender="tab,abandonBtn" />
+                            </apex:selectList>
+                            <apex:inputField rendered="{!!isPortalUser}" value="{!cart.BGBK__Contact__c}" id="contact" >
+                                <apex:actionSupport event="onchange" action="{!contactChanged}" reRender="reconcileSection,email" /> 
+                            </apex:inputField>
+                            <apex:inputText label="Email Receipt To" value="{!email}" id="email"/>
+                            <apex:outputPanel style="margin-left:18%">Note: If you update the email address on this field, it will also update the email address for the contact record.</apex:outputPanel>
+                            <apex:inputField rendered="{!!isPortalUser}" value="{!cart.BGBK__Process_DateTime__c}"/>
+                            <br />
+                            <apex:outputPanel styleClass="btn" style="margin-left:18%" onclick="checkoutJS(getUnselectedItems());" rendered="{!canCreate && (feeVOs.size > 0 || invoiceVOs.size > 0 || depositVOs.size > 0)}">Continue</apex:outputPanel> 
+                            <apex:outputPanel id="reconcileSection" style="display:none">
+                                <apex:outputPanel rendered="{!reconcileCart!=null}">
+                                    <script>
+                                        if(confirm('An active cart for the selected Contact has been found. Click OK to reconcile the two carts, or Cancel to select a different Contact')){
+                                            $(document.getElementById('p:f:pb:totals:doReconcileBtn')).click();
+                                        }
+                                        else{
+                                            $(document.getElementById('p:f:pb:totals:cancelRconcileBtn')).click();
+                                        }
+                                    </script>
+                                    <apex:commandbutton id="doReconcileBtn" action="{!doReconcile}" value="Do Reconcile"  />
+                                    <apex:commandbutton id="cancelRconcileBtn" action="{!cancelReconcile}" value="Cancel Reconcile" reRender="totals" />
+                                </apex:outputPanel>
+                            </apex:outputPanel>                                
+                        </apex:pageBlockSection>   
+                    </div>
+                
+                    <script>
+                    
+                    /* set the checkbox value when load this tab */
+                    function setSelected()
+                    {
+                        var nList = document.getElementsByTagName('input');
+                        if(feeVOList.length > 0) document.getElementsByClassName("cbFeeAll")[0].checked = true;
+                        if(depVOList.length > 0) document.getElementsByClassName("cbDepositAll")[0].checked =  true;
+                        if(invVOList.length > 0) document.getElementsByClassName("cbInvoiceAll")[0].checked = true;
+                        for (var i = 0; i < nList.length; i++)
+                        {
+                            var n = nList[i];
+                            if(n.getAttribute('type')=='checkbox')
+                            {
+                                for (var j = 0; j < feeVOList.length; j++)
+                                {
+                                    if (feeVOList[j].indexOf(n.id) != -1)
+                                    {
+                                        var a = feeVOList[j].split(',');
+                                        n.checked = (a[1] == 'true');
+                                        if(document.getElementsByClassName("cbFeeAll")[0].checked) 
+                                            document.getElementsByClassName("cbFeeAll")[0].checked = n.checked;
+                                    }
+                                }
+                                
+                                for(var j = 0; j < invVOList.length; j++)
+                                {
+                                    if (invVOList[j].indexOf(n.id) != -1)
+                                    {
+                                        var a = invVOList[j].split(',');
+                                        n.checked = (a[1] == 'true');
+                                        if(document.getElementsByClassName("cbInvoiceAll")[0].checked) 
+                                            document.getElementsByClassName("cbInvoiceAll")[0].checked = n.checked;
+                                    }
+                                }
+
+                                for(var j = 0; j < depVOList.length; j++)
+                                {
+                                    if (depVOList[j].indexOf(n.id) != -1)
+                                    {
+                                        var a = depVOList[j].split(',');
+                                        n.checked = (a[1] == 'true');
+                                        if(document.getElementsByClassName("cbDepositAll")[0].checked) 
+                                            document.getElementsByClassName("cbDepositAll")[0].checked = n.checked;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    setSelected();
+
+                    function selectAll(input, objectType ){
+                        var inputCheckboxes = document.getElementsByTagName("input");
+                        var voList = (objectType == 'fee') ? feeVOList : (objectType == 'invoice') ? invVOList : (objectType == 'deposit') ? depVOList : [];
+                        for (var i = 0; i < inputCheckboxes.length; i++)
+                        {
+                            var inputCheckbox = inputCheckboxes[i];
+                            if(inputCheckbox.getAttribute('type')=='checkbox')
+                            {
+                                for (var j = 0; j < voList.length; j++)
+                                {
+                                    if (voList[j].indexOf(inputCheckbox.id) != -1)
+                                    {       
+                                        var index = voList.indexOf(inputCheckbox.id+',true');
+                                        if (index != -1) {
+                                            voList[index] = inputCheckbox.id + ',' + input.checked;
+                                        } else {
+                                            index = voList.indexOf(inputCheckbox.id+',false');
+                                            if(index != -1) {
+                                                voList[index] = inputCheckbox.id + ',' + input.checked;
+                                            }
+                                        }                           
+                                        inputCheckbox.checked = input.checked;
+                                    }
+                                }                                     
+                            }
+                        } 
+                    }
+
+                    function check(cb, cbAll){
+                        var all;
+                        var voList = (cbAll == 'cbFeeAll') ? feeVOList : (cbAll == 'cbInvoiceAll') ? invVOList : (cbAll == 'cbDepositAll') ? depVOList : [];
+                        if(cbAll == 'cbFeeAll')
+                        {
+                          all = document.getElementsByClassName("cbFeeAll")[0];
+                        }
+                        if(cbAll == 'cbInvoiceAll')
+                        {
+                          all = document.getElementsByClassName("cbInvoiceAll")[0];
+                        }
+                        if(cbAll == 'cbDepositAll')
+                        {
+                          all = document.getElementsByClassName("cbDepositAll")[0];
+                        }
+                        if(!cb.checked){
+                            all.checked = false;
+                            var index = voList.indexOf(cb.id+',true');
+                            if (index != -1) {
+                                voList[index] = cb.id + ',false';
+                            }
+                        }
+                        else
+                        {
+                            var index = voList.indexOf(cb.id+',false');
+                            if (index != -1) {
+                                voList[index] = cb.id + ',true';
+                            }
+                            for (var j = 0; j < voList.length; j++)
+                            {
+                                all.checked = voList[j].split(',')[1] == 'false' ? false : true;
+                                if(!all.checked) break;
+                            }
+                        }
+                    }
+                    </script>
+                </apex:tab>
+                
+                <!---- CHECKOUT TAB ---->
+                <apex:variable var="index" value="{!0}"/>
+                <apex:tab label="Checkout" id="checkout" name="checkout" disabled="{!(activeTab != 'checkout' && activeTab != 'review') || processSuccessful }" onTabEnter="checkoutJS(getUnselectedItems());">
+                
+                    <apex:outputPanel rendered="{!isPortalUser}">
+                        <p>Pay with a credit card.</p>
+                    </apex:outputPanel>
+                    
+                    <apex:repeat value="{!receiptVOs}" var="rvo" id="receipts">
+                        <hr />
+                        <br />
+                        <apex:pageBlockSection columns="4">
+                            <apex:outputPanel />
+                             <apex:outputPanel />
+                              <apex:outputPanel />
+                            <apex:commandLink action="{!delReceipt}" value="Remove" immediate="true" reRender="tab,totals,totalPaymentPanel,msg" rendered="{!index != 0}">
+                                <apex:param name="delIndex" assignTo="{!delRecIndex}" value="{!index}"/>
+                            </apex:commandLink>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection columns="1" id="pm">
+                            <apex:selectList value="{!rvo.pmtMethodSelected}" label="Payment Method" size="1" id="payment" required="true">
+                                <apex:selectOptions value="{!pmtMethods}"/>
+                                <apex:actionSupport event="onchange" reRender="tab" action="{!checkGatewayRequirementforPaymentMethod}">
+                                    <apex:param name="currentReceiptIndex" value="{!index}" assignTo="{!currentReceiptIndex}"/>
+                                </apex:actionSupport>
+                            </apex:selectList>
+                            <apex:inputText label="Payment Amount" value="{!rvo.amount}" rendered="{!!isblank(rvo.r.MUSW__Payment_Method__c) && !(CONTAINS('Other', rvo.pmtMethodSelected) || CONTAINS('Deposit', rvo.r.MUSW__Payment_Method__c))}">
+                                    <apex:actionSupport event="onkeyup" reRender="totals,totalPaymentPanel" />  
+                            </apex:inputText>
+                        </apex:pageBlockSection>
+                        <apex:outputPanel rendered="{!rvo.r.MUSW__Payment_Method__c = 'Deposit'}">
+                            <apex:pageBlockSection columns="1" id="depositCheckout">
+                                <apex:inputField value="{!rvo.payableReceipt.MUSW__Deposit__c}">
+                                    <apex:actionSupport event="onchange" action="{!useDeposit}" reRender="depositAmount, totals, msg,totalPaymentPanel">
+                                        <apex:param name="index" value="{!index}" assignTo="{!currentRowIndex}"/>
+                                    </apex:actionSupport>
+                                </apex:inputField>
+                                <apex:inputText label="Payment Amount" id="depositAmount" value="{!rvo.amount}" >
+                                    <apex:actionSupport event="onchange"  action="{!validateAmount}" reRender="totals,msg, totalPaymentPanel">
+                                        <apex:param name="index" value="{!index}" assignTo="{!currentRowIndex}"/>
+                                    </apex:actionSupport>  
+                                </apex:inputText>
+                            </apex:pageBlockSection>
+                        </apex:outputPanel>
+
+                        <apex:outputPanel id="creditPanel" rendered="{!rvo.r.MUSW__Payment_Method__c = 'Credit Card' || rvo.r.MUSW__Payment_Method__c = 'Debit' || rvo.r.MUSW__Payment_Method__c = 'Offline Credit Card' || rvo.r.MUSW__Payment_Method__c = 'Bank Account'}">
+
+                            <!-- PLUGIN CREDIT CARD SECTION HERE -->
+                            <apex:insert name="creditCardInfo"/>
+                            
+                            <apex:variable var="hasCC" value="true"/>
+                    
+                        </apex:outputPanel>
+
+                        <apex:outputPanel >
+                            <apex:pageBlockSection columns="1" id="dynamicCheckOut">
+                                <apex:repeat value="{!receiptFields[rvo.pmtMethodSelected]}" var="field">           
+                                        <apex:inputField value="{!rvo.r[field]}" rendered="{!rvo.r.Id = null}" />
+                                        <apex:outputField value="{!rvo.r[field]}" rendered="{!rvo.r.Id != null}"/>
+                                </apex:repeat>
+                            </apex:pageBlockSection>
+                        </apex:outputPanel>
+
+                        
+                        <apex:outputPanel rendered="{!!isblank(rvo.r.MUSW__Payment_Method__c) && CONTAINS('Other', rvo.pmtMethodSelected)}">
+                    
+                            <apex:pageBlockSection columns="1" id="existingReceiptCheckout">                              
+                                <apex:inputField label="Select Receipt" value="{!rvo.existingPmt.BGBK__Receipt__c}" required="false">
+                                    <apex:actionSupport action="{!checkExistingReceipt}" event="onchange" reRender="totals,totalPaymentPanel,existingReceiptCheckout,msg" />  
+                                </apex:inputField>
+                                <apex:inputText label="Amount" value="{!rvo.amount}">
+                                    <apex:actionSupport event="onchange" reRender="totals,totalPaymentPanel" />  
+                                </apex:inputText>
+                            </apex:pageBlockSection>
+                    
+                        </apex:outputPanel>
+                    
+                        <!-- JS SCRIPT FOR HIDING CERTAIN PAYMENT OPTIONS (e.g. only DSA can see Credit Card) -->
+                        <!-- SWIPE BUTTON ALSO GOES HERE -->
+                        <apex:insert name="creditCardExtras"/>
+                        
+                        <apex:variable var="index" value="{!index+1}"/>
+                        <br />
+                    </apex:repeat>
+                    
+                    <br />
+                    
+                    <!-- ADDITIONAL CHECKOUT BUTTON FOR CREDIT CARD 
+                    <apex:insert name="checkoutTabButton"/>-->
+                    <!-- 
+                    <apex:commandButton value="Continue" id="reviewOrderBtn" rendered="{!hasCC = 'true'}">
+                        <apex:actionSupport event="onclick"  action="{!review}" reRender="tab,msg" oncomplete="document.getElementById('preloader2').style.visibility='hidden';"/>
+                    </apex:commandButton>
+                     -->
+                    <apex:commandButton value="Add Payment Method" action="{!addReceipt}" reRender="tab,checkout,depositCheckout"  rendered="{!canPayMulti && !isGatewayRequiredforPaymentMethod}" />
+                    <!-- 
+                    <apex:commandButton value="Process Payment" action="{!process}" reRender="tab,msg" rendered="{!hasCC = 'false'}" oncomplete="sendEmailJS();document.getElementById('p:f:pb:topBtns:abandonBtn').style.visibility='hidden';"/>-->
+                     
+                    <apex:commandButton value="Process Payment" status="BlockIndicator" action="{!process}" rendered="{!!isGatewayRequiredforPaymentMethod}" reRender="tab,msg"  oncomplete="sendEmailJS();document.getElementById('p:f:pb:topBtns:abandonBtn').style.visibility='hidden';"/>
+                    
+                    <BGBK:MockGatewayPayment cID="{!cart.Id}" returnUrl="{!retUrl}" contactEmail="{!email}" accountPay="{!a}" contactPay="{!con}" paymentMethodSelected="Credit Card" amountToPay="{!totalPayment}" payablesForGateway="{!payables}" rendered="{!isGatewayRequiredforPaymentMethod && activeTab="checkout" && (feeVOs.size > 0 || invoiceVOs.size > 0)}"/>
+                </apex:tab>
+                 
+                 <!---- REVIEW CC TAB 
+                <apex:tab label="Review Credit Card" name="review" id="review" disabled="{!activeTab != 'review' || processSuccessful}" rendered="{!hasCC = 'true'}">
+                    <apex:outputPanel id="creditReviewPbs"> 
+                        
+                        
+                        <apex:insert name="creditCardReview"/>
+                        
+                    </apex:outputPanel>
+                </apex:tab>
+                ---->
+                <!---- CONFIRM TAB ---->
+                <apex:tab label="Confirmation" name="confirm" disabled="{!activeTab != 'confirm'}">
+                    <!-- Use below cart confirm to show Fees/ Invoices/ Deposits -->
+                    <apex:outputPanel rendered="{!keepPolling}">
+                        <apex:pageMessages />
+                        <apex:actionPoller rendered="{!jobId != null}" action="{!batchJobPoll}" interval="5" reRender="tab,msg" />
+
+                        <div class="preloader2"/>
+                    </apex:outputPanel>
+                    
+                    <apex:outputPanel rendered="{!NOT(keepPolling)}">
+                        <BGBK:CartConfirm cart="{!cart}" fees="{!fees}" deposits="{!deposits}"
+                        invoices="{!invoices}" receipts="{!rs}" feePayments="{!feePayments}"
+                        depositPayments="{!depositPayments}" invoicePayments="{!invoicePayments}"
+                        emailAddress="{!con.email}" totalAmount="{!totalPayment}" error="{!processResultCode}" rendered="{!activeTab = 'confirm'}" />
+
+                        <apex:commandButton value="Print Receipt" reRender="tab,msg" onClick="window.open('/apex/BGBK__CartPrint?cartId={!cart.Id}&email={!email}');" rendered="{!processSuccessful && receiptVOs.size>0}"/>
+
+                        <apex:commandButton value="Try Again" action="{!checkout}" reRender="tab,msg" rendered="{!!processSuccessful && (feeVOs.size > 0 || invoiceVOs.size > 0)}" />
+                    </apex:outputPanel>                      
+                </apex:tab>
+                
+            </apex:tabPanel>
+            
+            <p class="bg-steps">To complete the payment process successfully, please do not click your browser back button.</p>
+    
+        </apex:pageblock>
+        
+        <apex:actionFunction name="sendEmailJS" action="{!sendPdf}" reRender="" rendered="{!NOT(keepPolling)}"/>
+        <apex:actionFunction name="refreshTotalJS" action="{!refreshTotal}" reRender="totals,totalOutstanding,msg">
+            <apex:param name="itemIdsUnselected" assignTo="{!itemsUnselected}" value="" />
+        </apex:actionFunction>
+        <apex:actionFunction name="checkoutJS" action="{!refreshTotalAndCheckout}" reRender="tab,msg,totalPaymentPanel" >
+            <apex:param name="itemIdsUnselected" assignTo="{!itemsUnselected}" value="" />
+        </apex:actionFunction>
+        <apex:actionFunction name="refreshFees" action="{!refreshFeesTab}" rerender="tab,msg,totalPaymentPanel">
+        </apex:actionFunction>     
+        
+    
+    <style>
+    .pbBody tr .disabledTab {
+      color: #999;
+    }
+    .preloader2 {
+     visibility:visible;
+     margin:0;
+     margin-top:image-height/2;
+     margin-left:image-width/2;
+     padding:0;
+     position:fixed;
+     top:0px;
+     left:0px;
+     width:100%;
+     height:100%;
+     background:#fff url('/img/loading32.gif') no-repeat center center;
+     z-index:999;
+     opacity:0.5;
+    }
+    </style>
+    
+    <script>
+    /* Loop through the input checkbox and return the list of unselected items */
+    function getUnselectedItems()
+    {
+        var nList = document.getElementsByTagName('input');
+        var itemIds = '';
+        for (var i = 0; i < nList.length; i++)
+        {
+            var n = nList[i];
+            if (n.getAttribute('type') == 'checkbox')
+            {
+                if (!n.checked)    
+                {
+                    itemIds += n.id;
+                    itemIds +=',';
+                }
+            }
+        }
+        
+        return itemIds;
+    }
+    </script>
+    
+    <!-- ALL OTHER JS SCRIPT GOES HERE -->
+    <apex:insert name="pageScript"/>
+
+    </apex:form>
+</apex:page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Deposit_Default</fullName>
+    <fields>Name</fields>
+    <fields>MUSW__Status__c</fields>
+    <fields>MUSW__Type__c</fields>
+    <fields>MUSW__Amount__c</fields>
+    <fields>MUSW__Available_Amount__c</fields>
+    <fields>MUSW__Paid_Amount__c</fields>
+    <label>Deposit Default</label>
+</CompactLayout>

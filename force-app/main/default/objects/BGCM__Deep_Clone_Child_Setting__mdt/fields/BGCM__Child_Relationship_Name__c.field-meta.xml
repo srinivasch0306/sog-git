@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGCM__Child_Relationship_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>API Name of the child relationship for the related list to be cloned.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>API Name of the child relationship for the related list to be cloned. eg. child_relationship__r Relationship must be to the parent object specified in the related Clone Parent setting.</inlineHelpText>
+    <label>Child Relationship Name</label>
+    <length>80</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

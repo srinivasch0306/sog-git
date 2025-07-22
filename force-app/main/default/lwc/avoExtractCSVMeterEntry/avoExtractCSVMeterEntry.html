@@ -1,0 +1,44 @@
+<template>
+    <article class="slds-card">
+        
+        <div class="slds-card__header slds-border_bottom">
+          <header class="slds-text-heading_medium">
+            <div class="slds-m-bottom_small slds-align_absolute-center">Extract CSV</div>
+          </header>
+        </div>     
+
+        <div class="slds-card__body slds-card__body_inner">    
+          <lightning-spinner if:true={isLoading} alternative-text="Loading" size="medium"></lightning-spinner>
+
+          
+          <template if:false={entriesCreated}>
+            <template if:false={showError}>
+              <p>Are you sure you want to Extract CSV?</p>
+            </template>
+            
+            <template if:true={showError}>
+              <p style="white-space:pre-line">{errorMessage}</p>
+            </template>
+          </template>
+
+          <template if:true={entriesCreated}>
+            <p>Meter Entry records successfully created.</p>
+          </template>
+          
+          
+        </div>
+        
+        <footer class="slds-card__footer">
+          <div class="slds-no-flex">
+            <lightning-button label="Cancel" title="Cancel" onclick={closeAction} class="slds-m-left_x-small"></lightning-button>
+            <template if:true={showExtractButton}>
+              <lightning-button variant="brand" label="Extract CSV" title="Extract CSV" onclick={handleSubmit} class="slds-m-left_x-small"></lightning-button>
+            </template>
+            <template if:true={entriesCreated}>
+              <lightning-button variant="brand" label="Finish" title="Finish" onclick={handleFinish} class="slds-m-left_x-small"></lightning-button>
+            </template>
+            
+          </div>
+        </footer>
+      </article>    
+</template>

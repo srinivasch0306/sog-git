@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cancelled Must Re-Apply</fullName>
+        <default>false</default>
+        <label>Cancelled Must Re-Apply</label>
+    </customValue>
+    <customValue>
+        <fullName>Consolidated</fullName>
+        <default>false</default>
+        <label>Consolidated</label>
+    </customValue>
+    <customValue>
+        <fullName>Corrected</fullName>
+        <default>false</default>
+        <label>Corrected</label>
+    </customValue>
+    <customValue>
+        <fullName>modified</fullName>
+        <default>false</default>
+        <label>modified</label>
+    </customValue>
+    <customValue>
+        <fullName>Modified &amp; Transferred</fullName>
+        <default>false</default>
+        <label>Modified &amp; Transferred</label>
+    </customValue>
+    <customValue>
+        <fullName>Modifeid a&amp; Updated</fullName>
+        <default>false</default>
+        <label>Modifeid a&amp; Updated</label>
+    </customValue>
+    <customValue>
+        <fullName>Applicatoin</fullName>
+        <default>false</default>
+        <label>Applicatoin</label>
+    </customValue>
+    <customValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+    </customValue>
+    <customValue>
+        <fullName>Reprint</fullName>
+        <default>false</default>
+        <label>Reprint</label>
+    </customValue>
+    <customValue>
+        <fullName>Relinquished</fullName>
+        <default>false</default>
+        <label>Relinquished</label>
+    </customValue>
+    <customValue>
+        <fullName>Revoked</fullName>
+        <default>false</default>
+        <label>Revoked</label>
+    </customValue>
+    <customValue>
+        <fullName>SPLIT PERMIT</fullName>
+        <default>false</default>
+        <label>SPLIT PERMIT</label>
+    </customValue>
+    <customValue>
+        <fullName>To be Consolidated</fullName>
+        <default>false</default>
+        <label>To be Consolidated</label>
+    </customValue>
+    <customValue>
+        <fullName>To Be Corrected</fullName>
+        <default>false</default>
+        <label>To Be Corrected</label>
+    </customValue>
+    <customValue>
+        <fullName>To be Modified</fullName>
+        <default>false</default>
+        <label>To be Modified</label>
+    </customValue>
+    <customValue>
+        <fullName>To be Revoked</fullName>
+        <default>false</default>
+        <label>To be Revoked</label>
+    </customValue>
+    <customValue>
+        <fullName>To be Split</fullName>
+        <default>false</default>
+        <label>To be Split</label>
+    </customValue>
+    <customValue>
+        <fullName>To be Transferred</fullName>
+        <default>false</default>
+        <label>To be Transferred</label>
+    </customValue>
+    <customValue>
+        <fullName>To be Updated</fullName>
+        <default>false</default>
+        <label>To be Updated</label>
+    </customValue>
+    <customValue>
+        <fullName>to be Modified and Transferred</fullName>
+        <default>false</default>
+        <label>to be Modified and Transferred</label>
+    </customValue>
+    <customValue>
+        <fullName>Transferred</fullName>
+        <default>false</default>
+        <label>Transferred</label>
+    </customValue>
+    <customValue>
+        <fullName>To be unrevoked</fullName>
+        <default>false</default>
+        <label>To be unrevoked</label>
+    </customValue>
+    <customValue>
+        <fullName>To be relinquished</fullName>
+        <default>false</default>
+        <label>To be relinquished</label>
+    </customValue>
+    <customValue>
+        <fullName>Updated</fullName>
+        <default>false</default>
+        <label>Updated</label>
+    </customValue>
+    <customValue>
+        <fullName>Unrevoked</fullName>
+        <default>false</default>
+        <label>Unrevoked</label>
+    </customValue>
+    <customValue>
+        <fullName>To Be Corrected &amp; Transferred</fullName>
+        <default>false</default>
+        <label>To Be Corrected &amp; Transferred</label>
+    </customValue>
+    <customValue>
+        <fullName>To be Updated &amp; Transferred</fullName>
+        <default>false</default>
+        <label>To be Updated &amp; Transferred</label>
+    </customValue>
+    <masterLabel>SOG_Status/Action</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

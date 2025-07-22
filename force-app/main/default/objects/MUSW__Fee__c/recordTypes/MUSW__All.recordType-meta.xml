@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__All</fullName>
+    <active>true</active>
+    <label>All</label>
+    <picklistValues>
+        <picklist>AVO_SubType__c</picklist>
+        <values>
+            <fullName>Ability to Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Between 50 and 100 acres irrigated from a groundwater source without%2Fin excess of permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Between 50 and 100 acres irrigated from a surface water source without%2Fin excess of permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure to comply with low flow conditions in surface water permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure to follow water conservation measures required by groundwater withdrawal permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure to follow water conservation measures required by surface water withdrawal permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groundwater source located in red zone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groundwater source located in yellow zone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigating acres in excess of permitted amount from a groundwater source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigating acres in excess of permitted amount from a surface water source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More than 100 acres irrigated from a groundwater source without%2Fin excess of permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More than 100 acres irrigated from a surface water source without%2Fin excess of permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operating permitted groundwater withdrawal site without an EPD approved water meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operating permitted surface water withdrawal site without an EPD approved water meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface water source located in red zone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface water source located in yellow zone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tampering with groundwater meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tampering with surface water meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timely Response to Notice of Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted groundwater withdrawal and irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted surface water withdrawal and irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use of a groundwater source during drought</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use of a surface water source during drought</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Group__c</picklist>
+        <values>
+            <fullName>Group 1</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Group 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Payment_Method__c</picklist>
+        <values>
+            <fullName>Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Type__c</picklist>
+        <values>
+            <fullName>Downward Adjustments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upward Adjustments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Violations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

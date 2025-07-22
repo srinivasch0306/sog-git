@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Scheduled_End_DateTime__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The &quot;Scheduled End&quot; field represents the date and time when the inspection is scheduled to be completed. This field indicates the planned end time as determined by the scheduling team or system. It may or may not align with the requested end date/time.</description>
+    <label>Scheduled End</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

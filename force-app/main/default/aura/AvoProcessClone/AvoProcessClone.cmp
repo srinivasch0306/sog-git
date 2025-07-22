@@ -1,0 +1,18 @@
+<aura:component Controller="AvoProcessHelper" implements="force:lightningQuickAction,force:hasRecordId,force:hasSObjectName" >
+	<aura:attribute name="sObjectName" type="String" default="{!v.sObjectName}" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="processName" type="String" default="[xxx] Process" />
+    
+
+    <div class="content-wrapper">
+        <div class="row">
+            <h2 class="header">Clone the current process, state transitions, and state transition triggers</h2><br/>
+            <lightning:input aura:id="processName" value="{! v.processName }" name="processName" label="New Process Name" />
+        </div>
+    </div>
+    <br />
+    <div class="create-button">
+        <lightning:button variant="brand-outline" label="Clone Process" title="Clone the current Process" onclick="{! c.handleClone }"/>
+    </div>
+    <div></div>
+</aura:component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Extra_Where_Clause__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Specify any additional filter criteria in SOQL syntax to further refine results of this tier&apos;s query</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Specify any additional filter criteria in SOQL syntax to further refine results of this tier&apos;s query</inlineHelpText>
+    <label>System Default Filter</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

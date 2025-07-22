@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>InvoiceItem__c</label>
+    <protected>false</protected>
+    <values>
+        <field>clariti__AccountField__c</field>
+        <value xsi:type="xsd:string">clariti__Invoice__r.clariti__BillingAccount__r.Id</value>
+    </values>
+    <values>
+        <field>clariti__AmountField__c</field>
+        <value xsi:type="xsd:string">clariti__InvoiceAmount__c</value>
+    </values>
+    <values>
+        <field>clariti__CartFieldSet__c</field>
+        <value xsi:type="xsd:string">InvoiceItemCartColumns</value>
+    </values>
+    <values>
+        <field>clariti__CartItemField__c</field>
+        <value xsi:type="xsd:string">clariti__InvoiceItem__c</value>
+    </values>
+    <values>
+        <field>clariti__ObjectAPIName__c</field>
+        <value xsi:type="xsd:string">clariti__InvoiceItem__c</value>
+    </values>
+    <values>
+        <field>clariti__OutstandingAmountField__c</field>
+        <value xsi:type="xsd:string">clariti__AmountOutstanding__c</value>
+    </values>
+    <values>
+        <field>clariti__ParentObjectField__c</field>
+        <value xsi:type="xsd:string">clariti__Invoice__r.Id</value>
+    </values>
+</CustomMetadata>

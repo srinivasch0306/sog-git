@@ -1,0 +1,3402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>Copy_10_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>2954</locationX>
+        <locationY>3131</locationY>
+        <customErrorMessages>
+            <errorMessage>SwAppliedDt on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_11_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>2690</locationX>
+        <locationY>2915</locationY>
+        <customErrorMessages>
+            <errorMessage>Date Installed on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_1_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>314</locationX>
+        <locationY>971</locationY>
+        <customErrorMessages>
+            <errorMessage>Pump Test on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_2_of_Show_2006_Post_FRBP_Error</name>
+        <label>Show 2006 Post-FRBP Error</label>
+        <locationX>7706</locationX>
+        <locationY>7019</locationY>
+        <customErrorMessages>
+            <errorMessage>2006 Post-FRBP - SW &amp; In Critical Stream Buffer and/or Capacity Use Area.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_2_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>578</locationX>
+        <locationY>1187</locationY>
+        <customErrorMessages>
+            <errorMessage>Lithology on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_3_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>1106</locationX>
+        <locationY>1619</locationY>
+        <customErrorMessages>
+            <errorMessage>Well Data On File on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_4_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>842</locationX>
+        <locationY>1403</locationY>
+        <customErrorMessages>
+            <errorMessage>Well Closed on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_5_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>1370</locationX>
+        <locationY>1835</locationY>
+        <customErrorMessages>
+            <errorMessage>WTP Well on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_6_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>1634</locationX>
+        <locationY>2051</locationY>
+        <customErrorMessages>
+            <errorMessage>GwAppliedDt on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_7_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>1898</locationX>
+        <locationY>2267</locationY>
+        <customErrorMessages>
+            <errorMessage>Well Pad on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_8_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>2426</locationX>
+        <locationY>2699</locationY>
+        <customErrorMessages>
+            <errorMessage>WellVetted on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Copy_9_of_Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>2162</locationX>
+        <locationY>2483</locationY>
+        <customErrorMessages>
+            <errorMessage>InstallerID on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Required_Submission_Error</name>
+        <label>Required Submission Error</label>
+        <locationX>8498</locationX>
+        <locationY>7451</locationY>
+        <customErrorMessages>
+            <errorMessage>There are pending required submissions on the Permit record. Please complete them before doing this task.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_2006_Post_FRBP_Error</name>
+        <label>Show 2006 Post-FRBP Error</label>
+        <locationX>7442</locationX>
+        <locationY>6803</locationY>
+        <customErrorMessages>
+            <errorMessage>2006 Post-FRBP - Floridan Well Permit &amp; In Critical Stream Buffer and/or Capacity Use Area</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Coastal_24_Zone_Error</name>
+        <label>Show Coastal 24 Zone Error</label>
+        <locationX>6122</locationX>
+        <locationY>5723</locationY>
+        <customErrorMessages>
+            <errorMessage>In Coastal 24 Conservation Zone - Need Coastal Irrigation Water Conservation Plan on file.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Correct_Source_Name_Error</name>
+        <label>Show Correct Source Name Error</label>
+        <locationX>4010</locationX>
+        <locationY>3887</locationY>
+        <customErrorMessages>
+            <errorMessage>Data Entry Error - Source Type Flowing Stream and Source Name Contains &quot;Pond&quot; - Enter Correct Source Name</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Data_Entry_Error</name>
+        <label>Show Data Entry Error</label>
+        <locationX>7178</locationX>
+        <locationY>6587</locationY>
+        <customErrorMessages>
+            <errorMessage>Data Entry Error - # Wells and/or # SW Pumps Refilling is Null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Data_Entry_Error_for_SW_Type_and_Refill_Source</name>
+        <label>Show Data Entry Error for SW Type and Refill Source</label>
+        <locationX>3746</locationX>
+        <locationY>3671</locationY>
+        <customErrorMessages>
+            <errorMessage>Data Entry Error - Source Type Flowing Stream and Pond Refill Source Entered - Remove Pond Refill Source</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Date_Error</name>
+        <label>Show Date Error</label>
+        <locationX>3218</locationX>
+        <locationY>3239</locationY>
+        <customErrorMessages>
+            <errorMessage>Date Revision Requested entered for pending application and new permit not yet issued - remove revision request date.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Field_Error</name>
+        <label>Show Field Error</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <customErrorMessages>
+            <errorMessage>Aquifer ID on the GW Withdrawal cannot be null.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Flint_River_Basin_Error</name>
+        <label>Show Flint River Basin Error</label>
+        <locationX>6650</locationX>
+        <locationY>6155</locationY>
+        <customErrorMessages>
+            <errorMessage>Flint River Basin New or Modified SW/WTP SW - Need Water Conservation Plan.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_IrrEfficiency_Form_Error</name>
+        <label>Show IrrEfficiency Form Error</label>
+        <locationX>5594</locationX>
+        <locationY>5399</locationY>
+        <customErrorMessages>
+            <errorMessage>Need Irrigation Efficiency Certification Form on file for this permit</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_LF_CFS_Error</name>
+        <label>Show LF CFS Error</label>
+        <locationX>4274</locationX>
+        <locationY>4103</locationY>
+        <customErrorMessages>
+            <errorMessage>Data Entry Error - LF Plan, LF cfs, and/or LF gpm is Null</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Missing_Meter_Installation_Error</name>
+        <label>Show Missing Meter Installation Error</label>
+        <locationX>5330</locationX>
+        <locationY>5183</locationY>
+        <customErrorMessages>
+            <errorMessage>One or more Withdrawals missing Meter Installation</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Purpose_of_Water_Use_Error</name>
+        <label>Show Purpose of Water Use Error</label>
+        <locationX>7970</locationX>
+        <locationY>7127</locationY>
+        <customErrorMessages>
+            <errorMessage>Purpose of Water Use is Irrigation and Zero/Null Permitted Acres – Check Data Entry.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Purpose_of_Water_Use_Error_02</name>
+        <label>Show Purpose of Water Use Error</label>
+        <locationX>8234</locationX>
+        <locationY>7235</locationY>
+        <customErrorMessages>
+            <errorMessage>Purpose of Water Use is Non-Irrigation and has Permitted Acres – Check Data Entry.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Source_Type_and_Source_Name_Error</name>
+        <label>Show Source Type and Source Name Error</label>
+        <locationX>4538</locationX>
+        <locationY>4319</locationY>
+        <customErrorMessages>
+            <errorMessage>Data Entry Error - Source Type is Pond and Source Name not matching correctly</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Surface_Water_Source_Name_Error</name>
+        <label>Show Surface Water Source Name Error</label>
+        <locationX>6386</locationX>
+        <locationY>5939</locationY>
+        <customErrorMessages>
+            <errorMessage>You must correct Surface Water Source name with known or standard name.  Standard Source names include given name on file or Pond 1, Pond 2, etc.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Suspension_Area_GW_Error</name>
+        <label>Show Suspension Area GW Error</label>
+        <locationX>4802</locationX>
+        <locationY>4643</locationY>
+        <customErrorMessages>
+            <errorMessage>2012 Post-Suspension New or Modified Floridan Well Permit in the Suspension Areas</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Suspension_Area_SW_Error</name>
+        <label>Show Suspension Area SW Error</label>
+        <locationX>5066</locationX>
+        <locationY>4859</locationY>
+        <customErrorMessages>
+            <errorMessage>2012 Post-Suspension New or Modified SW Withdrawal Permit in Suspension Areas</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_SW_LF_LFP_Error</name>
+        <label>Show SW LF LFP Error</label>
+        <locationX>6914</locationX>
+        <locationY>6371</locationY>
+        <customErrorMessages>
+            <errorMessage>Data Entry Error - LF cfs and/or LF gpm &gt;0 and LF Plan not marked as on file.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Water_Conservation_Form_Error</name>
+        <label>Show Water Conservation Form Error</label>
+        <locationX>5858</locationX>
+        <locationY>5615</locationY>
+        <customErrorMessages>
+            <errorMessage>Flint River Basin GW/WTP SW or Floridan Aquifer Well - Need Water Conservation Plan</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Show_Water_Feasibility_Error</name>
+        <label>Show Water Feasibility Error</label>
+        <locationX>3482</locationX>
+        <locationY>3455</locationY>
+        <customErrorMessages>
+            <errorMessage>Coastal Conservation Zone Golf Course - Need Reuse Water Feasibility Study on file.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Check_if_any_pending_submissions</name>
+        <label>Check if any pending submissions</label>
+        <locationX>8630</locationX>
+        <locationY>7343</locationY>
+        <defaultConnector>
+            <targetReference>Update_Permit_to_Permit_Approval</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No pending submissions</defaultConnectorLabel>
+        <rules>
+            <name>Yes_There_are_pending_submissions</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_Submissions_to_Permit</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Related_Permit.MUSW__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Agricultural Water Withdrawal Application</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Required_Submission_Error</targetReference>
+            </connector>
+            <label>Yes - There are pending submissions</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Permit_Type</name>
+        <label>Check Permit Type</label>
+        <locationX>4669</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Not AWWA</defaultConnectorLabel>
+        <rules>
+            <name>AWWA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Agricultural Water Withdrawal Application</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Related_Permit</targetReference>
+            </connector>
+            <label>AWWA</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_QA_QC_1_Permit_Check_2_SuspensionAreaSW</name>
+        <label>QA/QC 1 Permit Check 18a CheckNeed1YrCovLtr Missing1YL</label>
+        <locationX>5593</locationX>
+        <locationY>5075</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_IrrEfficiency_Form_Exists_on_Permit</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Copy_3_of_Applicable_for_Error</name>
+            <conditionLogic>(1 OR 2) AND 3 AND 4 AND 5</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_Permit.AVO_Transaction_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Revoked</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Related_Permit.AVO_Transaction_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Relinquished</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Copy_11_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.AVO_Waive_Law_Rule_Plan_checks__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Related_Meter_s</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Missing_Meter_Installation_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Data_Field_Check_1</name>
+        <label>Data Field Check 2</label>
+        <locationX>577</locationX>
+        <locationY>863</locationY>
+        <defaultConnector>
+            <targetReference>Copy_3_of_Get_GW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_2_of_Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Data_Field_Check_10</name>
+        <label>Data Field Check 11</label>
+        <locationX>2953</locationX>
+        <locationY>2807</locationY>
+        <defaultConnector>
+            <targetReference>Copy_2_of_Get_SW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_11_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_11_of_Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_11_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Data_Field_Check_11</name>
+        <label>Data Field Check 12</label>
+        <locationX>3217</locationX>
+        <locationY>3023</locationY>
+        <defaultConnector>
+            <targetReference>QA_QC_Rule_1_Permit_Check_17_New_Dt_Revised_Fix_Report</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_12_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_2_of_Get_SW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_10_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Data_Field_Check_2</name>
+        <label>Data Field Check 3</label>
+        <locationX>841</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Copy_4_of_Get_GW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_3_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_3_of_Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Data_Field_Check_4</name>
+        <label>Data Field Check 5</label>
+        <locationX>1369</locationX>
+        <locationY>1511</locationY>
+        <defaultConnector>
+            <targetReference>Copy_6_of_Get_GW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_5_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_5_of_Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_3_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Data_Field_Check_5</name>
+        <label>Data Field Check 6</label>
+        <locationX>1633</locationX>
+        <locationY>1727</locationY>
+        <defaultConnector>
+            <targetReference>Copy_7_of_Get_GW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_6_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_6_of_Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_5_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Data_Field_Check_6</name>
+        <label>Data Field Check 7</label>
+        <locationX>1897</locationX>
+        <locationY>1943</locationY>
+        <defaultConnector>
+            <targetReference>Copy_8_of_Get_GW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_7_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_7_of_Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_6_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Data_Field_Check_7</name>
+        <label>Data Field Check 8</label>
+        <locationX>2161</locationX>
+        <locationY>2159</locationY>
+        <defaultConnector>
+            <targetReference>Copy_9_of_Get_GW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_8_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_8_of_Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_7_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Data_Field_Check_8</name>
+        <label>Data Field Check 9</label>
+        <locationX>2425</locationX>
+        <locationY>2375</locationY>
+        <defaultConnector>
+            <targetReference>Copy_10_of_Get_GW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_9_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_9_of_Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_9_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Data_Field_Check_9</name>
+        <label>Data Field Check 10</label>
+        <locationX>2689</locationX>
+        <locationY>2591</locationY>
+        <defaultConnector>
+            <targetReference>Copy_11_of_Get_GW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_10_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_10_of_Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_8_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_3_of_Data_Field_Check_2</name>
+        <label>Data Field Check 4</label>
+        <locationX>1105</locationX>
+        <locationY>1295</locationY>
+        <defaultConnector>
+            <targetReference>Copy_5_of_Get_GW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Copy_4_of_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_4_of_Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_4_of_Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Data_Field_Check_1</name>
+        <label>Data Field Check 1</label>
+        <locationX>313</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>Copy_2_of_Get_GW_Withdrawal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Null</defaultConnectorLabel>
+        <rules>
+            <name>Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_GW_Withdrawal</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Field_Error</targetReference>
+            </connector>
+            <label>Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_10_New_Mod_FRBP_2006_Cons_Plan_SW</name>
+        <label>QA/QC 1 Permit Check 10 New Mod FRBP 2006 Cons Plan SW</label>
+        <locationX>6912</locationX>
+        <locationY>6047</locationY>
+        <defaultConnector>
+            <targetReference>Copy_6_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_11</name>
+            <conditionLogic>(1 OR 2 OR 3) AND 4 AND (5 OR 7 OR 8 OR 9) AND 6</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_5_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Original_Date_Applied__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>2006-04-20</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_DateRevRequested__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <dateValue>2006-04-20</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Undocumented Source</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Application</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Is_Conservation_Plan_required__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified &amp; Transferred</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Consolidated</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Flint_River_Basin_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_10_NewModFlAqu_FRBP_2006_Cons_Plan_GW</name>
+        <label>QA/QC 1 Permit Check 10 NewModFlAqu FRBP 2006 Cons Plan GW</label>
+        <locationX>6121</locationX>
+        <locationY>5507</locationY>
+        <defaultConnector>
+            <targetReference>QA_QC_1_Permit_Check_32_Coastal_Need_Cons_Plan_On_Permit_PFE_QAQC</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_8</name>
+            <conditionLogic>1 AND (2 OR 3) AND (4 OR 6 OR 7 OR 8) AND 5</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_Withdrawal_s_on_Application_3</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Original_Date_Applied__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>2006-04-20</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_DateRevRequested__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <dateValue>2006-04-20</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Application</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Is_Conservation_Plan_required__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified &amp; Transferred</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Consolidated</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Water_Conservation_Form_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_11_FRBP_2006_GW</name>
+        <label>QA/QC 1 Permit Check 11 FRBP 2006 GW</label>
+        <locationX>7697</locationX>
+        <locationY>6695</locationY>
+        <defaultConnector>
+            <targetReference>Copy_9_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_14</name>
+            <conditionLogic>(9 AND (1 OR 2)) AND 3 AND (4 OR 6 OR 7 OR 8) AND 5</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Original_Date_Applied__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>2006-04-20</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_DateRevRequested__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <dateValue>2006-04-20</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Undocumented Source</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Application</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.AVO_Waive_Law_Rule_Plan_checks__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified &amp; Transferred</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Consolidated</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Copy_8_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_2006_Post_FRBP_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_12_FRBP_2006_SW</name>
+        <label>QA/QC 1 Permit Check 12 FRBP 2006 SW</label>
+        <locationX>7953</locationX>
+        <locationY>6911</locationY>
+        <defaultConnector>
+            <targetReference>QA_QC_1_Permit_Check_22_Purpose_Irr_No_Permitted_Acres</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_Applicable_for_Error</name>
+            <conditionLogic>(1 AND (2 OR 3)) AND 4 AND (5 OR 6 OR 7 OR 8)</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_8_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Original_Date_Applied__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>2006-04-20</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_DateRevRequested__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <dateValue>2006-04-20</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Undocumented Source</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Application</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified &amp; Transferred</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Consolidated</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Show_2006_Post_FRBP_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_14_GC_Coastal_Reuse_Water_Study</name>
+        <label>QA/QC 1 Permit Check 14 GC Coastal Reuse Water Study</label>
+        <locationX>3745</locationX>
+        <locationY>3347</locationY>
+        <defaultConnector>
+            <targetReference>Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_error_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_12_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Golf_Course__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Water_Feasibility_Error</targetReference>
+            </connector>
+            <label>Applicable for error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_18a_Check_Surface_Water_Source_Correction</name>
+        <label>QA/QC 1 Permit Check 18a Check Surface Water Source Correction</label>
+        <locationX>6649</locationX>
+        <locationY>5831</locationY>
+        <defaultConnector>
+            <targetReference>Copy_5_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_10</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_Withdrawal_s_on_Application_2</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Revoked</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Relinquished</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Surface_Water_Source_Name_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_1_Suspension_Area_GW</name>
+        <label>QA/QC 1 Permit Check 1 Suspension Area GW</label>
+        <locationX>5065</locationX>
+        <locationY>4535</locationY>
+        <defaultConnector>
+            <targetReference>Copy_10_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_6</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4) AND (5 OR 6) AND (7 OR 9 OR 10 OR 11) AND 8</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_4_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.AVO_Waive_Law_Rule_Plan_checks__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Permit_Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Undocumented Source</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Undocumented__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Original_Date_Applied__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>2012-07-30</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_DateRevRequested__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <dateValue>2012-07-30</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Application</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Condition</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified &amp; Transferred</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Consolidated</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Suspension_Area_GW_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_22_Purpose_Irr_No_Permitted_Acres</name>
+        <label>QA/QC 1 Permit Check 22 Purpose Irr &amp; No Permitted Acres</label>
+        <locationX>8201</locationX>
+        <locationY>7019</locationY>
+        <defaultConnector>
+            <targetReference>QA_QC_1_Permit_Check_22_Purpose_Non_Irr_Permitted_Acres</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_15</name>
+            <conditionLogic>1 AND (2 OR 3) AND 4 AND (5 OR 6)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Undocumented Source</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Permitted_Acres__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Permitted_Acres__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_PurIR__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Revoked</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Relinquished</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Purpose_of_Water_Use_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_22_Purpose_Non_Irr_Permitted_Acres</name>
+        <label>QA/QC 1 Permit Check 22 Purpose Non Irr &amp; Permitted Acres</label>
+        <locationX>8432</locationX>
+        <locationY>7127</locationY>
+        <defaultConnector>
+            <targetReference>Get_Related_Submissions_to_Permit</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_16</name>
+            <conditionLogic>1 AND 2 AND (3 OR 5) AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Undocumented Source</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Permitted_Acres__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Relinquished</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_PurIR__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>No</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Revoked</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Purpose_of_Water_Use_Error_02</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_23_SW_Type_Stream_Refill_Source</name>
+        <label>QA/QC 1 Permit Check 23 SW Type Stream &amp; Refill Source</label>
+        <locationX>4009</locationX>
+        <locationY>3563</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_error_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Data_Entry_Error_for_SW_Type_and_Refill_Source</targetReference>
+            </connector>
+            <label>Applicable for error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_24_SW_Type_Stream_Name_Pond</name>
+        <label>QA/QC 1 Permit Check 24 SW Type Stream &amp; Name Pond</label>
+        <locationX>4273</locationX>
+        <locationY>3779</locationY>
+        <defaultConnector>
+            <targetReference>Copy_3_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_1_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Correct_Source_Name_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_25_SW_LF_Amt_Or_Plan_Null</name>
+        <label>QA/QC 1 Permit Check 25 SW LF Amt Or Plan Null</label>
+        <locationX>4537</locationX>
+        <locationY>3995</locationY>
+        <defaultConnector>
+            <targetReference>Copy_2_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_4</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_3_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_LF_CFS_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_26_SW_Lf_0_No_LFP</name>
+        <label>QA/QC 1 Permit Check 26 SW Lf &gt; 0 &amp; No LFP</label>
+        <locationX>7175</locationX>
+        <locationY>6263</locationY>
+        <defaultConnector>
+            <targetReference>Copy_7_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_12</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_6_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_SW_LF_LFP_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_28_SW_Source_Type_Nm_MisMatch_2</name>
+        <label>QA/QC 1 Permit Check 28 SW Source Type &amp; Nm MisMatch 2</label>
+        <locationX>4801</locationX>
+        <locationY>4211</locationY>
+        <defaultConnector>
+            <targetReference>Copy_4_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_2_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Source_Type_and_Source_Name_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_29_SW_Wells_SW_Refill_Null</name>
+        <label>QA/QC 1 Permit Check 29 SW #Wells &amp; SW Refill Null</label>
+        <locationX>7437</locationX>
+        <locationY>6479</locationY>
+        <defaultConnector>
+            <targetReference>Copy_8_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_13</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_7_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Data_Entry_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_2_SuspensionAreaSW</name>
+        <label>QA/QC 1 Permit Check 2 SuspensionAreaSW</label>
+        <locationX>5329</locationX>
+        <locationY>4751</locationY>
+        <defaultConnector>
+            <targetReference>Copy_11_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Applicable_for_Error</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4) AND (5 OR 6) AND (7 OR 11 OR 12 OR 13) AND (8 OR 9) AND 10</conditionLogic>
+            <conditions>
+                <leftValueReference>Copy_4_of_Get_Related_Withdrawal_s_on_Application</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.AVO_Waive_Law_Rule_Plan_checks__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Permit_Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Undocumented Source</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Undocumented__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Original_Date_Applied__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>2012-07-30</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_DateRevRequested__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <dateValue>2012-07-30</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Application</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Suspension_Areas__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>GW &amp; SW</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Suspension_Areas__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>SW only</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Condition</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified &amp; Transferred</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Consolidated</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Suspension_Area_SW_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_32_Coastal_Need_Cons_Plan_On_Permit_PFE_QAQC</name>
+        <label>QA/QC 1 Permit Check 32 Coastal Need Cons Plan On Permit PFE QAQC1q`</label>
+        <locationX>6385</locationX>
+        <locationY>5615</locationY>
+        <defaultConnector>
+            <targetReference>Get_Related_Withdrawal_s_on_Application_2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_9</name>
+            <conditionLogic>1 AND (2 OR 3) AND 4 AND 5 AND (6 OR 7 OR 8 OR 9)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Undocumented Source</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Original_Date_Applied__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>2006-06-01</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_DateRevRequested__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <dateValue>2006-06-01</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Coastal_24__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>No</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Is_Conservation_Plan_required__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Application</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified &amp; Transferred</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Consolidated</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Coastal_24_Zone_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_1_Permit_Check_40_IrrEffMissing</name>
+        <label>QA/QC 1 Permit Check 40 IrrEff Missing</label>
+        <locationX>5857</locationX>
+        <locationY>5291</locationY>
+        <defaultConnector>
+            <targetReference>Get_Related_Withdrawal_s_on_Application_3</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_Error_7</name>
+            <conditionLogic>1 AND (2 OR 3) AND 4 AND (5 OR 6 OR 7 OR 8)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.MUSW__Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Undocumented Source</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Suspension_Areas__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>GW &amp; SW</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Suspension_Areas__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>SW Only</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Check_if_IrrEfficiency_Form_Exists_on_Permit</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Application</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified &amp; Transferred</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Modified</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Transaction_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To Be Consolidated</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_IrrEfficiency_Form_Error</targetReference>
+            </connector>
+            <label>Applicable for Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QA_QC_Rule_1_Permit_Check_17_New_Dt_Revised_Fix_Report</name>
+        <label>QA/QC Rule 1 Permit Check 17 New &amp; Dt Revised Fix Report</label>
+        <locationX>3481</locationX>
+        <locationY>3131</locationY>
+        <defaultConnector>
+            <targetReference>Copy_12_of_Get_Related_Withdrawal_s_on_Application</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Applicable_for_error</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_DateRevRequested__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MUSW__Permit2__r.AVO_Date_Permit_Issued__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Show_Date_Error</targetReference>
+            </connector>
+            <label>Applicable for error</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>AVO AWWA Transition to Permit Approval {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO AWWA Transition to Permit Approval</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>QA/QC Rule: 1_Permit_Check_40_IrrEffMissing</description>
+        <name>Check_if_IrrEfficiency_Form_Exists_on_Permit</name>
+        <label>Check if IrrEfficiency Form Exists on Permit</label>
+        <locationX>5857</locationX>
+        <locationY>5183</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_40_IrrEffMissing</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Irrigation Efficiency Certification Form</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Permit2__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MUSW__Submission__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: WellVetted</description>
+        <name>Copy_10_of_Get_GW_Withdrawal</name>
+        <label>Get GW Withdrawal</label>
+        <locationX>2689</locationX>
+        <locationY>2483</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Data_Field_Check_9</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_WellVetted__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>For QA/QC Rule: 1_Permit_Check_2_SuspensionArea_SW</description>
+        <name>Copy_10_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>5329</locationX>
+        <locationY>4643</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_2_SuspensionAreaSW</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_GIS_UNIQUE__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SwAppliedDt__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <dateTimeValue>2012-07-30T07:00:00.000Z</dateTimeValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: Date Installed</description>
+        <name>Copy_11_of_Get_GW_Withdrawal</name>
+        <label>Get SW Withdrawal</label>
+        <locationX>2953</locationX>
+        <locationY>2699</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Data_Field_Check_10</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Date_Installed__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>For QA/QC Rule: 1_Permit_Check_18a_CheckNeed1YrCovLtr_Missing1YL</description>
+        <name>Copy_11_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>5593</locationX>
+        <locationY>4859</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Related_Meter_s</targetReference>
+        </connector>
+        <filterLogic>(2 OR (1 AND 5)) AND 3 AND 4</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Related_Permit.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Well_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Plugged/ Abandoned</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>For QA/QC Rule: 1_Permit_Check_14_GC_Coastal_ReuseWaterStudy</description>
+        <name>Copy_12_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>3745</locationX>
+        <locationY>3239</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_14_GC_Coastal_Reuse_Water_Study</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND (3 OR 4 OR 5 OR 6)</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Coastal_24__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>c</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Coastal_24__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>C</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Coastal_24__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>r</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Coastal_24__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>R</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>For QA/QC Rule: 1_Permit_Check_24_SW_TypeStream&amp;NamePond</description>
+        <name>Copy_1_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>4273</locationX>
+        <locationY>3671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_24_SW_Type_Stream_Name_Pond</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SourceType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Flowing Stream or Canal to such</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Surface_Water_Source__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>pond</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: Pump Test</description>
+        <name>Copy_2_of_Get_GW_Withdrawal</name>
+        <label>Get GW Withdrawal</label>
+        <locationX>577</locationX>
+        <locationY>755</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Data_Field_Check_1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Pump_Test__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>For QA/QC Rule: 1_Permit_Check_28_SW_SourceType&amp;NmMisMatch2</description>
+        <name>Copy_2_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>4801</locationX>
+        <locationY>4103</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_28_SW_Source_Type_Nm_MisMatch_2</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND (3 OR 4 OR 5 OR 6) AND (NOT(7) AND NOT(8) AND NOT(10) AND NOT(11)) AND 9</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SourceType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Shared Impoundment</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SourceType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>On Farm Constructed Pond</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SourceType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Natural Lagoon, Wetland, Pond</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SourceType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sinkhold Pond</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Surface_Water_Source__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>pond</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Surface_Water_Source__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>lake</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Surface_Water_Source__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Pond</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Surface_Water_Source__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Lake</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: SwAppliedDt</description>
+        <name>Copy_2_of_Get_SW_Withdrawal</name>
+        <label>Get SW Withdrawal</label>
+        <locationX>3217</locationX>
+        <locationY>2915</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Data_Field_Check_11</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SwAppliedDt__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: Lithology</description>
+        <name>Copy_3_of_Get_GW_Withdrawal</name>
+        <label>Get GW Withdrawal</label>
+        <locationX>841</locationX>
+        <locationY>971</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Data_Field_Check_2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Lithology__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>For QA/QC Rule: 1_Permit_Check_25_SW_LFAmtOrPlanNull</description>
+        <name>Copy_3_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>4537</locationX>
+        <locationY>3887</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_25_SW_LF_Amt_Or_Plan_Null</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_LFP_Type__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: Well Closed</description>
+        <name>Copy_4_of_Get_GW_Withdrawal</name>
+        <label>Get GW Withdrawal</label>
+        <locationX>1105</locationX>
+        <locationY>1187</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_3_of_Data_Field_Check_2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Well_Closed__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>For QA/QC Rule: 1_Permit_Check_1_SuspensionArea_GW</description>
+        <name>Copy_4_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>5065</locationX>
+        <locationY>4319</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Condition</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND (8 OR 9)</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_GIS_UNIQUE__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_GwAppliedDt__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <dateTimeValue>2012-07-30T07:00:00.000Z</dateTimeValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Aquifer_ID__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Floridan</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Well_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Plugged/ Abandoned</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_2012_Suspension_Areas__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>GW &amp; SW</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_2012_Suspension_Areas__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>GW only</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: Well Data On File</description>
+        <name>Copy_5_of_Get_GW_Withdrawal</name>
+        <label>Get GW Withdrawal</label>
+        <locationX>1369</locationX>
+        <locationY>1403</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Data_Field_Check_4</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Well_Data_On_File__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>QA/QC: 1_Permit_Check_10_NewMod_FRBP2006_ConsPlanSW</description>
+        <name>Copy_5_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>6912</locationX>
+        <locationY>5939</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_10_New_Mod_FRBP_2006_Cons_Plan_SW</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND 3 AND NOT((4 OR 5 OR 6 OR 7))</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SwAppliedDt__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <dateTimeValue>2006-04-20T07:00:00.000Z</dateTimeValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_FRBP_Conservation_Area__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>No</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_FRBP_Conservation_Area__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>no</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_FRBP_Conservation_Area__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>n</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_FRBP_Conservation_Area__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>N</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: WTP Well</description>
+        <name>Copy_6_of_Get_GW_Withdrawal</name>
+        <label>Get GW Withdrawal</label>
+        <locationX>1633</locationX>
+        <locationY>1619</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Data_Field_Check_5</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_WTP_Well__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>QA/QC: 1_Permit_Check_26_SW_Lf&gt;0&amp;NoLFP</description>
+        <name>Copy_6_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>7175</locationX>
+        <locationY>6155</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_26_SW_Lf_0_No_LFP</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND 3 AND 4 AND (5 OR 6)</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Low_Flow_Plan_On_File_Yes_No__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Yes</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Low_Flow_cfs__c</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Low_Flow_gpm__c</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: GwAppliedDt</description>
+        <name>Copy_7_of_Get_GW_Withdrawal</name>
+        <label>Get GW Withdrawal</label>
+        <locationX>1897</locationX>
+        <locationY>1835</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Data_Field_Check_6</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_GwAppliedDt__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>QA/QC: 1_Permit_Check_29_SW_#Wells&amp;SWRefillNull</description>
+        <name>Copy_7_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>7437</locationX>
+        <locationY>6371</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_29_SW_Wells_SW_Refill_Null</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND 3 AND (4 OR 5)</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Wells_Refilling__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SW_Pumps_Refilling__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: GwAppliedDt</description>
+        <name>Copy_8_of_Get_GW_Withdrawal</name>
+        <label>Get GW Withdrawal</label>
+        <locationX>2161</locationX>
+        <locationY>2051</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Data_Field_Check_7</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Well_Pad__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>QA/QC: 1_Permit_Check_11_FRBP2006_GW</description>
+        <name>Copy_8_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>7697</locationX>
+        <locationY>6587</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_11_FRBP_2006_GW</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND (3 OR 7) AND 4 AND 5 AND 6</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_FRBP_Conservation_Area__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>R</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_GwAppliedDt__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <dateTimeValue>2006-04-20T07:00:00.000Z</dateTimeValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Aquifer_ID__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Floridan</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Critical_Stream_Buffer__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>CritStrBuf</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: InstallerID</description>
+        <name>Copy_9_of_Get_GW_Withdrawal</name>
+        <label>Get GW Withdrawal</label>
+        <locationX>2425</locationX>
+        <locationY>2267</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Data_Field_Check_8</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_InstallerID__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>QA/QC: 1_Permit_Check_12_FRBP2006_SW</description>
+        <name>Copy_9_of_Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>7953</locationX>
+        <locationY>6803</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_12_FRBP_2006_SW</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND (3 OR 6) AND 4 AND 5</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_FRBP_Conservation_Area__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>R</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SwAppliedDt__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <dateTimeValue>2006-04-20T07:00:00.000Z</dateTimeValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Critical_Stream_Buffer__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>CritStrBuf</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>For QA/QC Rule: 1_Permit_Check_1_SuspensionArea_GW</description>
+        <name>Get_Condition</name>
+        <label>Get Condition</label>
+        <locationX>5065</locationX>
+        <locationY>4427</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_1_Suspension_Area_GW</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3)</filterLogic>
+        <filters>
+            <field>AVO_Application_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Related_Permit.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Special_Condition_Category__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Drought Condition</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Special_Condition_Category__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MUSW__Condition__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Field: Aquifer ID</description>
+        <name>Get_GW_Withdrawal</name>
+        <label>Get GW Withdrawal</label>
+        <locationX>313</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Data_Field_Check_1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Aquifer_ID__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>For QA/QC Rule: 1_Permit_Check_18a_CheckNeed1YrCovLtr_Missing1YL</description>
+        <name>Get_Related_Meter_s</name>
+        <label>Get Related Meter/s</label>
+        <locationX>5593</locationX>
+        <locationY>4967</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_1_of_QA_QC_1_Permit_Check_2_SuspensionAreaSW</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8)</filterLogic>
+        <filters>
+            <field>AVO_Permit_Number__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Related_Permit.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Meter_Installation_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Approved and Active On Site</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Meter_Installation_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Clerical Error</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Meter_Installation_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Replaced</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Meter_Installation_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Deleted</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Meter_Installation_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Retrieved Meter</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Meter_Installation_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Double Metered</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Meter_Installation_Status__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Meter__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Related_Permit</name>
+        <label>Get Related Permit</label>
+        <locationX>313</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_GW_Withdrawal</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3)</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Agricultural Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Revision</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MUSW__Permit2__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Related_Submissions_to_Permit</name>
+        <label>Get Related Submissions to Permit</label>
+        <locationX>8630</locationX>
+        <locationY>7235</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_any_pending_submissions</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MUSW__Permit2__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Required__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MUSW__Submission__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>For QA/QC Rule: 1_Permit_Check_23_SW_TypeStream&amp;RefillSource</description>
+        <name>Get_Related_Withdrawal_s_on_Application</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>4009</locationX>
+        <locationY>3455</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_23_SW_Type_Stream_Refill_Source</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_SourceType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Flowing Stream or Canal to such</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Refill__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>QA/QC: 1_Permit_Check_18a_CheckSurfaceWaterSourceCorrection</description>
+        <name>Get_Related_Withdrawal_s_on_Application_2</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>6649</locationX>
+        <locationY>5723</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_18a_Check_Surface_Water_Source_Correction</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5) AND 6 AND 7</filterLogic>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Surface_Water_Source__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>UNKNOWN</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Surface_Water_Source__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>UNNAMED</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Surface_Water_Source__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>unnamed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Surface_Water_Source__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>UNSPECIFIED</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Deleted</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>QA/QC: 1_Permit_Check_10_NewModFlAqu_FRBP2006_ConsPlanGW</description>
+        <name>Get_Related_Withdrawal_s_on_Application_3</name>
+        <label>Get Related Withdrawal/s on Application</label>
+        <locationX>6121</locationX>
+        <locationY>5399</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>QA_QC_1_Permit_Check_10_NewModFlAqu_FRBP_2006_Cons_Plan_GW</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND NOT((3 OR 4 OR 5 OR 6)) AND 7 AND 8 AND 9 AND 10</filterLogic>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_FRBP_Conservation_Area__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>No</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_FRBP_Conservation_Area__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>no</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_FRBP_Conservation_Area__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>N</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_FRBP_Conservation_Area__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>n</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_GwAppliedDt__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <dateTimeValue>2006-04-20T07:00:00.000Z</dateTimeValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Aquifer_ID__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Floridan</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Well_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Plugged/ Abandoned</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Permit_to_Permit_Approval</name>
+        <label>Update Permit to Permit Approval</label>
+        <locationX>8762</locationX>
+        <locationY>7451</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>MUSW__Status__c</field>
+            <value>
+                <stringValue>Permit Approval</stringValue>
+            </value>
+        </inputAssignments>
+        <object>MUSW__Permit2__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>4543</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Permit_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Final Evaluation Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <object>MUSW__Review__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

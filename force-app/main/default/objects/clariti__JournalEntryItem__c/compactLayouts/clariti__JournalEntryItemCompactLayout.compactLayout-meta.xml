@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__JournalEntryItemCompactLayout</fullName>
+    <fields>clariti__EffectiveDate__c</fields>
+    <fields>clariti__DebitAmount__c</fields>
+    <fields>clariti__CreditAmount__c</fields>
+    <fields>clariti__LedgerAccount__c</fields>
+    <label>Journal Entry Item Compact Layout</label>
+</CompactLayout>

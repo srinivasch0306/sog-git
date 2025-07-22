@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Inventory_Status__c</fullName>
+    <label>Meter Inventory Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dead On Site</fullName>
+                <default>false</default>
+                <label>Dead On Site</label>
+            </value>
+            <value>
+                <fullName>Deleted</fullName>
+                <default>false</default>
+                <label>Deleted</label>
+            </value>
+            <value>
+                <fullName>Disposal Approved</fullName>
+                <default>false</default>
+                <label>Disposed Meter</label>
+            </value>
+            <value>
+                <fullName>Disposed Meter - Dead/Scrapped</fullName>
+                <default>false</default>
+                <label>Dead/Scrapped</label>
+            </value>
+            <value>
+                <fullName>Double Metered</fullName>
+                <default>false</default>
+                <label>Double Metered</label>
+            </value>
+            <value>
+                <fullName>Installed Meter</fullName>
+                <default>false</default>
+                <label>Installed Meter</label>
+            </value>
+            <value>
+                <fullName>Meter Retrieved - To Be Reused</fullName>
+                <default>false</default>
+                <label>Retrieved Meter</label>
+            </value>
+            <value>
+                <fullName>Missing Meter</fullName>
+                <default>false</default>
+                <label>Missing Meter</label>
+            </value>
+            <value>
+                <fullName>Ready in Warehouse</fullName>
+                <default>false</default>
+                <label>Ready in Warehouse</label>
+            </value>
+            <value>
+                <fullName>Stored in Barn</fullName>
+                <default>false</default>
+                <label>Stored in Barn</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>AVO Default Internal</label>
+    <permissionSets>AVO_Account_and_Contacts_Full</permissionSets>
+    <permissionSets>AVO_Account_and_Contacts_Partial</permissionSets>
+    <permissionSets>AVO_Additional_Admin_Permissions</permissionSets>
+    <permissionSets>AVO_Additional_Field_Specialist_Permissions</permissionSets>
+    <permissionSets>AVO_Additional_Meter_Management_Permissions</permissionSets>
+    <permissionSets>AVO_Additional_Permit_Management_Permissions</permissionSets>
+    <permissionSets>AVO_Compliance_Full</permissionSets>
+    <permissionSets>AVO_Inspection_Full</permissionSets>
+    <permissionSets>AVO_Lightning_App_Permissions</permissionSets>
+    <permissionSets>AVO_Meter_Codeset_Full</permissionSets>
+    <permissionSets>AVO_Meter_Full</permissionSets>
+    <permissionSets>AVO_Meter_Transaction_Full</permissionSets>
+    <permissionSets>AVO_Meter_Withdrawal_Full</permissionSets>
+    <permissionSets>AVO_Move_SharePoint_Files</permissionSets>
+    <permissionSets>AVO_Permit_Full</permissionSets>
+    <permissionSets>AVO_Process_Permissions</permissionSets>
+    <permissionSets>AVO_Template_Object</permissionSets>
+    <permissionSets>AVO_Withdrawal_Full</permissionSets>
+    <permissionSets>Waive_MFA_Authorization_for_Users_Login</permissionSets>
+    <permissionSets>clariti__ArcGIS_Map_Component_CRUD</permissionSets>
+    <permissionSets>clariti__FinancialsBaseCommunity</permissionSets>
+    <permissionSets>clariti__FinancialsClaritiPlatformCommunity</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

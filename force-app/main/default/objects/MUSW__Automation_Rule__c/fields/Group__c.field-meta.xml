@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group__c</fullName>
+    <label>Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Authorize / Issue</fullName>
+                <default>false</default>
+                <label>Authorize / Issue</label>
+            </value>
+            <value>
+                <fullName>Complaint Inspections</fullName>
+                <default>false</default>
+                <label>Complaint Inspections</label>
+            </value>
+            <value>
+                <fullName>Complaints</fullName>
+                <default>false</default>
+                <label>Complaints</label>
+            </value>
+            <value>
+                <fullName>Disposition</fullName>
+                <default>false</default>
+                <label>Disposition</label>
+            </value>
+            <value>
+                <fullName>Errors</fullName>
+                <default>false</default>
+                <label>Errors</label>
+            </value>
+            <value>
+                <fullName>Fees</fullName>
+                <default>false</default>
+                <label>Fees</label>
+            </value>
+            <value>
+                <fullName>Fire</fullName>
+                <default>false</default>
+                <label>Fire</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Letters</fullName>
+                <default>false</default>
+                <label>Letters</label>
+            </value>
+            <value>
+                <fullName>Permit Inspections</fullName>
+                <default>false</default>
+                <label>Permit Inspections</label>
+            </value>
+            <value>
+                <fullName>Permits</fullName>
+                <default>false</default>
+                <label>Permits</label>
+            </value>
+            <value>
+                <fullName>Planning</fullName>
+                <default>false</default>
+                <label>Planning</label>
+            </value>
+            <value>
+                <fullName>Plan Review</fullName>
+                <default>false</default>
+                <label>Plan Review</label>
+            </value>
+            <value>
+                <fullName>Submissions</fullName>
+                <default>false</default>
+                <label>Submissions</label>
+            </value>
+            <value>
+                <fullName>Tasks</fullName>
+                <default>false</default>
+                <label>Tasks</label>
+            </value>
+            <value>
+                <fullName>Template</fullName>
+                <default>false</default>
+                <label>Template</label>
+            </value>
+            <value>
+                <fullName>Violations</fullName>
+                <default>false</default>
+                <label>Violations</label>
+            </value>
+            <value>
+                <fullName>Zoning Review</fullName>
+                <default>false</default>
+                <label>Zoning Review</label>
+            </value>
+            <value>
+                <fullName>Alerts</fullName>
+                <default>false</default>
+                <label>Alerts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

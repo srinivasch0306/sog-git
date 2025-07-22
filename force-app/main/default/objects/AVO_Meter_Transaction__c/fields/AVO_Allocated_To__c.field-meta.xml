@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Allocated_To__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Allocated To</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Meter_Transaction Allocated To</relationshipLabel>
+    <relationshipName>Meter_Transaction_Allocated_To</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

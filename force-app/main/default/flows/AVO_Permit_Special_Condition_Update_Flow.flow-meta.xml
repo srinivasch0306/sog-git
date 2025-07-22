@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_Picklist_value</name>
+        <label>Check Picklist value</label>
+        <locationX>842</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Frost_Protection_Only</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Special_Condition_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Frost Protection Only</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Special_Condition_Frost_Protection_Only</targetReference>
+            </connector>
+            <label>Frost Protection Only</label>
+        </rules>
+        <rules>
+            <name>Associated_Permit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Special_Condition_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Associated Permit</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Special_Condition_Associated_Permit</targetReference>
+            </connector>
+            <label>Associated Permit</label>
+        </rules>
+        <rules>
+            <name>Low_Flow_Protection</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Special_Condition_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Low Flow Protection</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Special_Condition_Low_Flow_Protection</targetReference>
+            </connector>
+            <label>Low Flow Protection</label>
+        </rules>
+        <rules>
+            <name>Transmission_Line_Right_of_way</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Special_Condition_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Transmission Line Right-of-way</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Special_Condition_Transmission_Line_Right_of_way</targetReference>
+            </connector>
+            <label>Transmission Line Right-of-way</label>
+        </rules>
+        <rules>
+            <name>Well_Construction_Condition</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Special_Condition_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Well Construction Condition</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Special_Condition_Well_Construction_Condition</targetReference>
+            </connector>
+            <label>Well Construction Condition</label>
+        </rules>
+        <rules>
+            <name>Frost_Protection_Dual_Rate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Special_Condition_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Frost Protection Dual Rate</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Special_Condition_Frost_Protection_Dual_Rate</targetReference>
+            </connector>
+            <label>Frost Protection Dual Rate</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>AVO Permit - Special Condition Update Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Permit - Special Condition Update Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Special_Condition_Associated_Permit</name>
+        <label>Update Special Condition</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>AVO_Special_Condition__c</field>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Special_Condition_Frost_Protection_Dual_Rate</name>
+        <label>Update Special Condition</label>
+        <locationX>1370</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>AVO_Special_Condition__c</field>
+            <value>
+                <stringValue>This well may be used at a rate of XXXX gallons per minute (GPM) for irrigation as needed, and may only be used for frost protection at a rate of XXXX GPM from October 1st through April 30th when the air temperature for acres irrigated by this permit are approaching 35 degrees or are at or below 35 degrees.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Special_Condition_Frost_Protection_Only</name>
+        <label>Update Special Condition</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>AVO_Special_Condition__c</field>
+            <value>
+                <stringValue>This well is only to be used for frost protection purposes. This well may be used for frost protection at a rate of XXXX gallons per minute (GPM) from October 1st through April 30th when the air temperature approaches 35 degrees or are at or below 35 degrees.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Special_Condition_Low_Flow_Protection</name>
+        <label>Update Special Condition</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>AVO_Special_Condition__c</field>
+            <value>
+                <stringValue>At the site of your permitted withdrawal(s), there is a minimum low flow (7Q10) for each month that must be protected for water quality purposes. The method of monitoring is specified in the submitted low-flow plans as conditioned by this permit.  For each month in the table below, if at any time the flow immediately downstream of the pump intake or pond outflow is less than the low-flow amount for that month, you must discontinue pumping until flows return above, or equal to, the minimum low-flow level.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Special_Condition_Transmission_Line_Right_of_way</name>
+        <label>Update Special Condition</label>
+        <locationX>842</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>AVO_Special_Condition__c</field>
+            <value>
+                <stringValue>Based on the location you have requested, your well will be within 1/2 mile of a transmission line right-of-way. Please contact GA Power&apos;s Right-Of-Way Specialist, Tyler Clemons, at (478)365-7947 for assistance.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Special_Condition_Well_Construction_Condition</name>
+        <label>Update Special Condition</label>
+        <locationX>1106</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>AVO_Special_Condition__c</field>
+            <value>
+                <stringValue>ATTENTION: Due to the location, depth, and/or rate you have requested, this well has special conditions related to well construction and will require a well inspection completed by an EPD representative. See Attachment A for details.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>716</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Picklist_value</targetReference>
+        </connector>
+        <object>MUSW__Condition__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meters_Approved_Disposal</fullName>
+    <columns>NAME</columns>
+    <columns>AVO_Inventory_Status__c</columns>
+    <columns>AVO_Disposal_Method__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AVO_Inventory_Status__c</field>
+        <operation>equals</operation>
+        <value>Disposal Approved</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>AVO_Meter__c.Meter</value>
+    </filters>
+    <label>Meters Approved Disposal</label>
+</ListView>

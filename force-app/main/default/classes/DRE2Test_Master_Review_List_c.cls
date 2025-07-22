@@ -1,0 +1,1 @@
+@isTest private class DRE2Test_Master_Review_List_c { @isTest static void insertUpdateDelete() { DRE.DRETestExternalManager.run('Master_Review_List__c'); } }

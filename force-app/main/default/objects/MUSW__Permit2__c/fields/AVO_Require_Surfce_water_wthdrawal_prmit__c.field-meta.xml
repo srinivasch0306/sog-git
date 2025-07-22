@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Require_Surfce_water_wthdrawal_prmit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check this box if your irrigation system (traveler, solid-set or big gun) is or will be used to land apply effluent from a waste treatment lagoon and requires a surface water withdrawal permit from the division.</inlineHelpText>
+    <label>Require Surface water withdrawal permit</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

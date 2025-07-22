@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Cart_Lock_Timeout_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Use this setting to enable or disable the Cart Lock Timeout feature.</inlineHelpText>
+    <label>Cart Lock Timeout Enabled</label>
+    <type>Checkbox</type>
+</CustomField>

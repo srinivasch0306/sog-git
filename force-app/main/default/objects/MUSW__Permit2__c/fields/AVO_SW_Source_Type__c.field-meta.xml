@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_SW_Source_Type__c</fullName>
+    <label>SW Source Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Shared Impoundment</fullName>
+                <default>false</default>
+                <label>Shared Impoundment</label>
+            </value>
+            <value>
+                <fullName>On Farm Constructed Pond</fullName>
+                <default>false</default>
+                <label>On Farm Constructed Pond</label>
+            </value>
+            <value>
+                <fullName>Natural Lagoon, Wetland, Pond</fullName>
+                <default>false</default>
+                <label>Natural Lagoon, Wetland, Pond</label>
+            </value>
+            <value>
+                <fullName>Sinkhold Pond</fullName>
+                <default>false</default>
+                <label>Sinkhold Pond</label>
+            </value>
+            <value>
+                <fullName>Flowing Stream or Canal to such</fullName>
+                <default>false</default>
+                <label>Flowing Stream or Canal to such</label>
+            </value>
+            <value>
+                <fullName>Springs</fullName>
+                <default>false</default>
+                <label>Springs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,1 @@
+<apex:page standardController="MUSW__Complaint__c"><DRE:DRENotificationModal recordIds="{!MUSW__Complaint__c.Id}"/><DRE:DRERedirect recordIds="{!MUSW__Complaint__c.Id}"><apex:detail inlineEdit="true"/></DRE:DRERedirect></apex:page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Leak_detcton_and_operational_checks__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Leak detection and operational checks: Leak repair and maintenance of proper design system operating pressure are considered standard BMP’s. *Required for all new and modified Flint River Basin farm-use permits. (Refer to “Map A” on page 11)</inlineHelpText>
+    <label>Leak detection and operational checks</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

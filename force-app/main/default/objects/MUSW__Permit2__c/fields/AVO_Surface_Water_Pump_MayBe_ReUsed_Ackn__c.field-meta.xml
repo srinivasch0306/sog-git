@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Surface_Water_Pump_MayBe_ReUsed_Ackn__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>The surface water pump(s) is (are) currently out of service and may be re-used in the future.</inlineHelpText>
+    <label>Surface Water Pump MayBe ReUsed Ackn</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

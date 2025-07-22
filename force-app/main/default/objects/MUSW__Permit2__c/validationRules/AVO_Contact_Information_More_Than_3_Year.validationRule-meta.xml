@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Contact_Information_More_Than_3_Year</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(  MUSW__Status__c  , &apos;Final Evaluation&apos;),
+TODAY() -  MUSW__Parcel_Owner__r.AVO_ConInfoVerDt__c  &lt; 1095
+)</errorConditionFormula>
+    <errorMessage>If  ConInfoVerDt is more than 3 years, Contact Information on the application or permit must be verified before submited for next review stage</errorMessage>
+</ValidationRule>

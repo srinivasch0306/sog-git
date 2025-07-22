@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__FiscalYearIsNotActive</fullName>
+    <active>true</active>
+    <description>The related Fiscal Year must be active before the Fiscal Period can be set to active</description>
+    <errorConditionFormula>AND(
+        $CustomMetadata.clariti__FinancialsFeatureEnablementSettings__mdt.clariti__FiscalYearAndPeriodManagement.clariti__Enable__c,
+        OR(
+        ISNEW(),
+        ISCHANGED(clariti__Status__c)),
+        ISPICKVAL(clariti__Status__c,&apos;Active&apos;),
+        NOT(ISPICKVAL(clariti__FiscalYear__r.clariti__Status__c, &apos;Active&apos;))
+        )</errorConditionFormula>
+    <errorDisplayField>clariti__Status__c</errorDisplayField>
+    <errorMessage>The related Fiscal Year must be active before the Fiscal Period can be set to active.</errorMessage>
+</ValidationRule>

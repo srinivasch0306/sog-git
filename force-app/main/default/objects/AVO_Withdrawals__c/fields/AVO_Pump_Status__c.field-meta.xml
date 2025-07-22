@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Pump_Status__c</fullName>
+    <label>Pump Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UNDOCUMENTED</fullName>
+                <default>false</default>
+                <label>UNDOCUMENTED</label>
+            </value>
+            <value>
+                <fullName>PENDING PUMP</fullName>
+                <default>false</default>
+                <label>PENDING PUMP</label>
+            </value>
+            <value>
+                <fullName>ACTIVE PUMP</fullName>
+                <default>false</default>
+                <label>ACTIVE PUMP</label>
+            </value>
+            <value>
+                <fullName>DORMANT</fullName>
+                <default>false</default>
+                <label>DORMANT</label>
+            </value>
+            <value>
+                <fullName>NEVER INSTALLED</fullName>
+                <default>false</default>
+                <label>NEVER INSTALLED</label>
+            </value>
+            <value>
+                <fullName>NO AG PERMIT NEEDED</fullName>
+                <default>false</default>
+                <label>NO AG PERMIT NEEDED</label>
+            </value>
+            <value>
+                <fullName>PERMIT/APP CONSOLIDATED</fullName>
+                <default>false</default>
+                <label>PERMIT/APP CONSOLIDATED</label>
+            </value>
+            <value>
+                <fullName>UNDOCUMENTED CONSOLIDATED</fullName>
+                <default>false</default>
+                <label>UNDOCUMENTED CONSOLIDATED</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

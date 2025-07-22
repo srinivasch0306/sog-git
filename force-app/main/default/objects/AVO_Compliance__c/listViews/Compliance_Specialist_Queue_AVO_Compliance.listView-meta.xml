@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compliance_Specialist_Queue_AVO_Compliance</fullName>
+    <columns>NAME</columns>
+    <columns>AVO_CompStatus__c</columns>
+    <columns>AVO_CompAction__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Queue</filterScope>
+    <label>Compliance Specialist Queue</label>
+    <queue>Compliance_Specialist_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

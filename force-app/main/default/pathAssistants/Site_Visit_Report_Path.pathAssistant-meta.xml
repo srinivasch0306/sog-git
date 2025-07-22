@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>MUSW__Inspection__c</entityName>
+    <fieldName>MUSW__Status__c</fieldName>
+    <masterLabel>Site Visit Report Path</masterLabel>
+    <recordTypeName>AVO_Site_Visit_Report</recordTypeName>
+</PathAssistant>

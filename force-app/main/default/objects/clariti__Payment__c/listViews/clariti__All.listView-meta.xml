@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__All</fullName>
+    <columns>NAME</columns>
+    <columns>clariti__Account__c</columns>
+    <columns>clariti__TransactionDate__c</columns>
+    <columns>clariti__PaymentAmount__c</columns>
+    <columns>clariti__PaymentMethod__c</columns>
+    <columns>clariti__Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

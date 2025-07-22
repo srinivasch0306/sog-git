@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <!-- Retrieve all custom sites -->
+    <types>
+        <members>*</members> <!-- Retrieves all CustomSite components -->
+        <name>CustomSite</name>
+    </types>
+    <!-- Retrieve all SiteDotCom assets -->
+    <types>
+        <members>*</members> <!-- Retrieves all SiteDotCom components -->
+        <name>SiteDotCom</name>
+    </types>
+    <!-- Retrieve all networks (communities) -->
+    <types>
+        <members>*</members> <!-- Retrieves all Network components -->
+        <name>Network</name>
+    </types>
+    <!-- Retrieve all network branding -->
+    <types>
+        <members>*</members> <!-- Retrieves all NetworkBranding components -->
+        <name>NetworkBranding</name>
+    </types>
+    <!-- Retrieve all navigation menus -->
+    <types>
+        <members>*</members> <!-- Retrieves all NavigationMenu components -->
+        <name>NavigationMenu</name>
+    </types>
+    <!-- Retrieve all static resources -->
+    <types>
+        <members>*</members> <!-- Retrieves all StaticResource components -->
+        <name>StaticResource</name>
+    </types>
+    <!-- Add additional metadata types as needed -->
+    <version>64.0</version>
+</Package>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Sequence_Range_Default</fullName>
+    <fields>Name</fields>
+    <fields>MUSW__Start__c</fields>
+    <fields>MUSW__End__c</fields>
+    <label>Sequence Range Default</label>
+</CompactLayout>

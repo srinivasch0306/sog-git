@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Withdrawal_limit_acknowledgment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>I will not make any withdrawal from this water source and/or system in excess of 100,000 gallons per day until I have received a Permit for Farm Use of Groundwater and/or Surface Water signed and officially issued by the Georgia EPD Director and have returned all required documents, as will be set forth in the Letter of Concurrence to Georgia EPD. In addition, I understand that doing so may result in a violation of Georgia Groundwater Use Act and/or the Water Quality Control Act.</inlineHelpText>
+    <label>Withdrawal limit acknowledgment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

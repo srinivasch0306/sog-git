@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__All</fullName>
+    <columns>Iss_Track_No__c</columns>
+    <columns>MUSW__Permit_Type__c</columns>
+    <columns>MUSW__Work_Type__c</columns>
+    <columns>MUSW__Job_Location__c</columns>
+    <columns>MUSW__Current_Status__c</columns>
+    <columns>MUSW__Issued_Date__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

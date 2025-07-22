@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Reviewed</fullName>
+    <columns>NAME</columns>
+    <columns>BGBK__BG_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>OWNER.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>BGBK__BG_Status__c</field>
+        <operation>equals</operation>
+        <value>Reviewed</value>
+    </filters>
+    <label>My Reviewed Batches</label>
+</ListView>

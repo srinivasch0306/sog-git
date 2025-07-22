@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Completeness_Review_Geologist</fullName>
+    <active>true</active>
+    <description>Only Geologists can approve Completeness Reviews</description>
+    <errorConditionFormula>AND(ISCHANGED( MUSW__Status__c ), ISPICKVAL(MUSW__Status__c, &quot;Completed&quot;),  $Profile.Name &lt;&gt; &quot;System Administrator&quot;,  $UserRole.DeveloperName &lt;&gt; &quot;Geologist&quot;, $UserRole.DeveloperName &lt;&gt; &quot;Permit_Admin&quot;, $UserRole.DeveloperName &lt;&gt; &quot;Geologist_Permit_Management_Lead&quot;)</errorConditionFormula>
+    <errorMessage>Only Geologists or Permit Management Lead can approve Completeness Reviews.</errorMessage>
+</ValidationRule>

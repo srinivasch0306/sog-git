@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Submission_Templates</fullName>
+    <columns>NAME</columns>
+    <columns>Active__c</columns>
+    <columns>Manual_Creation_Allowed__c</columns>
+    <columns>Effective_Start_Date__c</columns>
+    <columns>Effective_End_Date__c</columns>
+    <columns>Avo_Compliance_Type__c</columns>
+    <columns>Avo_Metering_Type__c</columns>
+    <columns>Avo_Permit_Type__c</columns>
+    <columns>Record_Type__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Mine</filterScope>
+    <label>All Submission Templates</label>
+</ListView>

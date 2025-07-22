@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AVO_Meter_Management</members>
+        <members>AVO_Permit_Management_Lead</members>
+        <members>Portal_Sharing_BasicGov_Demo</members>
+        <members>Portal_Sharing_BasicGov_Training</members>
+        <members>Portal_Sharing_Basic_Gov_Demo</members>
+        <members>Portal_Sharing_Basic_Gov_Training</members>
+        <members>Portal_Sharing_Mike_Fraser</members>
+        <members>Portal_Sharing_Prof_Catherine_Fraser</members>
+        <members>Portal_Sharing_Sam_Smith</members>
+        <members>Portal_Sharing_Smriti_Account</members>
+        <members>Portal_Submission_Group</members>
+        <name>Group</name>
+    </types>
+    <version>64.0</version>
+</Package>

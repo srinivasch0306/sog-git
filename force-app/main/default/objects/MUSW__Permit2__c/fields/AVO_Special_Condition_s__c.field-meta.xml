@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Special_Condition_s__c</fullName>
+    <label>Special Condition(s)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Associated Permit</fullName>
+                <default>false</default>
+                <label>Associated Permit</label>
+            </value>
+            <value>
+                <fullName>Frost Protection Dual Rate</fullName>
+                <default>false</default>
+                <label>Frost Protection Dual Rate</label>
+            </value>
+            <value>
+                <fullName>Frost Protection Only</fullName>
+                <default>false</default>
+                <label>Frost Protection Only</label>
+            </value>
+            <value>
+                <fullName>Low Flow Protection</fullName>
+                <default>false</default>
+                <label>Low Flow Protection</label>
+            </value>
+            <value>
+                <fullName>Transmission Line Right-of-Way</fullName>
+                <default>false</default>
+                <label>Transmission Line Right-of-Way</label>
+            </value>
+            <value>
+                <fullName>Well Construction Condition</fullName>
+                <default>false</default>
+                <label>Well Construction Condition</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

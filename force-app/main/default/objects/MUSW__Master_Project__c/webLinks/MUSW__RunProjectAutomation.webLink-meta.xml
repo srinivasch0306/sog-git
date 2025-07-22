@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__RunProjectAutomation</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>275</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Assess</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>{!URLFOR( &apos;/apex/MUSW__AutomationAssess&apos; , null, [eid=MUSW__Master_Project__c.Id, parent=&quot;Planning Project&quot;,
+parentTable=&quot;MUSW__Master_Project__c&quot;,
+linkParcelContact=&quot;MUSW__Project_Contact__c&quot;, 
+linkParcelContactName=&quot;Project Contact&quot;, 
+linkParcelContactParent=&quot;MUSW__Project_Parcel__c&quot;, 
+linkParcelContactParentIDField=&quot;MUSW__Project__c&quot;, 
+parentParcel= MUSW__Master_Project__c.MUSW__ParcelId__c ,
+scope=&quot;STD&quot;,
+debug= $User.MUSW__Debug__c,
+stepthrough= $User.MUSW__Step_Through__c])}</url>
+    <width>400</width>
+</WebLink>

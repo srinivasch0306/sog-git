@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>AVO_Meter_Transaction__c</entityName>
+    <fieldName>AVO_Maintenance_Status__c</fieldName>
+    <masterLabel>Meter Maintenance Request Path</masterLabel>
+    <recordTypeName>Meter_Maintenance_Request</recordTypeName>
+</PathAssistant>

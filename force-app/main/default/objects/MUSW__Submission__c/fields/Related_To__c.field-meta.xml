@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_To__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK( &quot;/&quot; &amp; MUSW__Permit2__c + MUSW__Application2__c + MUSW__License2__c + AVO_Inspection__c,
+	MUSW__Permit2__r.Name + MUSW__Application2__r.Name +  MUSW__License2__r.Name + AVO_Inspection__r.Name, &quot;_parent&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Related To</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

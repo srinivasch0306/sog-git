@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DRE__DRE_Action__c</fullName>
+    <deprecated>false</deprecated>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>DRE Action</label>
+    <referenceTo>DRE__DRE_Action__mdt</referenceTo>
+    <relationshipLabel>DRE Action Attributes</relationshipLabel>
+    <relationshipName>DRE_Action_Attributes</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

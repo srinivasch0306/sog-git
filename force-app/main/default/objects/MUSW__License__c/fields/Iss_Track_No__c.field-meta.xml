@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Iss_Track_No__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(ISNULL(MUSW__Tracking_Number__c), MUSW__Tracking_Number__c = &quot;&quot;) 
+,HYPERLINK(&quot;../&quot;&amp;Id, Name, &quot;_parent&quot;) &amp; &quot; &quot; &amp; HYPERLINK(&quot;/servlet/servlet.Integration?lid=01N5e000000kb41&amp;Id=&quot; &amp; Id &amp; 
+&quot;&amp;ic=1&amp;object=MUSW__License__c&amp;setIssuanceDate=notnull&amp;issuanceDateField=MUSW__Issued_Date__c&amp;setStatus=Issued&amp;statusField=MUSW__Status__c&amp;type=&quot;&amp; CASE( MUSW__Type__c , 
+&quot;Rental&quot;,&quot;RR&quot;,
+&quot;DEFAULT&quot; )&amp;&quot;&amp;year=&quot;&amp; TEXT(YEAR(TODAY()))&amp;&quot;&amp;month=&quot;&amp; 
+TEXT(MONTH(TODAY()))&amp;&quot;&amp;day=&quot;&amp; TEXT(DAY(TODAY())), &quot;(Issue)&quot;, &quot;_parent&quot;),HYPERLINK( &quot;../&quot;&amp;Id , MUSW__Tracking_Number__c,&quot;_parent&quot; ) &amp; &quot; &quot; &amp; IF(CASE( MUSW__Type__c , 
+&quot;Rental&quot;,&quot;RENEW&quot;,
+&quot;DEFAULT&quot;) = &quot;RENEW&quot;,HYPERLINK(&quot;/servlet/servlet.Integration?lid=01N5e000000kb41&amp;Id=&quot; &amp; Id &amp; 
+&quot;&amp;ic=1&amp;object=MUSW__License__c&amp;instruct=RENEWDATEONLY&amp;setIssuanceDate=notnull&amp;issuanceDateField=MUSW__Renewal_Date__c&amp;type=&quot;&amp; CASE( MUSW__Type__c , 
+&quot;Rental&quot;,&quot;RR&quot;,
+&quot;DEFAULT&quot; ), &quot;(Renew)&quot;, &quot;_parent&quot;),&quot;&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Iss. License No.</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

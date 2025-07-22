@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Condition_Type__c</fullName>
+    <label>Condition Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LOC Standard Condition</fullName>
+                <default>false</default>
+                <label>LOC Standard Condition</label>
+            </value>
+            <value>
+                <fullName>Permit Standard Condition</fullName>
+                <default>false</default>
+                <label>Permit Standard Condition</label>
+            </value>
+            <value>
+                <fullName>Proposed Well(s) Construction Condition</fullName>
+                <default>false</default>
+                <label>Proposed Well(s) Construction Condition</label>
+            </value>
+            <value>
+                <fullName>LOC for New Permit Freeze/Frost Protection Dual Rate</fullName>
+                <default>false</default>
+                <label>LOC for New Permit Freeze/Frost Protection Dual Rate</label>
+            </value>
+            <value>
+                <fullName>LOC for Revised Permit Freeze/Frost Protection Dual Rate</fullName>
+                <default>false</default>
+                <label>LOC for Revised Permit Freeze/Frost Protection Dual Rate</label>
+            </value>
+            <value>
+                <fullName>LOC for New Permit Freeze/Frost Protection Only</fullName>
+                <default>false</default>
+                <label>LOC for New Permit Freeze/Frost Protection Only</label>
+            </value>
+            <value>
+                <fullName>LOC for Revised Permit Freeze/Frost Protection Only</fullName>
+                <default>false</default>
+                <label>LOC for Revised Permit Freeze/Frost Protection Only</label>
+            </value>
+            <value>
+                <fullName>Transmission Line Right-of-Way</fullName>
+                <default>false</default>
+                <label>Transmission Line Right-of-Way</label>
+            </value>
+            <value>
+                <fullName>Additional LOC Condition</fullName>
+                <default>false</default>
+                <label>Additional LOC Condition</label>
+            </value>
+            <value>
+                <fullName>LOC Low Flow Protection Condition</fullName>
+                <default>false</default>
+                <label>LOC Low Flow Protection Condition</label>
+            </value>
+            <value>
+                <fullName>Water Usage Farm Non-Irrigation &amp; Non-Freeze/Frost</fullName>
+                <default>false</default>
+                <label>Water Usage Farm Non-Irrigation &amp; Non-Freeze/Frost</label>
+            </value>
+            <value>
+                <fullName>Water Usage Farm Irrigation &amp; Non-Freeze/Frost</fullName>
+                <default>false</default>
+                <label>Water Usage Farm Irrigation &amp; Non-Freeze/Frost</label>
+            </value>
+            <value>
+                <fullName>Water Usage Golf Course or Athletic Fields Irrigation &amp; Non-Freeze/Frost</fullName>
+                <default>false</default>
+                <label>Water Usage Golf Course or Athletic Fields Irrigation &amp; Non-Freeze/Frost</label>
+            </value>
+            <value>
+                <fullName>Water Usage Farm Freeze/Frost Protection Only</fullName>
+                <default>false</default>
+                <label>Water Usage Farm Freeze/Frost Protection Only</label>
+            </value>
+            <value>
+                <fullName>Water Usage Farm Irrigation &amp; Freeze/Frost Protection Dual Rate</fullName>
+                <default>false</default>
+                <label>Water Usage Farm Irrigation &amp; Freeze/Frost Protection Dual Rate</label>
+            </value>
+            <value>
+                <fullName>Permit Freeze/Frost Protection Dual Rate</fullName>
+                <default>false</default>
+                <label>Permit Freeze/Frost Protection Dual Rate</label>
+            </value>
+            <value>
+                <fullName>Permit Freeze/Frost Protection Only</fullName>
+                <default>false</default>
+                <label>Permit Freeze/Frost Protection Only</label>
+            </value>
+            <value>
+                <fullName>Permit Expiration Date Condition</fullName>
+                <default>false</default>
+                <label>Permit Expiration Date Condition</label>
+            </value>
+            <value>
+                <fullName>Coastal Water Conservation Plan Condition</fullName>
+                <default>false</default>
+                <label>Coastal Water Conservation Plan Condition</label>
+            </value>
+            <value>
+                <fullName>Flint Water Conservation Plan Condition</fullName>
+                <default>false</default>
+                <label>Flint Water Conservation Plan Condition</label>
+            </value>
+            <value>
+                <fullName>Additional Permit Condition</fullName>
+                <default>false</default>
+                <label>Additional Permit Condition</label>
+            </value>
+            <value>
+                <fullName>Permit Low Flow Protection Condition</fullName>
+                <default>false</default>
+                <label>Permit Low Flow Protection Condition</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

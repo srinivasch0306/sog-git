@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Contact_Info_3_Years</fullName>
+    <active>true</active>
+    <description>If Data field Contact Info Verification Date on Property Owner Contact is Greater than 3 years</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( MUSW__Type__c , &apos;Final Evaluation Review&apos; ),
+  ISPICKVAL( MUSW__Status__c , &apos;Completed&apos;),
+  NOT( ISBLANK( MUSW__Permit2__c ) ), 
+  OR(
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Agricultural Water Withdrawal Application&apos;),
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Agricultural Water Withdrawal Permit&apos;),
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Application to Modify or Transfer an Agricultural Water Withdrawal Permit&apos;)
+  ),
+  NOT( ISBLANK( MUSW__Permit2__r.AVO_Property_Owner__r.AVO_ConInfoVerDt__c ) ),
+  IF( 
+    AND( 
+      MONTH( TODAY() ) = 2,
+      DAY( TODAY() ) = 29
+    ), 
+    DATE( YEAR( TODAY() ) - 3 , 3 , 1 ) &gt; MUSW__Permit2__r.AVO_Property_Owner__r.AVO_ConInfoVerDt__c,
+    DATE( YEAR( TODAY() ) - 3 , MONTH( TODAY() ) , DAY( TODAY() ) ) &gt; MUSW__Permit2__r.AVO_Property_Owner__r.AVO_ConInfoVerDt__c
+  ) 
+)</errorConditionFormula>
+    <errorMessage>Contact Information must be verified</errorMessage>
+</ValidationRule>

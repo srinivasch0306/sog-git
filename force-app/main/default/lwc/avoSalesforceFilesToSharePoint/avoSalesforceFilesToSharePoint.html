@@ -1,0 +1,80 @@
+<template>
+    <lightning-card title="File Details" icon-name="custom:custom63">
+        
+        <div class="slds-m-around_medium slds-grid">
+            <div style="width: 30%;float:left;">
+                <b># of files in Salesforce: {numberOfFiles}</b>
+            </div>
+            <div style="width: 50%;float:left;">
+               
+                <b>Total size of files in Salesforce: {totalFileSizeWithUnit}</b>
+            </div>
+            <div style="width: 20%;float:left;text-align:right;">
+                <lightning-button label="Move Files" onclick={moveFiles} class="slds-m-left_x-small slds-m-top_small"></lightning-button>
+            </div>
+        </div>
+       
+        <div class="slds-m-around_medium slds-grid" style="display: none;">
+            <div style="width: 15%;float:left;">
+                <lightning-input type="text" label="Search" onchange={handleSearch} class="slds-m-bottom_small"></lightning-input>
+            </div>
+            <div style="width: 85%;float:left;">
+                <lightning-button style="display: none;" label="Refresh Files" onclick={fetchFiles} class="slds-m-top_small"></lightning-button>
+              
+            </div>
+           
+        </div>
+
+        <lightning-card >
+           
+            <template if:true={showMessage}>
+                <div class="slds-notify slds-notify_alert slds-theme_success" role="alert">
+                    <span class="slds-assistive-text">Success</span>
+                    <h2>{message}</h2>
+                </div>
+            </template>
+        </lightning-card>
+        
+        
+        <div class="slds-m-around_medium">
+            <div if:true={isLoading} style="float: left; margin-left: 10px;"> <!-- Adjust styling as needed -->
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+            <template if:true={files}>
+               
+                
+                <lightning-datatable
+    data={paginatedFiles}
+    columns={columns}
+    key-field="ContentDocumentId"
+    selected-rows={selectedFileIds}
+    onrowselection={handleRowSelection}
+    show-row-number-column="true"
+    resizable
+    sorted-by={sortedBy}
+    sorted-direction={sortedDirection}
+    onsort={handleSort}>
+</lightning-datatable>
+
+            
+                <!-- <lightning-datatable
+                    data={paginatedFiles}
+                    columns={columns}
+                    key-field="id"
+                    hide-checkbox-column="true"
+                    show-row-number-column="true"
+                    resizable
+                    sorted-by={sortedBy}
+                    sorted-direction={sortedDirection}
+                    onsort={handleSort}>
+                </lightning-datatable>-->
+                <!-- Pagination Controls -->
+                <div class="slds-m-around_medium slds-align_absolute-center">
+                    <lightning-button-icon icon-name="utility:chevronleft" alternative-text="Previous" title="Previous" onclick={previousPage} disabled={isFirstPage}></lightning-button-icon>
+                    <span class="slds-p-horizontal_small">{currentPage} of {totalPages}</span>
+                    <lightning-button-icon icon-name="utility:chevronright" alternative-text="Next" title="Next" onclick={nextPage} disabled={isLastPage}></lightning-button-icon>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

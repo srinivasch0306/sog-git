@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Farmer_Initiated_Online_Request</fullName>
+    <active>true</active>
+    <label>Farmer Initiated Online Request</label>
+    <picklistValues>
+        <picklist>AVO_Basin__c</picklist>
+        <values>
+            <fullName>ALTAMAHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHATTAHOOCHEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COOSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLINT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCHLOCKONEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCMULGEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCONEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OGEECHEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAINT MARYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SATILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAVANNAH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUWANNEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TALLAPOOSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TENNESSEE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_COCompPlanApproved__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_COCompPlanSubmitted__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_COFineApplied__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_COFinePaid__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_CaseClass__c</picklist>
+        <values>
+            <fullName>Meter Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Initialized Use Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Violations Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statutory Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WWSA Compliance Case</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_CompAction__c</picklist>
+        <values>
+            <fullName>Approved AO Compliance Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved CO Compliance Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved NOV Compliance Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined AO Compliance Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined CO Compliance Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined NOV Compliance Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fine Payment for Administrative Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fine Payment for Consent Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initiate Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issued Administrative Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issued Consent Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issued Letter of Noncompliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issued Notice of Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issued Request for Information Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Initialized Use Case Tracking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Issued Administrative Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Issued Consent Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Issued Notice of Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Issued Request for Information Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready To Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommended Administrative Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommended Compliance Case Closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommended Consent Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommended Notice of Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommended Request for Information Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Visit Recommended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Visit Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted AO Compliance Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted AO to Lewis Hays for Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted CO Compliance Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted CO to Lewis Hays for Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted NOV Compliance Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted NOV to Lewis Hays for Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted Response To Request for Information</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_CompStatus__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initialised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_CompType__c</picklist>
+        <values>
+            <fullName>Meter Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Initialized Use Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Violations Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statutory Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WWSA Compliance Case</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Comp_Ref__c</picklist>
+        <values>
+            <fullName>1 Year - Owner Must Install Meter Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertising as Pump Contractor Without Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertising as Water Well Contractor Without License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired Letter of Concurrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Meter Approval Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groundwater Pumping Over Permitted GPM Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Plugging and Abandonment of Well</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete Meter Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigating Acres Over Permit Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Certification Requirement Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Water Conservation Plan Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Tampering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operating without Pump Contractor Certificate or Expired Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operating without Water Well Contractor License or Expired License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Completion Data Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Contractor Name and%2For Certificate Number Not Properly Displayed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water Pumping Over Permitted GPM Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Groundwater Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Surface Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Groundwater Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Surface Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Groundwater Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Surface Water Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Well to Pond Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Well Contractor Name and%2For License Number Not Properly Displayed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Completion Data Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Contractor Installed Well Without LOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Not Constructed To Specification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Pad Construction Picture Not Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Compliance_Plan_Submitted__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Document__c</picklist>
+        <values>
+            <fullName>Administrative Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consent Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Tampering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOV Meter Installation Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undcoumented surface water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Groundwater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Groundwater ACRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Surface water Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Groundwater Excess Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Groundwater Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WTP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_IsRFI__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_Administrative_Order__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_Consent_Order__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_NOV__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_NOVCompPlanApproved__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_NOV_Type__c</picklist>
+        <values>
+            <fullName>GW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Tampering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undcoumented surface water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Groundwater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Groundwater ACRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Surface water Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Groundwater Excess Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Groundwater Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WTP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Path_to_Resolution__c</picklist>
+        <values>
+            <fullName>Acre Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acre Trading%2C Drought Conditions or Volumetric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drought Conditioned Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drought Conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Test Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install a Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install or Fix Well Pad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Solution Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Drought Conditioned Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plug and Abandon Well</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Under Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove Unpermitted Source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submit Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submit Missing Forms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volumetric Limit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on Permit Action</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_RFI_Type__c</picklist>
+        <values>
+            <fullName>Expired LOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Installation Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Transfer Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFI Meter Tampering</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_ResTypeCode__c</picklist>
+        <values>
+            <fullName>Active Meter Installed %26 Approved for GW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Type__c</picklist>
+        <values>
+            <fullName>Farmer Initiated Online Request</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Type_of_Issue__c</picklist>
+        <values>
+            <fullName>Meter Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Related</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

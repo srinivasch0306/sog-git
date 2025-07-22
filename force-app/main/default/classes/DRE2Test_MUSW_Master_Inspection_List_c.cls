@@ -1,0 +1,1 @@
+@isTest private class DRE2Test_MUSW_Master_Inspection_List_c { @isTest static void insertUpdateDelete() { DRE.DRETestExternalManager.run('MUSW__Master_Inspection_List__c'); } }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Parcel_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Associated owner of the parcel (brought in by the associated parcel).</description>
+    <inlineHelpText>As indicated on parcel</inlineHelpText>
+    <label>Primary Owner</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Permits as Primary Owner</relationshipLabel>
+    <relationshipName>Parcel_Owner_Permit2s</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

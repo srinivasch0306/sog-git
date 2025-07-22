@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOG_LuPump_Type__c</fullName>
+    <label>LuPump Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vertical Turbine</fullName>
+                <default>false</default>
+                <label>Vertical Turbine</label>
+            </value>
+            <value>
+                <fullName>Submersible</fullName>
+                <default>false</default>
+                <label>Submersible</label>
+            </value>
+            <value>
+                <fullName>Centrifugal</fullName>
+                <default>false</default>
+                <label>Centrifugal</label>
+            </value>
+            <value>
+                <fullName>Gear head</fullName>
+                <default>false</default>
+                <label>Gear head</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

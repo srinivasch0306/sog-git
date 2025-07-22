@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Object_Balance_Settings__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Mapping to associated balance settings.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Mapping to associated balance settings.</inlineHelpText>
+    <label>Object Balance Settings</label>
+    <referenceTo>clariti__Object_Balance_Settings__mdt</referenceTo>
+    <relationshipLabel>Phase Criteria Settings</relationshipLabel>
+    <relationshipName>Phase_Criteria_Settings</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

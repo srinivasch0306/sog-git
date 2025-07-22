@@ -1,0 +1,28 @@
+<apex:page showHeader="false" controller="CyberSourcePayment_Controller" title="Payment gateway">
+    <apex:outputPanel id="CybersourcePay"  >
+        <apex:define name="body" >  
+            <center>
+                <form id="theForm" action="{!PaymentURL}" method="post">
+                    <p style="margin-top: 30px; margin-bottom:30px">
+                        please wait, this page will be redirected automatically ... 
+                    </p>
+                    <apex:panelGrid columns="1" style="margin-top:1em;">
+                        <apex:outputtext escape="false" value="{!ParametersValues}"/>
+                        <apex:outputtext escape="false" value="{!SignedData}" />
+                    </apex:panelGrid>
+                    <apex:panelGrid columns="2" style="margin-top:1em;">                        
+                        <input type="submit" id="submit" value="continue ... "/>                          
+                    </apex:panelGrid>
+                    <br/>
+                </form>
+                <script>
+                    // trigger the post back automatically 
+                    window.onload = function(){
+                        document.getElementById('submit').click();
+                    }
+                </script>
+                
+            </center>
+        </apex:define>
+    </apex:outputPanel>   
+</apex:page>

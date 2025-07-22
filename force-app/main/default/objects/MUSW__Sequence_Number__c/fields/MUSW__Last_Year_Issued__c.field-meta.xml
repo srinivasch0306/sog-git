@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Last_Year_Issued__c</fullName>
+    <deprecated>false</deprecated>
+    <description>4 digit year when the last number was issued. Used by yearly reset to determine when to reset the number.</description>
+    <externalId>false</externalId>
+    <label>Last Year Issued</label>
+    <length>4</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Void_Receipt</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Void Receipt</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/apex.js&quot;)}
+var receipt = [&apos;{!MUSW__Receipt__c.Id}&apos;];
+
+document.body.style.cursor=&apos;wait&apos;;
+var that=this;
+
+setTimeout(function(){
+try{
+sforce.apex.execute(&quot;BGBK.ReceiptService&quot;,&quot;voidReceipt&quot;,{receiptIds:receipt});
+document.body.style.cursor=&apos;default&apos;;
+window.location.reload();
+} catch(err)
+{
+alert(err);
+}
+},1000);</url>
+</WebLink>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Path_to_Resolution__c</fullName>
+    <description>This categorizes how easy/hard the compliance case will be to resolve and what the path to the resolution will be.</description>
+    <label>Path to Resolution</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Waiting on Permit Action</fullName>
+                <default>false</default>
+                <label>Waiting on Permit Action</label>
+            </value>
+            <value>
+                <fullName>No Solution Found</fullName>
+                <default>false</default>
+                <label>No Solution Found</label>
+            </value>
+            <value>
+                <fullName>Review Needed</fullName>
+                <default>false</default>
+                <label>Review Needed</label>
+            </value>
+            <value>
+                <fullName>Proposal Under Review</fullName>
+                <default>false</default>
+                <label>Proposal Under Review</label>
+            </value>
+            <value>
+                <fullName>Drought Conditions</fullName>
+                <default>false</default>
+                <label>Drought Conditions</label>
+            </value>
+            <value>
+                <fullName>Volumetric Limit</fullName>
+                <default>false</default>
+                <label>Volumetric Limit</label>
+            </value>
+            <value>
+                <fullName>Drought Conditioned Permit</fullName>
+                <default>false</default>
+                <label>Drought Conditioned Permit</label>
+            </value>
+            <value>
+                <fullName>Non-Drought Conditioned Permit</fullName>
+                <default>false</default>
+                <label>Non-Drought Conditioned Permit</label>
+            </value>
+            <value>
+                <fullName>Acre Trading</fullName>
+                <default>false</default>
+                <label>Acre Trading</label>
+            </value>
+            <value>
+                <fullName>Acre Trading, Drought Conditions or Volumetric</fullName>
+                <default>false</default>
+                <label>Acre Trading, Drought Conditions or Volumetric</label>
+            </value>
+            <value>
+                <fullName>Remove Unpermitted Source</fullName>
+                <default>false</default>
+                <label>Remove Unpermitted Source</label>
+            </value>
+            <value>
+                <fullName>Submit Application</fullName>
+                <default>false</default>
+                <label>Submit Application</label>
+            </value>
+            <value>
+                <fullName>Submit Missing Forms</fullName>
+                <default>false</default>
+                <label>Submit Missing Forms</label>
+            </value>
+            <value>
+                <fullName>Install or Fix Well Pad</fullName>
+                <default>false</default>
+                <label>Install or Fix Well Pad</label>
+            </value>
+            <value>
+                <fullName>Plug and Abandon Well</fullName>
+                <default>false</default>
+                <label>Plug and Abandon Well</label>
+            </value>
+            <value>
+                <fullName>Install a Meter</fullName>
+                <default>false</default>
+                <label>Install a Meter</label>
+            </value>
+            <value>
+                <fullName>Flow Test Needed</fullName>
+                <default>false</default>
+                <label>Flow Test Needed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

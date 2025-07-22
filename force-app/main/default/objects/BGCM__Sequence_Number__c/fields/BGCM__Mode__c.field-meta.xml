@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGCM__Mode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Automatic or User requested</description>
+    <inlineHelpText>Number is automatically issued or user requested</inlineHelpText>
+    <label>Mode (Deprecated)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Request</fullName>
+                <default>true</default>
+                <label>Request</label>
+            </value>
+            <value>
+                <fullName>Auto</fullName>
+                <default>false</default>
+                <label>Auto</label>
+            </value>
+            <value>
+                <fullName>Auto/Request</fullName>
+                <default>false</default>
+                <label>Auto/Request</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Define the functionality of buttons within your ArcGIS component.</description>
+    <label>ArcGIS Map Component Button Setting</label>
+    <pluralLabel>ArcGIS Map Component Button Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

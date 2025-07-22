@@ -1,0 +1,1 @@
+@isTest private class DRE2Test_MUSW_Work_Item_c { @isTest static void insertUpdateDelete() { DRE.DRETestExternalManager.run('MUSW__Work_Item__c'); } }

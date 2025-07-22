@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pass_Fail__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( MUSW__Status__c, 
+
+&quot;Failed&quot;,&quot;Failed&quot;, 
+&quot;Passed&quot;,&quot;Passed&quot;, 
+&quot;Stop Work&quot;,&quot;Failed&quot;, 
+&quot;Closed&quot;,&quot;Passed&quot;, 
+
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pass/Fail</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

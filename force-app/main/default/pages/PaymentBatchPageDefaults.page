@@ -1,0 +1,3 @@
+<apex:page showHeader="true" sidebar="true" standardController="BGBK__Payment_Batch__c">
+     <MUSW:PageDefaults sObjectType="BGBK__Payment_Batch__c"/>
+</apex:page>

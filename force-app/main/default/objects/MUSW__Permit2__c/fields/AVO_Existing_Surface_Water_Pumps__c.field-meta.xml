@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Existing_Surface_Water_Pumps__c</fullName>
+    <inlineHelpText>Are there any existing surface water pumps on your pond?</inlineHelpText>
+    <label>Existing Surface Water Pumps</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>AVO_YesNo</valueSetName>
+    </valueSet>
+</CustomField>

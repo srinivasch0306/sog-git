@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Priority__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Can be used for sort order in views and reports.  Not used in any default configuration.</description>
+    <label>Priority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3 High</fullName>
+                <default>false</default>
+                <label>3 High</label>
+            </value>
+            <value>
+                <fullName>2 Normal</fullName>
+                <default>true</default>
+                <label>2 Normal</label>
+            </value>
+            <value>
+                <fullName>1 Low</fullName>
+                <default>false</default>
+                <label>1 Low</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

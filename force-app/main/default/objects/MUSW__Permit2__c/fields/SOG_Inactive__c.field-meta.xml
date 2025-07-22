@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOG_Inactive__c</fullName>
+    <label>Inactive</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AG GW Currently Unused</fullName>
+                <default>false</default>
+                <label>AG GW Currently Unused</label>
+            </value>
+            <value>
+                <fullName>AG WTP Currently Unused</fullName>
+                <default>false</default>
+                <label>AG WTP Currently Unused</label>
+            </value>
+            <value>
+                <fullName>Applicant Request</fullName>
+                <default>false</default>
+                <label>Applicant Request</label>
+            </value>
+            <value>
+                <fullName>Consolidated Permit</fullName>
+                <default>false</default>
+                <label>Consolidated Permit</label>
+            </value>
+            <value>
+                <fullName>Dormant at permitee Request</fullName>
+                <default>false</default>
+                <label>Dormant at permitee Request</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Expired LOC</fullName>
+                <default>false</default>
+                <label>Expired LOC</label>
+            </value>
+            <value>
+                <fullName>GPMS Under Permitting Capacity</fullName>
+                <default>false</default>
+                <label>GPMS Under Permitting Capacity</label>
+            </value>
+            <value>
+                <fullName>Incomplete Form</fullName>
+                <default>false</default>
+                <label>Incomplete Form</label>
+            </value>
+            <value>
+                <fullName>Merged to an existing applicantion</fullName>
+                <default>false</default>
+                <label>Merged to an existing applicantion</label>
+            </value>
+            <value>
+                <fullName>Never Installed</fullName>
+                <default>false</default>
+                <label>Never Installed</label>
+            </value>
+            <value>
+                <fullName>New Wel/Pump not Installed</fullName>
+                <default>false</default>
+                <label>New Wel/Pump not Installed</label>
+            </value>
+            <value>
+                <fullName>Non AG Use/Other Applciation</fullName>
+                <default>false</default>
+                <label>Non AG Use/Other Applciation</label>
+            </value>
+            <value>
+                <fullName>Pending Compliance Case</fullName>
+                <default>false</default>
+                <label>Pending Compliance Case</label>
+            </value>
+            <value>
+                <fullName>Plugged/Abandoned</fullName>
+                <default>false</default>
+                <label>Plugged/Abandoned</label>
+            </value>
+            <value>
+                <fullName>Revoked</fullName>
+                <default>false</default>
+                <label>Revoked</label>
+            </value>
+            <value>
+                <fullName>Voluntarily Relinquished</fullName>
+                <default>false</default>
+                <label>Voluntarily Relinquished</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

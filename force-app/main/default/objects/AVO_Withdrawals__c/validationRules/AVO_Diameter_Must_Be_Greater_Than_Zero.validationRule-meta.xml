@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Diameter_Must_Be_Greater_Than_Zero</fullName>
+    <active>true</active>
+    <description>Diameter(in) value must be greater than zero.</description>
+    <errorConditionFormula>AND(
+    OR(
+        RecordType.DeveloperName = &quot;Ground_Water_Withdrawal&quot;,
+RecordType.DeveloperName = &quot;Ground_Water_Withdrawal_Application&quot;
+    ),
+    NOT(ISBLANK(AVO_Diameter_in__c)),
+    AVO_Diameter_in__c &lt;= 0
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Diameter_in__c</errorDisplayField>
+    <errorMessage>Value must be greater than zero.</errorMessage>
+</ValidationRule>

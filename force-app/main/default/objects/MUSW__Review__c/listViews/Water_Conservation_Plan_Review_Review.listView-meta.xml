@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Water_Conservation_Plan_Review_Review</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Water Conservation Plan Review</label>
+    <queue>Water_Conservation_Plan_Review</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

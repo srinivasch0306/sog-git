@@ -1,0 +1,1 @@
+@isTest private class DRE2Test_MUSW_Milestone_c { @isTest static void insertUpdateDelete() { DRE.DRETestExternalManager.run('MUSW__Milestone__c'); } }

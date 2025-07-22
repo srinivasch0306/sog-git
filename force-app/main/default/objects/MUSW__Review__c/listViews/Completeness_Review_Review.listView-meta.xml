@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completeness_Review_Review</fullName>
+    <columns>NAME</columns>
+    <columns>MUSW__Type__c</columns>
+    <columns>MUSW__Status__c</columns>
+    <columns>Re_Review_Required__c</columns>
+    <columns>Review_Count__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>MUSW__Type__c</field>
+        <operation>equals</operation>
+        <value>Completeness Review</value>
+    </filters>
+    <label>Completeness Review</label>
+    <queue>Completeness_Review</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

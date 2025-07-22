@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permit_Fee</fullName>
+    <columns>NAME</columns>
+    <columns>Permit_Type__c</columns>
+    <columns>Fee_Type__c</columns>
+    <columns>Fee_Calculation_Type__c</columns>
+    <columns>Base__c</columns>
+    <columns>Multiplier__c</columns>
+    <columns>Fee_Formula_Amount__c</columns>
+    <columns>Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Permit_Type__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Permit Fee</label>
+</ListView>

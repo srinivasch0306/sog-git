@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Resource_Availability_Region_Default</fullName>
+    <fields>MUSW__Resource_Availability__c</fields>
+    <fields>MUSW__Region__c</fields>
+    <label>Resource Availability Region Default</label>
+</CompactLayout>

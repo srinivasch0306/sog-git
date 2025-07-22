@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__CashierSession__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Cashier Session</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Cashier Session should be not closed</errorMessage>
+        <filterItems>
+            <field>clariti__CashierSession__c.clariti__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>clariti__CashierSession__c</referenceTo>
+    <relationshipLabel>Cash Deposits</relationshipLabel>
+    <relationshipName>CashDeposits</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

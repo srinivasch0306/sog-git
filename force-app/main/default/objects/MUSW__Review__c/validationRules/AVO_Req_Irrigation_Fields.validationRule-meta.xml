@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_Irrigation_Fields</fullName>
+    <active>false</active>
+    <description>(Final Evaluation Review) Datafields Irrigation Type, Chemicals or Fertilizers and Permitted Acres cannot be blank</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( MUSW__Type__c , &apos;Final Evaluation Review&apos; ),
+  ISPICKVAL( MUSW__Status__c , &apos;Completed&apos;),
+  NOT( ISBLANK( MUSW__Permit2__c ) ), 
+  OR(
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Agricultural Water Withdrawal Application&apos;),
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Agricultural Water Withdrawal Permit&apos;),
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Application to Modify or Transfer an Agricultural Water Withdrawal Permit&apos;)
+  ),
+  OR(
+    ISBLANK( MUSW__Permit2__r.AVO_Irrigation_Type__c ),
+    ISBLANK( TEXT( MUSW__Permit2__r.AVO_Chemicals_or_Fertilizers__c ) ),
+    ISBLANK( MUSW__Permit2__r.AVO_Permitted_Acres__c )
+  )
+)</errorConditionFormula>
+    <errorMessage>Irrigation Type, Chemicals or Fertilizers and Permitted Acres cannot be blank</errorMessage>
+</ValidationRule>

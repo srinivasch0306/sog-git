@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Status_Permit_Issued</fullName>
+    <active>false</active>
+    <description>the status to &apos;Permit Issued&apos; when the type is &apos;Agricultural Water Withdrawal Application&apos;</description>
+    <errorConditionFormula>AND
+(
+
+RecordType.DeveloperName = &apos;AVO_Agricultural_Water_Withdrawal_Application&apos;,
+ISPICKVAL(MUSW__Status__c , &apos;Ready for Issuance&apos;))</errorConditionFormula>
+    <errorMessage>Status cannot be set to &apos;Ready for Issuance&apos;. Approval Process is required.</errorMessage>
+</ValidationRule>

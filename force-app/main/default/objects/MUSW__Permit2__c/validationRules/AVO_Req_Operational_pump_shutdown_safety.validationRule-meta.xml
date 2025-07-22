@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_Operational_pump_shutdown_safety</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+OR(
+RecordType.DeveloperName = &apos;AVO_Agricultural_Water_Withdrawal_Application&apos;, RecordType.DeveloperName = &apos;Application_to_Modify_or_Transfer_an_Agricultural_Water_Withdrawal_Permit&apos;
+),
+ISPICKVAL(AVO_Water_Conservation_Plan__c, &apos;Golf Course and Turf Systems&apos;) , (!AVO_Operational_pump_shutdown_safety__c)
+
+
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Operational_pump_shutdown_safety__c</errorDisplayField>
+    <errorMessage>Select Operational pump shutdown safety</errorMessage>
+</ValidationRule>

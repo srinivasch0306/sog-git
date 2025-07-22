@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Assignment_Service_Setting_Default</fullName>
+    <fields>Name</fields>
+    <fields>MUSW__List_View_Name__c</fields>
+    <fields>MUSW__Active__c</fields>
+    <label>Assignment Service Setting Default</label>
+</CompactLayout>

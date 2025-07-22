@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Building and Site Review</fullName>
+        <default>false</default>
+        <label>Building and Site Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Building Review Only</fullName>
+        <default>false</default>
+        <label>Building Review Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Site Review Only</fullName>
+        <default>false</default>
+        <label>Site Review Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Concept Review</fullName>
+        <default>false</default>
+        <label>Concept Review</label>
+    </customValue>
+    <masterLabel>Avo Plans Review Application Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

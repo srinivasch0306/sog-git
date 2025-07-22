@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>GIS Specialist</name>
+    <queueMembers>
+        <users>
+            <user>pi-gadnr@avocette.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>AVO_Meter_Transaction__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>MUSW__Permit2__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>MUSW__Review__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

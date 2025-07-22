@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avo_Offset_Type__c</fullName>
+    <label>Offset Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Days</fullName>
+                <default>false</default>
+                <label>Business Days</label>
+            </value>
+            <value>
+                <fullName>Calendar Days</fullName>
+                <default>false</default>
+                <label>Calendar Days</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

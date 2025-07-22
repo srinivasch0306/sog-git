@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_PermiAcres_Based_ZeroAcr_VolLimit_Ir</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  TEXT(AVO_ZeroAcreage__c) = &quot;No&quot;,
+  TEXT(AVO_PurIR__c) = &quot;Yes&quot;,
+  ISBLANK(AVO_Volumetric_Limits__c),
+  OR(
+    ISBLANK(AVO_Permitted_Acres__c),
+    AVO_Permitted_Acres__c &lt;= 0
+  ),
+  $Profile.Name &lt;&gt; &quot;AVO Customer Community Login&quot;
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Permitted_Acres__c</errorDisplayField>
+    <errorMessage>Permitted Acres must be greater than 0 when Zero Acre Permit is No, Irrigation is Yes, and Volumetric Limits is null.</errorMessage>
+</ValidationRule>

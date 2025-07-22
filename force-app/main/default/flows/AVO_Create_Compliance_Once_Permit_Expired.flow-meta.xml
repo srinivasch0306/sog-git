@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Checking_Expiry_Date</name>
+        <label>Checking Expiry Date</label>
+        <locationX>182</locationX>
+        <locationY>252</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Expired</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Letter_of_Concurrence_Expiration__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ExpiryDayPlusOneDay</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Latest_Withdrawal</targetReference>
+            </connector>
+            <label>Expired</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>ExpiryDayPlusOneDay</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() - 1</expression>
+    </formulas>
+    <interviewLabel>AVO Batch LOc {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Create Compliance Once Permit Expired</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Compliance</name>
+        <label>Create Compliance</label>
+        <locationX>50</locationX>
+        <locationY>468</locationY>
+        <inputAssignments>
+            <field>AVO_CaseClass__c</field>
+            <value>
+                <stringValue>Non-Initialized Use Case</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AVO_Comp_Ref__c</field>
+            <value>
+                <stringValue>Expired Letter of Concurrence</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AVO_RefPermitAppID__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AVO_UDWithdrawalID__c</field>
+            <value>
+                <elementReference>Get_Latest_Withdrawal.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>AVO_Compliance__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Latest_Withdrawal</name>
+        <label>Get Latest Withdrawal</label>
+        <locationX>50</locationX>
+        <locationY>360</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Compliance</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Checking_Expiry_Date</targetReference>
+        </connector>
+        <object>MUSW__Permit2__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2025-01-29</startDate>
+            <startTime>00:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

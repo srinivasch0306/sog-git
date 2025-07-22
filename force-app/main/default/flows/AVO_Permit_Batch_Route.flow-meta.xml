@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_to_permit</name>
+        <label>Assign to permit</label>
+        <locationX>264</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>singleRecord.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Looping_through_Permits</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>singleRecord.AVO_Permit_Batch_Id__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>BatchSequenceNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_to_PermitList</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_to_PermitList</name>
+        <label>Assign to PermitList</label>
+        <locationX>264</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>RecordList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>singleRecord</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Looping_through_Permits</targetReference>
+        </connector>
+    </assignments>
+    <customProperties>
+        <name>ScreenProgressIndicator</name>
+        <value>
+            <stringValue>{&quot;location&quot;:&quot;top&quot;,&quot;type&quot;:&quot;simple&quot;}</stringValue>
+        </value>
+    </customProperties>
+    <description>Config for user story: 30964</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>batchNumber</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+    ISBLANK({!Get_Batch_Number.AVO_Permit_Batch_Id__c}), 
+    0, 
+    VALUE(RIGHT({!Get_Batch_Number.AVO_Permit_Batch_Id__c}, 3))
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>batchNumberPlusOne</name>
+        <dataType>String</dataType>
+        <expression>LPAD(TEXT({!batchNumber} + 1), 3, &quot;0&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>BatchSequenceNumber</name>
+        <dataType>String</dataType>
+        <expression>&apos;RRT&apos; + {!today} +&apos;-&apos;+ {!batchNumberPlusOne}</expression>
+    </formulas>
+    <formulas>
+        <name>OrgUrl</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE(SUBSTITUTE({!$Api.Partner_Server_URL_370}, &apos;/services&apos;, &apos;&apos;), &apos;vf.force.com&apos;, &apos;lightning.force.com&apos;) &amp; 
+&apos;/lightning/o/MUSW__Permit2__c/list?filterName=Pending_Permit_Issuance&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>today</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    LEN(TEXT(MONTH(TODAY()))) = 1, 
+    &quot;0&quot; &amp; TEXT(MONTH(TODAY())), 
+    TEXT(MONTH(TODAY()))
+) &amp;
+IF(
+    LEN(TEXT(DAY(TODAY()))) = 1, 
+    &quot;0&quot; &amp; TEXT(DAY(TODAY())), 
+    TEXT(DAY(TODAY()))
+) &amp;
+TEXT(YEAR(TODAY()))</expression>
+    </formulas>
+    <interviewLabel>AVO Permit Batch Route {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Permit Batch Route</label>
+    <loops>
+        <name>Looping_through_Permits</name>
+        <label>Looping through Permits</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <collectionReference>ids</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_to_permit</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Permit_Batch_Records</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Batch_Number</name>
+        <label>Get Batch Number</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Looping_through_Permits</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Permit_Batch_Id__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MUSW__Permit2__c</object>
+        <sortField>AVO_Permit_Batch_Id__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Permit_Batch_Records</name>
+        <label>Update Permit Batch Records</label>
+        <locationX>176</locationX>
+        <locationY>650</locationY>
+        <connector>
+            <targetReference>Batch_Screen</targetReference>
+        </connector>
+        <inputReference>RecordList</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Batch_Screen</name>
+        <label>Batch Screen</label>
+        <locationX>176</locationX>
+        <locationY>758</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Header</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 22px; color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;Permit Batch Route&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>batchTxt</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;The Permits you&apos;ve selected have been routed.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>url</name>
+            <fieldText>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;a href=&quot;/lightning/o/MUSW__Permit2__c/list?filterName=Pending_Permit_Issuance&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 22px;&quot;&gt;Finish&lt;/a&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Batch_Number</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ids</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>navigate</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>/lightning/o/MUSW__Permit2__c/list?filterName=Pending_Permit_Issuance</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>RecordList</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MUSW__Permit2__c</objectType>
+    </variables>
+    <variables>
+        <name>singleRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MUSW__Permit2__c</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Acknowledgment Letter</fullName>
+        <default>false</default>
+        <label>Acknowledgment Letter</label>
+    </customValue>
+    <customValue>
+        <fullName>Administrative Order</fullName>
+        <default>false</default>
+        <label>Administrative Order</label>
+    </customValue>
+    <customValue>
+        <fullName>Aerial Imagery Map</fullName>
+        <default>false</default>
+        <label>Aerial Imagery Map</label>
+    </customValue>
+    <customValue>
+        <fullName>Agric Water Reuse Feasibility Study</fullName>
+        <default>false</default>
+        <label>Agric Water Reuse Feasibility Study</label>
+    </customValue>
+    <customValue>
+        <fullName>Agric Water Right Agreement</fullName>
+        <default>false</default>
+        <label>Agric Water Right Agreement</label>
+    </customValue>
+    <customValue>
+        <fullName>AG SW Pump Information Form</fullName>
+        <default>false</default>
+        <label>AG SW Pump Information Form</label>
+    </customValue>
+    <customValue>
+        <fullName>AG Well Data Sheet</fullName>
+        <default>false</default>
+        <label>AG Well Data Sheet</label>
+    </customValue>
+    <customValue>
+        <fullName>All Submissions</fullName>
+        <default>false</default>
+        <label>All Submissions</label>
+    </customValue>
+    <customValue>
+        <fullName>Any Submission</fullName>
+        <default>false</default>
+        <label>Any Submission</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Attestation Form</fullName>
+        <default>false</default>
+        <label>Application Attestation Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Form</fullName>
+        <default>false</default>
+        <label>Application Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Map</fullName>
+        <default>false</default>
+        <label>Application Map</label>
+    </customValue>
+    <customValue>
+        <fullName>Appraisal Notes</fullName>
+        <default>false</default>
+        <label>Appraisal Notes</label>
+    </customValue>
+    <customValue>
+        <fullName>Bill of Sale</fullName>
+        <default>false</default>
+        <label>Bill of Sale</label>
+    </customValue>
+    <customValue>
+        <fullName>Compliance Document</fullName>
+        <default>false</default>
+        <label>Compliance Document</label>
+    </customValue>
+    <customValue>
+        <fullName>Consent Order</fullName>
+        <default>false</default>
+        <label>Consent Order</label>
+    </customValue>
+    <customValue>
+        <fullName>Consolidated Conservation Plan</fullName>
+        <default>false</default>
+        <label>Consolidated Conservation Plan</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Photos of the Meter (Including Serial Number)</fullName>
+        <default>false</default>
+        <label>Digital Photos of the Meter (Including Serial Number)</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Photos of the Meter (Installation with surroudning piping)</fullName>
+        <default>false</default>
+        <label>Digital Photos of the Meter (Installation with surroudning piping)</label>
+    </customValue>
+    <customValue>
+        <fullName>Expired LOC Document</fullName>
+        <default>false</default>
+        <label>Expired LOC Document</label>
+    </customValue>
+    <customValue>
+        <fullName>Expiring LOC Document</fullName>
+        <default>false</default>
+        <label>Expiring LOC Document</label>
+    </customValue>
+    <customValue>
+        <fullName>Flow Meter Approval Form</fullName>
+        <default>false</default>
+        <label>Flow Meter Approval Form</label>
+    </customValue>
+    <customValue>
+        <fullName>GeoEval Sheet Page 1</fullName>
+        <default>false</default>
+        <label>GeoEval Sheet Page 1</label>
+    </customValue>
+    <customValue>
+        <fullName>GeoEval Sheet Page 2</fullName>
+        <default>false</default>
+        <label>GeoEval Sheet Page 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Incomplete Meter Installation Notice</fullName>
+        <default>false</default>
+        <label>Incomplete Meter Installation Notice</label>
+    </customValue>
+    <customValue>
+        <fullName>Irrigation Efficiency Certification Form</fullName>
+        <default>false</default>
+        <label>Irrigation Efficiency Certification Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Irrigation Efficiency Form</fullName>
+        <default>false</default>
+        <label>Irrigation Efficiency Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Last Will and Testament</fullName>
+        <default>false</default>
+        <label>Last Will and Testament</label>
+    </customValue>
+    <customValue>
+        <fullName>LOC Document</fullName>
+        <default>false</default>
+        <label>LOC Document</label>
+    </customValue>
+    <customValue>
+        <fullName>LOC No Low Flows</fullName>
+        <default>false</default>
+        <label>LOC No Low Flows</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Flow Guidance</fullName>
+        <default>false</default>
+        <label>Low Flow Guidance</label>
+    </customValue>
+    <customValue>
+        <fullName>Low flow protection plan</fullName>
+        <default>false</default>
+        <label>Low flow protection plan</label>
+    </customValue>
+    <customValue>
+        <fullName>Meter Approval Form</fullName>
+        <default>false</default>
+        <label>Meter Approval Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Meter Installation Form</fullName>
+        <default>false</default>
+        <label>Meter Installation Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Meter Maintenance Notice</fullName>
+        <default>false</default>
+        <label>Meter Maintenance Notice</label>
+    </customValue>
+    <customValue>
+        <fullName>Meter Photos</fullName>
+        <default>false</default>
+        <label>Meter Photos</label>
+    </customValue>
+    <customValue>
+        <fullName>Miscellaneous</fullName>
+        <default>false</default>
+        <label>Miscellaneous</label>
+    </customValue>
+    <customValue>
+        <fullName>Notice of Violation</fullName>
+        <default>false</default>
+        <label>Notice of Violation</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Legal Binding Documents</fullName>
+        <default>false</default>
+        <label>Other Legal Binding Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Mailing Group Supporting Doc</fullName>
+        <default>false</default>
+        <label>Other Mailing Group Supporting Doc</label>
+    </customValue>
+    <customValue>
+        <fullName>Ownership Verification Documents</fullName>
+        <default>false</default>
+        <label>Ownership Verification Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Permission to Drill/Urgent Request Letter</fullName>
+        <default>false</default>
+        <label>Permission to Drill/Urgent Request Letter</label>
+    </customValue>
+    <customValue>
+        <fullName>Permit</fullName>
+        <default>false</default>
+        <label>Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Permit Mailing Group Summary Report</fullName>
+        <default>false</default>
+        <label>Permit Mailing Group Summary Report</label>
+    </customValue>
+    <customValue>
+        <fullName>Permit Map</fullName>
+        <default>false</default>
+        <label>Permit Map</label>
+    </customValue>
+    <customValue>
+        <fullName>Permit Modification Form</fullName>
+        <default>false</default>
+        <label>Permit Modification Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Property Deed</fullName>
+        <default>false</default>
+        <label>Property Deed</label>
+    </customValue>
+    <customValue>
+        <fullName>Pump Data Sheet</fullName>
+        <default>false</default>
+        <label>Pump Data Sheet</label>
+    </customValue>
+    <customValue>
+        <fullName>Request For Information</fullName>
+        <default>false</default>
+        <label>Request For Information</label>
+    </customValue>
+    <customValue>
+        <fullName>Surface Water Low Flow Plan</fullName>
+        <default>false</default>
+        <label>Surface Water Low Flow Plan</label>
+    </customValue>
+    <customValue>
+        <fullName>SW Eval</fullName>
+        <default>false</default>
+        <label>SW Eval</label>
+    </customValue>
+    <customValue>
+        <fullName>Title Transfer</fullName>
+        <default>false</default>
+        <label>Title Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Conservation plan</fullName>
+        <default>false</default>
+        <label>Water Conservation plan</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Conservation Plan Document</fullName>
+        <default>false</default>
+        <label>Water Conservation Plan Document</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Well Inspection Form</fullName>
+        <default>false</default>
+        <label>Water Well Inspection Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Well DataSheet</fullName>
+        <default>false</default>
+        <label>Well DataSheet</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Pad PhotOs</fullName>
+        <default>false</default>
+        <label>Well Pad PhotOs</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Pad Requirement</fullName>
+        <default>false</default>
+        <label>Well Pad Requirement</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Plug and Abandon Form</fullName>
+        <default>false</default>
+        <label>Well Plug and Abandon Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Plug and Abandonment</fullName>
+        <default>false</default>
+        <label>Well Plug and Abandonment</label>
+    </customValue>
+    <customValue>
+        <fullName>XY Site Verification Form</fullName>
+        <default>false</default>
+        <label>XY Site Verification Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Construction Inspection Form</fullName>
+        <default>false</default>
+        <label>Well Construction Inspection Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Ownership Document</fullName>
+        <default>false</default>
+        <label>Ownership Document</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Compliance Case for Permit Holder</fullName>
+        <default>false</default>
+        <label>Pending Compliance Case for Permit Holder</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Use Conservation Plan</fullName>
+        <default>false</default>
+        <label>Water Use Conservation Plan</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Reuse Feasibility Study</fullName>
+        <default>false</default>
+        <label>Water Reuse Feasibility Study</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Right Agreement Property</fullName>
+        <default>false</default>
+        <label>Water Right Agreement Property</label>
+    </customValue>
+    <customValue>
+        <fullName>Permit Correction Proposal Checklist Form</fullName>
+        <default>false</default>
+        <label>Permit Correction Proposal Checklist Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Relinquishment Request Application</fullName>
+        <default>false</default>
+        <label>Relinquishment Request Application</label>
+    </customValue>
+    <customValue>
+        <fullName>Revoke Forms</fullName>
+        <default>false</default>
+        <label>Revoke Forms</label>
+    </customValue>
+    <customValue>
+        <fullName>Map</fullName>
+        <default>false</default>
+        <label>Map</label>
+    </customValue>
+    <masterLabel>Avo Submission Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

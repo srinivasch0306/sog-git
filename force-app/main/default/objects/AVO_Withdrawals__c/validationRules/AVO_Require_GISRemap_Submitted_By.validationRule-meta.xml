@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Require_GISRemap_Submitted_By</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(AVO_GISRemapRequired__c, &quot;Yes&quot;),
+  ISBLANK(AVO_GISRemapSubmittedBy__c),
+  $Profile.Name &lt;&gt; &apos;AVO Customer Community Login&apos;
+)</errorConditionFormula>
+    <errorDisplayField>AVO_GISRemapSubmittedBy__c</errorDisplayField>
+    <errorMessage>Field is required when GIS Remap Submitted By is set to &quot;Yes&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__EnableForCart__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field defines if the payment method is active for payment cart.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Toggle to display the payment method in the payment cart</inlineHelpText>
+    <label>Enable for Cart</label>
+    <type>Checkbox</type>
+</CustomField>

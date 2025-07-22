@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Professional</fullName>
+        <default>false</default>
+        <label>Professional</label>
+    </customValue>
+    <customValue>
+        <fullName>Character</fullName>
+        <default>false</default>
+        <label>Character</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Apprenticeship</fullName>
+        <default>false</default>
+        <label>Apprenticeship</label>
+    </customValue>
+    <customValue>
+        <fullName>Volunteer</fullName>
+        <default>false</default>
+        <label>Volunteer</label>
+    </customValue>
+    <masterLabel>Professional Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

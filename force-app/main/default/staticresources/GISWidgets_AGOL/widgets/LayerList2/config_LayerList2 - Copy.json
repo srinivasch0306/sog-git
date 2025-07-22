@@ -1,0 +1,26 @@
+{
+  "layers": [
+    {
+      "url": "https://gis.cityofelgin.net/arcgis/rest/services/Basemap_All_SF/MapServer/9",
+      "label": "Elgin Parcel Kane",
+      "type": "feature"
+    },
+    {
+      "url": "https://gis.cityofelgin.net/arcgis/rest/services/Basemap_All_SF/MapServer/0",
+      "label": "Elgin Master Address Point",
+      "type": "feature"
+    },
+	{
+      "url": "MUSW__Permit2__c",
+      "label": "BG Permit2",
+      "type": "basicgov"
+    },
+	{
+      "url": "MUSW__Inspection__c",
+      "label": "BG Inspection",
+      "type": "basicgov"
+    }
+  ],
+  "showLegend": true,
+  "shareResult":false
+}

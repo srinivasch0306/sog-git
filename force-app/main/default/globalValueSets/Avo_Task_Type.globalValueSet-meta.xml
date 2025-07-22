@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Acknowledgement Letter</fullName>
+        <default>false</default>
+        <label>Acknowledgement Letter</label>
+    </customValue>
+    <customValue>
+        <fullName>GIS Application Mapping</fullName>
+        <default>false</default>
+        <label>GIS Application Mapping</label>
+    </customValue>
+    <customValue>
+        <fullName>GIS Permit Mapping</fullName>
+        <default>false</default>
+        <label>GIS Permit Mapping</label>
+    </customValue>
+    <customValue>
+        <fullName>LOC Document Sending</fullName>
+        <default>false</default>
+        <label>LOC Document Sending</label>
+    </customValue>
+    <customValue>
+        <fullName>LOC Package Printing</fullName>
+        <default>false</default>
+        <label>LOC Package Printing</label>
+    </customValue>
+    <customValue>
+        <fullName>Ownership Validation and Update</fullName>
+        <default>false</default>
+        <label>Ownership Validation and Update</label>
+    </customValue>
+    <customValue>
+        <fullName>Waiver Approval</fullName>
+        <default>false</default>
+        <label>Waiver Approval</label>
+    </customValue>
+    <masterLabel>Avo Task Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

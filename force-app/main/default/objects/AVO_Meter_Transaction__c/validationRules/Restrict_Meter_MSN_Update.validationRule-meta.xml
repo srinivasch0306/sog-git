@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Meter_MSN_Update</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(AVO_Maintenance_Type__c, &quot;New Installation Maintenance&quot;) = FALSE, 
+    ISPICKVAL(AVO_Maintenance_Type__c, &quot;Meter Replacement&quot;) = FALSE, 
+    ISCHANGED(AVO_Meter_ID__c),
+    ISPICKVAL(AVO_Type__c, &quot;Meter Maintenance Request&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Meter_ID__c</errorDisplayField>
+    <errorMessage>MSN field cannot be changed unless Type is New Installation Maintenance</errorMessage>
+</ValidationRule>

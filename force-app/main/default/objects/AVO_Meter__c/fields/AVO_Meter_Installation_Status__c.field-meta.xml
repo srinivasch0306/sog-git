@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Meter_Installation_Status__c</fullName>
+    <label>Meter Installation Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved and Active On Site</fullName>
+                <default>false</default>
+                <label>Approved and Active On Site</label>
+            </value>
+            <value>
+                <fullName>Pending Approval</fullName>
+                <default>false</default>
+                <label>Pending Approval</label>
+            </value>
+            <value>
+                <fullName>Missing Meter</fullName>
+                <default>false</default>
+                <label>Missing Meter</label>
+            </value>
+            <value>
+                <fullName>Deleted</fullName>
+                <default>false</default>
+                <label>Deleted</label>
+            </value>
+            <value>
+                <fullName>Replaced</fullName>
+                <default>false</default>
+                <label>Replaced</label>
+            </value>
+            <value>
+                <fullName>Meter Moved</fullName>
+                <default>false</default>
+                <label>Meter Moved</label>
+            </value>
+            <value>
+                <fullName>Dead On Site</fullName>
+                <default>false</default>
+                <label>Dead On Site</label>
+            </value>
+            <value>
+                <fullName>Retrieved Meter</fullName>
+                <default>false</default>
+                <label>Retrieved Meter</label>
+            </value>
+            <value>
+                <fullName>Pending: Not Install to Specification</fullName>
+                <default>false</default>
+                <label>Pending: Not Install to Specification</label>
+            </value>
+            <value>
+                <fullName>Clerical Error</fullName>
+                <default>false</default>
+                <label>Clerical Error</label>
+            </value>
+            <value>
+                <fullName>Double Metered</fullName>
+                <default>false</default>
+                <label>Double Metered</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

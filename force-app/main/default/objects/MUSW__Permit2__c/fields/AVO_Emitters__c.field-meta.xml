@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Emitters__c</fullName>
+    <label>Emitters</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Will use micro-sprinkler device part circle will be used</fullName>
+                <default>false</default>
+                <label>Will use micro-sprinkler device part circle will be used</label>
+            </value>
+            <value>
+                <fullName>Will use part micro-sprinkler device. Full circle will be used</fullName>
+                <default>false</default>
+                <label>Will use part micro-sprinkler device. Full circle will be used</label>
+            </value>
+            <value>
+                <fullName>Will use non-pressure compensating point source emitters (emitter installed in the field after the tubing is installed)</fullName>
+                <default>false</default>
+                <label>Will use non-pressure compensating point source emitters (emitter installed in the field after the tubing is installed)</label>
+            </value>
+            <value>
+                <fullName>Will use pressure compensating point source emitters (emitter installed in the field after the tubing is installed)</fullName>
+                <default>false</default>
+                <label>Will use pressure compensating point source emitters (emitter installed in the field after the tubing is installed)</label>
+            </value>
+            <value>
+                <fullName>Will use line source emitters (emitter manufactured as integral part of tubing)</fullName>
+                <default>false</default>
+                <label>Will use line source emitters (emitter manufactured as integral part of tubing)</label>
+            </value>
+            <value>
+                <fullName>​Other</fullName>
+                <default>false</default>
+                <label>​Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_TypeOFStream</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+ISPICKVAL(  MUSW__Status__c  , &apos;Final Evaluation&apos;),
+ISPICKVAL(   AVO_OnStream__c   , &apos;Yes&apos;),
+ISPICKVAL(    MUSW__Type__c    , &apos;Well and Pump Data&apos;),
+ ISBLANK( TEXT(  SOG_Type_of_Stream__c  ) )),
+
+AND(
+ISPICKVAL(  MUSW__Status__c  , &apos;Final Evaluation&apos;),
+ISPICKVAL(   AVO_OnStream__c   , &apos;Yes&apos;),
+ISPICKVAL(    MUSW__Type__c    , &apos;Agricultural Surface Water Pump&apos;),
+ ISBLANK( TEXT(  SOG_Type_of_Stream__c  ) ))
+)</errorConditionFormula>
+    <errorMessage>If OnStream Is Yes and Type is SurfaceWater or Well To pond then TypeOFStream Cannot be Empty</errorMessage>
+</ValidationRule>

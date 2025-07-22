@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__UserDoesNotHaveReopenPermission</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+        $CustomMetadata.clariti__FinancialsFeatureEnablementSettings__mdt.clariti__FiscalYearAndPeriodManagement.clariti__Enable__c,
+ISCHANGED(clariti__Status__c),
+ISPICKVAL(PRIORVALUE(clariti__Status__c),&apos;Closed&apos;),
+IF(
+$Permission.clariti__ReopenFiscalPeriodsYears,
+NOT(ISPICKVAL(clariti__Status__c,&apos;Open&apos;)),
+TRUE
+)
+)</errorConditionFormula>
+    <errorDisplayField>clariti__Status__c</errorDisplayField>
+    <errorMessage>You do not have permission to reopen the Fiscal Period.</errorMessage>
+</ValidationRule>

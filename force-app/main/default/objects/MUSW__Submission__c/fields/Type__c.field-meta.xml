@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acknowledgment Letter</fullName>
+                <default>false</default>
+                <label>Acknowledgment Letter</label>
+            </value>
+            <value>
+                <fullName>Administrative Order</fullName>
+                <default>false</default>
+                <label>Administrative Order</label>
+            </value>
+            <value>
+                <fullName>Aerial Imagery Map</fullName>
+                <default>false</default>
+                <label>Aerial Imagery Map</label>
+            </value>
+            <value>
+                <fullName>Agric Water Reuse Feasibility Study</fullName>
+                <default>false</default>
+                <label>Agric Water Reuse Feasibility Study</label>
+            </value>
+            <value>
+                <fullName>Agric Water Right Agreement</fullName>
+                <default>false</default>
+                <label>Agric Water Right Agreement</label>
+            </value>
+            <value>
+                <fullName>AG SW Pump Information Form</fullName>
+                <default>false</default>
+                <label>AG SW Pump Information Form</label>
+            </value>
+            <value>
+                <fullName>AG Well Data Sheet</fullName>
+                <default>false</default>
+                <label>AG Well Data Sheet</label>
+            </value>
+            <value>
+                <fullName>Application Attestation Form</fullName>
+                <default>false</default>
+                <label>Application Attestation Form</label>
+            </value>
+            <value>
+                <fullName>Application Form</fullName>
+                <default>false</default>
+                <label>Application Form</label>
+            </value>
+            <value>
+                <fullName>Application Map</fullName>
+                <default>false</default>
+                <label>Application Map</label>
+            </value>
+            <value>
+                <fullName>Appraisal Notes</fullName>
+                <default>false</default>
+                <label>Appraisal Notes</label>
+            </value>
+            <value>
+                <fullName>Bill of Sale</fullName>
+                <default>false</default>
+                <label>Bill of Sale</label>
+            </value>
+            <value>
+                <fullName>Compliance Document</fullName>
+                <default>false</default>
+                <label>Compliance Document</label>
+            </value>
+            <value>
+                <fullName>Consent Order</fullName>
+                <default>false</default>
+                <label>Consent Order</label>
+            </value>
+            <value>
+                <fullName>Consolidated Conservation Plan</fullName>
+                <default>false</default>
+                <label>Consolidated Conservation Plan</label>
+            </value>
+            <value>
+                <fullName>Digital Photos of the Meter (Including Serial Number)</fullName>
+                <default>false</default>
+                <label>Digital Photos of the Meter (Including Serial Number)</label>
+            </value>
+            <value>
+                <fullName>Digital Photos of the Meter (Installation with surroudning piping)</fullName>
+                <default>false</default>
+                <label>Digital Photos of the Meter (Installation with surroudning piping)</label>
+            </value>
+            <value>
+                <fullName>Expired LOC Document</fullName>
+                <default>false</default>
+                <label>Expired LOC Document</label>
+            </value>
+            <value>
+                <fullName>Expiring LOC Document</fullName>
+                <default>false</default>
+                <label>Expiring LOC Document</label>
+            </value>
+            <value>
+                <fullName>Flow Meter Approval Form</fullName>
+                <default>false</default>
+                <label>Flow Meter Approval Form</label>
+            </value>
+            <value>
+                <fullName>GeoEval Sheet Page 1</fullName>
+                <default>false</default>
+                <label>GeoEval Sheet Page 1</label>
+            </value>
+            <value>
+                <fullName>GeoEval Sheet Page 2</fullName>
+                <default>false</default>
+                <label>GeoEval Sheet Page 2</label>
+            </value>
+            <value>
+                <fullName>Incomplete Meter Installation Notice</fullName>
+                <default>false</default>
+                <label>Incomplete Meter Installation Notice</label>
+            </value>
+            <value>
+                <fullName>Irrigation Efficiency Certification Form</fullName>
+                <default>false</default>
+                <label>Irrigation Efficiency Certification Form</label>
+            </value>
+            <value>
+                <fullName>Irrigation Efficiency Form</fullName>
+                <default>false</default>
+                <label>Irrigation Efficiency Form</label>
+            </value>
+            <value>
+                <fullName>Last Will and Testament</fullName>
+                <default>false</default>
+                <label>Last Will and Testament</label>
+            </value>
+            <value>
+                <fullName>LOC Document</fullName>
+                <default>false</default>
+                <label>LOC Document</label>
+            </value>
+            <value>
+                <fullName>LOC No Low Flows</fullName>
+                <default>false</default>
+                <label>LOC No Low Flows</label>
+            </value>
+            <value>
+                <fullName>Low Flow Guidance</fullName>
+                <default>false</default>
+                <label>Low Flow Guidance</label>
+            </value>
+            <value>
+                <fullName>Low flow protection plan</fullName>
+                <default>false</default>
+                <label>Low flow protection plan</label>
+            </value>
+            <value>
+                <fullName>Meter Approval Form</fullName>
+                <default>false</default>
+                <label>Meter Approval Form</label>
+            </value>
+            <value>
+                <fullName>Meter Installation Form</fullName>
+                <default>false</default>
+                <label>Meter Installation Form</label>
+            </value>
+            <value>
+                <fullName>Meter Maintenance Notice</fullName>
+                <default>false</default>
+                <label>Meter Maintenance Notice</label>
+            </value>
+            <value>
+                <fullName>Meter Photos</fullName>
+                <default>false</default>
+                <label>Meter Photos</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Notice of Violation</fullName>
+                <default>false</default>
+                <label>Notice of Violation</label>
+            </value>
+            <value>
+                <fullName>Other Legal Binding Documents</fullName>
+                <default>false</default>
+                <label>Other Legal Binding Documents</label>
+            </value>
+            <value>
+                <fullName>Other Mailing Group Supporting Doc</fullName>
+                <default>false</default>
+                <label>Other Mailing Group Supporting Doc</label>
+            </value>
+            <value>
+                <fullName>Ownership Verification Documents</fullName>
+                <default>false</default>
+                <label>Ownership Verification Documents</label>
+            </value>
+            <value>
+                <fullName>Permission to Drill/Urgent Request Letter</fullName>
+                <default>false</default>
+                <label>Permission to Drill/Urgent Request Letter</label>
+            </value>
+            <value>
+                <fullName>Permit</fullName>
+                <default>false</default>
+                <label>Permit</label>
+            </value>
+            <value>
+                <fullName>Permit Mailing Group Summary Report</fullName>
+                <default>false</default>
+                <label>Permit Mailing Group Summary Report</label>
+            </value>
+            <value>
+                <fullName>Permit Map</fullName>
+                <default>false</default>
+                <label>Permit Map</label>
+            </value>
+            <value>
+                <fullName>Permit Modification Form</fullName>
+                <default>false</default>
+                <label>Permit Modification Form</label>
+            </value>
+            <value>
+                <fullName>Property Deed</fullName>
+                <default>false</default>
+                <label>Property Deed</label>
+            </value>
+            <value>
+                <fullName>Pump Data Sheet</fullName>
+                <default>false</default>
+                <label>Pump Data Sheet</label>
+            </value>
+            <value>
+                <fullName>Request For Information</fullName>
+                <default>false</default>
+                <label>Request For Information</label>
+            </value>
+            <value>
+                <fullName>Surface Water Low Flow Plan</fullName>
+                <default>false</default>
+                <label>Surface Water Low Flow Plan</label>
+            </value>
+            <value>
+                <fullName>SW Eval</fullName>
+                <default>false</default>
+                <label>SW Eval</label>
+            </value>
+            <value>
+                <fullName>Title Transfer</fullName>
+                <default>false</default>
+                <label>Title Transfer</label>
+            </value>
+            <value>
+                <fullName>Water Conservation plan</fullName>
+                <default>false</default>
+                <label>Water Conservation plan</label>
+            </value>
+            <value>
+                <fullName>Water Conservation Plan Document</fullName>
+                <default>false</default>
+                <label>Water Conservation Plan Document</label>
+            </value>
+            <value>
+                <fullName>Water Well Inspection Form</fullName>
+                <default>false</default>
+                <label>Water Well Inspection Form</label>
+            </value>
+            <value>
+                <fullName>Well DataSheet</fullName>
+                <default>false</default>
+                <label>Well DataSheet</label>
+            </value>
+            <value>
+                <fullName>Well Pad PhotOs</fullName>
+                <default>false</default>
+                <label>Well Pad PhotOs</label>
+            </value>
+            <value>
+                <fullName>Well Pad Requirement</fullName>
+                <default>false</default>
+                <label>Well Pad Requirement</label>
+            </value>
+            <value>
+                <fullName>Well Plug and Abandon Form</fullName>
+                <default>false</default>
+                <label>Well Plug and Abandon Form</label>
+            </value>
+            <value>
+                <fullName>Well Plug and Abandonment</fullName>
+                <default>false</default>
+                <label>Well Plug and Abandonment</label>
+            </value>
+            <value>
+                <fullName>XY Site Verification Form</fullName>
+                <default>false</default>
+                <label>XY Site Verification Form</label>
+            </value>
+            <value>
+                <fullName>Photos</fullName>
+                <default>false</default>
+                <label>Photos</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,32 @@
+{
+  "editor": {
+    "enableUndoRedo": true,
+    "toolbarVisible": true,
+    "toolbarOptions": {
+      "mergeVisible": true,
+      "cutVisible": true,
+      "reshapeVisible": true
+    },
+    "useFilterEdit": true,
+    "autoApplyEditWhenGeometryIsMoved": true,
+    "snappingTolerance": 15,
+    "popupTolerance": 5,
+    "stickyMoveTolerance": 0,
+    "layerInfos": [
+	  {
+        "featureLayer": {
+          "id": "https://services3.arcgis.com/qrcTTRTwUoS8N47o/arcgis/rest/services/wHydrant/FeatureServer"
+        },
+        "disableGeometryUpdate": false,
+        "fieldInfos": [
+          {
+            "fieldName": "INSTALLDATE",
+            "label": "INSTALLDATE",
+            "isEditable": true,
+            "visible": true
+          }
+        ]
+      }
+    ]
+  }
+}

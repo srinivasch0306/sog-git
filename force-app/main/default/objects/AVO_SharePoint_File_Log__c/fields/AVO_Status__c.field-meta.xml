@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Status__c</fullName>
+    <label>AVO Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Moved</fullName>
+                <default>false</default>
+                <label>Moved</label>
+            </value>
+            <value>
+                <fullName>Link Generated</fullName>
+                <default>false</default>
+                <label>Link Generated</label>
+            </value>
+            <value>
+                <fullName>Duplicate Found</fullName>
+                <default>false</default>
+                <label>Duplicate Found</label>
+            </value>
+            <value>
+                <fullName>Error</fullName>
+                <default>false</default>
+                <label>Error</label>
+            </value>
+            <value>
+                <fullName>Parent Not Found</fullName>
+                <default>false</default>
+                <label>Parent Not Found</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

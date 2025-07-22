@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Method__c</fullName>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE(SUBSTITUTE(IF( NOT(ISBLANK(BGBK__Receipt__c) ), text(BGBK__Receipt__r.MUSW__Payment_Method__c) , IF(NOT(ISBLANK(Fee_Payment__c) ), text(Fee_Payment__r.BGBK__Payment__r.BGBK__Receipt__r.MUSW__Payment_Method__c) , &quot;Deposit (Cash)&quot; )), &quot;Internal Transfer&quot;, &quot;Internal Transfer (Cash)&quot;), &quot;_&quot;, &quot; &quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Payment Method</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

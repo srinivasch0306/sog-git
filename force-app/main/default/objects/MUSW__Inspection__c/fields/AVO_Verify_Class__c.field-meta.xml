@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Verify_Class__c</fullName>
+    <label>Verify Class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Meter Site Inspection</fullName>
+                <default>false</default>
+                <label>Meter Site Inspection</label>
+            </value>
+            <value>
+                <fullName>Permit Site Inspection</fullName>
+                <default>false</default>
+                <label>Permit Site Inspection</label>
+            </value>
+            <value>
+                <fullName>Compliance Investigation</fullName>
+                <default>false</default>
+                <label>Compliance Investigation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

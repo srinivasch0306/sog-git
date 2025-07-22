@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Clone_x5</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Clone x5</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT (&quot;/soap/ajax/59.0/connection.js&quot;)};
+{!REQUIRESCRIPT (&quot;/soap/ajax/59.0/apex.js&quot;)};
+
+var bljId = &apos;{!BGBL__Batch_Letter_Job__c.Id}&apos;;
+
+result = sforce.connection.query(&quot;Select BGBL__Batch_Letter__c, BGBL__Output_Type__c, BGBL__Status__c, BGBL__Single_Letter_Job__c, BGBL__OVERRIDE_PARAMETERS__C from BGBL__Batch_Letter_Job__c where id = &apos;&quot; + bljId + &quot;&apos;&quot;);
+var records = result.getArray(&quot;records&quot;);
+
+var bljToInsert = new Array();
+for (var i=0; i&lt; 5; i++) 
+{
+    var newBLJ = new sforce.SObject(&quot;BGBL__Batch_Letter_Job__c&quot;);
+    newBLJ.BGBL__Batch_Letter__c =records[0].BGBL__Batch_Letter__c;
+    newBLJ.BGBL__Output_Type__c =records[0].BGBL__Output_Type__c;
+    newBLJ.BGBL__Status__c = &apos;In Queue (verifying...)&apos;;
+    newBLJ.BGBL__Single_Letter_Job__c = true;
+    newBLJ.BGBL__OVERRIDE_PARAMETERS__C = records[0].BGBL__OVERRIDE_PARAMETERS__C;
+    bljToInsert.push(newBLJ );
+}
+sforce.connection.create(bljToInsert);
+alert(&apos;inserted &apos; + bljToInsert.length + &apos; records&apos;);
+/*
+{!REQUIRESCRIPT (&quot;/soap/ajax/59.0/connection.js&quot;)};
+{!REQUIRESCRIPT (&quot;/soap/ajax/59.0/apex.js&quot;)};
+
+var bljId = &apos;{!BGBL__Batch_Letter_Job__c.Id}&apos;;
+
+result = sforce.connection.query(&quot;Select BGBL__Batch_Letter__c, BGBL__Output_Type__c, BGBL__Status__c, BGBL__Single_Letter_Job__c, BGBL__OVERRIDE_PARAMETERS__C from BGBL__Batch_Letter_Job__c where id = &apos;&quot; + bljId + &quot;&apos;&quot;);
+var records = result.getArray(&quot;records&quot;);
+var bljToInsert[];
+for (var i=0; i&lt; 5; i++) 
+{
+    var record = records[i];
+
+    var newBLJ = new sforce.SObject(&quot;BGBL__Batch_Letter_Job__c&quot;);
+    newBLJ.BGBL__Batch_Letter__c =record.BGBL__Batch_Letter__c;
+    newBLJ.BGBL__Output_Type__c =record.BGBL__Output_Type__c;
+    newBLJ.BGBL__Status__c = &apos;In Queue (verifying...)&apos;;
+    newBLJ.BGBL__Single_Letter_Job__c = true;
+    newBLJ.BGBL__OVERRIDE_PARAMETERS__C = record.BGBL__OVERRIDE_PARAMETERS__C;
+    bljToInsert.add(newBLJ );
+}
+
+sforce.connection.create(bljToInsert);
+*/</url>
+</WebLink>

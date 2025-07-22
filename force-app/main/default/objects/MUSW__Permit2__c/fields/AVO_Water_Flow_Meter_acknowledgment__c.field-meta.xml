@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Water_Flow_Meter_acknowledgment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>I understand that PRIOR to the use of my surface source or groundwater well, the surface pump and/or well must have a water flow meter correctly installed and that an operable water use meter is required as a condition of withdrawing water for agricultural use. (EPD recommends checking with an irrigation dealer for installation requirements specific to your meter make and model.)  In addition, I understand that water withdrawal may not commence until a flow meter is installed on each source and approved.</inlineHelpText>
+    <label>Water Flow Meter acknowledgment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

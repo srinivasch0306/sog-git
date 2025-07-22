@@ -1,0 +1,18 @@
+<apex:page controller="DREFormulaBuilderLocalController">
+    <apex:pageBlock id="block1">
+        <apex:pageBlockSection id="section1" columns="1" collapsible="true" title="Formula Builder">
+            <apex:form >
+                <apex:selectList value="{!selectedObject}" size="1" multiselect="false">
+                    <apex:actionSupport event="onchange" rerender="formula"/>
+                    <apex:selectOptions value="{!Objects}"/>
+                </apex:selectList>
+            </apex:form>
+ 
+            <apex:outputPanel layout="block" id="formula">
+                <apex:iframe src="/apex/DRE__DREFormulaBuilder?showAddFieldButton=true&objectName={!selectedObject}&showChildren=true"/>
+            </apex:outputPanel>
+        </apex:pageBlockSection>
+         
+        <script> twistSection(document.getElementById('{!$Component.block1.section1}').getElementsByTagName('img')[0]) </script>
+    </apex:pageBlock>
+</apex:page>

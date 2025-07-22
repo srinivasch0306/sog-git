@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Reference__c</fullName>
+    <deprecated>false</deprecated>
+    <description>References a Reference record to associate the Reference with an Application.</description>
+    <label>Reference</label>
+    <referenceTo>MUSW__Reference__c</referenceTo>
+    <relationshipLabel>Application References</relationshipLabel>
+    <relationshipName>Application_References</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

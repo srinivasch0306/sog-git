@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Contact_Relationship_missing</fullName>
+    <active>false</active>
+    <description>When Account is specified (and it isn&apos;t a Citizen, or having the same name as the Contact), account relationship is required</description>
+    <errorConditionFormula>AND(ISPICKVAL(MUSW__Account_Relationship__c,&quot;&quot; ), NOT(ISBLANK(AccountId)), Account.Name != &quot;Citizen&quot; ,Account.Name != TRIM(IF(ISBLANK(TEXT(Salutation)), &quot;&quot;, TEXT(Salutation) + &quot; &quot;) + IF(ISBLANK(FirstName),&quot;&quot;, FirstName + &quot; &quot;) + IF(ISBLANK(MiddleName),&quot;&quot;, MiddleName + &quot; &quot;) + LastName + IF(ISBLANK(Suffix),&quot;&quot;,&quot; &quot; + Suffix)), MUSW__DBA_Name__c != Account.Name)</errorConditionFormula>
+    <errorDisplayField>MUSW__Account_Relationship__c</errorDisplayField>
+    <errorMessage>* Specify Contact Relationship to Account (or leave Account blank) *</errorMessage>
+</ValidationRule>

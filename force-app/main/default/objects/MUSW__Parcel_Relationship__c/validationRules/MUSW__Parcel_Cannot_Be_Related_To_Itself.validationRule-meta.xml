@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Parcel_Cannot_Be_Related_To_Itself</fullName>
+    <active>true</active>
+    <description>Parcel cannot be related to itself.</description>
+    <errorConditionFormula>AND(NOT( ISNULL( MUSW__Parcel__c ) ),NOT( ISNULL( MUSW__Related_Parcel__c ) ),(MUSW__Parcel__c ==  MUSW__Related_Parcel__c ) )</errorConditionFormula>
+    <errorDisplayField>MUSW__Related_Parcel__c</errorDisplayField>
+    <errorMessage>Parcel cannot be related to itself. Select a different Related Parcel.</errorMessage>
+</ValidationRule>

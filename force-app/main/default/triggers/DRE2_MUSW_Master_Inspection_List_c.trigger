@@ -1,0 +1,1 @@
+trigger DRE2_MUSW_Master_Inspection_List_c on MUSW__Master_Inspection_List__c (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_MUSW_Master_Inspection_List_c', new DRETriggerHandler()); }

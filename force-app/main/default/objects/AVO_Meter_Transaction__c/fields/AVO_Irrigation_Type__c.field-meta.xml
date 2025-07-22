@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Irrigation_Type__c</fullName>
+    <label>Irrigation Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CENTER PIVOT</fullName>
+                <default>false</default>
+                <label>CENTER PIVOT</label>
+            </value>
+            <value>
+                <fullName>CENTER PIVOT AND DRIP</fullName>
+                <default>false</default>
+                <label>CENTER PIVOT AND DRIP</label>
+            </value>
+            <value>
+                <fullName>CENTER PIVOT AND TRAVELER</fullName>
+                <default>false</default>
+                <label>CENTER PIVOT AND TRAVELER</label>
+            </value>
+            <value>
+                <fullName>DRIP</fullName>
+                <default>false</default>
+                <label>DRIP</label>
+            </value>
+            <value>
+                <fullName>DRIP AND SOLID SET SPRINKLER</fullName>
+                <default>false</default>
+                <label>DRIP AND SOLID SET SPRINKLER</label>
+            </value>
+            <value>
+                <fullName>DRIP AND TRAVELER</fullName>
+                <default>false</default>
+                <label>DRIP AND TRAVELER</label>
+            </value>
+            <value>
+                <fullName>DUMP WELL</fullName>
+                <default>false</default>
+                <label>DUMP WELL</label>
+            </value>
+            <value>
+                <fullName>NON-IRRIGATION</fullName>
+                <default>false</default>
+                <label>NON-IRRIGATION</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>SOLID SET SPRINKLER</fullName>
+                <default>false</default>
+                <label>SOLID SET SPRINKLER</label>
+            </value>
+            <value>
+                <fullName>TRAVELER</fullName>
+                <default>false</default>
+                <label>TRAVELER</label>
+            </value>
+            <value>
+                <fullName>TRAVELER AND SOLID SET SPRINKLER</fullName>
+                <default>false</default>
+                <label>TRAVELER AND SOLID SET SPRINKLER</label>
+            </value>
+            <value>
+                <fullName>UNKNOWN</fullName>
+                <default>false</default>
+                <label>UNKNOWN</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

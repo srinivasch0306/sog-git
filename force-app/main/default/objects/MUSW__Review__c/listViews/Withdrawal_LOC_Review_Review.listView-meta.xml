@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Withdrawal_LOC_Review_Review</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Withdrawal LOC Review</label>
+    <queue>Withdrawal_LOC_Review</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

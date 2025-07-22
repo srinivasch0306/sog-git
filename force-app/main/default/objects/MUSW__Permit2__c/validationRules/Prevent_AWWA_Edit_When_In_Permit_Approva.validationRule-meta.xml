@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_AWWA_Edit_When_In_Permit_Approva</fullName>
+    <active>false</active>
+    <description>Prevents editing of the AWWA record when the Permit Stage is &apos;Permit Approval</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(MUSW__Status__c , &quot;Permit Approval&quot;),
+    ISPICKVAL(MUSW__Type__c , &quot;Agricultural Water Withdrawal Application&quot;),
+    NOT(ISPICKVAL(PRIORVALUE(MUSW__Status__c), &quot;Permit Approval&quot;))
+)</errorConditionFormula>
+    <errorMessage>You cannot edit this Permit when the Stage is &apos;Permit Approval&apos;</errorMessage>
+</ValidationRule>

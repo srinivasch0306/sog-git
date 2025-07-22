@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Big_Gun_Recommended_Practice__c</fullName>
+    <inlineHelpText>The following practices are not required for irrigation system efficiencies certification, but are recognized as quality water management practices.  You may indicate which of the practices listed below you  are implementing or explain other practices in use.</inlineHelpText>
+    <label>Big Gun Recommended Practice</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Night-time only irrigation</fullName>
+                <default>false</default>
+                <label>Night-time only irrigation</label>
+            </value>
+            <value>
+                <fullName>Conservation tillage</fullName>
+                <default>false</default>
+                <label>Conservation tillage</label>
+            </value>
+            <value>
+                <fullName>GPS-enabled control panel of positioning</fullName>
+                <default>false</default>
+                <label>GPS-enabled control panel of positioning</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

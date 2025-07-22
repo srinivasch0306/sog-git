@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__SupervisorCanNotEditSessionWithBankDep</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(clariti__Status__c , &apos;Closed&apos;) &amp;&amp; $Permission.clariti__ManageCashierSessions &amp;&amp; NOT(ISBLANK(clariti__BankDeposit__c)) &amp;&amp; NOT(ISCHANGED(clariti__BankDeposit__c))</errorConditionFormula>
+    <errorMessage>You do not have permission to edit a closed Cashier Session that has a Bank Deposit.</errorMessage>
+</ValidationRule>

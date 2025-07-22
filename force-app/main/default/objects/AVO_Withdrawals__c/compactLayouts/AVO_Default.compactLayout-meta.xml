@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Default</fullName>
+    <fields>Name</fields>
+    <fields>AVO_Type__c</fields>
+    <fields>AVO_Well_Name__c</fields>
+    <fields>AVO_Permit__c</fields>
+    <fields>AVO_Status__c</fields>
+    <label>AVO Default</label>
+</CompactLayout>

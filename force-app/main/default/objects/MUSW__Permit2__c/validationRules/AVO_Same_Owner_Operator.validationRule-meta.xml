@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Same_Owner_Operator</fullName>
+    <active>true</active>
+    <description>When Owner is Operator is Yes, Property Owner and Operator/Manager must be the same.</description>
+    <errorConditionFormula>AND( ISPICKVAL( AVO_Owener_is_operator__c , &quot;Yes&quot; ),  AVO_Operator_Manager__c  &lt;&gt;  AVO_Property_Owner__c )</errorConditionFormula>
+    <errorMessage>Operator/Manager and Property Owner must be the same contact record.</errorMessage>
+</ValidationRule>

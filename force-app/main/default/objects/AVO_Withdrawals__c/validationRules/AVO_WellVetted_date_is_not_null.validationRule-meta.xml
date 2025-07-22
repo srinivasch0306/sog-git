@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_WellVetted_date_is_not_null</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(AVO_WellVetted__c, &quot;Yes&quot;),
+  OR(
+    ISBLANK(AVO_WellVettedDate__c),
+    DATEVALUE(AVO_WellVettedDate__c) &gt; TODAY()
+  ),
+  $Profile.Name &lt;&gt; &apos;AVO Customer Community Login&apos;
+)</errorConditionFormula>
+    <errorDisplayField>AVO_WellVettedDate__c</errorDisplayField>
+    <errorMessage>Field is required and cannot be a future date when Well Vetted is set to Yes.</errorMessage>
+</ValidationRule>

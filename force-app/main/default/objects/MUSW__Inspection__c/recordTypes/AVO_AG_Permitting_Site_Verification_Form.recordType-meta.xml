@@ -1,0 +1,1704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_AG_Permitting_Site_Verification_Form</fullName>
+    <active>true</active>
+    <label>AG Permitting Site Verification Form</label>
+    <picklistValues>
+        <picklist>AVO_Bured_Pipe__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Case_Class__c</picklist>
+        <values>
+            <fullName>Meter Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Initialized Use Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Violations Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statutory Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WWSA Compliance Case</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Center_Pivot_End_Gun_Shut_Off__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Conservation_Tillage__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Crop_Type__c</picklist>
+        <values>
+            <fullName>Livestock%2FPoultry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orchard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Row Crop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sod</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Documented__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Drilling_Site_Status__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Start</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Flow_Protection_Condition__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Flow_plan_mechanism_in_place__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_GIS_Verified__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_GPS_Enabled_Control_Panel__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Hard_Hose_w_Speed_Compensation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Has_the_well_been_plugged__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Irrigation_Scheduling__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Irrigation_Type__c</picklist>
+        <values>
+            <fullName>Center Pivot%2FLinear Move</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Irr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid Set Sprinkler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traveler</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_Irrigated_Acres_more__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_an_irrigation_system_in_place__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_meter_missing_at_site__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_the_irrigation_system_in_use__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_the_site_fully_metered__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_well_constructed_according_to_LOC__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_well_plugged_with_material__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Leak_Repair_Maintenance__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Licensed_Contractor_Onsite__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Low_Flow_Gauge_Type__c</picklist>
+        <values>
+            <fullName>Blairsville Water Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controlled Flow Through Culvert Pipe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross-Sectional Area Method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross-Sectional Area Method %26 Flow Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross-Sectional Area Method %26 Staff Gauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Float Switch On Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pond Outflow Spillway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pond Outflow Spillway %26 Staff Gauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recirculating Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riser Method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staff Gauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USGS Stream Gauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weir Method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weir Method %26 Staff Gauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Installed To Protect Flow Requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>well installed to supplement stream flow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Low_Pressure_System__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Low_trajectory_Angle__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Functioning__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Installed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Location__c</picklist>
+        <values>
+            <fullName>Alt%2E Leg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GW Source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pivot Point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Source</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Orientation__c</picklist>
+        <values>
+            <fullName>Diagonal Z</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horiontal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vertical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Permit_LOC_Onsite__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Pipe_Type__c</picklist>
+        <values>
+            <fullName>Aluminum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Galvanized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PVC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Pump_Shut_Down_Safety__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Pump_Well_Power_Source__c</picklist>
+        <values>
+            <fullName>Combination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diesel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Purpose_of_Water_Use__c</picklist>
+        <values>
+            <fullName>Athl Field</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comm%2E Fish Prod</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golf Course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livestock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pond Refill</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Rainfall_Shut_Off_Switch__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Review_Type__c</picklist>
+        <values>
+            <fullName>1 Year - Owner Must Install Meter Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 Year - Unmeterable Permitted Withdrawals Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertising as Pump Contractor Without Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertising as Water Well Contractor Without License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conservation Plan Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired Letter of Concurrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Meter Approval Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groundwater Pumping Over Permitted GPM Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Construction of Well</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Plugging and Abandonment of Well</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Plugging and Abandonment of Well Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Plugging and Abandonment of Well WWSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete Meter Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigating Acres Over Permit Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Certification Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Certification Requirement Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Water Conservation Plan Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Tampering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misrepresentations or False Promises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Permit NOV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operating Without Well Driller Bond%2FLetter of Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operating without Pump Contractor Certificate or Expired Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operating without Water Well Contractor License or Expired License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Completion Data Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Contractor Name and%2For Certificate Number Not Properly Displayed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water Pumping Over Permitted GPM Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Groundwater Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Surface Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered Permitted GW Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered Permitted SW Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Groundwater Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Surface Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsecured Well</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Groundwater Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Surface Water Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Well to Pond Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WWSA Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Well Contractor Name and%2For License Number Not Properly Displayed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Completion Data Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Contractor Installed Well Without LOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Not Constructed To Specification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Pad Broken%2C Missing%2C or Incomplete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Pad Construction Picture Not Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Site_Visit_Class__c</picklist>
+        <values>
+            <fullName>Compliance Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Site Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Site Inspection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Site_Visit_Sub_Class__c</picklist>
+        <values>
+            <fullName>1 Year - Owner Must Install Meter Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 Year - Unmeterable Permitted Withdrawals Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired Letter of Concurrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Meter Approval Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Meter Approval Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groundwater Pumping Over Permitted GPM Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Plugging and Abandonment of Well Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete Meter Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigating Acres Over Permit Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Certification Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Certification Requirement Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Water Conservation Plan Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Water Conservation Plan Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter R%26R Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Tampering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Meter Installation Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Permit NOV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Well Construction Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Completion Data Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water Pumping Over Permitted GPM Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Groundwater Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Surface Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered Permitted GW Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered Permitted SW Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Groundwater Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Surface Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Groundwater Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Surface Water Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Well to Pond Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Meter Site Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Meter XY %26 Serial Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Owner Installed Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Source XY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Completion Data Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Not Constructed To Specification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Pad Construction Picture Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Plugged and Abandoned Inspection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Source_Type__c</picklist>
+        <values>
+            <fullName>Pump-Surface Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Ground Water</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Status__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Sub_Class_Picklist__c</picklist>
+        <values>
+            <fullName>1 Year - Owner Must Install Meter Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 Year - Unmeterable Permitted Withdrawals Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conservation Plan Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired Letter of Concurrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Meter Approval Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Meter Approval Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groundwater Pumping Over Permitted GPM Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Plugging and Abandonment of Well - Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete Meter Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigating Acres Over Permit Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Certification Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Certification Requirement Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Water Conservation Plan Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter R%26R Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Tampering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Meter Installation Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Permit NOV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Well Construction Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Completion Data Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water Pumping Over Permitted GPM Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Groundwater Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Surface Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered Permitted GW Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered Permitted SW Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Groundwater Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Surface Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Groundwater Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Surface Water Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Well to Pond Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Meter Site Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Meter XY %26 Serial Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Owner Installed Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Source XY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Completion Data Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Not Constructed To Specification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Pad Construction Picture Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Plugged and Abandoned Inspection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Telemetry_Unit__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Type_Of_Issue__c</picklist>
+        <values>
+            <fullName>Meter Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Related</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Unit_Multiplier__c</picklist>
+        <values>
+            <fullName>%2E0001x</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2E001x</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2E01x</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2E10x</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2C000x</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2C000x</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100x</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10x</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1x</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Unit_of_Measure__c</picklist>
+        <values>
+            <fullName>Acre%2FFeet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acre%2FInches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallons</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Units_to_Review__c</picklist>
+        <values>
+            <fullName>Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WWSA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_User_Region_ID__c</picklist>
+        <values>
+            <fullName>Region 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Region 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Region 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Region 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Region 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Verify_Processed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Verify_Sub_Class__c</picklist>
+        <values>
+            <fullName>1 Year - Owner Must Install Meter Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 Year - Unmeterable Permitted Withdrawals Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired Letter of Concurrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Meter Approval Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Meter Approval Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groundwater Pumping Over Permitted GPM Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Plugging and Abandonment of Well Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete Meter Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigating Acres Over Permit Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Certification Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Certification Requirement Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Water Conservation Plan Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Water Conservation Plan Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter R%26R Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Tampering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Meter Installation Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Permit NOV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Well Construction Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Completion Data Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water Pumping Over Permitted GPM Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Groundwater Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Surface Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered Permitted GW Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered Permitted SW Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Groundwater Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpermitted Surface Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Groundwater Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Surface Water Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused Well to Pond Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Meter Site Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Meter XY %26 Serial Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Owner Installed Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Source XY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Completion Data Form Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Not Constructed To Specification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Pad Construction Picture Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Plugged and Abandoned Inspection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Well_Inspection_Completed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_water_source_for_field__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_well_constructed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Checklist_Type__c</picklist>
+        <values>
+            <fullName>Business - Other Checklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging Checklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optional Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant Checklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subquestions Checklist</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Group__c</picklist>
+        <values>
+            <fullName>Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Codes %2F Zoning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumbing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Close_Action__c</picklist>
+        <values>
+            <fullName>Advisory Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unfounded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verbal Warning</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Priority__c</picklist>
+        <values>
+            <fullName>1 Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Normal</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>3 High</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Required_Skills__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Type__c</picklist>
+        <values>
+            <fullName>AG Permitting Site Verification Form</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Verified_Okay__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Output_Type_Short__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(ispickval( BGBL__Output_Type__c ,&quot;Acrobat (.pdf)&quot;), &quot;pdf&quot;,&quot;&quot;) + 
+IF(ispickval( BGBL__Output_Type__c ,&quot;Word 2003 or earlier (.doc)&quot;), &quot;doc&quot;,&quot;&quot;) +
+IF(ispickval( BGBL__Output_Type__c ,&quot;Word 2007 (.docx)&quot;), &quot;docx&quot;,&quot;&quot;)</formula>
+    <label>Output Type (short)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

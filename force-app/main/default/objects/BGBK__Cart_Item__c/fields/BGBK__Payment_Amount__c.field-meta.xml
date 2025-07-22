@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Payment_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Payment / Partial Payment amount of the fee/invoice/deposit</description>
+    <inlineHelpText>Payment / Partial Payment amount of the fee/invoice/deposit</inlineHelpText>
+    <label>Payment Amount</label>
+    <precision>13</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

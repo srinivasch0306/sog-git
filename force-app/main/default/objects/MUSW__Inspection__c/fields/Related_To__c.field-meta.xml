@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_To__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISNULL( MUSW__Permit__c ), MUSW__Permit__c = &quot;&quot;), 
+If(OR(ISNULL( MUSW__Complaint2__c ), MUSW__Complaint2__c = &quot;&quot;), 
+IF(OR(ISNULL( MUSW__License2__c ), MUSW__License2__c = &quot;&quot;), 
+&quot;&quot;, HYPERLINK( &quot;/&quot; &amp; MUSW__License2__c, MUSW__License2__r.Name ,&quot;_parent&quot; )), 
+HYPERLINK( &quot;/&quot; &amp; MUSW__Complaint2__c,MUSW__Complaint2__r.Name,&quot;_parent&quot; )), 
+HYPERLINK( &quot;/&quot; &amp; MUSW__Permit__c,MUSW__Permit__r.Name,&quot;_parent&quot; ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Related To</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

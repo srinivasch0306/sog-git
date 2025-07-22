@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Add_Multiple_Conditions</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New/Edit Conditions</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/apex/musw__bulkAddEdit?pid={!MUSW__Permit__c.Id}{!MUSW__Planning_Application__c.Id}{!MUSW__Permit2__c.Id}{!MUSW__Application2__c.Id}{!MUSW__Review__c.Id}{!MUSW__License2__c.Id}&amp;type=MUSW__Condition__c&amp;defaults=MUSW__Status__c=&amp;minrows=5</url>
+</WebLink>

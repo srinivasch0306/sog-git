@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Exam_Default</fullName>
+    <fields>MUSW__Name__c</fields>
+    <fields>MUSW__Score__c</fields>
+    <fields>MUSW__Date__c</fields>
+    <label>Exam Default</label>
+</CompactLayout>

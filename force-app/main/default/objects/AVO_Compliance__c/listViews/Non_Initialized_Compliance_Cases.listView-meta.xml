@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Initialized_Compliance_Cases</fullName>
+    <columns>NAME</columns>
+    <columns>AVO_CompStatus__c</columns>
+    <columns>AVO_CompAction__c</columns>
+    <columns>AVO_CaseClass__c</columns>
+    <columns>AVO_Comp_Ref__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AVO_CaseClass__c</field>
+        <operation>equals</operation>
+        <value>Non-Initialized Use Case</value>
+    </filters>
+    <filters>
+        <field>AVO_Comp_Ref__c</field>
+        <operation>equals</operation>
+        <value>Expired Letter of Concurrence</value>
+    </filters>
+    <label>Non-Initialized Compliance Cases</label>
+</ListView>

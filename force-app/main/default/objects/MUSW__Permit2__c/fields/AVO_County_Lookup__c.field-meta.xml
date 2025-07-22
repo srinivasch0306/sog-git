@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_County_Lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>County of the Water Source</label>
+    <referenceTo>AVO_County__c</referenceTo>
+    <relationshipLabel>Permits (County)</relationshipLabel>
+    <relationshipName>Permits1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

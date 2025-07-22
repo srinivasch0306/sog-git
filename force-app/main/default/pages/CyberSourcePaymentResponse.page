@@ -1,0 +1,52 @@
+<apex:page id="CyberSourcePaymentResponse" controller="CyberSourcePaymentResponseController" 
+ showHeader="false" sidebar="false" applyHtmlTag="true" applyBodyTag="false" lightningStyleSheets="true" action="{!UpdatePayment}">
+    <apex:slds />
+    <center>
+    <div class="slds-scope">
+        <div class="slds-panel slds-grid slds-grid__vertical slds-nowrap">
+            <div class="slds-form__stacked slds-grow slds-scrollable__y">
+                <div class="slds-panel__section">
+                    <h3 class="slds-text-heading__small slds-m-bottom__medium">Transaction Detail</h3>
+
+                    <div class="slds-form-element slds-hint-parent slds-has-divider__bottom">
+                        <span class="slds-form-element__label">Amount</span>
+                        <div class="slds-form-element__control">
+                            <span class="slds-form-element__static">{!$CurrentPage.parameters.auth_amount}</span>
+                        </div>
+                    </div>
+
+                    <div class="slds-form-element slds-hint-parent slds-has-divider__bottom">
+                        <span class="slds-form-element__label">Order Number</span>
+                        <div class="slds-form-element__control">
+                            <span class="slds-form-element__static">{!$CurrentPage.parameters.req_reference_number}</span>
+                        </div>
+                    </div>
+
+                    <div class="slds-form-element slds-hint-parent slds-has-divider__bottom">
+                        <span class="slds-form-element__label">Status</span>
+                        <div class="slds-form-element__control">
+                            <span class="slds-form-element__static">{!$CurrentPage.parameters.decision}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-panel__section slds-has-divider__bottom">
+                    <div class="slds-media">
+                        <div class="slds-media__body">
+                            <div class="slds-button-group slds-m-top__small" role="group">
+                                <button class="slds-button slds-button__neutral slds-grow" onclick="closeWindow()">Close window</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </center>
+    <script>
+        function closeWindow() {
+            window.close();
+        }
+
+        setTimeout("window.close();", 3000);       
+    </script>
+</apex:page>

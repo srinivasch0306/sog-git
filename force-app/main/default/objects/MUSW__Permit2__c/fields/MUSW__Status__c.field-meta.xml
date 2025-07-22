@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Status of the permit as it moves through the business workflow.</description>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending</fullName>
+                <default>true</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Submitted Documents</fullName>
+                <default>false</default>
+                <label>Submitted Documents</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>In Transaction</fullName>
+                <default>false</default>
+                <label>In Transaction</label>
+            </value>
+            <value>
+                <fullName>In Review</fullName>
+                <default>false</default>
+                <label>In Review</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Finaled</fullName>
+                <default>false</default>
+                <label>Finaled</label>
+            </value>
+            <value>
+                <fullName>Enforcement</fullName>
+                <default>false</default>
+                <label>Enforcement</label>
+            </value>
+            <value>
+                <fullName>Initial Review</fullName>
+                <default>false</default>
+                <label>Initial Review</label>
+            </value>
+            <value>
+                <fullName>LOC Package</fullName>
+                <default>false</default>
+                <label>LOC Package</label>
+            </value>
+            <value>
+                <fullName>LOC Issued</fullName>
+                <default>false</default>
+                <label>LOC Issued</label>
+            </value>
+            <value>
+                <fullName>LOC Documents Uploaded</fullName>
+                <default>false</default>
+                <label>LOC Documents Uploaded</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>Form Assessment</fullName>
+                <default>false</default>
+                <label>Form Assessment</label>
+            </value>
+            <value>
+                <fullName>Final Evaluation</fullName>
+                <default>false</default>
+                <label>Final Evaluation</label>
+            </value>
+            <value>
+                <fullName>Permit Approval</fullName>
+                <default>false</default>
+                <label>Permit Approval</label>
+            </value>
+            <value>
+                <fullName>Revision Approval</fullName>
+                <default>false</default>
+                <label>Revision Approval</label>
+            </value>
+            <value>
+                <fullName>Ready for Issuance</fullName>
+                <default>false</default>
+                <label>Ready for Issuance</label>
+            </value>
+            <value>
+                <fullName>Permit Issued</fullName>
+                <default>false</default>
+                <label>Permit Issued</label>
+            </value>
+            <value>
+                <fullName>Revision Issued</fullName>
+                <default>false</default>
+                <label>Revision Issued</label>
+            </value>
+            <value>
+                <fullName>Issued</fullName>
+                <default>false</default>
+                <label>Issued</label>
+            </value>
+            <value>
+                <fullName>Permit Rejected</fullName>
+                <default>false</default>
+                <label>Permit Rejected</label>
+            </value>
+            <value>
+                <fullName>Consolidated</fullName>
+                <default>false</default>
+                <label>Consolidated</label>
+            </value>
+            <value>
+                <fullName>Permit Denied</fullName>
+                <default>false</default>
+                <label>Permit Denied</label>
+            </value>
+            <value>
+                <fullName>Revision Denied</fullName>
+                <default>false</default>
+                <label>Revision Denied</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Undocumented Source</fullName>
+                <default>false</default>
+                <label>Undocumented Source</label>
+            </value>
+            <value>
+                <fullName>APPLICATION GIS MAPPING</fullName>
+                <default>false</default>
+                <label>APPLICATION GIS MAPPING</label>
+            </value>
+            <value>
+                <fullName>Undocumented Source Pending Action</fullName>
+                <default>false</default>
+                <label>Undocumented Source Pending Action</label>
+            </value>
+            <value>
+                <fullName>Cancelled Undocumented Source</fullName>
+                <default>false</default>
+                <label>Cancelled Undocumented Source</label>
+            </value>
+            <value>
+                <fullName>Undocumented Under Permitting Threshold</fullName>
+                <default>false</default>
+                <label>Undocumented Under Permitting Threshold</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

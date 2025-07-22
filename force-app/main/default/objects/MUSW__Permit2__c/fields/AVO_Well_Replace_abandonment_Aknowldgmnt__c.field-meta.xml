@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Well_Replace_abandonment_Aknowldgmnt__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>I understand that the well being replaced will need to be properly plugged and abandoned by a water well contractor licensed in the State of Georgia. (Only applies to Replacement Requests)</inlineHelpText>
+    <label>Well Replace/abandonment Acknowledgment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

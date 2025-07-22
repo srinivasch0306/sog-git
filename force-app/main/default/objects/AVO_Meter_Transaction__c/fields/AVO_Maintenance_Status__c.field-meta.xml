@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Maintenance_Status__c</fullName>
+    <label>Maintenance Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Pending Meter Allocation</fullName>
+                <default>false</default>
+                <label>Pending Meter Allocation</label>
+            </value>
+            <value>
+                <fullName>Pending Specialist Allocation</fullName>
+                <default>false</default>
+                <label>Pending Internal or External Allocation</label>
+            </value>
+            <value>
+                <fullName>Allocated</fullName>
+                <default>false</default>
+                <label>Allocated</label>
+            </value>
+            <value>
+                <fullName>Site Visit Only</fullName>
+                <default>false</default>
+                <label>Site Needs Revisit</label>
+            </value>
+            <value>
+                <fullName>Initiated</fullName>
+                <default>false</default>
+                <label>Initiated</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Maintenance On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

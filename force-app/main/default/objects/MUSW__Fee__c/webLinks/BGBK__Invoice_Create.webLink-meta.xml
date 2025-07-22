@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Invoice_Create</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>New Invoice</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/apex/BGBK__invoice_create?parentId={!MUSW__Permit__c.Id}{!MUSW__Complaint__c.Id}{!MUSW__License1__c.Id}{!MUSW__Permit2__c.Id}{!MUSW__Application2__c.Id}{!MUSW__Complaint2__c.Id}{!MUSW__License2__c.Id}</url>
+</WebLink>

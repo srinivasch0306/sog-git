@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Pre_Irrigat_Limits_When_Permit_Blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISNEW()) &amp;&amp; AND(
+    ISCHANGED(AVO_Permitted_Acres__c),
+    ISNULL(AVO_Permitted_Acres__c),
+    ISNULL(AVO_Previously_Irrigated_Permitted_Acres__c)
+)
+ &amp;&amp;
+$Profile.Name &lt;&gt; &apos;AVO Customer Community Login&apos;
+&amp;&amp;
+OR(
+RecordType.Name = &apos;Agricultural Water Withdrawal Permit&apos;,
+RecordType.Name = &apos;Agricultural Water Withdrawal Application&apos;
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Previously_Irrigated_Permitted_Acres__c</errorDisplayField>
+    <errorMessage>Previously Irrigated Permitted Acres is required and must be greater than or equal to 0 when Permitted Acres is blank.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meter_Installation</fullName>
+    <active>true</active>
+    <label>Meter Installation</label>
+    <picklistValues>
+        <picklist>MUSW__Applicant_Relationship__c</picklist>
+        <values>
+            <fullName>Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Related</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Construction_Type__c</picklist>
+        <values>
+            <fullName>IA - Fire Resistive Non-Combustible %28High-rise%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IB - Fire Resistive Non-Combustible %28Mid-rise%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIA - Protected Non-Combustible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIB - Unprotected Non-Combustible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIIA - Ordinary Protected Combustible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIIB - Ordinary Unprotected Combustible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IV - Heavy Timber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA - Protected Wood Frame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VB - Unprotected Wood Frame</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Eligibility__c</picklist>
+        <values>
+            <fullName>First Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reciprocal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__License_Class__c</picklist>
+        <values>
+            <fullName>Apprentice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__License_Eligibility__c</picklist>
+        <values>
+            <fullName>First Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reciprocal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Object_Record_Type__c</picklist>
+        <values>
+            <fullName>AG Water Metering Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVO_Agricultural_Water_Withdrawal_Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVO_Compliance_Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural Flow Meter Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application_to_Modify_or_Transfer_an_Agricultural_Water_Withdrawal_Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Water Withdrawal Application</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Object_Type__c</picklist>
+        <values>
+            <fullName>AVO_Compliance%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVO_Meter_Transaction%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVO_Withdrawals%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUSW%5F%5FPermit2%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Permit_Work_Type__c</picklist>
+        <values>
+            <fullName>Addition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alteration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demolition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Phase__c</picklist>
+        <values>
+            <fullName>Application</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed due to Inactivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consolidated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Under Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Type2__c</picklist>
+        <values>
+            <fullName>Development Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Type__c</picklist>
+        <values>
+            <fullName>Development Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Use_Class__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Use_Group__c</picklist>
+        <values>
+            <fullName>A-1 Assembly%2C theaters%2C with stage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-1 Assembly%2C theaters%2C without stage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-2 Assembly%2C nightclubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-2 Assembly%2C restaurants%2C bars%2C banquet halls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-3 Assembly%2C churches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-3 Assembly%2C general%2C community halls%2C libraries%2C museums</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-4 Assembly%2C arenas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E Educational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F-1 Factory and industrial%2C moderate hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F-2 Factory and industrial%2C low hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H-1 High Hazard%2C explosives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H-5 HPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H234 High Hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-1 Institutional%2C supervised environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-2 Institutional%2C hospitals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-2 Institutional%2C nursing homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-3 Institutional%2C restrained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-4 Institutional%2C day care facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M Mercantile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-1 Residential%2C hotels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-2 Residential%2C multiple family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-3 Residential%2C one- and two-family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-4 Residential%2C care%2Fassisted living facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S-1 Storage%2C moderate hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S-2 Storage%2C low hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U Utility%2C miscellaneous</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Use_Type__c</picklist>
+        <values>
+            <fullName>Duplex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi Family Dwelling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Family Dwelling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Townhouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Work_Type__c</picklist>
+        <values>
+            <fullName>Addition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alteration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demolition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Plans_Review_Application_Type__c</picklist>
+        <values>
+            <fullName>Building Review Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building and Site Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concept Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Review Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

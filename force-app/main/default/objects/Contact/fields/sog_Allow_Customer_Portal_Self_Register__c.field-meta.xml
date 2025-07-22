@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sog_Allow_Customer_Portal_Self_Register__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If you allow access to a customer portal, when selected, allows contacts to self-register for it.</description>
+    <label>Allow Customer Portal Self-Registration</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

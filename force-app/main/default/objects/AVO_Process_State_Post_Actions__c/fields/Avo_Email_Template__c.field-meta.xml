@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avo_Email_Template__c</fullName>
+    <label>Email Template</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Permit Pay Fees Due</fullName>
+                <default>false</default>
+                <label>Permit Pay Fees Due</label>
+            </value>
+            <value>
+                <fullName>Unit Manager Review Email</fullName>
+                <default>false</default>
+                <label>Unit Manager Review Email</label>
+            </value>
+            <value>
+                <fullName>Park Supervisor Review Email</fullName>
+                <default>false</default>
+                <label>Park Supervisor Review Email</label>
+            </value>
+            <value>
+                <fullName>Risk Review Email</fullName>
+                <default>false</default>
+                <label>Risk Review Email</label>
+            </value>
+            <value>
+                <fullName>Completeness Review Email</fullName>
+                <default>false</default>
+                <label>Completeness Review Email</label>
+            </value>
+            <value>
+                <fullName>Land Review Email</fullName>
+                <default>false</default>
+                <label>Land Review Email</label>
+            </value>
+            <value>
+                <fullName>Expedited Completeness Review Email</fullName>
+                <default>false</default>
+                <label>Expedited Completeness Review Email</label>
+            </value>
+            <value>
+                <fullName>Application Received - Incomplete</fullName>
+                <default>false</default>
+                <label>Application Received - Incomplete</label>
+            </value>
+            <value>
+                <fullName>Application Received - Complete</fullName>
+                <default>false</default>
+                <label>Application Received - Complete</label>
+            </value>
+            <value>
+                <fullName>Permit Issued/Notice to Proceed</fullName>
+                <default>false</default>
+                <label>Permit Issued/Notice to Proceed</label>
+            </value>
+            <value>
+                <fullName>Permit Created</fullName>
+                <default>false</default>
+                <label>Permit Created</label>
+            </value>
+            <value>
+                <fullName>Application Pay Fees Due</fullName>
+                <default>false</default>
+                <label>Application Pay Fees Due</label>
+            </value>
+            <value>
+                <fullName>Revision Request Acknowledgment Notification</fullName>
+                <default>false</default>
+                <label>Revision Request Acknowledgment Notification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

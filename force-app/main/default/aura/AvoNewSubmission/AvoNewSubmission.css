@@ -1,0 +1,28 @@
+/* 
+    Style sheet for the New Inspection Lightning Component
+    @author Michael Chung
+    last modified by Michael Chung
+    @date 05/20/2021
+*/
+
+.THIS.content-wrapper {
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    border: 2px;
+}
+
+.THIS .create-button {
+    position: sticky;
+    top: 0;
+    min-width: 180px;
+}
+
+.THIS .loadingSubmissions{
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    width: 55px;
+    vertical-align: middle;
+    white-space: nowrap;
+}

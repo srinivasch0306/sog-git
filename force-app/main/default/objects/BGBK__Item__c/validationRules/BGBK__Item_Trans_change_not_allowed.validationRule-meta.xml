@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Item_Trans_change_not_allowed</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED( BGBK__Transaction__c )</errorConditionFormula>
+    <errorMessage>Transaction is not editable</errorMessage>
+</ValidationRule>

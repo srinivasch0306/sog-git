@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Restrict_Letter_Edit_By_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+RecordType.Name = &quot;Agricultural Water Withdrawal Permit&quot;,
+RecordType.Name = &quot;Agricultural Water Withdrawal Application&quot;,
+RecordType.Name = &quot;Revision&quot;
+),
+    ISCHANGED(AVO_Type_of_Letter_Required__c),
+$Profile.Name &lt;&gt; &quot;AVO Customer Community Login&quot;,
+    NOT(
+        OR(
+            ISPICKVAL(MUSW__Status__c, &quot;Final Evaluation&quot;),
+            ISPICKVAL(MUSW__Status__c, &quot;Form Assessment&quot;)
+        )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Type_of_Letter_Required__c</errorDisplayField>
+    <errorMessage>You can only update Type of Letter Required when the Stage is &apos;Final Evaluation&apos; or &apos;Form Assessment&apos;.</errorMessage>
+</ValidationRule>

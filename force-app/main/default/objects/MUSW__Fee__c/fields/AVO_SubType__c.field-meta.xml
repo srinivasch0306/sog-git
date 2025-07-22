@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_SubType__c</fullName>
+    <label>SubType</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>MUSW__Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Printing Document</fullName>
+                <default>false</default>
+                <label>Printing Document</label>
+            </value>
+            <value>
+                <fullName>Consultation</fullName>
+                <default>false</default>
+                <label>Consultation</label>
+            </value>
+            <value>
+                <fullName>Unpermitted groundwater withdrawal and irrigation</fullName>
+                <default>false</default>
+                <label>Unpermitted groundwater withdrawal and irrigation</label>
+            </value>
+            <value>
+                <fullName>Irrigating acres in excess of permitted amount from a surface water source</fullName>
+                <default>false</default>
+                <label>Irrigating acres in excess of permitted amount from a surface water source</label>
+            </value>
+            <value>
+                <fullName>Unpermitted surface water withdrawal and irrigation</fullName>
+                <default>false</default>
+                <label>Unpermitted surface water withdrawal and irrigation</label>
+            </value>
+            <value>
+                <fullName>Irrigating acres in excess of permitted amount from a groundwater source</fullName>
+                <default>false</default>
+                <label>Irrigating acres in excess of permitted amount from a groundwater source</label>
+            </value>
+            <value>
+                <fullName>Tampering with surface water meter</fullName>
+                <default>false</default>
+                <label>Tampering with surface water meter</label>
+            </value>
+            <value>
+                <fullName>Tampering with groundwater meter</fullName>
+                <default>false</default>
+                <label>Tampering with groundwater meter</label>
+            </value>
+            <value>
+                <fullName>Operating permitted surface water withdrawal site without an EPD approved water meter</fullName>
+                <default>false</default>
+                <label>Operating permitted surface water withdrawal site without an EPD approved water meter</label>
+            </value>
+            <value>
+                <fullName>Operating permitted groundwater withdrawal site without an EPD approved water meter</fullName>
+                <default>false</default>
+                <label>Operating permitted groundwater withdrawal site without an EPD approved water meter</label>
+            </value>
+            <value>
+                <fullName>Failure to follow water conservation measures required by surface water withdrawal permit</fullName>
+                <default>false</default>
+                <label>Failure to follow water conservation measures required by surface water withdrawal permit</label>
+            </value>
+            <value>
+                <fullName>Failure to follow water conservation measures required by groundwater withdrawal permit</fullName>
+                <default>false</default>
+                <label>Failure to follow water conservation measures required by groundwater withdrawal permit</label>
+            </value>
+            <value>
+                <fullName>Failure to comply with low flow conditions in surface water permit</fullName>
+                <default>false</default>
+                <label>Failure to comply with low flow conditions in surface water permit</label>
+            </value>
+            <value>
+                <fullName>Surface water source located in yellow zone</fullName>
+                <default>false</default>
+                <label>Surface water source located in yellow zone</label>
+            </value>
+            <value>
+                <fullName>Groundwater source located in yellow zone</fullName>
+                <default>false</default>
+                <label>Groundwater source located in yellow zone</label>
+            </value>
+            <value>
+                <fullName>Surface water source located in red zone</fullName>
+                <default>false</default>
+                <label>Surface water source located in red zone</label>
+            </value>
+            <value>
+                <fullName>Groundwater source located in red zone</fullName>
+                <default>false</default>
+                <label>Groundwater source located in red zone</label>
+            </value>
+            <value>
+                <fullName>Between 50 and 100 acres irrigated from a surface water source without/in excess of permit</fullName>
+                <default>false</default>
+                <label>Between 50 and 100 acres irrigated from a surface water source without/in excess of permit</label>
+            </value>
+            <value>
+                <fullName>Between 50 and 100 acres irrigated from a groundwater source without/in excess of permit</fullName>
+                <default>false</default>
+                <label>Between 50 and 100 acres irrigated from a groundwater source without/in excess of permit</label>
+            </value>
+            <value>
+                <fullName>More than 100 acres irrigated from a groundwater source without/in excess of permit</fullName>
+                <default>false</default>
+                <label>More than 100 acres irrigated from a groundwater source without/in excess of permit</label>
+            </value>
+            <value>
+                <fullName>Use of a surface water source during drought</fullName>
+                <default>false</default>
+                <label>Use of a surface water source during drought</label>
+            </value>
+            <value>
+                <fullName>Use of a groundwater source during drought</fullName>
+                <default>false</default>
+                <label>Use of a groundwater source during drought</label>
+            </value>
+            <value>
+                <fullName>Ability to Pay</fullName>
+                <default>false</default>
+                <label>Ability to Pay</label>
+            </value>
+            <value>
+                <fullName>Timely Response to Notice of Violation</fullName>
+                <default>false</default>
+                <label>Timely Response to Notice of Violation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>More than 100 acres irrigated from a surface water source without/in excess of permit</fullName>
+                <default>false</default>
+                <label>More than 100 acres irrigated from a surface water source without/in excess of permit</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Unpermitted groundwater withdrawal and irrigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Irrigating acres in excess of permitted amount from a surface water source</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Unpermitted surface water withdrawal and irrigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Irrigating acres in excess of permitted amount from a groundwater source</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Tampering with surface water meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Tampering with groundwater meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Operating permitted surface water withdrawal site without an EPD approved water meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Operating permitted groundwater withdrawal site without an EPD approved water meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Failure to follow water conservation measures required by surface water withdrawal permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Failure to follow water conservation measures required by groundwater withdrawal permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <valueName>Failure to comply with low flow conditions in surface water permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Violations</controllingFieldValue>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <controllingFieldValue>Downward Adjustments</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <valueName>Surface water source located in yellow zone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <valueName>Groundwater source located in yellow zone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <valueName>Surface water source located in red zone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <valueName>Groundwater source located in red zone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <valueName>Between 50 and 100 acres irrigated from a surface water source without/in excess of permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <valueName>Between 50 and 100 acres irrigated from a groundwater source without/in excess of permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <valueName>More than 100 acres irrigated from a groundwater source without/in excess of permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <valueName>Use of a surface water source during drought</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <valueName>Use of a groundwater source during drought</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Upward Adjustments</controllingFieldValue>
+            <valueName>More than 100 acres irrigated from a surface water source without/in excess of permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Downward Adjustments</controllingFieldValue>
+            <valueName>Ability to Pay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Downward Adjustments</controllingFieldValue>
+            <valueName>Timely Response to Notice of Violation</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

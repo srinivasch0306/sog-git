@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_LOC_Completed_Special_Conditions</fullName>
+    <active>true</active>
+    <description>When LOC Review is completed, Permit&apos;s Special Conditions must be filled if Special Condition Required = Yes or Permit Type = Surface Water</description>
+    <errorConditionFormula>AND(
+   NOT( ISBLANK( MUSW__Permit2__c ) ),
+   ISPICKVAL( MUSW__Type__c , &apos;Withdrawal LOC Review&apos;) ,
+   ISPICKVAL( MUSW__Status__c , &apos;Completed&apos;),
+   OR(
+      AND( 
+         ISPICKVAL( MUSW__Permit2__r.AVO_Permit_Type__c, &apos;Surface Water&apos;),
+         ISBLANK( MUSW__Permit2__r.AVO_Special_Condition_s__c ) 
+      ),
+      AND(
+         ISPICKVAL( MUSW__Permit2__r.AVO_Special_Condition_Required__c , &apos;Yes&apos;),
+         ISBLANK( MUSW__Permit2__r.AVO_Special_Condition_s__c ) 
+      ) 
+   ) 
+)</errorConditionFormula>
+    <errorMessage>Special Condition(s) is required.</errorMessage>
+</ValidationRule>

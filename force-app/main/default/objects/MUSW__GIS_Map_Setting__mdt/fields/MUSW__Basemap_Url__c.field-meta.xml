@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Basemap_Url__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Basemap url, or it will use topographic basemap by default</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Provide basemap url, or it will use topographic basemap by default</inlineHelpText>
+    <label>Basemap Url</label>
+    <required>false</required>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Submit_DateTime__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date and time that the Letter Job is scheduled to be submitted. Use cases: to refresh API session id for long queues eg. &gt; 4 hours or re-sending failed jobs.</description>
+    <inlineHelpText>If still in &apos;In Queue&apos;, date and time in which job gets submitted. Sent immediately if this is blank.</inlineHelpText>
+    <label>Submit Time</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

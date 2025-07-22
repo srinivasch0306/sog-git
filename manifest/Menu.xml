@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Applicant_Navigation</members>
+        <members>Compliance_Applications</members>
+        <members>Contractor_Navigation</members>
+        <members>Meter_Installation_Applications</members>
+        <members>Permit_Applications</members>
+        <members>SFDC_Default_Navigation_Clariti_Staging</members>
+        <members>SFDC_Default_Navigation_Community_Portal</members>
+        <members>Withdrawal_Applications</members>
+        <name>NavigationMenu</name>
+    </types>
+    <version>64.0</version>
+</Package>

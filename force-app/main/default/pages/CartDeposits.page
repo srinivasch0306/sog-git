@@ -1,0 +1,17 @@
+<apex:page controller="CartDepositsController">
+    <apex:form id="AmountForm">
+        <apex:sectionHeader title="" subtitle="Amount to be deposited">
+            <apex:pageMessages id="msg"></apex:pageMessages>
+            <div id='errorMsg'></div>
+        </apex:sectionHeader>
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!goBack}" value="Back" />
+                <apex:commandButton action="{!processDepositAmount}" value="Submit" reRender="AmountForm"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="1">
+                <apex:inputText label="Amount" value="{!depositAmount}" id="amount"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

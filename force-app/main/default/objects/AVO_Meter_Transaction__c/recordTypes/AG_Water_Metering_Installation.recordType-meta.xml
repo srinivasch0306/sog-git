@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AG_Water_Metering_Installation</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>AVO_AG_Water_Metering_Installation_Compact_Layout</compactLayoutAssignment>
+    <label>AG Water Metering Installation</label>
+    <picklistValues>
+        <picklist>AVO_Allocation_Type__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Batch_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Batch_Type__c</picklist>
+        <values>
+            <fullName>Batch Meter Entry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Batch Meter Reading</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Battery__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Change_Status__c</picklist>
+        <values>
+            <fullName>Approved and Active On Site</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Crop_Type__c</picklist>
+        <values>
+            <fullName>Blueberries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cotton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dairy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golf Course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Golf Sport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orchard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pasture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peanut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pecans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Row Crop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sod</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soybean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turf Grass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vegetable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Discovered_By__c</picklist>
+        <values>
+            <fullName>Alexander McLean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antonio Fleming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BAKER IRRIGATION INC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chase Cline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cristina Pounds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethan Bundrick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GFC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hannah Denton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heather Brown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRRIGATION PLUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jacob Elliott</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jesstin Chandler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Justin Walls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lance Wyant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lee Wright</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marjie Roquemore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matthew Barton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michael Martin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OWNER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebecca Rehee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SHOEMAKER IRRIGATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shannon Parrish</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Flow_Straightener_Status__c</picklist>
+        <values>
+            <fullName>Flow Straightener Installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Straightener Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Straightener Required and Not Installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Installation_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIS Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Review AG</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Installation_Type__c</picklist>
+        <values>
+            <fullName>Battery Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Site Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrieval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Installed_Per_Specification__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Inventory_Status__c</picklist>
+        <values>
+            <fullName>Allocated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dead On Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deleted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disposal Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disposed Meter - Dead%2FScrapped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double Metered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installed Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Retrieved - Pending Disposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Retrieved - To Be Reused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Disposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Disposal Coliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready in Warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Require Retrieval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Meter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Irrigation_Type__c</picklist>
+        <values>
+            <fullName>CENTER PIVOT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CENTER PIVOT AND DRIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CENTER PIVOT AND TRAVELER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRIP AND SOLID SET SPRINKLER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRIP AND TRAVELER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DUMP WELL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NON-IRRIGATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOLID SET SPRINKLER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRAVELER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRAVELER AND SOLID SET SPRINKLER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNKNOWN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Maintenance_Notice_Printed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Maintenance_Source__c</picklist>
+        <values>
+            <fullName>Meter Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Maintenance_Status__c</picklist>
+        <values>
+            <fullName>Allocated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initiated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Specialist Allocation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Maintenance_Type__c</picklist>
+        <values>
+            <fullName>Battery Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Installation Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Site Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrieval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Application_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIS Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Transaction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Update</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Is_Battery_Driven__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Location__c</picklist>
+        <values>
+            <fullName>Alt%2E Leg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pivot Point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Source</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Mounting_Orientation__c</picklist>
+        <values>
+            <fullName>Diagonal Z</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizontal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vertical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Orientation__c</picklist>
+        <values>
+            <fullName>Diagonal Z</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizontal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vertical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Reader__c</picklist>
+        <values>
+            <fullName>Alexander McLean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antonio Fleming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BAKER IRRIGATION INC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chase Cline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cristina Pounds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethan Bundrick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GFC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hannah Denton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heather Brown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRRIGATION PLUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jacob Elliott</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jesstin Chandler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Justin Walls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lance Wyant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lee Wright</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marjie Roquemore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matthew Barton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michael Martin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OWNER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebecca Rehee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SHOEMAKER IRRIGATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shannon Parrish</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Reading_Type__c</picklist>
+        <values>
+            <fullName>Yearly Reading</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Special_Condition__c</picklist>
+        <values>
+            <fullName>ARPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drought Conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly Meter Reading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volumetric Limit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Transaction_Type__c</picklist>
+        <values>
+            <fullName>AG Water Metering Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural Flow Meter Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Installation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Meter_Update_Type__c</picklist>
+        <values>
+            <fullName>Meter Location Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Movement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Multiplier__c</picklist>
+        <values>
+            <fullName>0%2E0001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0%2E0010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0%2E0100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0%2E1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2C000%2E0000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E0000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2C000%2E0000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2E0000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100%2E0000</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Pipe_Down_UOM__c</picklist>
+        <values>
+            <fullName>Foot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Pipe_Type__c</picklist>
+        <values>
+            <fullName>Aluminum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Galvanized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PVC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Pipe_Up_UOM__c</picklist>
+        <values>
+            <fullName>Foot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Source_Full_Pipe_Flow__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Source_Type__c</picklist>
+        <values>
+            <fullName>Pump - Surface Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well - Groundwater</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Source_Well_Pad__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Source_Withdrawal_Type__c</picklist>
+        <values>
+            <fullName>Combination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diesel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydraulic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_State_Purchased__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Storage_Location__c</picklist>
+        <values>
+            <fullName>Barn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Container</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Kitchen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Left-wall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Right-wall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Type__c</picklist>
+        <values>
+            <fullName>AG Water Metering Installation</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Unit_Of_Measure__c</picklist>
+        <values>
+            <fullName>Acre%2FFeet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acre%2FInches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UnKnown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Update_Reason__c</picklist>
+        <values>
+            <fullName>Battery Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Location Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Movement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrieval Maintenance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Update_Type__c</picklist>
+        <values>
+            <fullName>Clerical Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dead on Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double Metered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrieved Meter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Vanes_Status__c</picklist>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vanes Installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vanes Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vanes Required and Not Installed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Accessory_Type__c</picklist>
+        <values>
+            <fullName>Battery%2C AG2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery%2C AG3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery%2C AG90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery%2C McMag3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery%2C SignalFire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS106-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS106-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS106-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS106-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS108-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS108-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS108-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS108-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS110</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS112</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Cap%2C 4%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Cap%2C 6%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Cap%2C 8%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SignalFire Telemetry Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vane Set%2C 10%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vane Set%2C 12%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vane Set%2C 4%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vane Set%2C 6%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vane Set%2C 8%22</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Read_Meter__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

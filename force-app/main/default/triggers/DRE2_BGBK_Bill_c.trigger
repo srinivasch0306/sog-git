@@ -1,0 +1,1 @@
+trigger DRE2_BGBK_Bill_c on BGBK__Bill__c (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_BGBK_Bill_c', new DRETriggerHandler()); }

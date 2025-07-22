@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Fee_Invoiced_lock_Amount</fullName>
+    <active>true</active>
+    <description>can&apos;t change fee amounts if non-voided invoiced</description>
+    <errorConditionFormula>AND( NOT(ISPICKVAL(BGBK__Invoice__r.BGBK__Status__c,&apos;Voided&apos;)), BGBK__Invoice__c != null,  ISCHANGED(MUSW__Amount__c ))</errorConditionFormula>
+    <errorMessage>Cannot change the Amount of an Invoiced Fee. Void invoice before changing the Fee Amount</errorMessage>
+</ValidationRule>

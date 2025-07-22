@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_LuOwner_WWSA</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( AVO_CaseClass__c , &quot;WWSA Compliance Case&quot;), ISBLANK( AVO_LuOwnerO_wnerContactId__c ))</errorConditionFormula>
+    <errorDisplayField>AVO_LuOwnerO_wnerContactId__c</errorDisplayField>
+    <errorMessage>LuOwner_OwnerContactId is mandatory when CaseClass is WWSA Compliance Case.</errorMessage>
+</ValidationRule>

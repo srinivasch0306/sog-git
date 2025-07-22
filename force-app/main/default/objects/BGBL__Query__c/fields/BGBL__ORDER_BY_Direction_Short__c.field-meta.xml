@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__ORDER_BY_Direction_Short__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF
+(
+TEXT( BGBL__ORDER_BY_Direction__c ) == &quot;Ascending&quot;,
+&quot;ASC&quot;,
+&quot;DESC&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>ORDER BY Direction (Short). eg. ASC or DESC</inlineHelpText>
+    <label>ORDER</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

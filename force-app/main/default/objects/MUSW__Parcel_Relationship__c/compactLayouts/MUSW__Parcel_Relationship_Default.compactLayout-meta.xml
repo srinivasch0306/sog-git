@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Parcel_Relationship_Default</fullName>
+    <fields>Name</fields>
+    <fields>MUSW__Parcel__c</fields>
+    <fields>MUSW__Action__c</fields>
+    <fields>MUSW__Related_Parcel__c</fields>
+    <fields>MUSW__Type__c</fields>
+    <fields>MUSW__Recorded_Date__c</fields>
+    <label>Parcel Relationship Default</label>
+</CompactLayout>

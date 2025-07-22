@@ -1,0 +1,1 @@
+trigger DRE2_Master_Review_List_c on Master_Review_List__c (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_Master_Review_List_c', new DRETriggerHandler()); }

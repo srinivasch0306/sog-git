@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Cart_Item_Compact_Layout</fullName>
+    <fields>clariti__PaymentAmount__c</fields>
+    <fields>clariti__Cart__c</fields>
+    <label>Cart Item Compact Layout</label>
+</CompactLayout>

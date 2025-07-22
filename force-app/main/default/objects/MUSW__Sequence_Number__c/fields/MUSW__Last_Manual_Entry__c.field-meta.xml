@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Last_Manual_Entry__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The last entered manual text. Use as reference when prompting for a new manual text/number. Used only when the track number format includes a {manual} prompt</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The last manually-entered text when issuing this tracking number</inlineHelpText>
+    <label>Last Manual Entry</label>
+    <length>25</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

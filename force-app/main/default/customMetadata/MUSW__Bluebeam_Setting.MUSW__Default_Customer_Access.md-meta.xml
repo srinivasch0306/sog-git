@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Default Customer Access</label>
+    <protected>false</protected>
+    <values>
+        <field>MUSW__Checkbox__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>MUSW__Description__c</field>
+        <value xsi:type="xsd:string">Controls the default Customer Access toggle on the sharing detail page for files created via the integrated EPR system. By setting the checkbox to &quot;Checked&quot;, the default Customer Access is &quot;On&quot; and all portal users who have access to the record the file is attached to will have access to the file. This Customer Access can still be toggled &quot;Off&quot; on a per file basis.</value>
+    </values>
+</CustomMetadata>

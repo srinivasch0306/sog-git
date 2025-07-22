@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Alert_Indicator__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/apex/musw__TaskAlert?id=&quot;+ Id, IMAGE( 
+CASE( MUSW__AlertCode__c, 
+0, &quot;/img/samples/light_green.gif&quot;, 
+1, &quot;/img/samples/light_yellow.gif&quot;, 
+2, &quot;/img/samples/light_red.gif&quot;, 
+&quot;/servlet/servlet.ImageServer?oid=&quot;+ $Organization.Id +&quot;&amp;id=0155e000000aM1H&quot;), 
+&quot;none&quot;), &quot;_top&quot;) + IF(MUSW__Parcel__c != null, &quot; Par: &quot; + HYPERLINK(&quot;/apex/musw__TaskAlert?id=&quot;+  MUSW__Parcel__c, IMAGE( 
+CASE( MUSW__Parcel__r.MUSW__AlertCode__c, 
+0, &quot;/img/samples/light_green.gif&quot;, 
+1, &quot;/img/samples/light_yellow.gif&quot;, 
+2, &quot;/img/samples/light_red.gif&quot;, 
+&quot;/servlet/servlet.ImageServer?oid=&quot;+ $Organization.Id +&quot;&amp;id=0155e000000aM1H&quot;), 
+&quot;none&quot;), &quot;_top&quot;),&quot;&quot;)</formula>
+    <inlineHelpText>Click to view/add/update your alerts</inlineHelpText>
+    <label>Alert</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Profile_Permissions__c</fullName>
+    <deprecated>false</deprecated>
+    <description>If not provided, all profiles will see this button. To restrict to specific profiles, admin user can provide a comma-separated list of profile names that will have access to this action button.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If not provided, all profiles will see this button. To restrict to specific profiles, admin user can provide a comma-separated list of profile names that will have access to this action button.</inlineHelpText>
+    <label>Profile Permissions</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

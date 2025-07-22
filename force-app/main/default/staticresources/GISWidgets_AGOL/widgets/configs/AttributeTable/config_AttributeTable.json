@@ -1,0 +1,1853 @@
+{
+  "layerInfos": [
+    {
+      "name": "AddressesElgin",
+      "id": "AddressesElgin_4091",
+      "layer": {
+        "url": "https://services3.arcgis.com/3VfZSNcjuPi50OQp/arcgis/rest/services/AddressesElgin/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Address",
+            "alias": "Address",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STPrefix",
+            "alias": "STPrefix",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STName",
+            "alias": "STName",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STType",
+            "alias": "STType",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Unit",
+            "alias": "Unit",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "City",
+            "alias": "City",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "State",
+            "alias": "State",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "ZipCode",
+            "alias": "ZipCode",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FULL_ADR",
+            "alias": "FULL_ADR",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "EditDate",
+            "alias": "EditDate",
+            "show": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            }
+          },
+          {
+            "name": "EditUser",
+            "alias": "EditUser",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "POINT_X",
+            "alias": "POINT_X",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "POINT_Y",
+            "alias": "POINT_Y",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Lat",
+            "alias": "Lat",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Long",
+            "alias": "Long",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "LOCID",
+            "alias": "LOCID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Parcel_Num",
+            "alias": "Parcel_Num",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "COUNTY",
+            "alias": "COUNTY",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "OWNER_NAME",
+            "alias": "OWNER_NAME",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "OWNER_ADDR",
+            "alias": "OWNER_ADDR",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "OWNER_CITY",
+            "alias": "OWNER_CITY",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "OWNER_STAT",
+            "alias": "OWNER_STAT",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "OWNER_ZIPC",
+            "alias": "OWNER_ZIPC",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Township",
+            "alias": "Township",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "School_Dis",
+            "alias": "School_Dis",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Library_Di",
+            "alias": "Library_Di",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "TIF_Distri",
+            "alias": "TIF_Distri",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "SSA_Distri",
+            "alias": "SSA_Distri",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Historic_D",
+            "alias": "Historic_D",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Zoning",
+            "alias": "Zoning",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Conditiona",
+            "alias": "Conditiona",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Current_La",
+            "alias": "Current_La",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Leaf_Distr",
+            "alias": "Leaf_Distr",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "US_Rep_Dis",
+            "alias": "US_Rep_Dis",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "State_Sena",
+            "alias": "State_Sena",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "State_Rep_",
+            "alias": "State_Rep_",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "County_Boa",
+            "alias": "County_Boa",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Street_Typ",
+            "alias": "Street_Typ",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Relation_T",
+            "alias": "Relation_T",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Enterprise",
+            "alias": "Enterprise",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "River_Edge",
+            "alias": "River_Edge",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Code_Distr",
+            "alias": "Code_Distr",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Census_Blo",
+            "alias": "Census_Blo",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Subdivisio",
+            "alias": "Subdivisio",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Census_Tra",
+            "alias": "Census_Tra",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Trash_Coll",
+            "alias": "Trash_Coll",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "created_us",
+            "alias": "created_us",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "created_da",
+            "alias": "created_da",
+            "show": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            }
+          },
+          {
+            "name": "last_edite",
+            "alias": "last_edite",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "last_edi_1",
+            "alias": "last_edi_1",
+            "show": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            }
+          },
+          {
+            "name": "SF_ID",
+            "alias": "SF_ID",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Location_R",
+            "alias": "Location_R",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Sewer_Reca",
+            "alias": "Sewer_Reca",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Ord_Recapt",
+            "alias": "Ord_Recapt",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Police_Bea",
+            "alias": "Police_Bea",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Police_Sub",
+            "alias": "Police_Sub",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Police_Rop",
+            "alias": "Police_Rop",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Fire_Distr",
+            "alias": "Fire_Distr",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Fire_Quadr",
+            "alias": "Fire_Quadr",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "DutchLapSi",
+            "alias": "DutchLapSi",
+            "show": true,
+            "format": null
+          }
+        ]
+      },
+      "show": false
+    },
+    {
+      "name": "StreetsCook",
+      "id": "StreetsCook_4929",
+      "layer": {
+        "url": "https://services3.arcgis.com/3VfZSNcjuPi50OQp/arcgis/rest/services/StreetsCook/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "UNIQUEID",
+            "alias": "UNIQUEID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "TYPE",
+            "alias": "TYPE",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MAJORROAD",
+            "alias": "MAJORROAD",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "LADDRFROM",
+            "alias": "LADDRFROM",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "LADDRTO",
+            "alias": "LADDRTO",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "RADDRFROM",
+            "alias": "RADDRFROM",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "RADDRTO",
+            "alias": "RADDRTO",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPRD",
+            "alias": "STNAMEPRD",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPRM",
+            "alias": "STNAMEPRM",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPRT",
+            "alias": "STNAMEPRT",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAME",
+            "alias": "STNAME",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPOT",
+            "alias": "STNAMEPOT",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPOD",
+            "alias": "STNAMEPOD",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPOM",
+            "alias": "STNAMEPOM",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FULLSTNA",
+            "alias": "FULLSTNA",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FULSTNAAB",
+            "alias": "FULSTNAAB",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPRD1",
+            "alias": "STNAMEPRD1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPRM1",
+            "alias": "STNAMEPRM1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPRT1",
+            "alias": "STNAMEPRT1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAME1",
+            "alias": "STNAME1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPOT1",
+            "alias": "STNAMEPOT1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPOD1",
+            "alias": "STNAMEPOD1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "STNAMEPOM1",
+            "alias": "STNAMEPOM1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FULLSTNA1",
+            "alias": "FULLSTNA1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FULSTNAAB1",
+            "alias": "FULSTNAAB1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HONSTNAME",
+            "alias": "HONSTNAME",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HONSTNAME1",
+            "alias": "HONSTNAME1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "DEDICATED_",
+            "alias": "DEDICATED_",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "LCITY",
+            "alias": "LCITY",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "RCITY",
+            "alias": "RCITY",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "LUSPSST",
+            "alias": "LUSPSST",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "RUSPSST",
+            "alias": "RUSPSST",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "ZIPL",
+            "alias": "ZIPL",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "ZIPR",
+            "alias": "ZIPR",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "HWYTYPE",
+            "alias": "HWYTYPE",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HWYNO",
+            "alias": "HWYNO",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FULLHINA",
+            "alias": "FULLHINA",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HWYTYPE1",
+            "alias": "HWYTYPE1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HWYNO1",
+            "alias": "HWYNO1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FULLHINA1",
+            "alias": "FULLHINA1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HWYTYPE2",
+            "alias": "HWYTYPE2",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HWYNO2",
+            "alias": "HWYNO2",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FULLHINA2",
+            "alias": "FULLHINA2",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HWYTYPE3",
+            "alias": "HWYTYPE3",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HWYNO3",
+            "alias": "HWYNO3",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FULLHINA3",
+            "alias": "FULLHINA3",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "RTE_HRCHY",
+            "alias": "RTE_HRCHY",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GRADE_SEP",
+            "alias": "GRADE_SEP",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FROM_GRADE",
+            "alias": "FROM_GRADE",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "TO_GRADE",
+            "alias": "TO_GRADE",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SURFACE",
+            "alias": "SURFACE",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SPDLIMIT",
+            "alias": "SPDLIMIT",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "LENGTH",
+            "alias": "LENGTH",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MINUTE",
+            "alias": "MINUTE",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "ONEWAY",
+            "alias": "ONEWAY",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HTRESTRC",
+            "alias": "HTRESTRC",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "LONGITUDE",
+            "alias": "LONGITUDE",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "LATITUDE",
+            "alias": "LATITUDE",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "UNIVRSLDT",
+            "alias": "UNIVRSLDT",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "CFCCCODE",
+            "alias": "CFCCCODE",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "GNISMUNIL",
+            "alias": "GNISMUNIL",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "GNISMUNIR",
+            "alias": "GNISMUNIR",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "GNISTWP",
+            "alias": "GNISTWP",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "GNISCNTY",
+            "alias": "GNISCNTY",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "GNISSTATE",
+            "alias": "GNISSTATE",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "COORDACCU",
+            "alias": "COORDACCU",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "EDITOR",
+            "alias": "EDITOR",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "EDITTIME",
+            "alias": "EDITTIME",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "EDITTYPE",
+            "alias": "EDITTYPE",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "REVIEWER_I",
+            "alias": "REVIEWER_I",
+            "show": false,
+            "format": null
+          },
+          {
+            "name": "REVIEW_DAT",
+            "alias": "REVIEW_DAT",
+            "show": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            }
+          },
+          {
+            "name": "OPSTATUS",
+            "alias": "OPSTATUS",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "ANOMALY",
+            "alias": "ANOMALY",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "MSAGSTAT",
+            "alias": "MSAGSTAT",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "PWA_COMMEN",
+            "alias": "PWA_COMMEN",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "OrthoYear",
+            "alias": "OrthoYear",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "safeZone",
+            "alias": "safeZone",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "safeZoneEn",
+            "alias": "safeZoneEn",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Shape_STLe",
+            "alias": "Shape_STLe",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": false
+    },
+    {
+      "name": "StreetsKane",
+      "id": "StreetsKane_1536",
+      "layer": {
+        "url": "https://services3.arcgis.com/3VfZSNcjuPi50OQp/arcgis/rest/services/StreetsKane/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Layer",
+            "alias": "Layer",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "MLevel",
+            "alias": "MLevel",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CLID",
+            "alias": "CLID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FEDIRP",
+            "alias": "FEDIRP",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FENAME",
+            "alias": "FENAME",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FETYPE",
+            "alias": "FETYPE",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FEDIRS",
+            "alias": "FEDIRS",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "CFCC",
+            "alias": "CFCC",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FRADDL",
+            "alias": "FRADDL",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "TOADDL",
+            "alias": "TOADDL",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FRADDR",
+            "alias": "FRADDR",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "TOADDR",
+            "alias": "TOADDR",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "ZIPL",
+            "alias": "ZIPL",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "ZIPR",
+            "alias": "ZIPR",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FULLNAME",
+            "alias": "FULLNAME",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "AddDate",
+            "alias": "AddDate",
+            "show": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            }
+          },
+          {
+            "name": "AddUser",
+            "alias": "AddUser",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "CountyRte",
+            "alias": "CountyRte",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "StateRte",
+            "alias": "StateRte",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "USRte",
+            "alias": "USRte",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Interstate",
+            "alias": "Interstate",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "EditDate",
+            "alias": "EditDate",
+            "show": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            }
+          },
+          {
+            "name": "EditUser",
+            "alias": "EditUser",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Lat",
+            "alias": "Lat",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Long",
+            "alias": "Long",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CityLeft",
+            "alias": "CityLeft",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "CityRight",
+            "alias": "CityRight",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "VersionNum",
+            "alias": "VersionNum",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Shape_STLe",
+            "alias": "Shape_STLe",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": false
+    },
+    {
+      "name": "ParcelsKane",
+      "id": "ParcelsKane_2570",
+      "layer": {
+        "url": "https://services3.arcgis.com/3VfZSNcjuPi50OQp/arcgis/rest/services/ParcelsKane/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "PIN",
+            "alias": "PIN",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "PIN_1",
+            "alias": "PIN_1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "GNIS",
+            "alias": "GNIS",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Township",
+            "alias": "Township",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "TaxCode",
+            "alias": "TaxCode",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "UseCode",
+            "alias": "UseCode",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "TaxName",
+            "alias": "TaxName",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "SiteAddres",
+            "alias": "SiteAddres",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "SiteCity",
+            "alias": "SiteCity",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "SiteState",
+            "alias": "SiteState",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "SiteZip",
+            "alias": "SiteZip",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "CurrentGro",
+            "alias": "CurrentGro",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "LegalDesc",
+            "alias": "LegalDesc",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "MailingAdd",
+            "alias": "MailingAdd",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "MailingA_1",
+            "alias": "MailingA_1",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "MailingCit",
+            "alias": "MailingCit",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "MailingSta",
+            "alias": "MailingSta",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "MailingZip",
+            "alias": "MailingZip",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "DocNo",
+            "alias": "DocNo",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "DocDate",
+            "alias": "DocDate",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "HouseNumbe",
+            "alias": "HouseNumbe",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "NumberSuff",
+            "alias": "NumberSuff",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "PreDir",
+            "alias": "PreDir",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Street",
+            "alias": "Street",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Municipali",
+            "alias": "Municipali",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "ParkDist",
+            "alias": "ParkDist",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "FireDist",
+            "alias": "FireDist",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "SchoolDist",
+            "alias": "SchoolDist",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "LibraryDis",
+            "alias": "LibraryDis",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "SSA",
+            "alias": "SSA",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "TIF",
+            "alias": "TIF",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "CollegeDis",
+            "alias": "CollegeDis",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "CemeteryDi",
+            "alias": "CemeteryDi",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "SolidWaste",
+            "alias": "SolidWaste",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Sanitary",
+            "alias": "Sanitary",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Conserve",
+            "alias": "Conserve",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Airport",
+            "alias": "Airport",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Ambulance",
+            "alias": "Ambulance",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "County",
+            "alias": "County",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "ForestPres",
+            "alias": "ForestPres",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Enterprise",
+            "alias": "Enterprise",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Mosquito",
+            "alias": "Mosquito",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "TwpTaxed",
+            "alias": "TwpTaxed",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "TwpHighway",
+            "alias": "TwpHighway",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Water",
+            "alias": "Water",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Drainage",
+            "alias": "Drainage",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "CBDist",
+            "alias": "CBDist",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "CBName",
+            "alias": "CBName",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "VersionNum",
+            "alias": "VersionNum",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "ParcelSize",
+            "alias": "ParcelSize",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape_STAr",
+            "alias": "Shape_STAr",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape_STLe",
+            "alias": "Shape_STLe",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "INSIDE_X",
+            "alias": "INSIDE_X",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "INSIDE_Y",
+            "alias": "INSIDE_Y",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CENTROID_X",
+            "alias": "CENTROID_X",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CENTROID_Y",
+            "alias": "CENTROID_Y",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "INSIDE_X",
+            "alias": "INSIDE_X",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "INSIDE_Y",
+            "alias": "INSIDE_Y",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "INSIDE_X",
+            "alias": "INSIDE_X",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "INSIDE_Y",
+            "alias": "INSIDE_Y",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CENTROID_X",
+            "alias": "CENTROID_X",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CENTROID_Y",
+            "alias": "CENTROID_Y",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "INSIDE_X",
+            "alias": "INSIDE_X",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "INSIDE_Y",
+            "alias": "INSIDE_Y",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CENTROID_X",
+            "alias": "CENTROID_X",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CENTROID_Y",
+            "alias": "CENTROID_Y",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": false
+    },
+    {
+      "name": "ParcelsCook",
+      "id": "ParcelsCook_5183",
+      "layer": {
+        "url": "https://services3.arcgis.com/3VfZSNcjuPi50OQp/arcgis/rest/services/ParcelsCook/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "pin10",
+            "alias": "pin10",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "upper_elev",
+            "alias": "upper_elev",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "taxcode",
+            "alias": "taxcode",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "pinsa",
+            "alias": "pinsa",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "lower_elev",
+            "alias": "lower_elev",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "pin14",
+            "alias": "pin14",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "pinac",
+            "alias": "pinac",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "pinu",
+            "alias": "pinu",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "pina",
+            "alias": "pina",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "survey_cal",
+            "alias": "survey_cal",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "shape_star",
+            "alias": "shape_star",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "job_no",
+            "alias": "job_no",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "parceltype",
+            "alias": "parceltype",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "shape_stle",
+            "alias": "shape_stle",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "pinp",
+            "alias": "pinp",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "pinb",
+            "alias": "pinb",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "ParcelSize",
+            "alias": "ParcelSize",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape_ST_1",
+            "alias": "Shape_ST_1",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape_ST_2",
+            "alias": "Shape_ST_2",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CENTROID_X",
+            "alias": "CENTROID_X",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CENTROID_Y",
+            "alias": "CENTROID_Y",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": false
+    }
+  ],
+  "table": {
+    "pageSizeOptions": [
+      25,
+      50,
+      100,
+      1000
+    ]
+  },
+  "hideExportButton": false,
+  "initiallyExpand": false,
+  "filterByMapExtent": true
+}

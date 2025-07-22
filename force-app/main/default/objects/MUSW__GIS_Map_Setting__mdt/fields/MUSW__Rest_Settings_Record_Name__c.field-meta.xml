@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Rest_Settings_Record_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Name of the Rest Settings record which contains the map authentication details, like app/user login credentials and Token url (if any). When not provided, the system will skip authentication to the GIS System and assume the resources are public..</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Provide name of the Rest Settings record which contains the map authentication details, like app/user login credentials and Token url (if any). When not provided, the system will skip authentication to the GIS System and assume the resources are public.</inlineHelpText>
+    <label>Rest Settings Record Name</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

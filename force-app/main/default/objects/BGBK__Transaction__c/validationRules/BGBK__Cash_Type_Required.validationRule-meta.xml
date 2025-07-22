@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Cash_Type_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( BGBK__Cash_Type__c, &apos;&apos;),  ISPICKVAL(BGBK__Type__c, &apos;Cash&apos;))</errorConditionFormula>
+    <errorMessage>Cash Type is Required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,62 @@
+<apex:page standardController="MUSW__Inspection__c" extensions="InspectionNewOverrideController" action="{!initSetIEMode}">
+    <apex:includescript value="/soap/ajax/26.0/connection.js"/>
+    
+    <script>
+        sforce.connection.sessionId = "{!$Api.Session_ID}";
+        
+        try {
+            var url;
+            url = "{!$CurrentPage.url}".substr("{!$CurrentPage.url}".indexOf("?"));
+            url = "/a14/e" + url.replace("sfdc.override=1", "nooverride=1").replace("&save_new=1", "") + "&Name=System+Number";
+            if ("{!$CurrentPage.parameters.CF00N5e00000ZbqpF}" == "") {
+                // serialize the Url to get parent Id
+                var paramList = hrefSerialize("{!$CurrentPage.parameters.retURL}"); 
+                var pid;
+                pid = paramList['id']; //get id from VF pages
+                
+                if (pid == undefined) 
+                {    
+                    //get id from overriden standard pages instead
+                    
+                    var paramList = hrefSerialize("{!$CurrentPage.url}"); 
+                    pid = paramList['retURL'];
+                    pid = pid.replace("%2F", ""); //escaped version of '/'
+                }  
+                pid = pid.replace("/", "");
+                
+                
+                var rec = sforce.connection.query("select MUSW__Parcel__c, MUSW__Parcel__r.Name from MUSW__Permit2__c where Id = '"+pid+"'");
+                if (rec.size == 0) rec = sforce.connection.query("select MUSW__Parcel__c, MUSW__Parcel__r.Name from MUSW__Complaint2__c where Id = '"+pid+"'");
+                var p = rec.getArray("records")[0];
+                if (p["MUSW__Parcel__c"] != null) {
+                    var parcelName = p["MUSW__Parcel__r"]["Name"];
+                    
+                    url += "&CF00N5e00000ZbqpF=" + parcelName;
+                }
+            }
+            
+            window.location.href = url;
+        }
+        catch (err) { alert(err); }       
+       
+
+        function hrefSerialize(uri)   
+         {       
+             var startTagStartPos= uri.indexOf("?")+1;     
+             var startTagEndPos = uri.length;       
+             var paramList = encodeURI(uri.substring(startTagStartPos, startTagEndPos));       
+             params = new Array();              
+             paramList = paramList + "&";      
+         while (paramList.indexOf("&") != -1)        
+         {           
+             startTagStartPos = paramList.indexOf("=");           
+             startTagEndPos = paramList.indexOf("&");             
+             var paramKey = paramList.substring(0,startTagStartPos);    
+             var paramValue = paramList.substring(startTagStartPos + 1,startTagEndPos);       
+             params[paramKey] = unescape(paramValue);           
+             paramList = paramList.substring(paramList.indexOf("&") + 1, paramList.length);      
+         }       
+         return params;  
+         }  
+    </script>
+</apex:page>

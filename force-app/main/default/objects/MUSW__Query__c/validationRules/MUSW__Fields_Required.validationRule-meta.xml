@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Fields_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>MUSW__Fields__c =&quot;&quot;</errorConditionFormula>
+    <errorDisplayField>MUSW__Fields__c</errorDisplayField>
+    <errorMessage>You must specify which Fields you want the Query to return.</errorMessage>
+</ValidationRule>

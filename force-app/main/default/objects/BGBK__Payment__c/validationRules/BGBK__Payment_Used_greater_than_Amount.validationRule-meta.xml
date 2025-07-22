@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Payment_Used_greater_than_Amount</fullName>
+    <active>true</active>
+    <description>Cannot use more than allocated</description>
+    <errorConditionFormula>AND((BGBK__Amount_Used__c - BLANKVALUE(BGBK__Loss_Overage_Amount__c,0))  &gt; (BGBK__Amount__c -  BLANKVALUE(BGBK__Refunded_Amount__c,0)), ISCHANGED(BGBK__Amount_Used__c))</errorConditionFormula>
+    <errorMessage>Cannot Use (pay) more than Payment Amount (minus any Refunds)</errorMessage>
+</ValidationRule>

@@ -1,0 +1,1 @@
+<apex:page standardController="BGCK__Answer__c"><DRE:DRENotificationModal recordIds="{!BGCK__Answer__c.Id}"/><DRE:DRERedirect recordIds="{!BGCK__Answer__c.Id}"><apex:detail inlineEdit="true"/></DRE:DRERedirect></apex:page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Tooltip_Attribute__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A field name from the feature layer, that will be displayed in a tooltip when hovering over the feature layer.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Provide one field name from the feature layer, that will be displayed in a tooltip when hovering over the feature layer.</inlineHelpText>
+    <label>Tooltip Attribute</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Parcel_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Deprecated. In environments synched with Assessor data, parcel owners are no longer contacts.</description>
+    <inlineHelpText>as indicated on parcel</inlineHelpText>
+    <label>Primary Owner</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Complaints as Primary Owner</relationshipLabel>
+    <relationshipName>Complaint2s</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

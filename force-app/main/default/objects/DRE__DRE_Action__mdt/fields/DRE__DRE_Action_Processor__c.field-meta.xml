@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DRE__DRE_Action_Processor__c</fullName>
+    <deprecated>false</deprecated>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Custom processor lookup (optional)</inlineHelpText>
+    <label>DRE Action Processor</label>
+    <referenceTo>DRE__DRE_Action_Processor__mdt</referenceTo>
+    <relationshipLabel>DRE Actions</relationshipLabel>
+    <relationshipName>DRE_Actions</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

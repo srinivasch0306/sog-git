@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SQ FT</fullName>
+        <default>false</default>
+        <label>SQ FT</label>
+    </customValue>
+    <customValue>
+        <fullName>KILOWATT</fullName>
+        <default>false</default>
+        <label>KILOWATT</label>
+    </customValue>
+    <customValue>
+        <fullName>EACH</fullName>
+        <default>false</default>
+        <label>EACH</label>
+    </customValue>
+    <customValue>
+        <fullName>INCH</fullName>
+        <default>false</default>
+        <label>INCH</label>
+    </customValue>
+    <customValue>
+        <fullName>LINEAR FT</fullName>
+        <default>false</default>
+        <label>LINEAR FT</label>
+    </customValue>
+    <customValue>
+        <fullName>AMP</fullName>
+        <default>false</default>
+        <label>AMP</label>
+    </customValue>
+    <customValue>
+        <fullName>WATT</fullName>
+        <default>false</default>
+        <label>WATT</label>
+    </customValue>
+    <customValue>
+        <fullName>HP</fullName>
+        <default>false</default>
+        <label>HP</label>
+    </customValue>
+    <customValue>
+        <fullName>CU FT</fullName>
+        <default>false</default>
+        <label>CU FT</label>
+    </customValue>
+    <customValue>
+        <fullName>BTU</fullName>
+        <default>false</default>
+        <label>BTU</label>
+    </customValue>
+    <masterLabel>Unit of Measure</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

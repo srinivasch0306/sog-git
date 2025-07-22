@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>MUSW__Permit2__c.MUSW__Type__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__Permit2__c.AVO_Permit_Type__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__Permit2__c.AVO_Permit_Purpose__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__Permit2__c.AVO_Property_Owner__c</field>
+    </columns>
+    <description>For testing purposes only.</description>
+    <filter>
+        <criteriaItems>
+            <column>MUSW__Permit2__c.AVO_Property_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Riddhi Patel</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MUSW__Permit2__c.MUSW__Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>New Permits Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MUSW__Permit2__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <endDate>2025-03-11</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2025-02-01</startDate>
+    </timeFrameFilter>
+</Report>

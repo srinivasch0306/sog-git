@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cuda_signnow__Contact_CudaSign</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Send with CudaSign</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/sn_global_templates_v2?id={!Contact.Id}&amp;type=contact</url>
+</WebLink>

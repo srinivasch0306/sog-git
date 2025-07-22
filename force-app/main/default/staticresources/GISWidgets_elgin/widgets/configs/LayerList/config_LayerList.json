@@ -1,0 +1,28 @@
+{
+  "showLegend": true,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "EnableOrDisablePopup": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": true,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+    "AddressesElgin_4091": {
+      "display": true
+    },
+    "StreetsCook_4929": {
+      "display": true
+    },
+    "StreetsKane_1536": {
+      "display": true
+    },
+    "ParcelsKane_2570": {
+      "display": true
+    },
+    "ParcelsCook_5183": {
+      "display": true
+    }
+  }
+}

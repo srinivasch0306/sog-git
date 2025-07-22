@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Work_Item_Template_Default</fullName>
+    <fields>Name</fields>
+    <fields>MUSW__Description__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>MUSW__IsEnabled__c</fields>
+    <label>Work Item Template Default</label>
+</CompactLayout>

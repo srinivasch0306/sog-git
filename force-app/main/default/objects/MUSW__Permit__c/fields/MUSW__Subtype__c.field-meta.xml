@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Subtype__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>What is being constructed, serviced or installed?</inlineHelpText>
+    <label>Subtype</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accessory</fullName>
+                <default>false</default>
+                <label>Accessory</label>
+            </value>
+            <value>
+                <fullName>Deck</fullName>
+                <default>false</default>
+                <label>Deck</label>
+            </value>
+            <value>
+                <fullName>Dwelling</fullName>
+                <default>true</default>
+                <label>Dwelling</label>
+            </value>
+            <value>
+                <fullName>Fence</fullName>
+                <default>false</default>
+                <label>Fence</label>
+            </value>
+            <value>
+                <fullName>Pool</fullName>
+                <default>false</default>
+                <label>Pool</label>
+            </value>
+            <value>
+                <fullName>Roof</fullName>
+                <default>false</default>
+                <label>Roof</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

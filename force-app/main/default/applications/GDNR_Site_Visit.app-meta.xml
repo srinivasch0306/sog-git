@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Code_Enforcement_Inspection_Record_Page2</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>MUSW__Inspection__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Code_Enforcement_Inspection_Record_Page2</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>MUSW__Inspection__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Meter_Codeset_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>AVO_Meter_Codeset__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Meter_Codeset_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>AVO_Meter_Codeset__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>GA EPD- Site Visit</label>
+    <navType>Console</navType>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Customer Community Login</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Customer Community Login - Applicant</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Customer Community Login - Contractor</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default Admin Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default APU Intern Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default Compliance Specialist Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default Data Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default Directors Office Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default Field Specialist Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default GIS Specialist Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default Meter Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default Permit Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default Program Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AVO Default Water Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AVO_Metering_Home_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Admin Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Admin Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default APU Intern Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default APU Intern Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Compliance Specialist Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Compliance Specialist Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Data Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Data Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Directors Office Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Directors Office Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Field Specialist Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Field Specialist Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default GIS Specialist Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default GIS Specialist Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Meter Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Meter Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Permit Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Permit Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Program Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Program Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Water Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>AVO Default Water Management Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AVO_Meter_Update_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AVO_Meter_Transaction__c</pageOrSobjectType>
+        <recordType>AVO_Meter_Transaction__c.Meter_Update</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>MUSW__Inspection__c</tabs>
+    <tabs>MUSW__Violation__c</tabs>
+    <tabs>MUSW__Submission__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>GDNR_Site_Visit_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>MUSW__Inspection__c</tab>
+        </mappings>
+        <mappings>
+            <tab>MUSW__Submission__c</tab>
+        </mappings>
+        <mappings>
+            <tab>MUSW__Violation__c</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-home</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

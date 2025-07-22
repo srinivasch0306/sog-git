@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Related_Parcel__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Related Parcel</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>MUSW__Parcel__c.MUSW__Historic__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>MUSW__Parcel__c</referenceTo>
+    <relationshipLabel>Related Parcels</relationshipLabel>
+    <relationshipName>Related_Parcels</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

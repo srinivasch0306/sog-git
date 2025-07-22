@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Assessor_Owner_Street__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Parcel Owner&apos;s street address as indicated by the Assessor. Includes street number and street name.</description>
+    <externalId>false</externalId>
+    <label>Owner Street</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

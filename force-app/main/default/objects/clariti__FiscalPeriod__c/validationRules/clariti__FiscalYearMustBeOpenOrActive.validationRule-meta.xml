@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__FiscalYearMustBeOpenOrActive</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+        $CustomMetadata.clariti__FinancialsFeatureEnablementSettings__mdt.clariti__FiscalYearAndPeriodManagement.clariti__Enable__c,
+   OR(
+     ISNEW(),
+     ISCHANGED(clariti__FiscalYear__c)
+     ),
+   NOT(OR(
+        ISPICKVAL(clariti__FiscalYear__r.clariti__Status__c ,&apos;Open&apos;),
+        ISPICKVAL(clariti__FiscalYear__r.clariti__Status__c ,&apos;Active&apos;)
+   ))
+)</errorConditionFormula>
+    <errorDisplayField>clariti__FiscalYear__c</errorDisplayField>
+    <errorMessage>You can not relate a Fiscal Period with a Fiscal Year that is Closed or Inactive</errorMessage>
+</ValidationRule>

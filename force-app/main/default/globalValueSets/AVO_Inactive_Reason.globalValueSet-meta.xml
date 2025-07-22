@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Duplicate</fullName>
+        <default>false</default>
+        <label>Duplicate</label>
+    </customValue>
+    <customValue>
+        <fullName>Never Installed</fullName>
+        <default>false</default>
+        <label>Never Installed</label>
+    </customValue>
+    <customValue>
+        <fullName>Non AG Use/Other Applciation</fullName>
+        <default>false</default>
+        <label>Non AG Use/Other Applciation</label>
+    </customValue>
+    <customValue>
+        <fullName>Voluntarily Relinquished</fullName>
+        <default>false</default>
+        <label>Voluntarily Relinquished</label>
+    </customValue>
+    <customValue>
+        <fullName>Consolidated Permit</fullName>
+        <default>false</default>
+        <label>Consolidated Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>New Well/Pump not Installed</fullName>
+        <default>false</default>
+        <label>New Well/Pump not Installed</label>
+    </customValue>
+    <customValue>
+        <fullName>Ag SW Currently Unused</fullName>
+        <default>false</default>
+        <label>Ag SW Currently Unused</label>
+    </customValue>
+    <customValue>
+        <fullName>AG GW Currently Unused</fullName>
+        <default>false</default>
+        <label>AG GW Currently Unused</label>
+    </customValue>
+    <customValue>
+        <fullName>AG WTP Currently Unused</fullName>
+        <default>false</default>
+        <label>AG WTP Currently Unused</label>
+    </customValue>
+    <customValue>
+        <fullName>Revoked</fullName>
+        <default>false</default>
+        <label>Revoked</label>
+    </customValue>
+    <customValue>
+        <fullName>Dormant at permitee Request</fullName>
+        <default>false</default>
+        <label>Dormant at permitee Request</label>
+    </customValue>
+    <customValue>
+        <fullName>Plugged/Abandoned</fullName>
+        <default>false</default>
+        <label>Plugged/Abandoned</label>
+    </customValue>
+    <customValue>
+        <fullName>Expired LOC</fullName>
+        <default>false</default>
+        <label>Expired LOC</label>
+    </customValue>
+    <customValue>
+        <fullName>Incomplete Form</fullName>
+        <default>false</default>
+        <label>Incomplete Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Compliance Case</fullName>
+        <default>false</default>
+        <label>Pending Compliance Case</label>
+    </customValue>
+    <customValue>
+        <fullName>Applicant Request</fullName>
+        <default>false</default>
+        <label>Applicant Request</label>
+    </customValue>
+    <customValue>
+        <fullName>GPMS Under Permitting Capacity</fullName>
+        <default>false</default>
+        <label>GPMS Under Permitting Capacity</label>
+    </customValue>
+    <customValue>
+        <fullName>Merged to an existing application/permit</fullName>
+        <default>false</default>
+        <label>Merged to an existing application/permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Waters of the State</fullName>
+        <default>false</default>
+        <label>Not Waters of the State</label>
+    </customValue>
+    <customValue>
+        <fullName>No Longer Present</fullName>
+        <default>false</default>
+        <label>No Longer Present</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer Pump Only</fullName>
+        <default>false</default>
+        <label>Transfer Pump Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Denied</fullName>
+        <default>false</default>
+        <label>Application Denied</label>
+    </customValue>
+    <masterLabel>AVO Inactive Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

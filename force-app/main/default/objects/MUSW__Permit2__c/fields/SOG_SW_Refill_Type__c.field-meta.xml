@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOG_SW_Refill_Type__c</fullName>
+    <label>SW Refill Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stream</fullName>
+                <default>false</default>
+                <label>Stream</label>
+            </value>
+            <value>
+                <fullName>Springs</fullName>
+                <default>false</default>
+                <label>Springs</label>
+            </value>
+            <value>
+                <fullName>Sinkhole-Wetland</fullName>
+                <default>false</default>
+                <label>Sinkhole-Wetland</label>
+            </value>
+            <value>
+                <fullName>Runoff Only</fullName>
+                <default>false</default>
+                <label>Runoff Only</label>
+            </value>
+            <value>
+                <fullName>Pumped SW</fullName>
+                <default>false</default>
+                <label>Pumped SW</label>
+            </value>
+            <value>
+                <fullName>Pumped GW</fullName>
+                <default>false</default>
+                <label>Pumped GW</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

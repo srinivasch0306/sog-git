@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Permit_Issuance</fullName>
+    <columns>NAME</columns>
+    <columns>AVO_Permit_Number_to_Modify_or_Transfer__c</columns>
+    <columns>MUSW__Type__c</columns>
+    <columns>MUSW__Work_Type__c</columns>
+    <columns>MUSW__Status__c</columns>
+    <columns>AVO_Approval_Step__c</columns>
+    <columns>AVO_Permit_Batch_Id__c</columns>
+    <columns>AVO_Transaction_Type__c</columns>
+    <columns>MUSW__Applicant__c</columns>
+    <columns>AVO_Application_Type_Modification__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MUSW__Type__c</field>
+        <operation>equals</operation>
+        <value>Agricultural Water Withdrawal Application,Revision</value>
+    </filters>
+    <filters>
+        <field>MUSW__Status__c</field>
+        <operation>equals</operation>
+        <value>Permit Approval,Revision Approval</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>MUSW__Permit2__c.AVO_Agricultural_Water_Withdrawal_Application,MUSW__Permit2__c.Application_to_Modify_or_Transfer_an_Agricultural_Water_Withdrawal_Permit</value>
+    </filters>
+    <label>Pending Permit Approval</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

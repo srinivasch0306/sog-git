@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meter_Model</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>AVO_Meter_Codeset</compactLayoutAssignment>
+    <label>Meter Model</label>
+    <picklistValues>
+        <picklist>AVO_Status__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Type__c</picklist>
+        <values>
+            <fullName>Meter Model</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

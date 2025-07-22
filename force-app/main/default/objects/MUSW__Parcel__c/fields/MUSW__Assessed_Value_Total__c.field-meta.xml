@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Assessed_Value_Total__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Total assessed value including land, improvements, and buildings.</description>
+    <formula>MUSW__Assessed_Buildings_Values__c +  MUSW__Assessed_Land_Value__c +  MUSW__Improvement_Value__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Assessed Value Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Address__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to address to which the permit is associated to.</description>
+    <inlineHelpText>Provide the address that this permit belongs to.</inlineHelpText>
+    <label>Address</label>
+    <referenceTo>MUSW__Address__c</referenceTo>
+    <relationshipLabel>Permits</relationshipLabel>
+    <relationshipName>Permits</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

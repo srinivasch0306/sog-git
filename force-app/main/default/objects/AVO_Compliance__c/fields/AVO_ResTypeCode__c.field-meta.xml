@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_ResTypeCode__c</fullName>
+    <label>ResTypeCode</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active Meter Installed &amp; Approved for GW Withdrawal(s)</fullName>
+                <default>false</default>
+                <label>Active Meter Installed &amp; Approved for GW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Active Meter Installed &amp; Approved for SW Withdrawal(s)</fullName>
+                <default>false</default>
+                <label>Active Meter Installed &amp; Approved for SW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Active Meters Installed &amp; Approved For All Withdrawals on this Permit</fullName>
+                <default>false</default>
+                <label>Active Meters Installed &amp; Approved For All Withdrawals on this Permit</label>
+            </value>
+            <value>
+                <fullName>Add GW Withdrawal(s) To Existing Permit</fullName>
+                <default>false</default>
+                <label>Add GW Withdrawal(s) To Existing Permit</label>
+            </value>
+            <value>
+                <fullName>Add SW Withdrawal(s) To Existing Permit</fullName>
+                <default>false</default>
+                <label>Add SW Withdrawal(s) To Existing Permit</label>
+            </value>
+            <value>
+                <fullName>Ag Permit Revoked/Relinquished</fullName>
+                <default>false</default>
+                <label>Ag Permit Revoked/Relinquished</label>
+            </value>
+            <value>
+                <fullName>Ag Unpermitted Acres Not Currently In Use</fullName>
+                <default>false</default>
+                <label>Ag Unpermitted Acres Not Currently In Use</label>
+            </value>
+            <value>
+                <fullName>Already Plugged &amp; Abandoned Floridan Well</fullName>
+                <default>false</default>
+                <label>Already Plugged &amp; Abandoned Floridan Well</label>
+            </value>
+            <value>
+                <fullName>Already Plugged &amp; Abandoned Non-Floridan Well</fullName>
+                <default>false</default>
+                <label>Already Plugged &amp; Abandoned Non-Floridan Well</label>
+            </value>
+            <value>
+                <fullName>Application Received for Undocumented Withdrawal(s)</fullName>
+                <default>false</default>
+                <label>Application Received for Undocumented Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Capped Floridan Well / Not In Use</fullName>
+                <default>false</default>
+                <label>Capped Floridan Well / Not In Use</label>
+            </value>
+            <value>
+                <fullName>Capped Non-Floridan Well / Not In Use</fullName>
+                <default>false</default>
+                <label>Capped Non-Floridan Well / Not In Use</label>
+            </value>
+            <value>
+                <fullName>Case Created In Error / Close Case</fullName>
+                <default>false</default>
+                <label>Case Created In Error / Close Case</label>
+            </value>
+            <value>
+                <fullName>Contractor Refunded Customer</fullName>
+                <default>false</default>
+                <label>Contractor Refunded Customer</label>
+            </value>
+            <value>
+                <fullName>Contractor Resolved Customer’s Issues</fullName>
+                <default>false</default>
+                <label>Contractor Resolved Customer’s Issues</label>
+            </value>
+            <value>
+                <fullName>Corrected Permit</fullName>
+                <default>false</default>
+                <label>Corrected Permit</label>
+            </value>
+            <value>
+                <fullName>Decrease Permitted Acres</fullName>
+                <default>false</default>
+                <label>Decrease Permitted Acres</label>
+            </value>
+            <value>
+                <fullName>Decrease Permitted GW GPMs</fullName>
+                <default>false</default>
+                <label>Decrease Permitted GW GPMs</label>
+            </value>
+            <value>
+                <fullName>Decrease Permitted SW GPMs</fullName>
+                <default>false</default>
+                <label>Decrease Permitted SW GPMs</label>
+            </value>
+            <value>
+                <fullName>GW Withdrawal Activated/Use Established</fullName>
+                <default>false</default>
+                <label>GW Withdrawal Activated/Use Established</label>
+            </value>
+            <value>
+                <fullName>GW Withdrawal(s) Already Permitted</fullName>
+                <default>false</default>
+                <label>GW Withdrawal(s) Already Permitted</label>
+            </value>
+            <value>
+                <fullName>Incomplete Construction of Floridan Well / Not in Use</fullName>
+                <default>false</default>
+                <label>Incomplete Construction of Floridan Well / Not in Use</label>
+            </value>
+            <value>
+                <fullName>Incomplete Construction of Non-Floridan Well / Not In Use</fullName>
+                <default>false</default>
+                <label>Incomplete Construction of Non-Floridan Well / Not In Use</label>
+            </value>
+            <value>
+                <fullName>Increase Permitted Acres</fullName>
+                <default>false</default>
+                <label>Increase Permitted Acres</label>
+            </value>
+            <value>
+                <fullName>Increase Permitted GW GPMs</fullName>
+                <default>false</default>
+                <label>Increase Permitted GW GPMs</label>
+            </value>
+            <value>
+                <fullName>Increase Permitted SW GPMs</fullName>
+                <default>false</default>
+                <label>Increase Permitted SW GPMs</label>
+            </value>
+            <value>
+                <fullName>Irrigated Acres Already Permitted</fullName>
+                <default>false</default>
+                <label>Irrigated Acres Already Permitted</label>
+            </value>
+            <value>
+                <fullName>Irrigated Acres Taken Out of Use / Unable to Permit Acres</fullName>
+                <default>false</default>
+                <label>Irrigated Acres Taken Out of Use / Unable to Permit Acres</label>
+            </value>
+            <value>
+                <fullName>LOC Requirements Complete</fullName>
+                <default>false</default>
+                <label>LOC Requirements Complete</label>
+            </value>
+            <value>
+                <fullName>Modification Requirements Complete</fullName>
+                <default>false</default>
+                <label>Modification Requirements Complete</label>
+            </value>
+            <value>
+                <fullName>New Permit Issued for GW Withdrawal(s)</fullName>
+                <default>false</default>
+                <label>New Permit Issued for GW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>New Permit Issued for SW Withdrawal(s)</fullName>
+                <default>false</default>
+                <label>New Permit Issued for SW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Newly Plugged &amp; Abandoned Floridan Well</fullName>
+                <default>false</default>
+                <label>Newly Plugged &amp; Abandoned Floridan Well</label>
+            </value>
+            <value>
+                <fullName>Newly Plugged &amp; Abandoned Non-Floridan Well</fullName>
+                <default>false</default>
+                <label>Newly Plugged &amp; Abandoned Non-Floridan Well</label>
+            </value>
+            <value>
+                <fullName>No Ag Permit Needed / EPD Permitted Industrial Water Use</fullName>
+                <default>false</default>
+                <label>No Ag Permit Needed / EPD Permitted Industrial Water Use</label>
+            </value>
+            <value>
+                <fullName>No Ag Permit Needed / GW GPMs Under Permit Capacity</fullName>
+                <default>false</default>
+                <label>No Ag Permit Needed / GW GPMs Under Permit Capacity</label>
+            </value>
+            <value>
+                <fullName>No Ag Permit Needed / Non-Ag Water Use</fullName>
+                <default>false</default>
+                <label>No Ag Permit Needed / Non-Ag Water Use</label>
+            </value>
+            <value>
+                <fullName>No Ag Permit Needed / SW GPMs Under Permit Capacity</fullName>
+                <default>false</default>
+                <label>No Ag Permit Needed / SW GPMs Under Permit Capacity</label>
+            </value>
+            <value>
+                <fullName>No Ag Permit Needed / Unpermitted Industrial Water Use</fullName>
+                <default>false</default>
+                <label>No Ag Permit Needed / Unpermitted Industrial Water Use</label>
+            </value>
+            <value>
+                <fullName>No Ag Permit Needed/SW Not Waters of the State</fullName>
+                <default>false</default>
+                <label>No Ag Permit Needed/SW Not Waters of the State</label>
+            </value>
+            <value>
+                <fullName>No Existing SW Pump Found At Site</fullName>
+                <default>false</default>
+                <label>No Existing SW Pump Found At Site</label>
+            </value>
+            <value>
+                <fullName>No Existing Well Found At Site</fullName>
+                <default>false</default>
+                <label>No Existing Well Found At Site</label>
+            </value>
+            <value>
+                <fullName>Permit to Inactive Per Owner&apos;s Request</fullName>
+                <default>false</default>
+                <label>Permit to Inactive Per Owner&apos;s Request</label>
+            </value>
+            <value>
+                <fullName>Pump Contractor Completed New or Renewal Bonding</fullName>
+                <default>false</default>
+                <label>Pump Contractor Completed New or Renewal Bonding</label>
+            </value>
+            <value>
+                <fullName>Pump Contractor Completed New or Renewal Certification</fullName>
+                <default>false</default>
+                <label>Pump Contractor Completed New or Renewal Certification</label>
+            </value>
+            <value>
+                <fullName>Pump Contractor Properly Displayed Name and/or Licensing</fullName>
+                <default>false</default>
+                <label>Pump Contractor Properly Displayed Name and/or Licensing</label>
+            </value>
+            <value>
+                <fullName>Removed SW Pump from Water Source</fullName>
+                <default>false</default>
+                <label>Removed SW Pump from Water Source</label>
+            </value>
+            <value>
+                <fullName>SW Withdrawal Activated/Use Established</fullName>
+                <default>false</default>
+                <label>SW Withdrawal Activated/Use Established</label>
+            </value>
+            <value>
+                <fullName>SW Withdrawal(s) Already Permitted</fullName>
+                <default>false</default>
+                <label>SW Withdrawal(s) Already Permitted</label>
+            </value>
+            <value>
+                <fullName>Traded Acres from Existing Ag Permit(s)</fullName>
+                <default>false</default>
+                <label>Traded Acres from Existing Ag Permit(s)</label>
+            </value>
+            <value>
+                <fullName>Traded SW Pump(s) from Existing Permit(s)</fullName>
+                <default>false</default>
+                <label>Traded SW Pump(s) from Existing Permit(s)</label>
+            </value>
+            <value>
+                <fullName>Traded Well(s) and SW Pump(s) and Acres from Existing Permit(s)</fullName>
+                <default>false</default>
+                <label>Traded Well(s) and SW Pump(s) and Acres from Existing Permit(s)</label>
+            </value>
+            <value>
+                <fullName>Traded Well(s) and SW Pump(s) from Existing Permit(s)</fullName>
+                <default>false</default>
+                <label>Traded Well(s) and SW Pump(s) from Existing Permit(s)</label>
+            </value>
+            <value>
+                <fullName>Traded Well(s) from Existing Ag Permit(s)</fullName>
+                <default>false</default>
+                <label>Traded Well(s) from Existing Ag Permit(s)</label>
+            </value>
+            <value>
+                <fullName>Uncertified Pump Contractor Removed Advertisments</fullName>
+                <default>false</default>
+                <label>Uncertified Pump Contractor Removed Advertisments</label>
+            </value>
+            <value>
+                <fullName>Unlicensed Water Well Contractor Removed Advertisments</fullName>
+                <default>false</default>
+                <label>Unlicensed Water Well Contractor Removed Advertisments</label>
+            </value>
+            <value>
+                <fullName>Water Well Contractor Completed New or Renewal Licensing</fullName>
+                <default>false</default>
+                <label>Water Well Contractor Completed New or Renewal Licensing</label>
+            </value>
+            <value>
+                <fullName>Well Construction Corrected</fullName>
+                <default>false</default>
+                <label>Well Construction Corrected</label>
+            </value>
+            <value>
+                <fullName>Well Driller Completed New or Renewal Bonding</fullName>
+                <default>false</default>
+                <label>Well Driller Completed New or Renewal Bonding</label>
+            </value>
+            <value>
+                <fullName>Well Driller Properly Constructed/Sealed Well</fullName>
+                <default>false</default>
+                <label>Well Driller Properly Constructed/Sealed Well</label>
+            </value>
+            <value>
+                <fullName>Well Driller Properly Displayed Name and/or Licensing</fullName>
+                <default>false</default>
+                <label>Well Driller Properly Displayed Name and/or Licensing</label>
+            </value>
+            <value>
+                <fullName>Well or Pump Contractor Stopped Operating</fullName>
+                <default>false</default>
+                <label>Well or Pump Contractor Stopped Operating</label>
+            </value>
+            <value>
+                <fullName>Well Pad Properly Constructed</fullName>
+                <default>false</default>
+                <label>Well Pad Properly Constructed</label>
+            </value>
+            <value>
+                <fullName>Well Plugged and Abandoned</fullName>
+                <default>false</default>
+                <label>Well Plugged and Abandoned</label>
+            </value>
+            <value>
+                <fullName>Well Properly Secured</fullName>
+                <default>false</default>
+                <label>Well Properly Secured</label>
+            </value>
+            <value>
+                <fullName>Withdrawal Inactive / Not in Use</fullName>
+                <default>false</default>
+                <label>Withdrawal Inactive / Not in Use</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

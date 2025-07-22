@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Brunswick</fullName>
+        <default>false</default>
+        <label>Brunswick</label>
+    </customValue>
+    <customValue>
+        <fullName>Claiborne</fullName>
+        <default>false</default>
+        <label>Claiborne</label>
+    </customValue>
+    <customValue>
+        <fullName>Claiborne-Clayton</fullName>
+        <default>false</default>
+        <label>Claiborne-Clayton</label>
+    </customValue>
+    <customValue>
+        <fullName>Claiborne-Cretaceous</fullName>
+        <default>false</default>
+        <label>Claiborne-Cretaceous</label>
+    </customValue>
+    <customValue>
+        <fullName>Clayton</fullName>
+        <default>false</default>
+        <label>Clayton</label>
+    </customValue>
+    <customValue>
+        <fullName>Crystalline Rock</fullName>
+        <default>false</default>
+        <label>Crystalline Rock</label>
+    </customValue>
+    <customValue>
+        <fullName>Cretaceous Sand</fullName>
+        <default>false</default>
+        <label>Cretaceous Sand</label>
+    </customValue>
+    <customValue>
+        <fullName>Cretaceous</fullName>
+        <default>false</default>
+        <label>Cretaceous</label>
+    </customValue>
+    <customValue>
+        <fullName>Cretaceous-Clayton</fullName>
+        <default>false</default>
+        <label>Cretaceous-Clayton</label>
+    </customValue>
+    <customValue>
+        <fullName>Crystalline</fullName>
+        <default>false</default>
+        <label>Crystalline</label>
+    </customValue>
+    <customValue>
+        <fullName>Dublin-Midville</fullName>
+        <default>false</default>
+        <label>Dublin-Midville</label>
+    </customValue>
+    <customValue>
+        <fullName>Dublin</fullName>
+        <default>false</default>
+        <label>Dublin</label>
+    </customValue>
+    <customValue>
+        <fullName>Floridan-Claiborne</fullName>
+        <default>false</default>
+        <label>Floridan-Claiborne</label>
+    </customValue>
+    <customValue>
+        <fullName>Floridan-Gordon</fullName>
+        <default>false</default>
+        <label>Floridan-Gordon</label>
+    </customValue>
+    <customValue>
+        <fullName>Floridan</fullName>
+        <default>false</default>
+        <label>Floridan</label>
+    </customValue>
+    <customValue>
+        <fullName>Floridan-Miocene</fullName>
+        <default>false</default>
+        <label>Floridan-Miocene</label>
+    </customValue>
+    <customValue>
+        <fullName>Floridan-Sabinian</fullName>
+        <default>false</default>
+        <label>Floridan-Sabinian</label>
+    </customValue>
+    <customValue>
+        <fullName>Gordon-Dublin</fullName>
+        <default>false</default>
+        <label>Gordon-Dublin</label>
+    </customValue>
+    <customValue>
+        <fullName>Gordon</fullName>
+        <default>false</default>
+        <label>Gordon</label>
+    </customValue>
+    <customValue>
+        <fullName>Jacksonian</fullName>
+        <default>false</default>
+        <label>Jacksonian</label>
+    </customValue>
+    <customValue>
+        <fullName>Lower Floridan</fullName>
+        <default>false</default>
+        <label>Lower Floridan</label>
+    </customValue>
+    <customValue>
+        <fullName>Midville</fullName>
+        <default>false</default>
+        <label>Midville</label>
+    </customValue>
+    <customValue>
+        <fullName>Miocene</fullName>
+        <default>false</default>
+        <label>Miocene</label>
+    </customValue>
+    <customValue>
+        <fullName>Oligocene</fullName>
+        <default>false</default>
+        <label>Oligocene</label>
+    </customValue>
+    <customValue>
+        <fullName>Paleo-Eocene</fullName>
+        <default>false</default>
+        <label>Paleo-Eocene</label>
+    </customValue>
+    <customValue>
+        <fullName>Paleozoic Carbonates</fullName>
+        <default>false</default>
+        <label>Paleozoic Carbonates</label>
+    </customValue>
+    <customValue>
+        <fullName>Sabinian</fullName>
+        <default>false</default>
+        <label>Sabinian</label>
+    </customValue>
+    <customValue>
+        <fullName>Surficial</fullName>
+        <default>false</default>
+        <label>Surficial</label>
+    </customValue>
+    <customValue>
+        <fullName>Lower Tertiary (Undif.)</fullName>
+        <default>false</default>
+        <label>Lower Tertiary (Undif.)</label>
+    </customValue>
+    <customValue>
+        <fullName>Upper Floridan</fullName>
+        <default>false</default>
+        <label>Upper Floridan</label>
+    </customValue>
+    <masterLabel>Aquifers</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

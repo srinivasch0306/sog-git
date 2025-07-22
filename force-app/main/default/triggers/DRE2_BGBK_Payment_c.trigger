@@ -1,0 +1,1 @@
+trigger DRE2_BGBK_Payment_c on BGBK__Payment__c (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_BGBK_Payment_c', new DRETriggerHandler()); }

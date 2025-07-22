@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Child_Iterate_Query__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>if true, each record returned by this query will result in a letter copy</inlineHelpText>
+    <label>Child Iterate Query</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

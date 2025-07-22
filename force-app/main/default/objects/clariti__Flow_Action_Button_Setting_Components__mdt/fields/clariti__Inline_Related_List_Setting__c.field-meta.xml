@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Inline_Related_List_Setting__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Links this flow so the Inline Related List can use it.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Inline Related List Setting</label>
+    <referenceTo>clariti__Inline_Related_List_Setting__mdt</referenceTo>
+    <relationshipLabel>Flow Action Button Settings (Components)</relationshipLabel>
+    <relationshipName>Flow_Action_Button_Settings_Components</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

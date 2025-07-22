@@ -1,0 +1,27 @@
+<apex:page standardController="MUSW__Inspection__c" >
+
+    <apex:pageMessages ></apex:pageMessages>
+
+    <BGBK:Notify recordIds="{!MUSW__Inspection__c.Id},IF(MUSW__Inspection__c.MUSW__Permit__c!=null,MUSW__Inspection__c.MUSW__Permit__c,MUSW__Inspection__c.MUSW__Complaint2__c))},{!MUSW__Inspection__c.MUSW__Parcel__c}"/>
+    
+    <apex:outputPanel rendered="{!$User.UITheme = 'PortalDefault'}">
+        <div class="ptBreadcrumb"><p><a href="apex/InspectionTabPortal">&laquo; Back to Inspections</a></p></div>
+    </apex:outputPanel>
+    
+    <apex:detail inlineEdit="true"/>
+    
+    <script>
+    if ({!!isnull(MUSW__Inspection__c.Requested_DateTime__c)}) hideButton("Request");
+    
+    function hideButton(title) {
+        var ie = (document.all) ? true : false;
+        var elements = (ie) ? document.all : document.getElementsByTagName('input');
+        for (i=0; i<elements.length; i++) {
+            if (elements[i].title == title) {
+                elements[i].style.display = 'none';
+            }
+        }
+    }
+    </script>
+    
+</apex:page>

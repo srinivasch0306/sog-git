@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Evaluation_Review_Review</fullName>
+    <columns>NAME</columns>
+    <columns>MUSW__Status__c</columns>
+    <filterScope>Queue</filterScope>
+    <label>Final Evaluation Review</label>
+    <queue>Final_Evaluation_Review</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

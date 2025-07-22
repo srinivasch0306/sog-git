@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Proceeding_Default</fullName>
+    <fields>MUSW__Type__c</fields>
+    <fields>MUSW__Proceeding_Body__c</fields>
+    <fields>MUSW__Scheduled_Date__c</fields>
+    <fields>MUSW__Maximum_Agenda_Items__c</fields>
+    <fields>MUSW__Scheduled_Agenda_Items__c</fields>
+    <label>Proceeding Default</label>
+</CompactLayout>

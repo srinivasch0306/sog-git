@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The type of fee. Each type may have a different accounting code.</description>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Violations</fullName>
+                <default>false</default>
+                <label>Violations</label>
+            </value>
+            <value>
+                <fullName>Upward Adjustments</fullName>
+                <default>false</default>
+                <label>Upward Adjustments</label>
+            </value>
+            <value>
+                <fullName>Downward Adjustments</fullName>
+                <default>false</default>
+                <label>Downward Adjustments</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

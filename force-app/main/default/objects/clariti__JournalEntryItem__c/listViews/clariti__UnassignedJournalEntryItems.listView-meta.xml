@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__UnassignedJournalEntryItems</fullName>
+    <booleanFilter>1 OR 2 OR 3</booleanFilter>
+    <columns>NAME</columns>
+    <columns>clariti__Account__c</columns>
+    <columns>clariti__EffectiveDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>clariti__FiscalPeriod__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>clariti__EffectiveDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>clariti__LedgerAccount__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Unassigned Journal Entry Items</label>
+</ListView>

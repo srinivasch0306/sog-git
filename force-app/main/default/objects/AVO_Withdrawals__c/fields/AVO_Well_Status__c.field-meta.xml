@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Well_Status__c</fullName>
+    <label>Well Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Plugged/ Abandoned</fullName>
+                <default>false</default>
+                <label>Plugged/ Abandoned</label>
+            </value>
+            <value>
+                <fullName>Active Well</fullName>
+                <default>false</default>
+                <label>Active Well</label>
+            </value>
+            <value>
+                <fullName>Pending Replacement</fullName>
+                <default>false</default>
+                <label>Pending Replacement</label>
+            </value>
+            <value>
+                <fullName>New Well</fullName>
+                <default>false</default>
+                <label>New Well</label>
+            </value>
+            <value>
+                <fullName>Capped/Dormant</fullName>
+                <default>false</default>
+                <label>Capped/Dormant</label>
+            </value>
+            <value>
+                <fullName>Replacement Well</fullName>
+                <default>false</default>
+                <label>Replacement Well</label>
+            </value>
+            <value>
+                <fullName>Undocumented</fullName>
+                <default>false</default>
+                <label>Undocumented</label>
+            </value>
+            <value>
+                <fullName>Never Installed</fullName>
+                <default>false</default>
+                <label>Never Installed</label>
+            </value>
+            <value>
+                <fullName>No Ag Permit Needed</fullName>
+                <default>false</default>
+                <label>No Ag Permit Needed</label>
+            </value>
+            <value>
+                <fullName>Permit/App Consolidated</fullName>
+                <default>false</default>
+                <label>Permit/App Consolidated</label>
+            </value>
+            <value>
+                <fullName>Undocumented Consolidated</fullName>
+                <default>false</default>
+                <label>Undocumented Consolidated</label>
+            </value>
+            <value>
+                <fullName>Pending Well</fullName>
+                <default>false</default>
+                <label>Pending Well</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

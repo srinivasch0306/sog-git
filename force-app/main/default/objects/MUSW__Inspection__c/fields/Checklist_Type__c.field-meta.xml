@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Checklist_Type__c</fullName>
+    <label>Checklist Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Restaurant Checklist</fullName>
+                <default>false</default>
+                <label>Restaurant Checklist</label>
+            </value>
+            <value>
+                <fullName>Business - Other Checklist</fullName>
+                <default>false</default>
+                <label>Business - Other Checklist</label>
+            </value>
+            <value>
+                <fullName>Lodging Checklist</fullName>
+                <default>false</default>
+                <label>Lodging Checklist</label>
+            </value>
+            <value>
+                <fullName>Subquestions Checklist</fullName>
+                <default>false</default>
+                <label>Subquestions Checklist</label>
+            </value>
+            <value>
+                <fullName>Optional Questions</fullName>
+                <default>false</default>
+                <label>Optional Questions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

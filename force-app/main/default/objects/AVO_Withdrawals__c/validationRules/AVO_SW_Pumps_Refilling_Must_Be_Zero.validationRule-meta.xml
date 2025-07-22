@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_SW_Pumps_Refilling_Must_Be_Zero</fullName>
+    <active>true</active>
+    <description>If Source Type =&quot;Flowing Stream or Canal to such&quot; then Well SW Pumps Refilling = 0</description>
+    <errorConditionFormula>AND(
+OR(RecordType.DeveloperName = &quot;Surface_Water_Withdrawal&quot;,
+RecordType.DeveloperName = &quot;Surface_Water_Withdrawal_Application&quot;
+),
+ISPICKVAL(AVO_SourceType__c, &quot;Flowing Stream or Canal to such&quot;),
+AVO_SW_Pumps_Refilling__c &lt;&gt; 0
+)</errorConditionFormula>
+    <errorDisplayField>AVO_SW_Pumps_Refilling__c</errorDisplayField>
+    <errorMessage>Value must be zero.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Center_Pivot_Advanced_Practice__c</fullName>
+    <label>Center Pivot Advanced Practice</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced irrigation scheduling</fullName>
+                <default>false</default>
+                <label>Advanced irrigation scheduling</label>
+            </value>
+            <value>
+                <fullName>Operational rain shut-off switch</fullName>
+                <default>false</default>
+                <label>Operational rain shut-off switch</label>
+            </value>
+            <value>
+                <fullName>End gun shut-off</fullName>
+                <default>false</default>
+                <label>End gun shut-off</label>
+            </value>
+            <value>
+                <fullName>Irrigation consultant</fullName>
+                <default>false</default>
+                <label>Irrigation consultant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

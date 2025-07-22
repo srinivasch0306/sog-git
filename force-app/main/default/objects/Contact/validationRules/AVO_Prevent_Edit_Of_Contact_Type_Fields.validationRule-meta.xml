@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Prevent_Edit_Of_Contact_Type_Fields</fullName>
+    <active>true</active>
+    <description>Prevents users from editing the Contact Type and Contact Registration Type fields after a Contact record has been created. This ensures data consistency and prevents unauthorized changes to classification fields post-creation.</description>
+    <errorConditionFormula>AND(
+    NOT(ISNEW()),
+    OR(
+        ISCHANGED(sog_Contact_Type__c),
+        ISCHANGED(sog_Contact_Registration_Types__c)
+    )
+)</errorConditionFormula>
+    <errorMessage>You cannot modify Contact Type or Contact Registration Type after the Contact is created.</errorMessage>
+</ValidationRule>

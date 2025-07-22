@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Action_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Specifies the action that the result operation should apply.</description>
+    <label>Action Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Add Adjusted Calendar Days</fullName>
+                <default>false</default>
+                <label>Add Adjusted Calendar Days</label>
+            </value>
+            <value>
+                <fullName>Add Business Day Hours</fullName>
+                <default>false</default>
+                <label>Add Business Day Hours</label>
+            </value>
+            <value>
+                <fullName>Add Business Days</fullName>
+                <default>false</default>
+                <label>Add Business Days</label>
+            </value>
+            <value>
+                <fullName>Add Calendar Days</fullName>
+                <default>false</default>
+                <label>Add Calendar Days</label>
+            </value>
+            <value>
+                <fullName>Add Calendar Hours</fullName>
+                <default>false</default>
+                <label>Add Calendar Hours</label>
+            </value>
+            <value>
+                <fullName>Add Error</fullName>
+                <default>false</default>
+                <label>Add Error</label>
+            </value>
+            <value>
+                <fullName>Add Letter</fullName>
+                <default>false</default>
+                <label>Add Letter</label>
+            </value>
+            <value>
+                <fullName>Add Notification</fullName>
+                <default>false</default>
+                <label>Add Notification</label>
+            </value>
+            <value>
+                <fullName>Add Record</fullName>
+                <default>false</default>
+                <label>Add Record</label>
+            </value>
+            <value>
+                <fullName>Add Record - Duplicate Check</fullName>
+                <default>true</default>
+                <label>Add Record - Duplicate Check</label>
+            </value>
+            <value>
+                <fullName>Add Record - Restriction Check</fullName>
+                <default>false</default>
+                <label>Add Record - Restriction Check</label>
+            </value>
+            <value>
+                <fullName>Add Records</fullName>
+                <default>false</default>
+                <label>Add Records</label>
+            </value>
+            <value>
+                <fullName>Add Records - Duplicate Check</fullName>
+                <default>false</default>
+                <label>Add Records - Duplicate Check</label>
+            </value>
+            <value>
+                <fullName>Clone Record</fullName>
+                <default>false</default>
+                <label>Clone Record</label>
+            </value>
+            <value>
+                <fullName>Decrement Number</fullName>
+                <default>false</default>
+                <label>Decrement Number</label>
+            </value>
+            <value>
+                <fullName>Divide Number</fullName>
+                <default>false</default>
+                <label>Divide Number</label>
+            </value>
+            <value>
+                <fullName>Email Report</fullName>
+                <default>false</default>
+                <label>Email Report</label>
+            </value>
+            <value>
+                <fullName>Increment Number</fullName>
+                <default>false</default>
+                <label>Increment Number</label>
+            </value>
+            <value>
+                <fullName>Maximum</fullName>
+                <default>false</default>
+                <label>Maximum</label>
+            </value>
+            <value>
+                <fullName>Minimum</fullName>
+                <default>false</default>
+                <label>Minimum</label>
+            </value>
+            <value>
+                <fullName>Multiply Number</fullName>
+                <default>false</default>
+                <label>Multiply Number</label>
+            </value>
+            <value>
+                <fullName>New Value (Numeric Field)</fullName>
+                <default>false</default>
+                <label>New Value (Numeric Field)</label>
+            </value>
+            <value>
+                <fullName>New Value (Text Field)</fullName>
+                <default>false</default>
+                <label>New Value (Text Field)</label>
+            </value>
+            <value>
+                <fullName>New Value - Duplicate Check</fullName>
+                <default>false</default>
+                <label>New Value - Duplicate Check</label>
+            </value>
+            <value>
+                <fullName>Send Email</fullName>
+                <default>false</default>
+                <label>Send Email</label>
+            </value>
+            <value>
+                <fullName>Sum Numbers</fullName>
+                <default>false</default>
+                <label>Sum Numbers</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

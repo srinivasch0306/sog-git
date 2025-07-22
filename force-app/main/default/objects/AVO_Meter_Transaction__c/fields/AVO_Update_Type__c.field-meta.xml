@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Update_Type__c</fullName>
+    <label>Update Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clerical Error</fullName>
+                <default>false</default>
+                <label>Clerical Error</label>
+            </value>
+            <value>
+                <fullName>Missing Meter</fullName>
+                <default>false</default>
+                <label>Missing Meter</label>
+            </value>
+            <value>
+                <fullName>Dead on Site</fullName>
+                <default>false</default>
+                <label>Dead on Site</label>
+            </value>
+            <value>
+                <fullName>Retrieved Meter</fullName>
+                <default>false</default>
+                <label>Retrieved Meter</label>
+            </value>
+            <value>
+                <fullName>Double Metered</fullName>
+                <default>false</default>
+                <label>Double Metered</label>
+            </value>
+            <value>
+                <fullName>Duplicate Installation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Duplicate Installation</label>
+            </value>
+            <value>
+                <fullName>Meter Moved</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Meter Moved</label>
+            </value>
+            <value>
+                <fullName>Off-site Storage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Off-site Storage</label>
+            </value>
+            <value>
+                <fullName>Tied to Wrong Permit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tied to Wrong Permit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

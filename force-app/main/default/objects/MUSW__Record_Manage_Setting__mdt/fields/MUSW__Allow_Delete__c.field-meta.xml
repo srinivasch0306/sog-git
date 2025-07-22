@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Allow_Delete__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, user will be able to delete records from the RecordManage page</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Allow Delete</label>
+    <type>Checkbox</type>
+</CustomField>

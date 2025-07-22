@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Contact_Relationship_without_Account</fullName>
+    <active>true</active>
+    <description>When an account relationship is specified, but the account name is not filled in.</description>
+    <errorConditionFormula>AND(NOT(ISPICKVAL(MUSW__Account_Relationship__c,&quot;&quot; )), AccountId  = &quot;&quot; )</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>* Specify which Account the Contact is related to (or leave Relationship blank) *</errorMessage>
+</ValidationRule>

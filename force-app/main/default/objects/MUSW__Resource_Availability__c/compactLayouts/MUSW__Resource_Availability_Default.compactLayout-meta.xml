@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Resource_Availability_Default</fullName>
+    <fields>MUSW__Resource__c</fields>
+    <fields>MUSW__Day_of_the_Week__c</fields>
+    <fields>MUSW__Working_Hours__c</fields>
+    <fields>MUSW__Active__c</fields>
+    <label>Resource Availability Default</label>
+</CompactLayout>

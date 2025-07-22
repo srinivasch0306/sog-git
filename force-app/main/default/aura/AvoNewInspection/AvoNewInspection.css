@@ -1,0 +1,21 @@
+.THIS.content-wrapper {
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    border: 2px;
+}
+
+.THIS .create-button {
+    position: sticky;
+    top: 0;
+    min-width: 130px;
+}
+
+.THIS .loadingInspections{
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    width: 55px;
+    vertical-align: middle;
+    white-space: nowrap;
+}

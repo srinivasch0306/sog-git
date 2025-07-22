@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Site_Report_review</fullName>
+    <columns>NAME</columns>
+    <columns>MUSW__Status__c</columns>
+    <columns>AVO_Verify_Class__c</columns>
+    <columns>AVO_Verify_Sub_Class__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>MUSW__Type__c</field>
+        <operation>equals</operation>
+        <value>Site Visit Report</value>
+    </filters>
+    <filters>
+        <field>MUSW__Status__c</field>
+        <operation>equals</operation>
+        <value>Requester Review</value>
+    </filters>
+    <label>Pending Site Report review</label>
+</ListView>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Permit_Work_Item</fullName>
+    <active>true</active>
+    <label>Permit Work Item</label>
+    <picklistValues>
+        <picklist>MUSW__Object_Record_Types__c</picklist>
+        <values>
+            <fullName>AG Water Metering Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVO_Agricultural_Water_Withdrawal_Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVO_Compliance_Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural Flow Meter Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application_to_Modify_or_Transfer_an_Agricultural_Water_Withdrawal_Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Water Withdrawal Application</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Object_Types__c</picklist>
+        <values>
+            <fullName>AVO_Compliance%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVO_Meter_Transaction%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUSW%5F%5FPermit2%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Permit_Types__c</picklist>
+        <values>
+            <fullName>Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groundwater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Heater Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well to Pond</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Unit_of_Measure__c</picklist>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unit_of_Measure__c</picklist>
+        <values>
+            <fullName>AMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BTU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CU FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KILOWATT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LINEAR FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WATT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permit_History__c</fullName>
+    <label>Permit History</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Update Permit</fullName>
+                <default>false</default>
+                <label>Update Permit</label>
+            </value>
+            <value>
+                <fullName>Transfer Permit</fullName>
+                <default>false</default>
+                <label>Transfer Permit</label>
+            </value>
+            <value>
+                <fullName>Correct Permit</fullName>
+                <default>false</default>
+                <label>Correct Permit</label>
+            </value>
+            <value>
+                <fullName>Modify Permit</fullName>
+                <default>false</default>
+                <label>Modify Permit</label>
+            </value>
+            <value>
+                <fullName>Relinquish Permit</fullName>
+                <default>false</default>
+                <label>Relinquish Permit</label>
+            </value>
+            <value>
+                <fullName>Historic Permit</fullName>
+                <default>false</default>
+                <label>Historic Permit</label>
+            </value>
+            <value>
+                <fullName>Revoke Permit</fullName>
+                <default>false</default>
+                <label>Revoke Permit</label>
+            </value>
+            <value>
+                <fullName>Revoke Permt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Revoke Permt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

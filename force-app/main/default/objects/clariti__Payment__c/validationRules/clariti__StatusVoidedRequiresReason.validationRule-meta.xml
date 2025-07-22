@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__StatusVoidedRequiresReason</fullName>
+    <active>true</active>
+    <description>Changing the Status__c field to &quot;Voided&quot; requires Void Reason to be populated</description>
+    <errorConditionFormula>AND(ISPICKVAL(clariti__Status__c, &apos;Voided&apos;), NOT(ISPICKVAL(clariti__VoidReason__c, &apos;Non Sufficient Funds&apos;)), NOT(ISPICKVAL(clariti__VoidReason__c, &apos;Credit Card Charge Back&apos;)), NOT(ISPICKVAL(clariti__VoidReason__c, &apos;Other&apos;)))</errorConditionFormula>
+    <errorDisplayField>clariti__Status__c</errorDisplayField>
+    <errorMessage>Update the Void Reason in order to change the status to ‘Voided’</errorMessage>
+</ValidationRule>

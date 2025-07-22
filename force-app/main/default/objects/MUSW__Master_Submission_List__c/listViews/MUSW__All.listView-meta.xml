@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__All</fullName>
+    <columns>NAME</columns>
+    <columns>License_Type__c</columns>
+    <columns>Subtype__c</columns>
+    <columns>Title__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Required__c</columns>
+    <columns>BG_File_Location_Type__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Active__c</columns>
+    <columns>Effective_Start_Date__c</columns>
+    <columns>Effective_End_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>License_Type__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>License Submission</label>
+</ListView>

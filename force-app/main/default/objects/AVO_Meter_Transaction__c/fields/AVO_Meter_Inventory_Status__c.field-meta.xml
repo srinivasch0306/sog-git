@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Meter_Inventory_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT( AVO_Meter_Maintenance_ID__r.AVO_Meter_ID__r.AVO_Inventory_Status__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Meter Inventory Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Source_Type_Fields__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>The field(s) containing the Source Type value</inlineHelpText>
+    <label>Source Type Fields</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MUSW__Type__c</fullName>
+                <default>false</default>
+                <label>MUSW__Type__c</label>
+            </value>
+            <value>
+                <fullName>MUSW__Permit_Type__c</fullName>
+                <default>false</default>
+                <label>MUSW__Permit_Type__c</label>
+            </value>
+            <value>
+                <fullName>MUSW__Status__c</fullName>
+                <default>false</default>
+                <label>MUSW__Status__c</label>
+            </value>
+            <value>
+                <fullName>MUSW__Current_Status__c</fullName>
+                <default>false</default>
+                <label>MUSW__Current_Status__c</label>
+            </value>
+            <value>
+                <fullName>AVO_Type__c</fullName>
+                <default>false</default>
+                <label>AVO_Type__c</label>
+            </value>
+            <value>
+                <fullName>AVO_Transaction_Type__c</fullName>
+                <default>false</default>
+                <label>AVO_Transaction_Type__c</label>
+            </value>
+            <value>
+                <fullName>AVO_Permit_Type__c</fullName>
+                <default>false</default>
+                <label>AVO_Permit_Type__c</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

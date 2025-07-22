@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__AllowOverpayments__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This setting allows the user to accept overpayments via Cash or Check payment methods</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>This setting allows the user to accept overpayments via Cash or Check payment methods</inlineHelpText>
+    <label>Allow Overpayments</label>
+    <type>Checkbox</type>
+</CustomField>

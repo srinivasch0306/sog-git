@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_Depth_of_Well_Casing</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+OR(
+RecordType.DeveloperName = &apos;AVO_Agricultural_Water_Withdrawal_Application&apos;
+),
+OR(
+ISPICKVAL(AVO_Types_of_Water_Source__c, &apos;Ground Water&apos; ), ISPICKVAL(AVO_Types_of_Water_Source__c,&apos;Well-to-Pond&apos;)) ,
+ISBLANK(AVO_Depth_of_Well_Casing__c)
+
+
+
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Depth_of_Well_Casing__c</errorDisplayField>
+    <errorMessage>Value is required</errorMessage>
+</ValidationRule>

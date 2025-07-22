@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Well_Number_Replaced_Required</fullName>
+    <active>true</active>
+    <description>Date Well Replaced is mandatory when Well Status is Replacement Well</description>
+    <errorConditionFormula>AND(
+ISBLANK( AVO_Well__c ),
+ISPICKVAL(AVO_Well_Status__c, &quot;Replacement Well&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Well__c</errorDisplayField>
+    <errorMessage>Field is required when Well Status is Replacement Well.</errorMessage>
+</ValidationRule>

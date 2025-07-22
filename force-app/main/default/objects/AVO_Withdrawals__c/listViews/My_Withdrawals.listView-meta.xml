@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Withdrawals</fullName>
+    <columns>NAME</columns>
+    <columns>AVO_Type__c</columns>
+    <columns>AVO_Permit__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Withdrawals</label>
+</ListView>

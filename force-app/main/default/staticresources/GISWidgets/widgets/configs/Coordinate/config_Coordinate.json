@@ -1,0 +1,42 @@
+{
+  "addSeparator": true,
+  "decimalPlaces": 9,
+  "spatialReferences": [
+    {
+      "wkid": "3857",
+      "label": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+      "outputUnit": "Meter",
+      "transformationWkid": "",
+      "transformationLabel": "",
+      "transformForward": false,
+      "options": {
+        "sameSRWithMap": true,
+        "isGeographicCS": false,
+        "isGeographicUnit": true,
+        "isProjectedCS": true,
+        "isProjectUnit": true,
+        "spheroidCS": 4326,
+        "defaultUnit": "Meter",
+        "unitRate": 1
+      }
+    },
+    {
+      "wkid": "6344",
+      "label": "NAD_1983_2011_UTM_Zone_15N",
+      "outputUnit": "Meter",
+      "transformationWkid": "",
+      "transformationLabel": "Transformation Name",
+      "transformForward": false,
+      "options": {
+        "sameSRWithMap": true,
+        "isGeographicCS": false,
+        "isGeographicUnit": false,
+        "isProjectedCS": true,
+        "isProjectUnit": true,
+        "spheroidCS": 4326,
+        "defaultUnit": "",
+        "unitRate": 1
+      }
+    }
+  ]
+}

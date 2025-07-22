@@ -1,0 +1,1 @@
+trigger DRE2_ContentVersion on ContentVersion (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_ContentVersion', new DRETriggerHandler()); }

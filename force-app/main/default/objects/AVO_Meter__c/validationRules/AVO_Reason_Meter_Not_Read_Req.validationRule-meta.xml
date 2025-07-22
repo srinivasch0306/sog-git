@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Reason_Meter_Not_Read_Req</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( AVO_Read_Meter__c, &quot;No&quot; ),
+ISBLANK( TEXT(AVO_Reason_Meter_Not_Read__c ))
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Reason_Meter_Not_Read__c</errorDisplayField>
+    <errorMessage>Reason Meter Not Read is required when Read Meter is &quot;No&quot;.</errorMessage>
+</ValidationRule>

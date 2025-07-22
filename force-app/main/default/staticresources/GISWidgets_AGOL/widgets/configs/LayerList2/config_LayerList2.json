@@ -1,0 +1,59 @@
+{
+  "distanceUnits": [{
+    "unit": "FEET",
+    "abbr": "ft"
+  }, {
+    "unit": "METERS",
+    "abbr": "m"
+  }, {
+    "unit": "YARDS",
+    "abbr": "yd"
+  }],
+  "showLegend": true,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "EnableOrDisablePopup": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": false,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+  
+    "ParcelsKane_5388" : {
+      "display" : true
+    },
+    "ParcelsCook_683" : {
+      "display" : true
+    },
+    "StreetsCook_8830" : {
+      "display" : true
+    },
+    "StreetsKane_980" : {
+      "display" : true
+    },
+    "AddressesElgin" : {
+      "display" : true
+    }
+  },
+  "layers": [
+    {
+      "url": "MUSW__Permit2__c",
+      "label": "BG Permit2",
+      "type": "basicgov",
+      "iconPath": "images/Favourite.png"
+    },
+    {
+      "url": "MUSW__Inspection__c",
+      "label": "BG Inspection",
+      "type": "basicgov",
+      "iconPath": ""
+    },
+    {
+      "url" : "Well__c",
+      "label" : "Wells",
+      "type" : "basicgov",
+      "iconPath" : ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Permit_Check_32__c</fullName>
+    <formula>AND(
+OR( NOT(BEGINS(LOWER(AVO_AppID__c), &quot;U&quot;)),  NOT(AVO_Undocumented__c)  ),
+NOT(CONTAINS(LOWER( AVO_Coastal_24__c ), &quot;no&quot;)),
+OR(  AVO_Original_Date_Applied__c &gt; DATE(2006,6,1),  AVO_DateRevRequested__c &gt; DATE(2006,6,1) ),
+OR( ISPICKVAL(AVO_Transaction_Type__c, &quot;New Permit&quot;), ISPICKVAL(AVO_Transaction_Type__c, &quot;Application&quot;), ISPICKVAL(AVO_Transaction_Type__c, &quot;Modify &amp; Transfer Permit&quot;), ISPICKVAL(AVO_Transaction_Type__c, &quot;Modify Permit&quot;), ISPICKVAL(AVO_Transaction_Type__c, &quot;Consolidate Permit&quot;) )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Permit Check 32</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

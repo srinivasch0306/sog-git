@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Scheduling_Method__c</fullName>
+    <inlineHelpText>Please select one (or more) of the scheduling method you plan to utilize.</inlineHelpText>
+    <label>Scheduling Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I do not plan to utilize any of the listed scheduling method</fullName>
+                <default>false</default>
+                <label>I do not plan to utilize any of the listed scheduling method</label>
+            </value>
+            <value>
+                <fullName>Device(s) installed in the soil (moisture blocks, tensiometers, C-probes, etc.)</fullName>
+                <default>false</default>
+                <label>Device(s) installed in the soil (moisture blocks, tensiometers, C-probes, etc.)</label>
+            </value>
+            <value>
+                <fullName>Evaporation pan or other similar based ET device (UGA EASY Pan)</fullName>
+                <default>false</default>
+                <label>Evaporation pan or other similar based ET device (UGA EASY Pan)</label>
+            </value>
+            <value>
+                <fullName>Computer model(s) (Irrigator - Pro, etc.)</fullName>
+                <default>false</default>
+                <label>Computer model(s) (Irrigator - Pro, etc.)</label>
+            </value>
+            <value>
+                <fullName>Written records of rainfall and crop use (ie. checkbook method)</fullName>
+                <default>false</default>
+                <label>Written records of rainfall and crop use (ie. checkbook method)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

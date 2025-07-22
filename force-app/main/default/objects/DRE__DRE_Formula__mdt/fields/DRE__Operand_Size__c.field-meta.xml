@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DRE__Operand_Size__c</fullName>
+    <deprecated>false</deprecated>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Operand Size</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>One</fullName>
+                <default>true</default>
+                <label>One</label>
+            </value>
+            <value>
+                <fullName>One or more</fullName>
+                <default>false</default>
+                <label>One or more</label>
+            </value>
+            <value>
+                <fullName>Two</fullName>
+                <default>false</default>
+                <label>Two</label>
+            </value>
+            <value>
+                <fullName>Two or more</fullName>
+                <default>false</default>
+                <label>Two or more</label>
+            </value>
+            <value>
+                <fullName>Three</fullName>
+                <default>false</default>
+                <label>Three</label>
+            </value>
+            <value>
+                <fullName>Three or more</fullName>
+                <default>false</default>
+                <label>Three or more</label>
+            </value>
+            <value>
+                <fullName>Four</fullName>
+                <default>false</default>
+                <label>Four</label>
+            </value>
+            <value>
+                <fullName>Four or more</fullName>
+                <default>false</default>
+                <label>Four or more</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

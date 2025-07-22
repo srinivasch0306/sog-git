@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>IA - Fire Resistive Non-Combustible (High-rise)</fullName>
+        <default>false</default>
+        <label>IA - Fire Resistive Non-Combustible (High-rise)</label>
+    </customValue>
+    <customValue>
+        <fullName>IB - Fire Resistive Non-Combustible (Mid-rise)</fullName>
+        <default>false</default>
+        <label>IB - Fire Resistive Non-Combustible (Mid-rise)</label>
+    </customValue>
+    <customValue>
+        <fullName>IIA - Protected Non-Combustible</fullName>
+        <default>false</default>
+        <label>IIA - Protected Non-Combustible</label>
+    </customValue>
+    <customValue>
+        <fullName>IIB - Unprotected Non-Combustible</fullName>
+        <default>false</default>
+        <label>IIB - Unprotected Non-Combustible</label>
+    </customValue>
+    <customValue>
+        <fullName>IIIA - Ordinary Protected Combustible</fullName>
+        <default>false</default>
+        <label>IIIA - Ordinary Protected Combustible</label>
+    </customValue>
+    <customValue>
+        <fullName>IIIB - Ordinary Unprotected Combustible</fullName>
+        <default>false</default>
+        <label>IIIB - Ordinary Unprotected Combustible</label>
+    </customValue>
+    <customValue>
+        <fullName>IV - Heavy Timber</fullName>
+        <default>false</default>
+        <label>IV - Heavy Timber</label>
+    </customValue>
+    <customValue>
+        <fullName>VA - Protected Wood Frame</fullName>
+        <default>false</default>
+        <label>VA - Protected Wood Frame</label>
+    </customValue>
+    <customValue>
+        <fullName>VB - Unprotected Wood Frame</fullName>
+        <default>false</default>
+        <label>VB - Unprotected Wood Frame</label>
+    </customValue>
+    <masterLabel>Construction Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

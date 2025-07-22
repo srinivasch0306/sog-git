@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>MUSW__Order__c</columns>
+    <columns>MUSW__Filter_Table_Index__c</columns>
+    <columns>MUSW__Result_Table_Index__c</columns>
+    <columns>MUSW__Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Inspection</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Violation</value>
+    </filters>
+    <label>Inspection &amp; Violation</label>
+</ListView>

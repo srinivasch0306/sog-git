@@ -1,0 +1,15 @@
+<apex:page standardController="MUSW__Permit2__c" >
+
+    <h1>Permits</h1>
+    
+    <span class="bg-button bg-gray-gradient"><a href="/apex/PermitRequestPortal?requestType=permit">Request a Permit</a></span>
+    
+    <h2 class="bg-h2">Existing Permits</h2>
+    
+     <p>Don't see your existing permit listed below? <strong><a href="apex/RequestAccess">Get online access</a></strong>.</p>
+
+    <div class="bg-hide">
+        <apex:listViews type="MUSW__Permit2__c" />
+    </div>
+
+</apex:page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__isActive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked the payment collection type will be available on the Payment Batch.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Check this to activate the payment collection type and make it available on the Payment Batch.</inlineHelpText>
+    <label>Active</label>
+    <type>Checkbox</type>
+</CustomField>

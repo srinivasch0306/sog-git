@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$MUSW__Complaint2__c.MUSW__Type__c</field>
+    </columns>
+    <columns>
+        <field>FK_$MUSW__Complaint2__c.MUSW__Status__c</field>
+    </columns>
+    <columns>
+        <field>FK_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>MUSW__Violation__c.MUSW__Type__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__Violation__c.MUSW__Comments__c</field>
+    </columns>
+    <description>Complaints with Violations - grouped by Address</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$MUSW__Complaint2__c.MUSW__Street__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Complaints with Violations</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MUSW__Violation__c@MUSW__Violation__c.MUSW__Complaint2__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FK_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

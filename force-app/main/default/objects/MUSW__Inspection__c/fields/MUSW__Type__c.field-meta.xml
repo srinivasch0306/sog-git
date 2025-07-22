@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Scope of the inspection activity to be done.</description>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Building</fullName>
+                <default>false</default>
+                <label>Building</label>
+            </value>
+            <value>
+                <fullName>Plumbing</fullName>
+                <default>false</default>
+                <label>Plumbing</label>
+            </value>
+            <value>
+                <fullName>Initial Inspection</fullName>
+                <default>false</default>
+                <label>Initial Inspection</label>
+            </value>
+            <value>
+                <fullName>AG Permitting Site Verification Form</fullName>
+                <default>false</default>
+                <label>AG Permitting Site Verification Form</label>
+            </value>
+            <value>
+                <fullName>Code Enforcement Inspection</fullName>
+                <default>false</default>
+                <label>Code Enforcement Inspection</label>
+            </value>
+            <value>
+                <fullName>Codes / Zoning</fullName>
+                <default>false</default>
+                <label>Codes / Zoning</label>
+            </value>
+            <value>
+                <fullName>Farmer Initiated Online Request</fullName>
+                <default>false</default>
+                <label>Farmer Initiated Online Request</label>
+            </value>
+            <value>
+                <fullName>Permit Inspection</fullName>
+                <default>false</default>
+                <label>Permit Inspection</label>
+            </value>
+            <value>
+                <fullName>Site Visit Request</fullName>
+                <default>false</default>
+                <label>Site Visit Request</label>
+            </value>
+            <value>
+                <fullName>WWSA Inspection</fullName>
+                <default>false</default>
+                <label>WWSA Inspection</label>
+            </value>
+            <value>
+                <fullName>Site Visit Report</fullName>
+                <default>false</default>
+                <label>Site Visit Report</label>
+            </value>
+            <value>
+                <fullName>Groundwater Withdrawal Information</fullName>
+                <default>false</default>
+                <label>Groundwater Withdrawal Information</label>
+            </value>
+            <value>
+                <fullName>Surface Water Withdrawal Information</fullName>
+                <default>false</default>
+                <label>Surface Water Withdrawal Information</label>
+            </value>
+            <value>
+                <fullName>Meter &amp; Telemetry Information</fullName>
+                <default>false</default>
+                <label>Meter &amp; Telemetry Information</label>
+            </value>
+            <value>
+                <fullName>Well Construction Inspection</fullName>
+                <default>false</default>
+                <label>Well Construction Inspection</label>
+            </value>
+            <value>
+                <fullName>Well Plug and Abandon Inspection</fullName>
+                <default>false</default>
+                <label>Well Plug and Abandon Inspection</label>
+            </value>
+            <value>
+                <fullName>Ag Site Inspection</fullName>
+                <default>false</default>
+                <label>Ag Site Inspection</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

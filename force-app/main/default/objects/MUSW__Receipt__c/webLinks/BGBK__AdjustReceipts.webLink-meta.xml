@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__AdjustReceipts</fullName>
+    <availability>online</availability>
+    <description>Adjust &amp; Refund button on the Receipts Details page</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Adjust &amp; Refund</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/bgbk__FeePaymentEdit?id={!MUSW__Receipt__c.Id}&amp;mode=Receipt</url>
+</WebLink>

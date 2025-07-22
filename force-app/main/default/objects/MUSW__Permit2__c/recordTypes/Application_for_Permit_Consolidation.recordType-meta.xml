@@ -1,0 +1,3517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_for_Permit_Consolidation</fullName>
+    <active>true</active>
+    <label>Application for Permit Consolidation</label>
+    <picklistValues>
+        <picklist>AVO_Any_casing_perforated_or_removed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_ApplicationRev__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Application_Type_Modification__c</picklist>
+        <values>
+            <fullName>Modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Application_Type__c</picklist>
+        <values>
+            <fullName>Add New Withdrawal to Existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install New Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Existing Unpermitted Source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replace Permitted Well</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Aquifer_ID__c</picklist>
+        <values>
+            <fullName>Brunswick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claiborne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claiborne-Clayton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claiborne-Cretaceous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clayton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cretaceous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cretaceous Sand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cretaceous-Clayton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crystalline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crystalline Rock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dublin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dublin-Midville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floridan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floridan-Claiborne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floridan-Gordon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floridan-Miocene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floridan-Sabinian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gordon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gordon-Dublin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jacksonian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lower Floridan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lower Tertiary %28Undif%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miocene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oligocene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paleo-Eocene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paleozoic Carbonates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sabinian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surficial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upper Floridan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Aquifers__c</picklist>
+        <values>
+            <fullName>Brunswick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claiborne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claiborne-Clayton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claiborne-Cretaceous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clayton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cretaceous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cretaceous Sand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cretaceous-Clayton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crystalline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crystalline Rock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dublin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dublin-Midville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floridan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floridan-Claiborne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floridan-Gordon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floridan-Miocene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floridan-Sabinian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gordon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gordon-Dublin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jacksonian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lower Floridan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lower Tertiary %28Undif%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miocene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oligocene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paleo-Eocene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paleozoic Carbonates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sabinian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surficial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upper Floridan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Are_the_wells_idenified_permitted__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_AtHeadWater__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Athletics__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Basin__c</picklist>
+        <values>
+            <fullName>ALTAMAHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHATTAHOOCHEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COOSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLINT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCHLOCKONEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCMULGEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCONEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OGEECHEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAINT MARYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SATILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAVANNAH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUWANNEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TALLAPOOSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TENNESSEE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Big_Gun_Practice__c</picklist>
+        <values>
+            <fullName>Buried pipe water delivery system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard hose with speed compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low trajectory angle delivery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Big_Gun_Recommended_Practice__c</picklist>
+        <values>
+            <fullName>Conservation tillage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPS-enabled control panel of positioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Night-time only irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Center_Pivot_Advanced_Practice__c</picklist>
+        <values>
+            <fullName>Advanced irrigation scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End gun shut-off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operational rain shut-off switch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Chemicals_or_Fertilizers__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Conservation_Plan_on_File__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Consolidated__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Critical_LOC__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_CurrentRecord__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Current_Permit_Activity_Use__c</picklist>
+        <values>
+            <fullName>ACTIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INACTIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PINACTIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unused</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Dark_Green_Zone_App__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Delivery_System__c</picklist>
+        <values>
+            <fullName>Buried Pipe water delivery system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable tow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard hose with speed compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard hose without speed compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable pipe %28above ground%29 water delivery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Emitters__c</picklist>
+        <values>
+            <fullName>%E2%80%8BOther</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will use line source emitters %28emitter manufactured as integral part of tubing%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will use micro-sprinkler device part circle will be used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will use non-pressure compensating point source emitters %28emitter installed in the field after the tubing is installed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will use part micro-sprinkler device%2E Full circle will be used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will use pressure compensating point source emitters %28emitter installed in the field after the tubing is installed%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_End_Guns_Plan__c</picklist>
+        <values>
+            <fullName>%E2%80%8BAutomated end gun shutoff will be installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No end gun will be installed on this system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The entire area under the end gun is cropland to be included in field operations%3B therefore%2C no automated end%C2%A0gun shutoff will be installed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Existing_Surface_Water_Pumps__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Existing_Wells__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_FinGISMapDone__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_FinalEvalDone__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Frost_Protection__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Golf_Course__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Gun__c</picklist>
+        <values>
+            <fullName>18-degree trajectory %28Full circle%29 gun%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18-degree trajectory %28Part circle%29 gun%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27-degree trajectory %28Full circle%29 gun%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27-degree trajectory %28Part circle%29 gun%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_How_Pump_is_Filled__c</picklist>
+        <values>
+            <fullName>Perennial or intermittent stream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pumped water from stream or%C2%A0pond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pumped water from well</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rainfall Runoff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinkhole or natural pond%2Fwetland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Springs %26 Seeps</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_InGISMap__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Inactive_Reason__c</picklist>
+        <values>
+            <fullName>AG GW Currently Unused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AG WTP Currently Unused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ag SW Currently Unused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applicant Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consolidated Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dormant at permitee Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired LOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPMS Under Permitting Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merged to an existing application%2Fpermit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never Installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Well%2FPump not Installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer Present</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non AG Use%2FOther Applciation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Waters of the State</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plugged%2FAbandoned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revoked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Pump Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voluntarily Relinquished</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_IrrEfficiencyFormOnFile__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Irrigation_Efficiency_Form_required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Irrigation_Type__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_Conservation_Plan_required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Is_Low_Flow_Plan_required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_LOCEvalDone__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Lithology__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Modification_Type__c</picklist>
+        <values>
+            <fullName>Add GW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add Replacement GW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add SW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decrease Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decrease GPMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase GPMs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove SW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revoked In Error by EPD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_New_Permit_Format__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_OnStream__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_OtherFormsRev__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Owener_is_operator__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Permit_Closed_Status__c</picklist>
+        <values>
+            <fullName>Archived</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Must Reapply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relinquished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revoked</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Permit_GIS_Mapping__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Permit_Purpose__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Permit_Type__c</picklist>
+        <values>
+            <fullName>Groundwater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well to Pond</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Pond_Funded__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Post_2006_Permit_Format__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Pump_Source__c</picklist>
+        <values>
+            <fullName>Pond or Reservoir lying on your property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shared Pond%2C Lake or Reservoir not entirely on your property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stream%2C creek%2C river or canal%2Fditch connected to that flowing water</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_PurAq__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_PurIR__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_PurLi__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_PurOt__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_PurRp__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Purpose_of_Water_Use__c</picklist>
+        <values>
+            <fullName>Freeze%2FFrost Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation %28Row Crops%2C Vegetables%2C Sod Production%2C Orchards%2C Plants Nurseries%2C Pasture%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Athletic Field</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Golf Course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livestock%2FPoultry Watering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Agricultural Use</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Regions__c</picklist>
+        <values>
+            <fullName>Region 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Region 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Region 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Region 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Region 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_SW_Source_Type__c</picklist>
+        <values>
+            <fullName>Flowing Stream or Canal to such</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natural Lagoon%2C Wetland%2C Pond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Farm Constructed Pond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shared Impoundment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinkhold Pond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Springs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Scheduling_Method__c</picklist>
+        <values>
+            <fullName>Computer model%28s%29 %28Irrigator - Pro%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device%28s%29 installed in the soil %28moisture blocks%2C tensiometers%2C C-probes%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaporation pan or other similar based ET device %28UGA EASY Pan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I do not plan to utilize any of the listed scheduling method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Written records of rainfall and crop use %28ie%2E checkbook method%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Solid_Set_Sprinkler_trajectory__c</picklist>
+        <values>
+            <fullName>12-degree trajectory %28Full circle%29 gun%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12-degree trajectory %28Part circle%29 gun%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27-degree trajectory %28Full circle%29 gun%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27-degree trajectory %28Part circle%29 gun%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6-degree trajectory %28Full circle%29 gun%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6-degree trajectory %28Part circle%29 gun%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Special_Condition_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Special_Condition__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Special_Condition_s__c</picklist>
+        <values>
+            <fullName>Associated Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frost Protection Dual Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frost Protection Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmission Line Right-of-Way</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Construction Condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Split_Permit__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Sprinkler_Package__c</picklist>
+        <values>
+            <fullName>High Pressure - Low angle Impacts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Pressure - LEPA package at approximately 18%22 above ground%2E%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Pressure - Spray nozzles on drops below pipe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Pressure - Spray nozzles on top of pipe with pressure regulators%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Pressure - Spray nozzles on top of pipe without pressure regulators%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Pressure - Variable rate irrigation %28VRI%29 sprinkler system%C2%A0</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_State_Funded_Meter__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Transaction_Status__c</picklist>
+        <values>
+            <fullName>Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Must reapply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consolidated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrected %26 Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modified %26 Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modified %26 Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relinquished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revoked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Consolidated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Corrected %26 Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Modified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Modified %26 Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Modified %26 Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Relinquished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Revoked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Split</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Unrevoked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Updated %26 Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrevoked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Transaction_Type__c</picklist>
+        <values>
+            <fullName>Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Must Reapply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct %26 Transfer Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Correspondence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modify %26 Transfer Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modify %26 Update Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modify Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relinquish Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revoke Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrevoke Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Permit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_TypeOfStream__c</picklist>
+        <values>
+            <fullName>INTERMITTENT STREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOT ON STREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PERENNIAL STREAM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Type_of_Letter_Required__c</picklist>
+        <values>
+            <fullName>1 Year Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 Year Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Types_of_Water_Source__c</picklist>
+        <values>
+            <fullName>Ground Water - Well pumps to irrigation and%2For refills pond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water - Surface water pumps refill pond and%2For pumps to irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well-to-Pond - System includes both Well %26 Surface water pumps</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_WTP_Well__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Waiver__c</picklist>
+        <values>
+            <fullName>Agricultural Well pad Picture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural well data form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation efficiency certificate form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Installation Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Compliance case for permit holder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water low flow plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface water pump data form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water reuse feasibility study</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water right agreement Property Ownership document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water use conservation Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Construction Inspection form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well plug and abandon form</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Water_Conservation_Plan__c</picklist>
+        <values>
+            <fullName>All Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Center Pivot and Lateral Move Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drip and Micro Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golf Course and Turf Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid-set Sprinkler Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traveler and Big-Gun Systems</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Water_Delivery_System__c</picklist>
+        <values>
+            <fullName>Buried PVC pipe %28permanent%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable PVC or aluminum pipe %28above ground%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pressure control accomplished by automated valves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pressure control accomplished by manual valves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tubing installation either above ground or less than 3 inches in the ground</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Well_Closed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Well_Data_On_File__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Well_Install_Type__c</picklist>
+        <values>
+            <fullName>New Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replacement Well</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undocumented Well</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Well_Status__c</picklist>
+        <values>
+            <fullName>AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_ZeroAcreage__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_contact_Info_Verified_Date__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Are_the_water_pump_s_permitted__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Fee_Calculation__c</picklist>
+        <values>
+            <fullName>Estimated Value</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valuation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Proposed_Occupancy__c</picklist>
+        <values>
+            <fullName>A-1 Assembly theaters with stage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-1 Assembly theaters without stage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-2 Assembly nightclubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-2 Assembly restaurants bars banquet halls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-3 Assembly churches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-3 Assembly general community halls libraries museums</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-4 Assembly arenas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-4 Assembly outdoor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E Educational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F-1 Factory and industrial moderate hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F-2 Factory and industrial low hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H-1 High Hazard explosives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H-5 HPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H234 High Hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-1 Institutional supervised environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-2 Institutional hospitals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-2 Institutional nursing homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-3 Institutional restrained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-4 Institutional day care facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M Mercantile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-1 Residential hotels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-2 Residential multiple family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-3 Residential one- and two-family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-4 Residential care%2Fassisted living facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S-1 Storage moderate hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S-2 Storage low hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U Utility miscellaneous</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Type_Construction__c</picklist>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Construction_Type__c</picklist>
+        <values>
+            <fullName>I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Phase__c</picklist>
+        <values>
+            <fullName>Application</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Certificate of Occupancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issuance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__State__c</picklist>
+        <values>
+            <fullName>AB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enforcement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finaled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC Documents Uploaded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Permit Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted Documents</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Type2__c</picklist>
+        <values>
+            <fullName>Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groundwater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Heater Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well to Pond</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Type__c</picklist>
+        <values>
+            <fullName>Application for Permit Consolidation</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Use_Class__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Use_Group__c</picklist>
+        <values>
+            <fullName>A-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-3</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>R-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Use_Type__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Institutional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixed Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi Family Dwelling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Family Dwelling</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Work_Type2__c</picklist>
+        <values>
+            <fullName>Addition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alteration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demolition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Work_Type__c</picklist>
+        <values>
+            <fullName>Addition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alteration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demolition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Permit_History__c</picklist>
+        <values>
+            <fullName>Correct Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Permit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_Inactive__c</picklist>
+        <values>
+            <fullName>AG GW Currently Unused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AG WTP Currently Unused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applicant Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consolidated Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dormant at permitee Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired LOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPMS Under Permitting Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merged to an existing applicantion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never Installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Wel%2FPump not Installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non AG Use%2FOther Applciation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Compliance Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plugged%2FAbandoned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revoked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voluntarily Relinquished</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_LFP_Monitor_Location_Lookup__c</picklist>
+        <values>
+            <fullName>End of affected Stream Segment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immediate Upstream of Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nearest USGS gauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pond Outflow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_LFP_Resp_Party_Lookup__c</picklist>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permittee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permittee and EPD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_LFP_Type_Lookup__c</picklist>
+        <values>
+            <fullName>25%25 AAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7Q10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOT REQUIRED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_LUWell_Status__c</picklist>
+        <values>
+            <fullName>Active Well</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dormant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Well</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plugged%2F Abandoned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_LuPump_Type__c</picklist>
+        <values>
+            <fullName>Centrifugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gear head</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submersible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vertical Turbine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_Modification_Type__c</picklist>
+        <values>
+            <fullName>Add GW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add Low Flow Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add Low Flow Protection %26 Add SW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add Replacement GW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add SW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decrease Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decrease GPMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decrease GPMS %26 Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Acres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Acres %26 Add GW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Acres %26 Add Low Flow Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Acres %26 Add SW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Acres %26 GPMs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Acres %26 GPMs %26 Add SW withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Acres %26 GPMs %2F Add Low Flow Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Acres %2F Add GW %26 SW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Acres%2C GPMs %26 Add GW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase GPMs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase GPMs %26 Add GW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase GPMs %26 Add Low Flow Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase GPMs %26 Add SW withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RGW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RPW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove GW Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove SW Withdrawal%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revoked In Error by EPD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UDD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UDG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UDH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Contact Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Other Information</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_NotRequiredOptions__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_Permit_Status__c</picklist>
+        <values>
+            <fullName>ACTIVE COMPLIANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APPLICATION FORM REVIEW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APPLICATION GIS MAPPING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANCELLED APPLICATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONFIRM WELL INSPECTION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONFIRM XY SITE VERIFICATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONSOLIDATE PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CORRECT PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DATA ENTRY STAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DECLINED APPROVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DENIED APPLICATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIRECTOR APPROVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FORM RETURNED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GW %2FSW FORM ASSESSMENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INSTALLED%2FWAITING ON FORMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISSUE LOG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC DOCUMENT PRINTING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC ISSUANCE EVALUATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC ISSUED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER FORM APPROVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER INSTALLATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MODIFY AND TRANSFER PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MODIFY PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PENDING DIRECTOR SIGNATURE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PENDING REVISION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PERMIT FINAL EVALUATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PERMIT GIS MAPPING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PERMIT ISSUED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PERMIT NEED METER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PERMIT RELINQUISHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PERMIT REVOKED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROGRAM MANAGER APPROVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READY FOR APPROVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READY FOR ROUTING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RELINQUISH PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RESOLVED COMPLIANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REVISION REQUEST DATA ENTRY STAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REVOKE PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPLIT PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TIMESHEET MANAGER APPROVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TIMESHEET SUPERVISOR APPROVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSFER PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNDOCUMENTED SOURCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNDOCUMENTED SOURCE PENDING ACTION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNREVOKE PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNREVOKED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPDATE PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WAIVE TRANSACTION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WATER SUPPLY APPROVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WATERSHED APPROVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WELL INSPECTION REQUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WWSA APP READ FOR COUNCIL APPROVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XY SITE VERIFICATION</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_SW_Refill_Type__c</picklist>
+        <values>
+            <fullName>Pumped GW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pumped SW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Runoff Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinkhole-Wetland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Springs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stream</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_Status_Action__c</picklist>
+        <values>
+            <fullName>Applicatoin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Must Re-Apply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consolidated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modifeid a%26 Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modified %26 Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relinquished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reprint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revoked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPLIT PERMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Corrected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Consolidated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Modified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Revoked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Split</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be relinquished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be unrevoked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrevoked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>modified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>to be Modified and Transferred</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SOG_Type_of_Stream__c</picklist>
+        <values>
+            <fullName>INTERMITTENT STREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOT ON STREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PERENNIAL STREAM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sequence_ID__c</picklist>
+        <values>
+            <fullName>AGGWD-YYYY-00001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONS-YYYY-00001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC-YYYY-00001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOCTM-YYYY-00001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RELI-YYYY-00001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WPA-YYYY-00001</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Solid_Set_Delivery_System__c</picklist>
+        <values>
+            <fullName>Buried Pipe water delivery system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable pipe %28above ground%29 water delivery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subtype__c</picklist>
+        <values>
+            <fullName>Educational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Training_Exercise__c</picklist>
+        <values>
+            <fullName>Ex-1-Update Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-2-Create Child</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-3-Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-4-Reviews from Master List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-5-Generate an Email Doc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-Sequence Number %26 Letters</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unit_of_Flow__c</picklist>
+        <values>
+            <fullName>CFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>avo_Air_Line_Installed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>avo_Chemigation_check_valve_installed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>avo_Developed_Well__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>avo_Disinfected_Well__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>avo_Installation_Type__c</picklist>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>avo_Is_the_Water_Level_Stabilized__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>avo_Pump_Disinfected__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>avo_Pump_Type__c</picklist>
+        <values>
+            <fullName>Diesel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>avo_Well_Disinfected_Well__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

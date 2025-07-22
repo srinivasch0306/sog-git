@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Disposal_Method_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISBLANK(TEXT(AVO_Disposal_Method__c)),
+  ISPICKVAL(AVO_Inventory_Status__c, &quot;Disposed Meter - Dead/Scrapped&quot;)  
+)</errorConditionFormula>
+    <errorMessage>Disposal Method is required when Meter Inventory Status is set to Dead/Scrapped.</errorMessage>
+</ValidationRule>

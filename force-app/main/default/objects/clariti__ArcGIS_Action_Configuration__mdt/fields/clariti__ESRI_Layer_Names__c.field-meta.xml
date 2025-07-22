@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__ESRI_Layer_Names__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A comma-separated list of ESRI layer names to which the custom action is available.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Enter a comma-separated list of ESRI layer names which are configured for the associated map.</inlineHelpText>
+    <label>ESRI Layer Names</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

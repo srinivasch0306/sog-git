@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Low_Flow_Gauge_Type__c</fullName>
+    <label>Low Flow Gauge Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Well Installed To Protect Flow Requirements</fullName>
+                <default>false</default>
+                <label>Well Installed To Protect Flow Requirements</label>
+            </value>
+            <value>
+                <fullName>Weir Method</fullName>
+                <default>false</default>
+                <label>Weir Method</label>
+            </value>
+            <value>
+                <fullName>Weir Method &amp; Staff Gauge</fullName>
+                <default>false</default>
+                <label>Weir Method &amp; Staff Gauge</label>
+            </value>
+            <value>
+                <fullName>USGS Stream Gauge</fullName>
+                <default>false</default>
+                <label>USGS Stream Gauge</label>
+            </value>
+            <value>
+                <fullName>Riser Method</fullName>
+                <default>false</default>
+                <label>Riser Method</label>
+            </value>
+            <value>
+                <fullName>Recirculating Pump</fullName>
+                <default>false</default>
+                <label>Recirculating Pump</label>
+            </value>
+            <value>
+                <fullName>Pond Outflow Spillway &amp; Staff Gauge</fullName>
+                <default>false</default>
+                <label>Pond Outflow Spillway &amp; Staff Gauge</label>
+            </value>
+            <value>
+                <fullName>Cross-Sectional Area Method &amp; Flow Meter</fullName>
+                <default>false</default>
+                <label>Cross-Sectional Area Method &amp; Flow Meter</label>
+            </value>
+            <value>
+                <fullName>Float Switch On Pump</fullName>
+                <default>false</default>
+                <label>Float Switch On Pump</label>
+            </value>
+            <value>
+                <fullName>Cross-Sectional Area Method &amp; Staff Gauge</fullName>
+                <default>false</default>
+                <label>Cross-Sectional Area Method &amp; Staff Gauge</label>
+            </value>
+            <value>
+                <fullName>Controlled Flow Through Culvert Pipe</fullName>
+                <default>false</default>
+                <label>Controlled Flow Through Culvert Pipe</label>
+            </value>
+            <value>
+                <fullName>Pond Outflow Spillway</fullName>
+                <default>false</default>
+                <label>Pond Outflow Spillway</label>
+            </value>
+            <value>
+                <fullName>Staff Gauge</fullName>
+                <default>false</default>
+                <label>Staff Gauge</label>
+            </value>
+            <value>
+                <fullName>Cross-Sectional Area Method</fullName>
+                <default>false</default>
+                <label>Cross-Sectional Area Method</label>
+            </value>
+            <value>
+                <fullName>Flow Meter</fullName>
+                <default>false</default>
+                <label>Flow Meter</label>
+            </value>
+            <value>
+                <fullName>well installed to supplement stream flow</fullName>
+                <default>false</default>
+                <label>well installed to supplement stream flow</label>
+            </value>
+            <value>
+                <fullName>Blairsville Water Plant</fullName>
+                <default>false</default>
+                <label>Blairsville Water Plant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

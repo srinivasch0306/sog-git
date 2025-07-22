@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Meter_Special_Condition__c</fullName>
+    <label>Meter Special Condition</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ARPA</fullName>
+                <default>false</default>
+                <label>ARPA</label>
+            </value>
+            <value>
+                <fullName>Drought Conditions</fullName>
+                <default>false</default>
+                <label>Drought Conditions</label>
+            </value>
+            <value>
+                <fullName>Monthly Meter Reading</fullName>
+                <default>false</default>
+                <label>Monthly Meter Reading</label>
+            </value>
+            <value>
+                <fullName>Volumetric Limit</fullName>
+                <default>false</default>
+                <label>Volumetric Limit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

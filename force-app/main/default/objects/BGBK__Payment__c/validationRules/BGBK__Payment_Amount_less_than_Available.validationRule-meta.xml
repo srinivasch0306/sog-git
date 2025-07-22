@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Payment_Amount_less_than_Available</fullName>
+    <active>true</active>
+    <description>Cannot refund used amounts.</description>
+    <errorConditionFormula>AND(BGBK__Amount__c - BGBK__Amount_Used__c  &lt;  BLANKVALUE(BGBK__Refunded_Amount__c,0), ISCHANGED(BGBK__Amount__c))</errorConditionFormula>
+    <errorMessage>cannot adjust Payment Amount below amount Available.</errorMessage>
+</ValidationRule>

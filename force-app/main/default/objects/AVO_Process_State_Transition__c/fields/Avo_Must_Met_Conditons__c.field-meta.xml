@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avo_Must_Met_Conditons__c</fullName>
+    <label>Must Met Conditions</label>
+    <summaryForeignKey>AVO_Process_State_Transition_Stopper__c.Avo_Process_State_Transition__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

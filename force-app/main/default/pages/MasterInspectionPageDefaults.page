@@ -1,0 +1,3 @@
+<apex:page showHeader="true" sidebar="true" standardController="MUSW__Master_Inspection_List__c">
+     <MUSW:PageDefaults sObjectType="MUSW__Master_Inspection_List__c"/>
+</apex:page>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Agricultural Water Withdrawal Application</fullName>
+        <default>false</default>
+        <label>Agricultural Water Withdrawal Application</label>
+    </customValue>
+    <customValue>
+        <fullName>Agricultural Water Withdrawal Permit</fullName>
+        <default>false</default>
+        <label>Agricultural Water Withdrawal Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Application for Permit Consolidation</fullName>
+        <default>false</default>
+        <label>Application for Permit Consolidation</label>
+    </customValue>
+    <customValue>
+        <fullName>Revision</fullName>
+        <default>false</default>
+        <label>Revision</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancellation Request</fullName>
+        <default>false</default>
+        <label>Cancellation Request</label>
+    </customValue>
+    <customValue>
+        <fullName>Permit Relinquishment</fullName>
+        <default>false</default>
+        <label>Permit Relinquishment</label>
+    </customValue>
+    <customValue>
+        <fullName>Well and Pump Data</fullName>
+        <default>false</default>
+        <label>Well and Pump Data</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Plug &amp; Abandonment</fullName>
+        <default>false</default>
+        <label>Well Plug &amp; Abandonment</label>
+    </customValue>
+    <customValue>
+        <fullName>AG Water Metering Installation</fullName>
+        <default>false</default>
+        <label>AG Water Metering Installation</label>
+    </customValue>
+    <masterLabel>Avo Permit Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

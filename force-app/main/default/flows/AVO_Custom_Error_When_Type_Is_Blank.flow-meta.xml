@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>NOV_Error_Message</name>
+        <label>NOV Error Message</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <customErrorMessages>
+            <errorMessage>NOV Type should not be blank when NOV is Yes</errorMessage>
+            <fieldSelection>AVO_NOV_Type__c</fieldSelection>
+            <isFieldError>true</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>RFI_Error_Message</name>
+        <label>RFI Error Message</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <customErrorMessages>
+            <errorMessage>RFI Type should not be blank when RFI is Yes</errorMessage>
+            <fieldSelection>AVO_RFI_Type__c</fieldSelection>
+            <isFieldError>true</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Checking_Types</name>
+        <label>Checking Types</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>RFI_Type</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_RFI_Type__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.AVO_IsRFI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>RFI_Error_Message</targetReference>
+            </connector>
+            <label>RFI Type</label>
+        </rules>
+        <rules>
+            <name>NOV_Type</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_NOV_Type__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.AVO_Is_NOV__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NOV_Error_Message</targetReference>
+            </connector>
+            <label>NOV Type</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>AVO Custom Error When Type Is Blank {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Custom Error When Type Is Blank</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Checking_Types</targetReference>
+        </connector>
+        <filterLogic>(1 AND 4 AND 5) OR (2 AND 3 AND 5) OR 1 OR 2</filterLogic>
+        <filters>
+            <field>AVO_IsRFI__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Yes</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Is_NOV__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Yes</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_CompAction__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Issued Notice of Violation</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_CompAction__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Issued Request for Information Letter</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_CompAction__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>AVO_Compliance__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

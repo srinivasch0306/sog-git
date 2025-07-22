@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Water_Meter_Integrity_Acknowledgment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>I understand that willfully injuring, altering, removing, resetting, adjusting, manipulating, obstructing, or in any manner interfering with or tampering with any water measuring device for the purpose or with the intent to produce an incorrect, inaccurate, or misleading measurement, or to cause, procure or direct any other person to do so, shall be unlawful.</inlineHelpText>
+    <label>Water Meter Integrity Acknowledgment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

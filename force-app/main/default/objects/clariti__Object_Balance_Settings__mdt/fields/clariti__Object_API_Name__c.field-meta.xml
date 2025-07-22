@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Object_API_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Specify the API name of the payable object.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Specify the API name of the payable object.</inlineHelpText>
+    <label>Object API Name</label>
+    <length>60</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

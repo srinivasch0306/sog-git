@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avo_Inspection_Action</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Avo_Compact_Layout</compactLayoutAssignment>
+    <label>Inspection Action</label>
+    <picklistValues>
+        <picklist>Avo_Email_Template__c</picklist>
+        <values>
+            <fullName>Permit Pay Fees Due</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Event_Type__c</picklist>
+        <values>
+            <fullName>30 Day Planning Commission Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Day Planning Commission Meeting for Special Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Day Planning Commission Meeting for Variance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 Day Planning Commission Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 Day Planning Commission Meeting for Special Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 Day Planning Commission Meeting for Variance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPC Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26C Agenda Review Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26C Voting Session Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mayor and Commission Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mayor and Commission Meeting for Special Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mayor and Commission Meeting for Variance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plan Review Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning Commission Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Hearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staff Conference</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Fee_Type__c</picklist>
+        <values>
+            <fullName>Any Fee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Inspection_Type__c</picklist>
+        <values>
+            <fullName>TPA Final Inspection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Queue_Assignment__c</picklist>
+        <values>
+            <fullName>Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review Queue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Review_Type__c</picklist>
+        <values>
+            <fullName>AG Program Manager Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director Office Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluation of Withdrawal 1st Cut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluation of Withdrawal 2nd Cut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Evaluation Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Assessment Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIS Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Cert Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection Plan Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Installation Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metering Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pemit Management Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Appraisal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiver Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Conservation Plan Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Reuse Visibility Study Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Shed Manager Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Supply Manager Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Data Form Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawal LOC Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Submission_Type__c</picklist>
+        <values>
+            <fullName>Acknowledgment Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administrative Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerial Imagery Map</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agric Water Reuse Feasibility Study</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agric Water Right Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Submissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any Submission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Attestation Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Map</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appraisal Notes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bill of Sale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consent Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Photos of the Meter %28Including Serial Number%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Photos of the Meter %28Installation with surroudning piping%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired LOC Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expiring LOC Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GeoEval Sheet Page 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GeoEval Sheet Page 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete Meter Installation Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Certification Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation Efficiency Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC No Low Flows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Last Will and Testament</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low flow protection plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Approval Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Installation Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Maintenance Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Photos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Legal Binding Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Mailing Group Supporting Doc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ownership Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ownership Verification Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Compliance Case for Permit Holder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permission to Drill%2FUrgent Request Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Correction Proposal Checklist Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Mailing Group Summary Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Map</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Modification Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Data Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relinquishment Request Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request For Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revoke Forms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Eval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water Low Flow Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Title Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Conservation Plan Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Conservation plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Reuse Feasibility Study</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Right Agreement Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Use Conservation Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Well Inspection Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Construction Inspection Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well DataSheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Pad PhotOs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Plug and Abandon Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Plug and Abandonment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XY Site Verification Form</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Task_Type__c</picklist>
+        <values>
+            <fullName>Acknowledgement Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIS Application Mapping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIS Permit Mapping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC Document Sending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOC Package Printing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiver Approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Update_Field_Type__c</picklist>
+        <values>
+            <fullName>Boolean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>String</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Milestone_Type__c</picklist>
+        <values>
+            <fullName>Initial Review Milestone for Permit and Building</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Well_Latitude__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Percise GPS Coordinates of planned drilling location (Degrees, Minutes, Seconds or Decimal Degrees):</inlineHelpText>
+    <label>Well Latitude</label>
+    <precision>13</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

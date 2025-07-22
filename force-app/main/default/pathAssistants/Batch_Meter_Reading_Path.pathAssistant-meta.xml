@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>AVO_Meter_Transaction__c</entityName>
+    <fieldName>AVO_Batch_Status__c</fieldName>
+    <masterLabel>Batch Meter Reading Path</masterLabel>
+    <recordTypeName>Batch_Meter_Reading</recordTypeName>
+</PathAssistant>

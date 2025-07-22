@@ -1,0 +1,3 @@
+<apex:page standardController="MUSW__Master_Work_Item_List__c">
+    <apex:include pageName="DREFormulaBuilderLocal"/>
+</apex:page>

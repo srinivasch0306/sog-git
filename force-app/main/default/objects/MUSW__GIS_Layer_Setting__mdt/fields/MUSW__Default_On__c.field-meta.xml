@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Default_On__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Whether a feature layer should be turned ON by default on the map, and use the layer toggle to turn ON and OFF the layer.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Set this to true if the feature layer should be displayed on the map by default.</inlineHelpText>
+    <label>Default On</label>
+    <type>Checkbox</type>
+</CustomField>

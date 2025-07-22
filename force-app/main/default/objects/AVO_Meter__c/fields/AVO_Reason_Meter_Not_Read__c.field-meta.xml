@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Reason_Meter_Not_Read__c</fullName>
+    <label>Reason Meter Not Read</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BATTERY DEAD</fullName>
+                <default>false</default>
+                <label>BATTERY DEAD</label>
+            </value>
+            <value>
+                <fullName>CLERICAL ERROR</fullName>
+                <default>false</default>
+                <label>CLERICAL ERROR</label>
+            </value>
+            <value>
+                <fullName>COMPLICATED WAD</fullName>
+                <default>false</default>
+                <label>COMPLICATED WAD</label>
+            </value>
+            <value>
+                <fullName>DEAD ON SITE</fullName>
+                <default>false</default>
+                <label>DEAD ON SITE</label>
+            </value>
+            <value>
+                <fullName>METER DAMAGED</fullName>
+                <default>false</default>
+                <label>METER DAMAGED</label>
+            </value>
+            <value>
+                <fullName>METER INSTALLED INCORRECTLY</fullName>
+                <default>false</default>
+                <label>METER INSTALLED INCORRECTLY</label>
+            </value>
+            <value>
+                <fullName>METER MISSING</fullName>
+                <default>false</default>
+                <label>METER MISSING</label>
+            </value>
+            <value>
+                <fullName>METER MOVED</fullName>
+                <default>false</default>
+                <label>METER MOVED</label>
+            </value>
+            <value>
+                <fullName>METER NOT IN USE</fullName>
+                <default>false</default>
+                <label>METER NOT IN USE</label>
+            </value>
+            <value>
+                <fullName>METER REPLACED</fullName>
+                <default>false</default>
+                <label>METER REPLACED</label>
+            </value>
+            <value>
+                <fullName>METER UNINSTALLED</fullName>
+                <default>false</default>
+                <label>METER UNINSTALLED</label>
+            </value>
+            <value>
+                <fullName>MONTHLY METER READING SITE</fullName>
+                <default>false</default>
+                <label>MONTHLY METER READING SITE</label>
+            </value>
+            <value>
+                <fullName>NON AG WATER USE</fullName>
+                <default>false</default>
+                <label>NON AG WATER USE</label>
+            </value>
+            <value>
+                <fullName>NON-MAINTAINABLE METER</fullName>
+                <default>false</default>
+                <label>NON-MAINTAINABLE METER</label>
+            </value>
+            <value>
+                <fullName>OTHER (Please write in other reason)</fullName>
+                <default>false</default>
+                <label>OTHER (Please write in other reason)</label>
+            </value>
+            <value>
+                <fullName>RETRIEVED METER</fullName>
+                <default>false</default>
+                <label>RETRIEVED METER</label>
+            </value>
+            <value>
+                <fullName>SITE DOUBLE METERED</fullName>
+                <default>false</default>
+                <label>SITE DOUBLE METERED</label>
+            </value>
+            <value>
+                <fullName>Pending: Not Install to Specification</fullName>
+                <default>false</default>
+                <label>Pending: Not Install to Specification</label>
+            </value>
+            <value>
+                <fullName>Data Entry Stage Needs Approval</fullName>
+                <default>false</default>
+                <label>Data Entry Stage Needs Approval</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

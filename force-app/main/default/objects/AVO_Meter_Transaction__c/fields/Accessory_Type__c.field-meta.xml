@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accessory_Type__c</fullName>
+    <label>Accessory Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Battery, AG90</fullName>
+                <default>false</default>
+                <label>Battery, AG90</label>
+            </value>
+            <value>
+                <fullName>Battery, AG2000</fullName>
+                <default>false</default>
+                <label>Battery, AG2000</label>
+            </value>
+            <value>
+                <fullName>Battery, AG3000</fullName>
+                <default>false</default>
+                <label>Battery, AG3000</label>
+            </value>
+            <value>
+                <fullName>Battery, McMag3000</fullName>
+                <default>false</default>
+                <label>Battery, McMag3000</label>
+            </value>
+            <value>
+                <fullName>Battery, SignalFire</fullName>
+                <default>false</default>
+                <label>Battery, SignalFire</label>
+            </value>
+            <value>
+                <fullName>FS106-1</fullName>
+                <default>false</default>
+                <label>FS106-1</label>
+            </value>
+            <value>
+                <fullName>FS106-2</fullName>
+                <default>false</default>
+                <label>FS106-2</label>
+            </value>
+            <value>
+                <fullName>FS106-3</fullName>
+                <default>false</default>
+                <label>FS106-3</label>
+            </value>
+            <value>
+                <fullName>FS106-4</fullName>
+                <default>false</default>
+                <label>FS106-4</label>
+            </value>
+            <value>
+                <fullName>FS108-1</fullName>
+                <default>false</default>
+                <label>FS108-1</label>
+            </value>
+            <value>
+                <fullName>FS108-2</fullName>
+                <default>false</default>
+                <label>FS108-2</label>
+            </value>
+            <value>
+                <fullName>FS108-3</fullName>
+                <default>false</default>
+                <label>FS108-3</label>
+            </value>
+            <value>
+                <fullName>FS108-4</fullName>
+                <default>false</default>
+                <label>FS108-4</label>
+            </value>
+            <value>
+                <fullName>FS110</fullName>
+                <default>false</default>
+                <label>FS110</label>
+            </value>
+            <value>
+                <fullName>FS112</fullName>
+                <default>false</default>
+                <label>FS112</label>
+            </value>
+            <value>
+                <fullName>Meter Cap, 4&quot;</fullName>
+                <default>false</default>
+                <label>Meter Cap, 4&quot;</label>
+            </value>
+            <value>
+                <fullName>Meter Cap, 6&quot;</fullName>
+                <default>false</default>
+                <label>Meter Cap, 6&quot;</label>
+            </value>
+            <value>
+                <fullName>Meter Cap, 8&quot;</fullName>
+                <default>false</default>
+                <label>Meter Cap, 8&quot;</label>
+            </value>
+            <value>
+                <fullName>SignalFire Telemetry Unit</fullName>
+                <default>false</default>
+                <label>SignalFire Telemetry Unit</label>
+            </value>
+            <value>
+                <fullName>Vane Set, 4&quot;</fullName>
+                <default>false</default>
+                <label>Vane Set, 4&quot;</label>
+            </value>
+            <value>
+                <fullName>Vane Set, 6&quot;</fullName>
+                <default>false</default>
+                <label>Vane Set, 6&quot;</label>
+            </value>
+            <value>
+                <fullName>Vane Set, 8&quot;</fullName>
+                <default>false</default>
+                <label>Vane Set, 8&quot;</label>
+            </value>
+            <value>
+                <fullName>Vane Set, 10&quot;</fullName>
+                <default>false</default>
+                <label>Vane Set, 10&quot;</label>
+            </value>
+            <value>
+                <fullName>Vane Set, 12&quot;</fullName>
+                <default>false</default>
+                <label>Vane Set, 12&quot;</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

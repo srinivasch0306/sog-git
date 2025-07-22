@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Community Portal</container>
+    <containerType>Network</containerType>
+    <label>Contractor Navigation</label>
+    <navigationMenuItem>
+        <label>Meters</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>My Maintenance Requests</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/my-meter-maintenance-requests</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Site Visit</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>My Site Visit Requests</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/my-site-visit-requests</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>My Site Visit Reports</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/my-site-visit-reports</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+</NavigationMenu>

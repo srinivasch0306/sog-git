@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__CloseOutBalance__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>(clariti__CloseOutCashBalance__c + clariti__CloseOutCheckBalance__c) - (clariti__CloseOutCashTrayCashBalance__c + clariti__CloseOutCashTrayCheckBalance__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Close Out Balance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_Special_Conditions</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(  MUSW__Status__c  , &apos;LOC Issued&apos;),
+ISPICKVAL(    AVO_Special_Condition__c , &apos;Yes&apos;),
+ISBLANK( AVO_Special_Condition_s__c  )
+)</errorConditionFormula>
+    <errorMessage>If Special Condition =&quot;Yes&quot; user must enter one or more Special Condition(s)</errorMessage>
+</ValidationRule>

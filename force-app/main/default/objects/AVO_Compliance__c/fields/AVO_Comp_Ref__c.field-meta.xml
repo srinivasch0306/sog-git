@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Comp_Ref__c</fullName>
+    <label>Comp_Ref</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>AVO_CaseClass__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>AVO_Comp_Ref_Types</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Unpermitted Surface Water Withdrawal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Unpermitted Groundwater Withdrawal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Irrigation Efficiency Certification Requirement Violation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Well Not Constructed To Specification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Low Flow Protection Plan Violation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Groundwater Pumping Over Permitted GPM Capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Irrigating Acres Over Permit Capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Irrigation Water Conservation Plan Violation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Surface Water Pumping Over Permitted GPM Capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Well Completion Data Form Not Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Flow Meter Approval Form Not Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Low Flow Protection Plan Not Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Pump Completion Data Form Not Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Well Pad Construction Picture Not Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Improper Plugging and Abandonment of Well Permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Conservation Plan Not Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>Irrigation Efficiency Certification Not Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Permit Violations Compliance Case</controllingFieldValue>
+            <valueName>New Permit NOV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Well Contractor Installed Well Without LOC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Water Well Contractor Name and/or License Number Not Properly Displayed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Advertising as Water Well Contractor Without License</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Operating without Pump Contractor Certificate or Expired Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Operating without Water Well Contractor License or Expired License</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Advertising as Pump Contractor Without Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Pump Contractor Name and/or Certificate Number Not Properly Displayed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Improper Plugging and Abandonment of Well</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Improper Plugging and Abandonment of Well WWSA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Unsecured Well</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Well Pad Broken, Missing, or Incomplete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Improper Construction of Well</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Misrepresentations or False Promises</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWSA Compliance Case</controllingFieldValue>
+            <valueName>Operating Without Well Driller Bond/Letter of Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Compliance Case</controllingFieldValue>
+            <valueName>1 Year - Owner Must Install Meter Notice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Compliance Case</controllingFieldValue>
+            <valueName>Meter Tampering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Compliance Case</controllingFieldValue>
+            <valueName>Incomplete Meter Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Compliance Case</controllingFieldValue>
+            <valueName>5 Year - Unmeterable Permitted Withdrawals Notice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Compliance Case</controllingFieldValue>
+            <valueName>Unmetered Permitted GW Withdrawal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Compliance Case</controllingFieldValue>
+            <valueName>Unmetered Permitted SW Withdrawal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Initialized Use Case</controllingFieldValue>
+            <valueName>Unused Surface Water Permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Initialized Use Case</controllingFieldValue>
+            <valueName>Unused Well to Pond Permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Initialized Use Case</controllingFieldValue>
+            <valueName>Unused Groundwater Permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Initialized Use Case</controllingFieldValue>
+            <valueName>Expired Letter of Concurrence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statutory Compliance Case</controllingFieldValue>
+            <valueName>Undocumented Acres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statutory Compliance Case</controllingFieldValue>
+            <valueName>Undocumented Groundwater Withdrawal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statutory Compliance Case</controllingFieldValue>
+            <valueName>Undocumented Surface Water Withdrawal</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

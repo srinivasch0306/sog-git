@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_ExcessGPM</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(AVO_Comp_Ref__c, &quot;Irrigating Acres Over Permit Capacity&quot;),
+  OR(
+    AVO_ExcessGPM__c &lt; 0,
+    ISBLANK(AVO_ExcessGPM__c)
+  )
+)</errorConditionFormula>
+    <errorDisplayField>AVO_ExcessGPM__c</errorDisplayField>
+    <errorMessage>ExcessGPM must be equal to or greater than 0 when Comp_Ref is Irrigating Acres Over Permit Capacity.</errorMessage>
+</ValidationRule>

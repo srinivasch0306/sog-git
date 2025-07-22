@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Single Family Dwelling</fullName>
+        <default>false</default>
+        <label>Single Family Dwelling</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi Family Dwelling</fullName>
+        <default>false</default>
+        <label>Multi Family Dwelling</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile Home</fullName>
+        <default>false</default>
+        <label>Mobile Home</label>
+    </customValue>
+    <customValue>
+        <fullName>Duplex</fullName>
+        <default>false</default>
+        <label>Duplex</label>
+    </customValue>
+    <customValue>
+        <fullName>Townhouse</fullName>
+        <default>false</default>
+        <label>Townhouse</label>
+    </customValue>
+    <masterLabel>Use Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

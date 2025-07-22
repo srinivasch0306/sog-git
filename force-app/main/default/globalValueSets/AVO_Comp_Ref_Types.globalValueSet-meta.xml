@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Unpermitted Surface Water Withdrawal</fullName>
+        <default>false</default>
+        <label>Unpermitted Surface Water Withdrawal</label>
+    </customValue>
+    <customValue>
+        <fullName>Unpermitted Groundwater Withdrawal</fullName>
+        <default>false</default>
+        <label>Unpermitted Groundwater Withdrawal</label>
+    </customValue>
+    <customValue>
+        <fullName>Undocumented Acres</fullName>
+        <default>false</default>
+        <label>Undocumented Acres</label>
+    </customValue>
+    <customValue>
+        <fullName>Unused Surface Water Permit</fullName>
+        <default>false</default>
+        <label>Unused Surface Water Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>1 Year - Owner Must Install Meter Notice</fullName>
+        <default>false</default>
+        <label>1 Year - Owner Must Install Meter Notice</label>
+    </customValue>
+    <customValue>
+        <fullName>Irrigation Efficiency Certification Requirement Violation</fullName>
+        <default>false</default>
+        <label>Irrigation Efficiency Certification Requirement Violation</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Not Constructed To Specification</fullName>
+        <default>false</default>
+        <label>Well Not Constructed To Specification</label>
+    </customValue>
+    <customValue>
+        <fullName>Meter Tampering</fullName>
+        <default>false</default>
+        <label>Meter Tampering</label>
+    </customValue>
+    <customValue>
+        <fullName>Incomplete Meter Installation</fullName>
+        <default>false</default>
+        <label>Incomplete Meter Installation</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Flow Protection Plan Violation</fullName>
+        <default>false</default>
+        <label>Low Flow Protection Plan Violation</label>
+    </customValue>
+    <customValue>
+        <fullName>Unused Well to Pond Permit</fullName>
+        <default>false</default>
+        <label>Unused Well to Pond Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Groundwater Pumping Over Permitted GPM Capacity</fullName>
+        <default>false</default>
+        <label>Groundwater Pumping Over Permitted GPM Capacity</label>
+    </customValue>
+    <customValue>
+        <fullName>Irrigating Acres Over Permit Capacity</fullName>
+        <default>false</default>
+        <label>Irrigating Acres Over Permit Capacity</label>
+    </customValue>
+    <customValue>
+        <fullName>Irrigation Water Conservation Plan Violation</fullName>
+        <default>false</default>
+        <label>Irrigation Water Conservation Plan Violation</label>
+    </customValue>
+    <customValue>
+        <fullName>Surface Water Pumping Over Permitted GPM Capacity</fullName>
+        <default>false</default>
+        <label>Surface Water Pumping Over Permitted GPM Capacity</label>
+    </customValue>
+    <customValue>
+        <fullName>Undocumented Groundwater Withdrawal</fullName>
+        <default>false</default>
+        <label>Undocumented Groundwater Withdrawal</label>
+    </customValue>
+    <customValue>
+        <fullName>Undocumented Surface Water Withdrawal</fullName>
+        <default>false</default>
+        <label>Undocumented Surface Water Withdrawal</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Completion Data Form Not Submitted</fullName>
+        <default>false</default>
+        <label>Well Completion Data Form Not Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>Flow Meter Approval Form Not Submitted</fullName>
+        <default>false</default>
+        <label>Flow Meter Approval Form Not Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Flow Protection Plan Not Submitted</fullName>
+        <default>false</default>
+        <label>Low Flow Protection Plan Not Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Contractor Installed Well Without LOC</fullName>
+        <default>false</default>
+        <label>Well Contractor Installed Well Without LOC</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Well Contractor Name and/or License Number Not Properly Displayed</fullName>
+        <default>false</default>
+        <label>Water Well Contractor Name and/or License Number Not Properly Displayed</label>
+    </customValue>
+    <customValue>
+        <fullName>Advertising as Water Well Contractor Without License</fullName>
+        <default>false</default>
+        <label>Advertising as Water Well Contractor Without License</label>
+    </customValue>
+    <customValue>
+        <fullName>Operating without Pump Contractor Certificate or Expired Certificate</fullName>
+        <default>false</default>
+        <label>Operating without Pump Contractor Certificate or Expired Certificate</label>
+    </customValue>
+    <customValue>
+        <fullName>Operating without Water Well Contractor License or Expired License</fullName>
+        <default>false</default>
+        <label>Operating without Water Well Contractor License or Expired License</label>
+    </customValue>
+    <customValue>
+        <fullName>Advertising as Pump Contractor Without Certificate</fullName>
+        <default>false</default>
+        <label>Advertising as Pump Contractor Without Certificate</label>
+    </customValue>
+    <customValue>
+        <fullName>Pump Completion Data Form Not Submitted</fullName>
+        <default>false</default>
+        <label>Pump Completion Data Form Not Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>Pump Contractor Name and/or Certificate Number Not Properly Displayed</fullName>
+        <default>false</default>
+        <label>Pump Contractor Name and/or Certificate Number Not Properly Displayed</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Pad Construction Picture Not Submitted</fullName>
+        <default>false</default>
+        <label>Well Pad Construction Picture Not Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>Unused Groundwater Permit</fullName>
+        <default>false</default>
+        <label>Unused Groundwater Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Improper Plugging and Abandonment of Well</fullName>
+        <default>false</default>
+        <label>Improper Plugging and Abandonment of Well</label>
+    </customValue>
+    <customValue>
+        <fullName>Expired Letter of Concurrence</fullName>
+        <default>false</default>
+        <label>Expired Letter of Concurrence</label>
+    </customValue>
+    <customValue>
+        <fullName>WWSA Inspection</fullName>
+        <default>false</default>
+        <label>WWSA Inspection</label>
+    </customValue>
+    <customValue>
+        <fullName>Improper Plugging and Abandonment of Well Permit</fullName>
+        <default>false</default>
+        <label>Improper Plugging and Abandonment of Well Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Conservation Plan Not Submitted</fullName>
+        <default>false</default>
+        <label>Conservation Plan Not Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>Irrigation Efficiency Certification Not Submitted</fullName>
+        <default>false</default>
+        <label>Irrigation Efficiency Certification Not Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>New Permit NOV</fullName>
+        <default>false</default>
+        <label>New Permit NOV</label>
+    </customValue>
+    <customValue>
+        <fullName>Improper Plugging and Abandonment of Well WWSA</fullName>
+        <default>false</default>
+        <label>Improper Plugging and Abandonment of Well WWSA</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsecured Well</fullName>
+        <default>false</default>
+        <label>Unsecured Well</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Pad Broken, Missing, or Incomplete</fullName>
+        <default>false</default>
+        <label>Well Pad Broken, Missing, or Incomplete</label>
+    </customValue>
+    <customValue>
+        <fullName>Improper Construction of Well</fullName>
+        <default>false</default>
+        <label>Improper Construction of Well</label>
+    </customValue>
+    <customValue>
+        <fullName>Misrepresentations or False Promises</fullName>
+        <default>false</default>
+        <label>Misrepresentations or False Promises</label>
+    </customValue>
+    <customValue>
+        <fullName>Operating Without Well Driller Bond/Letter of Certificate</fullName>
+        <default>false</default>
+        <label>Operating Without Well Driller Bond/Letter of Certificate</label>
+    </customValue>
+    <customValue>
+        <fullName>5 Year - Unmeterable Permitted Withdrawals Notice</fullName>
+        <default>false</default>
+        <label>5 Year - Unmeterable Permitted Withdrawals Notice</label>
+    </customValue>
+    <customValue>
+        <fullName>Unmetered Permitted GW Withdrawal</fullName>
+        <default>false</default>
+        <label>Unmetered Permitted GW Withdrawal</label>
+    </customValue>
+    <customValue>
+        <fullName>Unmetered Permitted SW Withdrawal</fullName>
+        <default>false</default>
+        <label>Unmetered Permitted SW Withdrawal</label>
+    </customValue>
+    <customValue>
+        <fullName>Unmetered Permitted GW Withdrawal </fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Unmetered Permitted GW Withdrawal </label>
+    </customValue>
+    <masterLabel>Comp_Ref Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

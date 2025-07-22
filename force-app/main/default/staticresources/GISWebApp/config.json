@@ -1,0 +1,334 @@
+{
+  "theme": {
+    "name": "FoldableTheme",
+    "styles": [
+      "blue",
+      "default",
+      "black",
+      "cyan",
+      "green",
+      "purple",
+      "red",
+      "yellow"
+    ],
+    "version": "2.2"
+  },
+  "portalUrl": "https://gaepd.maps.arcgis.com",
+  "appId": "5GruFr2jYAamkMZv",
+  "authorizedCrossOriginDomains": [],
+  "title": "BasicGov GIS",
+  "subtitle": "",
+  "keepAppState": true,
+  "logo": "images/app-logo.png",
+  "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+  "links": [
+    {
+      "label": " ",
+      "url": "www.arcgis.com"
+    }
+  ],
+  "widgetOnScreen": {
+    "widgets": [
+      {
+        "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
+        "position": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "height": 40,
+          "relativeTo": "browser"
+        },
+        "version": "2.2",
+        "id": "themes_FoldableTheme_widgets_HeaderController_Widget_1",
+        "name": "HeaderController"
+      },
+      {
+        "uri": "widgets/Scalebar/Widget",
+        "position": {
+          "left": 7,
+          "bottom": 25,
+          "relativeTo": "map"
+        },
+        "version": "2.2",
+        "id": "widgets_Scalebar_Widget_2",
+        "name": "Scalebar"
+      },
+      {
+        "uri": "widgets/Search/Widget",
+        "position": {
+          "left": 55,
+          "top": 5,
+          "relativeTo": "map"
+        },
+        "version": "2.2",
+        "id": "widgets_Search_Widget_3",
+        "name": "Search",
+        "label": "World Search"
+      },
+      {
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 7,
+          "bottom": 5,
+          "relativeTo": "map"
+        },
+        "version": "2.2",
+        "id": "widgets_Coordinate_Widget_4",
+        "name": "Coordinate",
+        "config": "widgets/configs/Coordinate/config_Coordinate.json"
+      },
+      {
+        "position": {
+          "left": 55,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_5",
+        "name": "Draw",
+        "version": "2.2",
+        "uri": "widgets/Draw/Widget",
+        "config": "widgets/configs/Draw/config_Draw.json"
+      },
+      {
+        "position": {
+          "left": 105,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_6",
+        "name": "Edit",
+        "version": "2.2",
+        "featureActions": [
+          {
+            "name": "Edit",
+            "uri": "EditFeatureAction"
+          }
+        ],
+        "uri": "widgets/Edit/Widget",
+        "config": "widgets/configs/Edit/config_Edit.json"
+      },
+      {
+        "position": {
+          "left": 155,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_7",
+        "name": "Measurement",
+        "version": "2.2",
+        "uri": "widgets/Measurement/Widget",
+        "config": "widgets/configs/Measurement/config_Measurement.json"
+      },
+      {
+        "position": {
+          "left": 205,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_8",
+        "name": "Print",
+        "version": "2.2",
+        "uri": "widgets/Print/Widget",
+        "config": "widgets/configs/Print/config_Print.json"
+      },
+      {
+        "position": {
+          "left": 255,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_9",
+        "name": "Directions",
+        "version": "2.2",
+        "uri": "widgets/Directions/Widget",
+        "config": "widgets/configs/Directions/config_Directions.json",
+        "featureActions": [
+          {
+            "name": "DirectionFrom",
+            "uri": "DirectionFromFeatureAction"
+          },
+          {
+            "name": "DirectionTo",
+            "uri": "DirectionToFeatureAction"
+          }
+        ]
+      },
+      {
+        "position": {
+          "left": 305,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_10",
+        "name": "eSearch",
+        "version": "2.2",
+        "IsController": false,
+        "uri": "widgets/eSearch/Widget",
+        "config": "widgets/configs/eSearch/config_eSearch.json",
+        "label": "Search"
+      },
+      {
+        "uri": "widgets/OverviewMap/Widget",
+        "position": {
+          "bottom": 0,
+          "right": 0,
+          "zIndex": 1,
+          "relativeTo": "map"
+        },
+        "version": "2.2",
+        "id": "widgets_OverviewMap_Widget_11",
+        "name": "OverviewMap"
+      },
+      {
+        "uri": "widgets/HomeButton/Widget",
+        "position": {
+          "left": 7,
+          "top": 75,
+          "relativeTo": "map"
+        },
+        "version": "2.2",
+        "id": "widgets_HomeButton_Widget_12",
+        "name": "HomeButton"
+      },
+      {
+        "uri": "widgets/MyLocation/Widget",
+        "position": {
+          "left": 7,
+          "top": 110,
+          "relativeTo": "map"
+        },
+        "version": "2.2",
+        "id": "widgets_MyLocation_Widget_13",
+        "name": "MyLocation"
+      },
+      {
+        "uri": "widgets/Splash/Widget",
+        "visible": false,
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.2",
+        "id": "widgets_Splash_Widget_14",
+        "name": "Splash"
+      },
+      {
+        "uri": "widgets/ZoomSlider/Widget",
+        "position": {
+          "top": 5,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "version": "2.2",
+        "id": "widgets_ZoomSlider_Widget_15",
+        "name": "ZoomSlider"
+      }
+    ],
+    "panel": {
+      "uri": "jimu/OnScreenWidgetPanel",
+      "position": {
+        "relativeTo": "map"
+      }
+    }
+  },
+  "map": {
+    "3D": false,
+    "2D": true,
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+    "itemId": "98ea6263c457473f805e18b91e3cace7",
+    "id": "map",
+    "portalUrl": "https://gaepd.maps.arcgis.com"
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+      "position": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5,
+        "zIndex": 5,
+        "relativeTo": "map"
+      }
+    },
+    "widgets": [
+      {
+        "name": "BasemapGallery",
+        "version": "2.2",
+        "uri": "widgets/BasemapGallery/Widget",
+        "config": "widgets/configs/BasemapGallery/config_BasemapGallery.json",
+        "index": 1,
+        "id": "widgets_BasemapGallery_Widget_18"
+      },
+      {
+        "uri": "widgets/LayerList2/Widget",
+        "version": "2.2",
+        "id": "widgets_LayerList_Widget_17",
+        "name": "LayerList2",
+        "index": 2,
+        "config": "widgets/configs/LayerList2/config_LayerList2.json",
+        "label": "Layer List"
+      },
+      {
+        "uri": "widgets/Create/Widget",
+        "version": "2.2",
+        "id": "widgets_Create_Widget_16",
+        "name": "Create",
+        "index": 3,
+        "config": "widgets/configs/Create/config_Create.json",
+		"label": "Create"
+      }
+    ],
+    "groups": []
+  },
+  "mobileLayout": {
+    "widgetOnScreen": {
+      "widgets": {
+        "widgets/Scalebar/Widget": {
+          "position": {
+            "left": 7,
+            "bottom": 40
+          },
+          "version": "1.4"
+        },
+        "widgets/Coordinate/Widget": {
+          "position": {
+            "left": 7,
+            "bottom": 17
+          },
+          "version": "1.4"
+        }
+      }
+    }
+  },
+  "loadingPage": {
+    "backgroundColor": "#334352",
+    "backgroundImage": {
+      "visible": false
+    },
+    "loadingGif": {
+      "visible": true,
+      "uri": "images/loading.gif",
+      "width": 196,
+      "height": 275
+    }
+  },
+  "wabVersion": "2.2",
+  "isTemplateApp": true,
+  "isWebTier": false,
+  "httpProxy": {
+    "useProxy": false,
+    "alwaysUseProxy": false,
+    "url": "/proxy.js",
+    "rules": []
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manage_Fees</fullName>
+    <availability>online</availability>
+    <description>Record Manage button to Manage Fees</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Manage Fees</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/cmp/MUSW__RecordManager?MUSW__pid={!MUSW__Permit2__c.Id}&amp;MUSW__sn=Manage_Fees</url>
+</WebLink>

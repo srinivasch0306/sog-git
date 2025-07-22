@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Parent_Query_Ids__c</fullName>
+    <deprecated>false</deprecated>
+    <description>string and comma delimited list of id&apos;s to restrict first letter query (the parent query) used by an additional IN clause</description>
+    <inlineHelpText>Used internally by batch and single requests to specify which parent records to work within the un-scoped first/parent applied letter query.</inlineHelpText>
+    <label>Parent Query Ids</label>
+    <length>131072</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

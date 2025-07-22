@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Fee_Paid_Full_lock_Amount</fullName>
+    <active>true</active>
+    <description>can&apos;t change amount below paid amount</description>
+    <errorConditionFormula>AND( MUSW__Fee_Paid__c = true,  ISCHANGED(MUSW__Amount__c ), PRIORVALUE(MUSW__Amount__c ) &gt; MUSW__Amount__c)</errorConditionFormula>
+    <errorMessage>Cannot change the Amount below the Amount already paid on this Fee. Increase Amount or click Cancel</errorMessage>
+</ValidationRule>

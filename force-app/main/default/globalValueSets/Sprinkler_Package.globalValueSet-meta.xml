@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>High Pressure - Low angle Impacts</fullName>
+        <default>false</default>
+        <label>High Pressure - Low angle Impacts</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Pressure - Spray nozzles on top of pipe with pressure regulators.</fullName>
+        <default>false</default>
+        <label>Low Pressure - Spray nozzles on top of pipe with pressure regulators.</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Pressure - Spray nozzles on top of pipe without pressure regulators.</fullName>
+        <default>false</default>
+        <label>Low Pressure - Spray nozzles on top of pipe without pressure regulators.</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Pressure - Spray nozzles on drops below pipe</fullName>
+        <default>false</default>
+        <label>Low Pressure - Spray nozzles on drops below pipe</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Pressure - LEPA package at approximately 18&quot; above ground. </fullName>
+        <default>false</default>
+        <label>Low Pressure - LEPA package at approximately 18&quot; above ground. </label>
+    </customValue>
+    <customValue>
+        <fullName>Low Pressure - Variable rate irrigation (VRI) sprinkler system </fullName>
+        <default>false</default>
+        <label>Low Pressure - Variable rate irrigation (VRI) sprinkler system </label>
+    </customValue>
+    <masterLabel>Sprinkler Package</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

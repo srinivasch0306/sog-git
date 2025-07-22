@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Old_Meter_MSN_Replacement</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(AVO_Maintenance_Type__c, &quot;Meter Replacement&quot;),
+    ISCHANGED( AVO_Old_Meter_ID__c ),
+    ISPICKVAL(AVO_Type__c, &quot;Meter Maintenance Request&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Old_Meter_ID__c</errorDisplayField>
+    <errorMessage>Old Meter ID cannot be changed in a Meter Replacement.</errorMessage>
+</ValidationRule>

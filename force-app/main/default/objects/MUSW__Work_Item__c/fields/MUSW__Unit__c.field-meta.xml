@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Unit__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Unit of Measure</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SQ FT</fullName>
+                <default>true</default>
+                <label>SQ FT</label>
+            </value>
+            <value>
+                <fullName>FT</fullName>
+                <default>false</default>
+                <label>FT</label>
+            </value>
+            <value>
+                <fullName>EACH</fullName>
+                <default>false</default>
+                <label>EACH</label>
+            </value>
+            <value>
+                <fullName>1K BTU</fullName>
+                <default>false</default>
+                <label>1K BTU</label>
+            </value>
+            <value>
+                <fullName>FLAT</fullName>
+                <default>false</default>
+                <label>FLAT</label>
+            </value>
+            <value>
+                <fullName>GAL</fullName>
+                <default>false</default>
+                <label>GAL</label>
+            </value>
+            <value>
+                <fullName>HP</fullName>
+                <default>false</default>
+                <label>HP</label>
+            </value>
+            <value>
+                <fullName>$</fullName>
+                <default>false</default>
+                <label>$</label>
+            </value>
+            <value>
+                <fullName>100 LI</fullName>
+                <default>false</default>
+                <label>100 LI</label>
+            </value>
+            <value>
+                <fullName>1K CFM</fullName>
+                <default>false</default>
+                <label>1K CFM</label>
+            </value>
+            <value>
+                <fullName>AMP</fullName>
+                <default>false</default>
+                <label>AMP</label>
+            </value>
+            <value>
+                <fullName>CU YD</fullName>
+                <default>false</default>
+                <label>CU YD</label>
+            </value>
+            <value>
+                <fullName>SYSTEM</fullName>
+                <default>false</default>
+                <label>SYSTEM</label>
+            </value>
+            <value>
+                <fullName>DEVICE</fullName>
+                <default>false</default>
+                <label>DEVICE</label>
+            </value>
+            <value>
+                <fullName>LIN FT</fullName>
+                <default>false</default>
+                <label>LIN FT</label>
+            </value>
+            <value>
+                <fullName>HEADS</fullName>
+                <default>false</default>
+                <label>HEADS</label>
+            </value>
+            <value>
+                <fullName>HOUR</fullName>
+                <default>false</default>
+                <label>HOUR</label>
+            </value>
+            <value>
+                <fullName>INCH</fullName>
+                <default>false</default>
+                <label>INCH</label>
+            </value>
+            <value>
+                <fullName>QTY</fullName>
+                <default>false</default>
+                <label>QTY</label>
+            </value>
+            <value>
+                <fullName>SQ YD</fullName>
+                <default>false</default>
+                <label>SQ YD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

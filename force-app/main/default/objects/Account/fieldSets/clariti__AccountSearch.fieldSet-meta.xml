@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__AccountSearch</fullName>
+    <description>Financial - Parent object search</description>
+    <label>Account Search</label>
+</FieldSet>

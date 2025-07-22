@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Receipt__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Lookup to the receipt record.</description>
+    <label>Receipt</label>
+    <referenceTo>MUSW__Receipt__c</referenceTo>
+    <relationshipLabel>Payables</relationshipLabel>
+    <relationshipName>Payable_Receipts</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

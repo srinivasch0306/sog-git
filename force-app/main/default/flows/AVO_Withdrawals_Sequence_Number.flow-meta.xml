@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_to_Count</name>
+        <label>Add to Count</label>
+        <locationX>314</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>withdrawalCount</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Get_all_Related_Withdrawals</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Permit_Transaction_Type</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_if_comes_from_repeater</name>
+        <label>Check if comes from repeater</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Get_all_Related_Withdrawals</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Check_if_comes_from_repeater__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Withdrawal_Name</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Undocumented_Source</name>
+        <label>Check if Undocumented Source</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Permit__r.MUSW__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Undocumented Source</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_comes_from_repeater</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>User Story: 31158</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>NewNumber</name>
+        <dataType>String</dataType>
+        <expression>$Record.AVO_Permit__r.Name &amp;
+IF(
+  TEXT($Record.AVO_Permit__r.AVO_Permit_Type__c) = &quot;GroundWater&quot;,
+  &quot;_G&quot; &amp; TEXT(WithdrawalCount + 1),
+  IF(
+    TEXT($Record.AVO_Permit__r.AVO_Permit_Type__c) = &quot;Surface Water&quot;,
+    &quot;_S&quot; &amp; TEXT(WithdrawalCount + 1),
+    &quot;_U&quot; &amp; TEXT(WithdrawalCount + 1)
+  )
+)</expression>
+    </formulas>
+    <interviewLabel>AVO Withdrawals Sequence Number {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Withdrawals Sequence Number</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_all_Related_Withdrawals</name>
+        <label>Get all Related Withdrawals</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_to_Count</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AVO_Permit__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Permit_Transaction_Type</name>
+        <label>Update Permit Transaction Type</label>
+        <locationX>314</locationX>
+        <locationY>755</locationY>
+        <connector>
+            <targetReference>Update_the_Number</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AVO_Permit__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Undocumented Source</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AVO_Transaction_Type__c</field>
+            <value>
+                <stringValue>Undocumented Source</stringValue>
+            </value>
+        </inputAssignments>
+        <object>MUSW__Permit2__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_the_Number</name>
+        <label>Update the Number</label>
+        <locationX>314</locationX>
+        <locationY>863</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>NewNumber</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Withdrawal_Name</name>
+        <label>Update Withdrawal Name</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>$Record.AVO_GIS_UNIQUE__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_if_Undocumented_Source</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>AVO_Withdrawals__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>1600</triggerOrder>
+    <variables>
+        <name>withdrawalCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+</Flow>

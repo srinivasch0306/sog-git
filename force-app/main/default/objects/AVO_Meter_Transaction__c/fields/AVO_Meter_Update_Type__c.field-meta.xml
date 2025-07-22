@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Meter_Update_Type__c</fullName>
+    <label>Meter Update Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Meter Location Change</fullName>
+                <default>false</default>
+                <label>Meter Location Change</label>
+            </value>
+            <value>
+                <fullName>Meter Movement</fullName>
+                <default>false</default>
+                <label>Meter Movement</label>
+            </value>
+            <value>
+                <fullName>Enter Removal Date</fullName>
+                <default>false</default>
+                <label>Enter Removal Date</label>
+            </value>
+            <value>
+                <fullName>Undo Removal Date</fullName>
+                <default>false</default>
+                <label>Undo Removal Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

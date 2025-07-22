@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Fee Items</label>
+    <protected>false</protected>
+    <values>
+        <field>MUSW__Button_Label__c</field>
+        <value xsi:type="xsd:string">Add Fees to Permit</value>
+    </values>
+    <values>
+        <field>MUSW__Fieldset__c</field>
+        <value xsi:type="xsd:string">Fee_Items</value>
+    </values>
+    <values>
+        <field>MUSW__Filter__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>MUSW__Junction_Object_Name__c</field>
+        <value xsi:type="xsd:string">MUSW__Fee__c</value>
+    </values>
+    <values>
+        <field>MUSW__List_Object_Name__c</field>
+        <value xsi:type="xsd:string">MUSW__Master_Fee_List__c</value>
+    </values>
+    <values>
+        <field>MUSW__List_Parent_Lookup__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>MUSW__Page_Title__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>MUSW__Source_Parent_Lookup__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>MUSW__User_Filter_Fieldset__c</field>
+        <value xsi:type="xsd:string">Fee_Items_Filter</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_RefPermitAppID_RefApplicationID</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISBLANK( AVO_RefPermitAppID__c ),
+ISBLANK( AVO_UDWithdrawalID__c ),
+OR(
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Undocumented Surface Water Withdrawal&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Undocumented Groundwater Withdrawal&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Improper Plugging and Abandonment of Well&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Pump Completion Data Form Not Submitted&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Unpermitted Groundwater Withdrawal&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Unpermitted Surface Water Withdrawal&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Well Pad Construction Picture Not Submitted&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Well Not Constructed To Specification&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;1 Year - Owner Must Install Meter Notice&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;5 Year - Unmeterable Permitted Withdrawals Notice&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Unmetered Permitted GW Withdrawal&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Unmetered Permitted SW Withdrawal&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Well Completion Data Form Not Submitted&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Groundwater Pumping Over Permitted GPM Capacity&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Surface Water Pumping Over Permitted GPM Capacity&quot; ),
+ISPICKVAL( AVO_Comp_Ref__c, &quot;Flow Meter Approval Form Not Submitted&quot; )
+)
+
+
+)</errorConditionFormula>
+    <errorMessage>RefPermitAppID and UDWithdrawalID are mandatory for the selected Comp_Ref.</errorMessage>
+</ValidationRule>

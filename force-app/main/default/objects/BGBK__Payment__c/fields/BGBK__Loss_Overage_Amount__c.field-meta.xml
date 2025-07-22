@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Loss_Overage_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Deprecated.</description>
+    <inlineHelpText>Minor adjustment to balance accounts. Used under a specified threshold</inlineHelpText>
+    <label>Loss/Overage Amount (Deprecated)</label>
+    <precision>13</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

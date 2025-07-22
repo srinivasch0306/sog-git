@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Modification_Type__c</fullName>
+    <label>Modification Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Add GW Withdrawal(s)</fullName>
+                <default>false</default>
+                <label>Add GW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Add Replacement GW Withdrawal(s)</fullName>
+                <default>false</default>
+                <label>Add Replacement GW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Add SW Withdrawal(s)</fullName>
+                <default>false</default>
+                <label>Add SW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Decrease Acres</fullName>
+                <default>false</default>
+                <label>Decrease Acres</label>
+            </value>
+            <value>
+                <fullName>Decrease GPMS</fullName>
+                <default>false</default>
+                <label>Decrease GPMS</label>
+            </value>
+            <value>
+                <fullName>Increase Acres</fullName>
+                <default>false</default>
+                <label>Increase Acres</label>
+            </value>
+            <value>
+                <fullName>Increase GPMs</fullName>
+                <default>false</default>
+                <label>Increase GPMs</label>
+            </value>
+            <value>
+                <fullName>Remove SW Withdrawal(s)</fullName>
+                <default>false</default>
+                <label>Remove SW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Revoked In Error by EPD</fullName>
+                <default>false</default>
+                <label>Revoked In Error by EPD</label>
+            </value>
+            <value>
+                <fullName>Update Contact Information</fullName>
+                <default>false</default>
+                <label>Update Contact Information</label>
+            </value>
+            <value>
+                <fullName>Update Other Information</fullName>
+                <default>false</default>
+                <label>Update Other Information</label>
+            </value>
+            <value>
+                <fullName>Add Low Flow Protection</fullName>
+                <default>false</default>
+                <label>Add Low Flow Protection</label>
+            </value>
+            <value>
+                <fullName>Remove GW Withdrawal(s)</fullName>
+                <default>false</default>
+                <label>Remove GW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Add Low Flow Protection &amp; Add SW Withdrawal(s)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AddLow Flow Protection&amp;Add SWWithdrawals</label>
+            </value>
+            <value>
+                <fullName>Decrease GPMS &amp; Acres</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Decrease GPMS &amp; Acres</label>
+            </value>
+            <value>
+                <fullName>Increase Acres &amp; Add GW Withdrawal(s)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Increase Acres &amp; Add GW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Increase Acres &amp; Add Low Flow Protection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Increase Acres &amp; Add Low Flow Protection</label>
+            </value>
+            <value>
+                <fullName>Increase Acres &amp; Add SW Withdrawal(s)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Increase Acres &amp; Add SW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Increase Acres &amp; GPMs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Increase Acres &amp; GPMs</label>
+            </value>
+            <value>
+                <fullName>Increase Acres &amp; GPMs &amp; Add SW withdrawal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Increase Acres&amp;GPMs &amp; Add SW withdrawal</label>
+            </value>
+            <value>
+                <fullName>Increase Acres, GPMs &amp; Add GW Withdrawal(s)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Increase Acres,GPMs &amp; Add GW Withdrawals</label>
+            </value>
+            <value>
+                <fullName>Increase Acres / Add GW &amp; SW Withdrawal(s)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Increase Acres/Add GW &amp; SW Withdrawals</label>
+            </value>
+            <value>
+                <fullName>Increase GPMs &amp; Add GW Withdrawal(s)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Increase GPMs &amp; Add GW Withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Increase GPMs &amp; Add Low Flow Protection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Increase GPMs &amp; Add Low Flow Protection</label>
+            </value>
+            <value>
+                <fullName>Increase GPMs &amp; Add SW withdrawal(s)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Increase GPMs &amp; Add SW withdrawal(s)</label>
+            </value>
+            <value>
+                <fullName>Increase Acres &amp; GPMs / Add Low Flow Protection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IncreaseAcres&amp;GPMs/AddLowFlowProtection</label>
+            </value>
+            <value>
+                <fullName>RGW</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RGW</label>
+            </value>
+            <value>
+                <fullName>RIE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RIE</label>
+            </value>
+            <value>
+                <fullName>RPW</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RPW</label>
+            </value>
+            <value>
+                <fullName>UDD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UDD</label>
+            </value>
+            <value>
+                <fullName>UDE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UDE</label>
+            </value>
+            <value>
+                <fullName>UDF</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UDF</label>
+            </value>
+            <value>
+                <fullName>UDG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UDG</label>
+            </value>
+            <value>
+                <fullName>UDH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UDH</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

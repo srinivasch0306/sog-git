@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Intake_Must_Be_Greater_Than_Zero</fullName>
+    <active>true</active>
+    <description>Intake(ft) value must be greater than zero and less than the Depth(ft) value.</description>
+    <errorConditionFormula>AND(
+    OR(RecordType.DeveloperName = &quot;Ground_Water_Withdrawal&quot;,
+RecordType.DeveloperName = &quot;Ground_Water_Withdrawal_Application&quot;
+),
+    NOT(ISBLANK(AVO_Intake_ft__c)),
+    NOT(ISBLANK(AVO_Depth_ft__c)),
+    OR (AVO_Intake_ft__c &lt;= 0,
+    AVO_Intake_ft__c &gt;= AVO_Depth_ft__c)
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Intake_ft__c</errorDisplayField>
+    <errorMessage>Value must be greater than zero and less than the Depth (ft) value.</errorMessage>
+</ValidationRule>

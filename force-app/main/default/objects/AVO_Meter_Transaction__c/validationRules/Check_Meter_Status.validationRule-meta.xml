@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Meter_Status</fullName>
+    <active>false</active>
+    <description>Prevents submission of an application for Agricultural Flow Meter Approval if the selected Meter&apos;s Inventory Status is not &quot;Ready in Warehouse.&quot;</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(AVO_Type__c, &quot;Agricultural Flow Meter Approval&quot;),
+    NOT(ISBLANK(AVO_Meter_ID__c)),
+    TEXT(AVO_Meter_ID__r.AVO_Inventory_Status__c) &lt;&gt; &quot;Ready in Warehouse&quot;
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Meter_ID__c</errorDisplayField>
+    <errorMessage>The selected Meter must have an Inventory Status of &quot;Ready in Warehouse&quot;.</errorMessage>
+</ValidationRule>

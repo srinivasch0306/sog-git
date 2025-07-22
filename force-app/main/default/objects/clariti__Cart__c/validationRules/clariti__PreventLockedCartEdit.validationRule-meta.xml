@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__PreventLockedCartEdit</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  !ISNEW(),
+  !ISCHANGED(clariti__Timeout_Date__c),
+  clariti__Timeout_Date__c &gt; NOW()
+)</errorConditionFormula>
+    <errorMessage>This cart is locked and cannot be modified. Please wait a few minutes for it to unlock and try again.</errorMessage>
+</ValidationRule>

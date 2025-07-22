@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Contact_Type__c</fullName>
+    <label>Contact Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assessment Contractor</fullName>
+                <default>false</default>
+                <label>Assessment Contractor</label>
+            </value>
+            <value>
+                <fullName>Bond Surety</fullName>
+                <default>false</default>
+                <label>Bond Surety</label>
+            </value>
+            <value>
+                <fullName>Bonded Driller</fullName>
+                <default>false</default>
+                <label>Bonded Driller</label>
+            </value>
+            <value>
+                <fullName>Compliance Contact</fullName>
+                <default>false</default>
+                <label>Compliance Contact</label>
+            </value>
+            <value>
+                <fullName>Maintenance Contractors</fullName>
+                <default>false</default>
+                <label>Maintenance Contractors</label>
+            </value>
+            <value>
+                <fullName>Manufacturer/Vendor</fullName>
+                <default>false</default>
+                <label>Manufacturer/Vendor</label>
+            </value>
+            <value>
+                <fullName>Meter Installer</fullName>
+                <default>false</default>
+                <label>Meter Installer</label>
+            </value>
+            <value>
+                <fullName>Permit Operator</fullName>
+                <default>false</default>
+                <label>Permit Operator</label>
+            </value>
+            <value>
+                <fullName>Permit Owner</fullName>
+                <default>false</default>
+                <label>Permit Owner</label>
+            </value>
+            <value>
+                <fullName>Pump Contractor</fullName>
+                <default>false</default>
+                <label>Pump Contractor</label>
+            </value>
+            <value>
+                <fullName>Well Contractor</fullName>
+                <default>false</default>
+                <label>Well Contractor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

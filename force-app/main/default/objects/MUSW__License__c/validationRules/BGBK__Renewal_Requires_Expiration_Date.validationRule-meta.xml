@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Renewal_Requires_Expiration_Date</fullName>
+    <active>true</active>
+    <description>When entering a renewal date, expiration date must be present</description>
+    <errorConditionFormula>AND( MUSW__Renewal_Date__c != null, MUSW__Expiration_Date__c = null)</errorConditionFormula>
+    <errorMessage>License must have an expiration end date, before entering a renewed Date.</errorMessage>
+</ValidationRule>

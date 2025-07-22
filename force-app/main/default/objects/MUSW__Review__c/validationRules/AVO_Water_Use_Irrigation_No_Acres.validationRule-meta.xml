@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Water_Use_Irrigation_No_Acres</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL( MUSW__Type__c , &apos;Final Evaluation Review&apos; ),
+  ISPICKVAL( MUSW__Status__c , &apos;Completed&apos;),
+  NOT( ISBLANK( MUSW__Permit2__c ) ), 
+  OR(
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Agricultural Water Withdrawal Application&apos;),
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Agricultural Water Withdrawal Permit&apos;),
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Application to Modify or Transfer an Agricultural Water Withdrawal Permit&apos;)
+  ),
+  MUSW__Permit2__r.AVO_Undocumented__c = False,
+  INCLUDES( MUSW__Permit2__r.AVO_Purpose_of_Water_Use__c, &apos;Irrigation (Row Crops, Vegetables, Sod Production, Orchards, Plants Nurseries, Pasture)&apos; ), 
+  OR(
+    ISBLANK( MUSW__Permit2__r.AVO_Permitted_Acres__c ),
+    MUSW__Permit2__r.AVO_Permitted_Acres__c = 0
+  ),
+  NOT( ISPICKVAL( MUSW__Permit2__r.AVO_Permit_Closed_Status__c , &apos;Cancelled Must Reapply&apos; ) ),
+  NOT( ISPICKVAL( MUSW__Permit2__r.AVO_Permit_Closed_Status__c , &apos;Relinquished&apos; ) ),
+  NOT( ISPICKVAL( MUSW__Permit2__r.AVO_Permit_Closed_Status__c , &apos;Revoked&apos; ) )
+)</errorConditionFormula>
+    <errorMessage>Purpose of Water Use is Irrigation and Zero/Null Permitted Acres – Check Data Entry</errorMessage>
+</ValidationRule>

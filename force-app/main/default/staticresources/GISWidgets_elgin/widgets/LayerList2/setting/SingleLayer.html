@@ -1,0 +1,54 @@
+<div style="width:100%;">
+	<table class="input-table" style="width:100%;" cellspacing="0">
+		<tbody>
+			<tr>
+				<td style="width:115px;text-align:left;">${nls.layerUrl}/${nls.bgAPI}</td>
+				<td style="width:auto;">
+					<input type="text" data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="layerUrl" style="width:100%;" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<table style="width:100%;" cellspacing="0">
+						<tr>
+							<td style="width:50%;">
+								<table style="width:100%;" cellspacing="0">
+									<tbody>
+										<tr>
+											<td style="width:115px;text-align:left;">
+												<span>${nls.layerLabel}</span>
+											</td>
+											<td style="width:auto;">
+												<td class="second" colspan="2">
+													<input type="text" data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="layerName" style="width:100%;" />													
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+							<td style="width:50%;">
+								<table style="width:100%;" cellspacing="0">
+									<tbody>
+										<tr>
+											<td style="width:135px;text-align:left;">
+												<span style="margin-left:20px;">${nls.layerType}</span>
+											</td>
+											<td style="width:auto;">
+												<Select data-dojo-type="dijit/form/Select" data-dojo-attach-point="layerType" style="width:100%;" />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="operate-footer" style="margin-top:10px;">
+		<div data-dojo-attach-point="btnCancel">${nls.cancel}</div>
+		<div data-dojo-attach-point="btnAdd">${nls.addLayer}</div>
+		<div data-dojo-attach-point="btnUpdate">${nls.updateLayer}</div>
+	</div>
+</div>

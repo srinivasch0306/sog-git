@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__List_View_Board_Setting__c</fullName>
+    <deprecated>false</deprecated>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>List View Board Setting</label>
+    <referenceTo>MUSW__List_View_Board_Setting__mdt</referenceTo>
+    <relationshipLabel>Flow Action Settings</relationshipLabel>
+    <relationshipName>Flow_Action_Settings</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

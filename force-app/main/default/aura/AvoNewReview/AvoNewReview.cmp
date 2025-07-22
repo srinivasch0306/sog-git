@@ -1,0 +1,36 @@
+<!--
+    Lightning Aura Component shown on Permit Records as a Quick Action to add New Reviews.
+    @author Michael Chung
+    last modified by Michael Chung
+    @date 05/20/2021
+-->
+
+<aura:component Controller="AvoReviewDataRetrieverController" implements="force:lightningQuickAction,force:hasRecordId,force:hasSObjectName">
+    <aura:attribute name="sObjectName" type="String" default="{!v.sObjectName}" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="options" type="List" default="" />
+    <aura:attribute name="reviewValues" type="List" />
+    <aura:attribute name="loaded" type="Boolean" default="false" />
+
+    <!-- Handler to call function when page is loaded initially  -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <div class="content-wrapper">
+        <lightning:checkboxGroup name="reviewType" label="Select Review Type(s)" value="{!v.reviewValues}" placeholder="Select Review Type(s)" options="{!v.options }" />
+
+        <div class="create-button">
+            <aura:if isTrue="{!v.reviewValues.length > 0}">
+                <lightning:button variant="brand-outline" label="Create Review(s)" title="Create Review(s)" onclick="{! c.handleCreation }"/>
+            </aura:if>
+            <aura:if isTrue="{!v.reviewValues.length == 0}">
+                <lightning:button variant="brand-outline" label="Create Review(s)" title="Create Review(s)" disabled="true" />
+            </aura:if>
+
+            <aura:if isTrue="{! v.loaded }">
+                <div class="loadingReviews">
+                    <lightning:spinner alternativeText="Loading" />
+                </div>
+            </aura:if>
+        </div>
+    </div>
+</aura:component>

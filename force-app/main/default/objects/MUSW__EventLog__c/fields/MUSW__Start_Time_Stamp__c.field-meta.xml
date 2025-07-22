@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Start_Time_Stamp__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to record the starting date and time of the event or workflow action that triggered the creation of an Event Log.</description>
+    <label>Start Time Stamp</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Resource_Availability__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Resource Availability</label>
+    <referenceTo>MUSW__Resource_Availability__c</referenceTo>
+    <relationshipLabel>Resource Availability Regions</relationshipLabel>
+    <relationshipName>Resource_Availability_Regions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,1 @@
+trigger DRE2_MUSW_Milestone_c on MUSW__Milestone__c (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_MUSW_Milestone_c', new DRETriggerHandler()); }

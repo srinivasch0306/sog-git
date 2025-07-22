@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DRE__DRE_Rule__c.DRE__DTE_Plan_Rules__r$DRE__DTE_Plan__c.Name</field>
+    </columns>
+    <columns>
+        <field>DRE__DRE_Rule__c.DRE__DTE_Plan_Rules__r$DRE__Status__c</field>
+    </columns>
+    <columns>
+        <field>DRE__DRE_Rule__c.DRE__DTE_Plan_Rules__r$DRE__Description__c</field>
+    </columns>
+    <description>DTE Test coverage report for DRE Rules (Display and Batch Rules are excluded)</description>
+    <filter>
+        <criteriaItems>
+            <column>DRE__DRE_Rule__c.DRE__DTE_Plan_Rules__r$DRE__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Applied</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DRE__DRE_Rule__c$DRE__Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Automation,Validation</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>DRE__DRE_Rule__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DRE Test Cases</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>DRE__DRE_Rules_with_Test_Links__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>DRE__DRE_Rule__c.DRE__DTE_Plan_Rules__r$DRE__DTE_Plan__c.Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DRE__DRE_Rule__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Evaluation of Withdrawal 1st Cut</fullName>
+        <default>false</default>
+        <label>Evaluation of Withdrawal 1st Cut</label>
+    </customValue>
+    <customValue>
+        <fullName>Evaluation of Withdrawal 2nd Cut</fullName>
+        <default>false</default>
+        <label>Evaluation of Withdrawal 2nd Cut</label>
+    </customValue>
+    <customValue>
+        <fullName>Special Appraisal</fullName>
+        <default>false</default>
+        <label>Special Appraisal</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Data Form Review</fullName>
+        <default>false</default>
+        <label>Well Data Form Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Flow Protection Plan Review</fullName>
+        <default>false</default>
+        <label>Low Flow Protection Plan Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Irrigation Efficiency Cert Review</fullName>
+        <default>false</default>
+        <label>Irrigation Efficiency Cert Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Reuse Visibility Study Review</fullName>
+        <default>false</default>
+        <label>Water Reuse Visibility Study Review</label>
+    </customValue>
+    <customValue>
+        <fullName>AG Program Manger Review</fullName>
+        <default>false</default>
+        <label>AG Program Manger Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Supply manager Review</fullName>
+        <default>false</default>
+        <label>Water Supply manager Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Shed manager Review</fullName>
+        <default>false</default>
+        <label>Water Shed manager Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Director Office Review</fullName>
+        <default>false</default>
+        <label>Director Office Review</label>
+    </customValue>
+    <masterLabel>Review Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

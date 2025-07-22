@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__OfficeFaxNumber__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Fax number to be displayed on the document</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Fax number to be displayed on the document</inlineHelpText>
+    <label>Office Fax Number</label>
+    <required>false</required>
+    <type>Phone</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Fields_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>BGBL__Object_Fields__c = &quot;&quot;</errorConditionFormula>
+    <errorDisplayField>BGBL__Object_Fields__c</errorDisplayField>
+    <errorMessage>You must specify which fields you want the query to return for merging.</errorMessage>
+</ValidationRule>

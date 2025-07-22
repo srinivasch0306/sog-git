@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Permit_Closed_Status__c</fullName>
+    <label>Permit Closed Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancelled Must Reapply</fullName>
+                <default>false</default>
+                <label>Cancelled Must Reapply</label>
+            </value>
+            <value>
+                <fullName>Relinquished</fullName>
+                <default>false</default>
+                <label>Relinquished</label>
+            </value>
+            <value>
+                <fullName>Revoked</fullName>
+                <default>false</default>
+                <label>Revoked</label>
+            </value>
+            <value>
+                <fullName>Archived</fullName>
+                <default>false</default>
+                <label>Archived</label>
+            </value>
+            <value>
+                <fullName>Denied</fullName>
+                <default>false</default>
+                <label>Denied</label>
+            </value>
+            <value>
+                <fullName>Cancelled Application</fullName>
+                <default>false</default>
+                <label>Cancelled Application</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

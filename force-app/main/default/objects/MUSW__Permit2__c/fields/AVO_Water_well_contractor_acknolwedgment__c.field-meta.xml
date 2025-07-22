@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Water_well_contractor_acknolwedgment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>I understand that the water well contractor installing water wells must be licensed in the State of Georgia, and wells installed by unlicensed water well contactors will not receive a Permit.  If you have selected your water well contractor, please provide the company name and license number:</inlineHelpText>
+    <label>Water well contractor acknowledgment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

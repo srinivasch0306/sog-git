@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Payment_Collection_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines which Payment Collection Type this tier is related to</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Specify the Payment Collection Type setting name to which this tier should relate to</inlineHelpText>
+    <label>Payment Collection Type</label>
+    <referenceTo>BGBK__Payment_Collection_Types__mdt</referenceTo>
+    <relationshipLabel>Payment Collection Type Tiers</relationshipLabel>
+    <relationshipName>Payment_Collection_Type_Tiers</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,3 @@
+<apex:page showHeader="true" sidebar="true" standardController="MUSW__Equipment__c">
+     <MUSW:PageDefaults sObjectType="MUSW__Equipment__c"/>
+</apex:page>

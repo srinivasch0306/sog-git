@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Open_Cart_ItemSearch</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Deprecated</masterLabel>
+    <openType>sidebar</openType>
+    <page>BGBK__CartPlaceholder</page>
+    <protected>false</protected>
+</WebLink>

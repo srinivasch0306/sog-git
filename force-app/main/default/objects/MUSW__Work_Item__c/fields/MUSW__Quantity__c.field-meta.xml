@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Quantity__c</fullName>
+    <defaultValue>1</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Count or Number of Items.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of Items. Used for &quot;EACH&quot; or for multiple dwellings eg. No. of Condo Units</inlineHelpText>
+    <label>Quantity</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

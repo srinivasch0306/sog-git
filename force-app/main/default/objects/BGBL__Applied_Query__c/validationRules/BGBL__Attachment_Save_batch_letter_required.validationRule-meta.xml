@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Attachment_Save_batch_letter_required</fullName>
+    <active>true</active>
+    <description>Either Attach on first query or Save Batch file must be true when not an iterate query</description>
+    <errorConditionFormula>ISPICKVAL(BGBL__Execution_Order__c, &quot;1&quot;) &amp;&amp;  BGBL__Child_Iterate_Query__c == false &amp;&amp; BGBL__Attachment_To_Object__c  == false &amp;&amp;  BGBL__Batch_Letter__r.BGBL__Save_Batch_Letter__c == false</errorConditionFormula>
+    <errorMessage>Must Attach in applied query or Save Batch Letter</errorMessage>
+</ValidationRule>

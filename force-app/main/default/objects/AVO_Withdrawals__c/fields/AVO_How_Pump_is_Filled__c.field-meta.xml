@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_How_Pump_is_Filled__c</fullName>
+    <inlineHelpText>Indicate How Pond is filled</inlineHelpText>
+    <label>How Pump is Filled</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Perennial or intermittent stream</fullName>
+                <default>false</default>
+                <label>Perennial or intermittent stream</label>
+            </value>
+            <value>
+                <fullName>Rainfall Runoff</fullName>
+                <default>false</default>
+                <label>Rainfall Runoff</label>
+            </value>
+            <value>
+                <fullName>Pumped water from stream or pond</fullName>
+                <default>false</default>
+                <label>Pumped water from stream or pond</label>
+            </value>
+            <value>
+                <fullName>Springs &amp; Seeps</fullName>
+                <default>false</default>
+                <label>Springs &amp; Seeps</label>
+            </value>
+            <value>
+                <fullName>Pumped water from well</fullName>
+                <default>false</default>
+                <label>Pumped water from well</label>
+            </value>
+            <value>
+                <fullName>Sinkhole or natural pond/wetland</fullName>
+                <default>false</default>
+                <label>Sinkhole or natural pond/wetland</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

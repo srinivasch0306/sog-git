@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Resource_Absence_Default</fullName>
+    <fields>MUSW__Resource__c</fields>
+    <fields>MUSW__Absence_Start_DateTime__c</fields>
+    <fields>MUSW__Absence_End_DateTime__c</fields>
+    <fields>MUSW__Is_All_Day_Absence__c</fields>
+    <label>Resource Absence Default</label>
+</CompactLayout>

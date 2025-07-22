@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__New_Edit_Filters</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New/Edit Filters</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/apex/musw__bulkAddEdit?pid={!MUSW__Automation_Rule__c.Id}&amp;defaults=MUSW__Group__c=1,MUSW__Active__c=true&amp;type=MUSW__Automation_Filter__c&amp;minrows=5</url>
+</WebLink>

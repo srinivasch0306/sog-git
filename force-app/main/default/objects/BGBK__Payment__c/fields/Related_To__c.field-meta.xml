@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_To__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISNULL( BGBK__Permit2__c ), BGBK__Permit2__c  = &quot;&quot;),
+	If(OR(ISNULL( BGBK__Application2__c ),  BGBK__Application2__c  = &quot;&quot;),
+		If(OR(ISNULL( BGBK__Complaint2__c ),  BGBK__Complaint2__c  = &quot;&quot;),
+			IF(OR(ISNULL( BGBK__License2__c ),  BGBK__License2__c  = &quot;&quot;),
+			&quot;&quot;, HYPERLINK( &quot;../&quot; &amp; BGBK__License2__c, BGBK__License2__r.Name ,&quot;_parent&quot; )),
+			HYPERLINK( &quot;../&quot; &amp; BGBK__Complaint2__c,BGBK__Complaint2__r.Name,&quot;_parent&quot; )),
+		HYPERLINK( &quot;../&quot; &amp; BGBK__Application2__c,BGBK__Application2__r.Name,&quot;_parent&quot; )),
+	HYPERLINK( &quot;../&quot; &amp; BGBK__Permit2__c,BGBK__Permit2__r.Name,&quot;_parent&quot; ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Related To</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

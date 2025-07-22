@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Irrigation_Type__c</fullName>
+    <label>Irrigation Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Center Pivot</fullName>
+                <default>false</default>
+                <label>Center Pivot</label>
+            </value>
+            <value>
+                <fullName>Center Pivot and Drip</fullName>
+                <default>false</default>
+                <label>Center Pivot and Drip</label>
+            </value>
+            <value>
+                <fullName>Center Pivot and solid Set Sprinkler</fullName>
+                <default>false</default>
+                <label>Center Pivot and solid Set Sprinkler</label>
+            </value>
+            <value>
+                <fullName>Center Pivot and Traveler</fullName>
+                <default>false</default>
+                <label>Center Pivot and Traveler</label>
+            </value>
+            <value>
+                <fullName>Drip</fullName>
+                <default>false</default>
+                <label>Drip</label>
+            </value>
+            <value>
+                <fullName>Drip and Solid Set Sprinkler</fullName>
+                <default>false</default>
+                <label>Drip and Solid Set Sprinkler</label>
+            </value>
+            <value>
+                <fullName>Drip and Traveler</fullName>
+                <default>false</default>
+                <label>Drip and Traveler</label>
+            </value>
+            <value>
+                <fullName>Dump Well</fullName>
+                <default>false</default>
+                <label>Dump Well</label>
+            </value>
+            <value>
+                <fullName>Non-Irrigation</fullName>
+                <default>false</default>
+                <label>Non-Irrigation</label>
+            </value>
+            <value>
+                <fullName>Solid set Sprinkler</fullName>
+                <default>false</default>
+                <label>Solid set Sprinkler</label>
+            </value>
+            <value>
+                <fullName>Traveler</fullName>
+                <default>false</default>
+                <label>Traveler</label>
+            </value>
+            <value>
+                <fullName>Traveler and Solid Set sprinkler</fullName>
+                <default>false</default>
+                <label>Traveler and Solid Set sprinkler</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

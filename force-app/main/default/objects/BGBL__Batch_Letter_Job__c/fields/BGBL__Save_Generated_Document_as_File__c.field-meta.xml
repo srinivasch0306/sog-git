@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Save_Generated_Document_as_File__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>$Setup.BGBL__Letter_Single__c.BGBL__Save_Generated_Document_as_File__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Save Generated Document as File</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

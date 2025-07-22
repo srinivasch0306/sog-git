@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_WWSAComplianceCase_FieldRestriction</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    $Profile.Name != &apos;AVO Customer Community Login - Applicant&apos;,
+    ISPICKVAL(AVO_CaseClass__c, &quot;WWSA Compliance Case&quot;),
+    OR(
+        ISCHANGED(AVO_RefPermitAppID__c),
+        ISCHANGED(AVO_RefMeterID__c),
+        ISCHANGED(AVO_AppID__c),
+        AND(
+            ISNEW(),
+            OR(
+                NOT(ISBLANK(AVO_RefPermitAppID__c)),
+                NOT(ISBLANK(AVO_RefMeterID__c)),
+                NOT(ISBLANK(AVO_AppID__c))
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>For WWSACompliance Cases, RefPermitAppID, RefMeterID and AppID fields are read-only and cannot be modified</errorMessage>
+</ValidationRule>

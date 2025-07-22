@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGCM__Source_Type_Fields__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>The field(s) containing the Source Type value. Required in Auto mode if Source Type is not DEFAULT. Note: Source Type Values are case sensitive.</inlineHelpText>
+    <label>Source Type Fields (Deprecated)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MUSW__Type__c</fullName>
+                <default>false</default>
+                <label>MUSW__Type__c</label>
+            </value>
+            <value>
+                <fullName>MUSW__Status__c</fullName>
+                <default>false</default>
+                <label>MUSW__Status__c</label>
+            </value>
+            <value>
+                <fullName>MUSW__Action_Type__c</fullName>
+                <default>false</default>
+                <label>MUSW__Action_Type__c</label>
+            </value>
+            <value>
+                <fullName>MUSW__Current_Status__c</fullName>
+                <default>false</default>
+                <label>MUSW__Current_Status__c</label>
+            </value>
+            <value>
+                <fullName>MUSW__Permit_Type__c</fullName>
+                <default>false</default>
+                <label>MUSW__Permit_Type__c</label>
+            </value>
+            <value>
+                <fullName>BGCM__Type__c</fullName>
+                <default>false</default>
+                <label>BGCM__Type__c</label>
+            </value>
+            <value>
+                <fullName>BGCM__Status__c</fullName>
+                <default>false</default>
+                <label>BGCM__Status__c</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

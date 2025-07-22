@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Meter_Location__c</fullName>
+    <label>Meter Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pivot Point</fullName>
+                <default>false</default>
+                <label>Pivot Point</label>
+            </value>
+            <value>
+                <fullName>GW Source</fullName>
+                <default>false</default>
+                <label>GW Source</label>
+            </value>
+            <value>
+                <fullName>SW Source</fullName>
+                <default>false</default>
+                <label>SW Source</label>
+            </value>
+            <value>
+                <fullName>Alt. Leg</fullName>
+                <default>false</default>
+                <label>Alt. Leg</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>AVO_Permit_Types__c</columns>
+    <columns>AVO_Permit_Statuses__c</columns>
+    <columns>AVO_Special_Condition_Category__c</columns>
+    <columns>AVO_Special_Condition__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Unpaid_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Total outstanding amount that still needs to be collected.</description>
+    <formula>IF((MUSW__Amount__c - MUSW__Paid_Amount__c - MUSW__Transfered_In_Amount__c) &lt; 0, 0, MUSW__Amount__c - MUSW__Paid_Amount__c - MUSW__Transfered_In_Amount__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Unpaid Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Use_Class__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Classification categories of how this permitted structure will be used.</description>
+    <label>Use Class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>MUSW__Use_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Residential</fullName>
+                <default>false</default>
+                <label>Residential</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Mixed Use</controllingFieldValue>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Institutional</controllingFieldValue>
+            <valueName>Commercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multi Family Dwelling</controllingFieldValue>
+            <controllingFieldValue>Mixed Use</controllingFieldValue>
+            <controllingFieldValue>Single Family Dwelling</controllingFieldValue>
+            <controllingFieldValue>Mobile Home</controllingFieldValue>
+            <valueName>Residential</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

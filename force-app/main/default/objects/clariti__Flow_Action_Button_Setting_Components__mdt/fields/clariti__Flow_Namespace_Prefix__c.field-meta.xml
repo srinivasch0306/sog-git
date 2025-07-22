@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Flow_Namespace_Prefix__c</fullName>
+    <deprecated>false</deprecated>
+    <description>For a managed flow, we will need to provide both the namespace and the flow API name - those are the two identifiers needed by our code logic to find the flow and then launch it.
+
+For a custom/unmanaged flow, we will only need to provide the flow API name - since the flow is custom, it doesn’t have a namespace that is unique to it (it just inherits the org’s namespace, if any), so the API name is enough for our logic to find and launch it.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Flow Namespace Prefix</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

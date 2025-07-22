@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__Completed__c</fullName>
+    <deprecated>false</deprecated>
+    <description>True if this is a completed submit or inspection</description>
+    <formula>OR( TEXT(sf_devops__Inspection_Result__r.sf_devops__Status__c)  = &quot;COMPLETED&quot;,  TEXT(sf_devops__Creation_Result__r.sf_devops__Status__c) = &quot;COMPLETED&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Completed</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

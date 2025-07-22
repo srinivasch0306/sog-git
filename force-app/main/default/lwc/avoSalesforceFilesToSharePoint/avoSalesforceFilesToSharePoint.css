@@ -1,0 +1,12 @@
+.button-hyperlink:hover {
+    text-decoration: underline;
+}
+
+.message-color{
+    background-color: #d8e6fe;
+}
+.slds-align_absolute-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

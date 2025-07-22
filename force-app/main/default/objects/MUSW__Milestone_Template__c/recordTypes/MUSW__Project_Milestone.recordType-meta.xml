@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Project_Milestone</fullName>
+    <active>true</active>
+    <label>Project Milestone</label>
+    <picklistValues>
+        <picklist>Avo_Permit_Type__c</picklist>
+        <values>
+            <fullName>AG Water Metering Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural Water Withdrawal Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application for Permit Consolidation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Relinquishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Plug %26 Abandonment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well and Pump Data</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Avo_Planning_Application_Type__c</picklist>
+        <values>
+            <fullName>Development Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Application_Phases__c</picklist>
+        <values>
+            <fullName>Application</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Application_Statuses__c</picklist>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Application_Types__c</picklist>
+        <values>
+            <fullName>Variance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__License_Phases__c</picklist>
+        <values>
+            <fullName>Application</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__License_Statuses__c</picklist>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__License_Types__c</picklist>
+        <values>
+            <fullName>Restaurant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Milestone_Name__c</picklist>
+        <values>
+            <fullName>Admin Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Object_Record_Types__c</picklist>
+        <values>
+            <fullName>AG Water Metering Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVO_Agricultural_Water_Withdrawal_Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVO_Compliance_Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural Flow Meter Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application_to_Modify_or_Transfer_an_Agricultural_Water_Withdrawal_Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Water Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Water Withdrawal Application</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Object_Types__c</picklist>
+        <values>
+            <fullName>AVO_Compliance%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVO_Meter_Transaction%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Permit_Phases__c</picklist>
+        <values>
+            <fullName>Application</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Permit_Statuses__c</picklist>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Issuance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revision Approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Permit_Types__c</picklist>
+        <values>
+            <fullName>Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groundwater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well to Pond</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Permit_Work_Types__c</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Project_Statuses__c</picklist>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Determines the display order on the itinerary page. When an inspection order is changed on an itinerary, this field is updated. It is not usually displayed on the inspection layout.</description>
+    <externalId>false</externalId>
+    <label>Order</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

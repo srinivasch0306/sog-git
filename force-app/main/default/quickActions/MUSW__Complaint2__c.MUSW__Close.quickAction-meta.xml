@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Trigger close complaint flow when button is clicked.</description>
+    <flowDefinition>MUSW__Close_Complaint</flowDefinition>
+    <label>Close</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

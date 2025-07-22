@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Incorrect_Longitude_And_Latitude_GW</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+    AVO_Well_Long__c  &gt; -80.75777,
+    AVO_Well_Long__c &lt; -85.60238,
+    AVO_Well_Latitude__c  &gt; 34.997296,    
+    AVO_Well_Latitude__c &lt; 30.319872
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Well_Latitude__c</errorDisplayField>
+    <errorMessage>The longitude or latitude values are incorrect. Please enter values within the boundaries of the State of Georgia.</errorMessage>
+</ValidationRule>

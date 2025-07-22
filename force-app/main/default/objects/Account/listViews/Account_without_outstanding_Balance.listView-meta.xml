@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_without_outstanding_Balance</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>BGBK__Total_Balance__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>BGBK__Total_Balance__c</field>
+        <operation>lessOrEqual</operation>
+        <value>0</value>
+    </filters>
+    <label>Account without outstanding Balance</label>
+</ListView>

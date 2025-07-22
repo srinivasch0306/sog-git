@@ -1,0 +1,58 @@
+<apex:page controller="InspectionRequestController" tabStyle="MUSW__Inspection__c" id="p" action="{!initSetIEMode}" >
+<apex:form id="f">
+    <apex:sectionHeader title="Inspection" subtitle="Request Inspections" description="{!parentName}">
+        <apex:messages />
+    </apex:sectionHeader>
+    
+    <apex:outputText rendered="{!hasBalance}">The Permit has outstanding balance. All Fees must be paid before requesting an Inspection.</apex:outputText>
+    <apex:pageblock id="pb" rendered="{!!hasBalance}">
+        <apex:pageblockbuttons >
+            <apex:commandbutton action="{!save}" value="Save" />
+            <apex:commandbutton action="{!cancel}" value="Cancel" immediate="true" />
+        </apex:pageblockbuttons>
+        
+        <apex:variable value="{!0}" var="index"/>
+        <apex:repeat value="{!ins}" var="i" id="insRepeat">
+            <table style="width:100%; background-color:{!IF(MOD(index, 2) = 0, '#F0F0F0', '#F8F8F8')}">
+            <tr>
+                <td style="width:5%">
+                    <apex:selectRadio onclick="expandJS({!index});" id="rb"/> <apex:outputText rendered="{!i.Id = null}">Other</apex:outputText>
+                </td>
+                <td style="width:100%">
+                    <table style="width:100%">
+                    <tr><td>
+                        <apex:repeat value="{!$ObjectType.MUSW__Inspection__c.FieldSets.Request_Overview}" var="f">
+                            <b>{!$ObjectType.MUSW__Inspection__c.Fields[f].label}</b>&nbsp;&nbsp;
+                            <apex:outputField value="{!i[f]}" rendered="{!i.Id != null}"/>
+                            <apex:inputField value="{!i[f]}" rendered="{!i.Id = null}"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                        </apex:repeat>
+                    </td></tr>
+                    <tr><td>
+                        <table style="width:100%;display:{!IF(insSelectIndex = index, 'block', 'none')}">
+                        <apex:repeat value="{!$ObjectType.MUSW__Inspection__c.FieldSets.Request_Details}" var="f">
+                            <tr>
+                                <td style="width:10%"><b>{!$ObjectType.MUSW__Inspection__c.Fields[f].label}</b></td>
+                                <td style="width:90%"><apex:inputField value="{!i[f]}" style="{!IF(f='Instructions__c', 'width:70%;height:70px', '')}"/></td>
+                            </tr>
+                        </apex:repeat>
+                        </table>
+                    </td></tr>
+                    </table>
+                </td>
+            </tr>
+            </table>
+            <apex:variable var="index" value="{!index + 1}"/>
+        </apex:repeat>
+        
+        <apex:actionFunction name="expandJS" reRender="pb" oncomplete="selectRadioJS();">
+            <apex:param name="insId" assignTo="{!insSelectIndex}" value=""/>
+        </apex:actionFunction>
+        
+        <script>
+        if ("{!insSelectIndex}" != "") document.getElementById("p:f:pb:insRepeat:{!insSelectIndex}:rb:0").checked = true;
+        </script>
+        
+    </apex:pageblock>
+    
+</apex:form>
+</apex:page>

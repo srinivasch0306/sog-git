@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Valuation_Template_Default</fullName>
+    <fields>Name</fields>
+    <fields>MUSW__Effective_Start_Date__c</fields>
+    <fields>MUSW__Effective_End_Date__c</fields>
+    <fields>MUSW__Amount__c</fields>
+    <label>Building Valuation Default</label>
+</CompactLayout>

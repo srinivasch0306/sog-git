@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Well_Vetted_By_Required</fullName>
+    <active>true</active>
+    <description>Well Vetted By is mandatory when Well Vetted is Yes.</description>
+    <errorConditionFormula>AND(
+ISBLANK(AVO_Well_Vetted_By__c),
+ISPICKVAL( AVO_WellVetted__c , &quot;Yes&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Well_Vetted_By__c</errorDisplayField>
+    <errorMessage>Field is required when Well Vetted is Yes.</errorMessage>
+</ValidationRule>

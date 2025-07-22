@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Inactive_User_must_have_a_Successor</fullName>
+    <active>false</active>
+    <description>A newly inactive user must specify a Successor for record hand-over.</description>
+    <errorConditionFormula>ContactId != null &amp;&amp; PRIORVALUE(IsActive) = true &amp;&amp; IsActive = false &amp;&amp; MUSW__Successor__c = null</errorConditionFormula>
+    <errorDisplayField>MUSW__Successor__c</errorDisplayField>
+    <errorMessage>Inactive User must have a Successor</errorMessage>
+</ValidationRule>

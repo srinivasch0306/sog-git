@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Verified_By_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( AVO_Meter_Verified__c, &quot;Yes&quot; ),
+ISBLANK( AVO_Verified_By__c )
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Verified_By__c</errorDisplayField>
+    <errorMessage>Verified By is mandatory when Meter Verified is Yes.</errorMessage>
+</ValidationRule>

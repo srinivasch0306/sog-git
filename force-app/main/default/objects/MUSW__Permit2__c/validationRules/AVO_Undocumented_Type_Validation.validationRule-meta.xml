@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Undocumented_Type_Validation</fullName>
+    <active>true</active>
+    <description>This rule ensures that when the checkbox field AVO_Undocumented__c is checked (true), the value of MUSW__Type__c must be &quot;Undocumented source&quot;. If it is not &quot;Undocumented source&quot;, an error will be triggered.</description>
+    <errorConditionFormula>AND(
+    AVO_Undocumented__c = TRUE,
+    NOT(ISPICKVAL(MUSW__Type__c, &quot;Undocumented Source&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Undocumented__c</errorDisplayField>
+    <errorMessage>Permit Application must be Undocumented source when AVO_Undocumented__c is true.</errorMessage>
+</ValidationRule>

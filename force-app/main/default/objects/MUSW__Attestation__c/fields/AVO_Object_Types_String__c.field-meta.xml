@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Object_Types_String__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES (  MUSW__Object_Types__c , &quot;MUSW__Permit2__c&quot; ), &quot;MUSW__Permit2__c;&quot;,null ) &amp;
+IF ( INCLUDES (  MUSW__Object_Types__c , &quot;AVO_Meter_Transaction__c&quot; ), &quot;AVO_Meter_Transaction__c;&quot;,null ) &amp;
+IF ( INCLUDES (  MUSW__Object_Types__c , &quot;AVO_Withdrawals__c&quot; ), &quot;AVO_Withdrawals__c&quot;,null ) &amp;
+IF ( INCLUDES (  MUSW__Object_Types__c , &quot;AVO_Compliance__c&quot; ), &quot;AVO_Compliance__c&quot;,null )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Object Types String</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

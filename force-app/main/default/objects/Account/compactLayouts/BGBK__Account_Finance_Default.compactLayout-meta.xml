@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Account_Finance_Default</fullName>
+    <fields>Name</fields>
+    <fields>Phone</fields>
+    <fields>BGBK__Total_Balance__c</fields>
+    <label>Account (Finance) Default</label>
+</CompactLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Restrict_Newer_Primary_Complaint</fullName>
+    <active>true</active>
+    <description>Cannot relate older complaint to a newer primary complaint</description>
+    <errorConditionFormula>NOT(ISBLANK(MUSW__Primary_Complaint__c )) &amp;&amp; MUSW__Primary_Complaint__r.CreatedDate  &gt;  CreatedDate</errorConditionFormula>
+    <errorMessage>Cannot relate older complaint to a newer primary complaint</errorMessage>
+</ValidationRule>

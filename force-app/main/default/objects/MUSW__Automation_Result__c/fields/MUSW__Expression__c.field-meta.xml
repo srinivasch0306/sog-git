@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Expression__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Javascript formula expression for Assess rules only. Clariti formulas in the Value field is the equivalent for all other rule types.</description>
+    <label>Expression</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

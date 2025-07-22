@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SingleUseTokenUsernameProd</label>
+    <protected>false</protected>
+    <values>
+        <field>clariti__Currency__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__PaymentType__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__Text_Area_Long__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__Text__c</field>
+        <value xsi:type="xsd:string">SUT-310562</value>
+    </values>
+</CustomMetadata>

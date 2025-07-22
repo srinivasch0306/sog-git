@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Escalator</fullName>
+        <default>false</default>
+        <label>Escalator</label>
+    </customValue>
+    <customValue>
+        <fullName>Elevator</fullName>
+        <default>false</default>
+        <label>Elevator</label>
+    </customValue>
+    <masterLabel>Equipment SubTypes</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Require_Absence_Start</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK( MUSW__Absence_Start_DateTime__c )</errorConditionFormula>
+    <errorDisplayField>MUSW__Absence_Start_DateTime__c</errorDisplayField>
+    <errorMessage>Absence Start is required.</errorMessage>
+</ValidationRule>

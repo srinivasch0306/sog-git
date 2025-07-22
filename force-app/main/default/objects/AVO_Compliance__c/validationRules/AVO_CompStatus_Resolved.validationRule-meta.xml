@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_CompStatus_Resolved</fullName>
+    <active>true</active>
+    <description>Once CompStatus is Resolved, it can&apos;t be changed except by admins.</description>
+    <errorConditionFormula>AND( $Profile.Name &lt;&gt; &quot;System Administrator&quot;, ISCHANGED( AVO_CompStatus__c ),  ISPICKVAL(PRIORVALUE(AVO_CompStatus__c), &quot;Resolved&quot;)  )</errorConditionFormula>
+    <errorDisplayField>AVO_CompStatus__c</errorDisplayField>
+    <errorMessage>CompStatus cannot be changed once it is Resolved.</errorMessage>
+</ValidationRule>

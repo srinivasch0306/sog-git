@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>MUSW__Fee__c.MUSW__Type__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__Fee__c.MUSW__Amount__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__Fee__c.MUSW__Amount_Paid__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__Fee__c.MUSW__Outstanding_Fee__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__Fee__c.MUSW__Fee_Paid_Date2__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__Fee__c.MUSW__Fee_Paid__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <description>Applications with fees</description>
+    <format>Tabular</format>
+    <name>Applications with Fees</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MUSW__Fee__c@MUSW__Fee__c.MUSW__Application2__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MUSW__Fee__c.MUSW__Fee_Paid_Date2__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

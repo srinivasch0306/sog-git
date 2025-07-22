@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Person_Account__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If true, Apex creates an associated/equivalent contact. Allows for the ability to create Applicants who are companies</description>
+    <inlineHelpText>If you want to make this company available also as a person. Eg. also having an email address and home/mobile phone numbers</inlineHelpText>
+    <label>Person Account</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

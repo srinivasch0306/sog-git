@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Parcel__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Associated parcel or address of the permit.</description>
+    <label>Parcel</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>MUSW__Parcel__c.MUSW__Historic__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>MUSW__Parcel__c</referenceTo>
+    <relationshipLabel>Permits</relationshipLabel>
+    <relationshipName>Permit2s</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,1 @@
+trigger DRE2_MUSW_Parcel_c on MUSW__Parcel__c (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_MUSW_Parcel_c', new DRETriggerHandler()); }

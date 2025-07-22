@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__ParentObjectField__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Mapping to the field(s) which contains the information of the parent object of the payable object</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Mapping to the field(s) which contains the information of the parent object of the payable object</inlineHelpText>
+    <label>Parent Object Field(s)</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

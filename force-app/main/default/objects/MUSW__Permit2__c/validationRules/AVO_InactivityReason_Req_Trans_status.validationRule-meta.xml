@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_InactivityReason_Req_Trans_status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISBLANK(TEXT(AVO_Inactive_Reason__c)),
+ISPICKVAL(AVO_Transaction_Status__c, &apos;Revoked&apos;) ||
+ISPICKVAL(AVO_Transaction_Status__c, &apos;To Be Revoked&apos;) ||
+ISPICKVAL(AVO_Transaction_Status__c, &apos;Cancelled Must reapply&apos;) ||
+ISPICKVAL(AVO_Transaction_Status__c, &apos;Relinquished&apos;) 
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Inactive_Reason__c</errorDisplayField>
+    <errorMessage>Inactive Reason must be populated when Transaction Status  is Revoked, To Be revoked, Cancelled Must Reapply or Relinquished</errorMessage>
+</ValidationRule>

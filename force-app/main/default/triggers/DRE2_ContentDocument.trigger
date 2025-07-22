@@ -1,0 +1,1 @@
+trigger DRE2_ContentDocument on ContentDocument (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_ContentDocument', new DRETriggerHandler()); }

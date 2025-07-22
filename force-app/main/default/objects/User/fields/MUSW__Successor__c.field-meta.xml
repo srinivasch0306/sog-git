@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Successor__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The succeeding User will inherit all records currently associated with the User being deactivated</description>
+    <inlineHelpText>The succeeding User will inherit all records currently associated with the User being deactivated</inlineHelpText>
+    <label>Successor</label>
+    <relationshipName>InactiveUsers</relationshipName>
+    <restrictedAdminField>false</restrictedAdminField>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Hierarchy</type>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Modification_Type_is_Req</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    ISBLANK(AVO_Modification_Type__c),
+    OR(
+        ISPICKVAL(AVO_Transaction_Status__c, &quot;To Be Modified&quot;),
+        ISPICKVAL(AVO_Transaction_Status__c, &quot;To be Updated&quot;),
+        ISPICKVAL(AVO_Transaction_Status__c, &quot;To be Corrected&quot;),
+        ISPICKVAL(AVO_Transaction_Status__c, &quot;To Be Modified &amp; Transferred&quot;),
+        ISPICKVAL(AVO_Transaction_Status__c, &quot;To Be Corrected &amp; Transferred&quot;),
+        ISPICKVAL(AVO_Transaction_Status__c, &quot;To be Updated &amp; Transferred&quot;)
+    ),
+    OR(
+        RecordType.Name = &quot;Agricultural Water Withdrawal Permit&quot;,
+        RecordType.Name = &quot;Agricultural Water Withdrawal Application&quot;
+    )
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Modification_Type__c</errorDisplayField>
+    <errorMessage>Modification Type is required when the Transaction Status is set to: &apos;To Be Modified&apos;, &apos;To Be Updated&apos;, &apos;To Be Corrected&apos;, &apos;To Be Modified &amp; Transferred&apos;, &apos;To Be Corrected &amp; Transferred&apos;, or &apos;To Be Updated &amp; Transferred&apos;.</errorMessage>
+</ValidationRule>

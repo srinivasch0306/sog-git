@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Disposal_Meter_Installations</fullName>
+    <columns>NAME</columns>
+    <columns>AVO_Type__c</columns>
+    <columns>AVO_Installation_Type__c</columns>
+    <columns>AVO_Installation_Status__c</columns>
+    <columns>AVO_Meter_Inventory_Status__c</columns>
+    <columns>AVO_Disposal_Approved__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>AVO_Meter_Transaction__c.AG_Water_Metering_Installation</value>
+    </filters>
+    <filters>
+        <field>AVO_Installation_Status__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </filters>
+    <filters>
+        <field>AVO_Installation_Type__c</field>
+        <operation>equals</operation>
+        <value>Replacement,Retrieval</value>
+    </filters>
+    <filters>
+        <field>AVO_Meter_Inventory_Status__c</field>
+        <operation>equals</operation>
+        <value>Meter Retrieved - Pending Disposal</value>
+    </filters>
+    <filters>
+        <field>AVO_Disposal_Approved__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Pending Disposal Meter Installations</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

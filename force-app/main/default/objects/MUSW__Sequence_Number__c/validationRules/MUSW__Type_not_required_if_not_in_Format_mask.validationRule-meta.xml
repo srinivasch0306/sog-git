@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Type_not_required_if_not_in_Format_mask</fullName>
+    <active>true</active>
+    <description>If type mask is not included in mask format do not fill in the Type field</description>
+    <errorConditionFormula>AND(NOT(CONTAINS(MUSW__Format__c,&apos;{type}&apos;)) ,  MUSW__Type__c != null)</errorConditionFormula>
+    <errorMessage>Type not required if Format mask does not contain &apos;{type}&apos;. Clear Type field</errorMessage>
+</ValidationRule>

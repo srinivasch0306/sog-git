@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__DepositSlipNumberIsRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>$CustomMetadata.clariti__FinancialsFeatureEnablementSettings__mdt.clariti__BankDepositSlipNumberIsRequired.clariti__Enable__c &amp;&amp;  ISBLANK(clariti__DepositSlipNumber__c) &amp;&amp; ISPICKVAL(clariti__Status__c, &apos;Closed&apos;)</errorConditionFormula>
+    <errorDisplayField>clariti__DepositSlipNumber__c</errorDisplayField>
+    <errorMessage>Deposit Slip Number is required.</errorMessage>
+</ValidationRule>

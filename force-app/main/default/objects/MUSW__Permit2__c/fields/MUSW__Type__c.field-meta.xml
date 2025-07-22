@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The permit type. This is typically related to the record type.</description>
+    <label>Type (Deprecated)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agricultural Surface Water Pump</fullName>
+                <default>false</default>
+                <label>Agricultural Surface Water Pump</label>
+            </value>
+            <value>
+                <fullName>Agricultural Water Withdrawal Application</fullName>
+                <default>false</default>
+                <label>Agricultural Water Withdrawal Application</label>
+            </value>
+            <value>
+                <fullName>Agricultural Water Withdrawal Permit</fullName>
+                <default>false</default>
+                <label>Agricultural Water Withdrawal Permit</label>
+            </value>
+            <value>
+                <fullName>Agricultural Well Pump</fullName>
+                <default>false</default>
+                <label>Agricultural Well Pump</label>
+            </value>
+            <value>
+                <fullName>Application for Permit Consolidation</fullName>
+                <default>false</default>
+                <label>Application for Permit Consolidation</label>
+            </value>
+            <value>
+                <fullName>Revision</fullName>
+                <default>false</default>
+                <label>Revision</label>
+            </value>
+            <value>
+                <fullName>Permit Relinquishment</fullName>
+                <default>false</default>
+                <label>Permit Relinquishment</label>
+            </value>
+            <value>
+                <fullName>Well and Pump Data</fullName>
+                <default>false</default>
+                <label>Well and Pump Data</label>
+            </value>
+            <value>
+                <fullName>Well Plug and Abandonment</fullName>
+                <default>false</default>
+                <label>Well Plug and Abandonment</label>
+            </value>
+            <value>
+                <fullName>AG Water Metering Installation</fullName>
+                <default>false</default>
+                <label>AG Water Metering Installation</label>
+            </value>
+            <value>
+                <fullName>Undocumented Source</fullName>
+                <default>false</default>
+                <label>Undocumented Source</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Parent_Query_without_relationship_name</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT(ISBLANK(BGBL__Parent_Query__c )),ISBLANK( BGBL__Object_Name_Plural__c  ))</errorConditionFormula>
+    <errorDisplayField>BGBL__Object_Name_Plural__c</errorDisplayField>
+    <errorMessage>Object Name (Plural) is Required when Parent Query is specified. Eg. MUSW__Fees__r</errorMessage>
+</ValidationRule>

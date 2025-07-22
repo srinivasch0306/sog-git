@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_Type_Of_Stream</fullName>
+    <active>true</active>
+    <description>(Final Evaluation Review) If Data field (SW On Stream? ==  Yes, AND Permit Type == Surface  Water, or Well to Pond), THEN, data field Type of Stream must not be blank</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( MUSW__Type__c , &apos;Final Evaluation Review&apos; ),
+  ISPICKVAL( MUSW__Status__c , &apos;Completed&apos;),
+  NOT( ISBLANK( MUSW__Permit2__c ) ), 
+  OR(
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Agricultural Water Withdrawal Application&apos;),
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Agricultural Water Withdrawal Permit&apos;),
+    ISPICKVAL( MUSW__Permit2__r.MUSW__Type__c , &apos;Application to Modify or Transfer an Agricultural Water Withdrawal Permit&apos;)
+  ),
+  ISPICKVAL( MUSW__Permit2__r.AVO_OnStream__c , &apos;Yes&apos; ),
+  OR(
+    ISPICKVAL( MUSW__Permit2__r.AVO_Permit_Type__c , &apos;Surface Water&apos; ),
+    ISPICKVAL( MUSW__Permit2__r.AVO_Permit_Type__c , &apos;Well to Pond&apos; )
+  ),
+  ISBLANK( TEXT( MUSW__Permit2__r.SOG_Type_of_Stream__c ) ) 
+)</errorConditionFormula>
+    <errorMessage>Type of Stream data required</errorMessage>
+</ValidationRule>

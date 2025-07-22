@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Payment_Source__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Source of fee payment: Either Receipt record or Deposit record</description>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISNULL( BGBK__Deposit__c ), BGBK__Deposit__c  = &quot;&quot;),
+	If(OR(ISNULL( BGBK__Receipt__c),  BGBK__Receipt__c = &quot;&quot;),
+		&quot;&quot;, HYPERLINK( &quot;/&quot; &amp; BGBK__Receipt__c,BGBK__Receipt__r.Name,&quot;_parent&quot; )),
+	HYPERLINK( &quot;/&quot; &amp; BGBK__Deposit__c,BGBK__Deposit__r.Name,&quot;_parent&quot; ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Payment Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

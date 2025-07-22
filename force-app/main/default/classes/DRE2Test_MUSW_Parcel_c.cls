@@ -1,0 +1,1 @@
+@isTest private class DRE2Test_MUSW_Parcel_c { @isTest static void insertUpdateDelete() { DRE.DRETestExternalManager.run('MUSW__Parcel__c'); } }

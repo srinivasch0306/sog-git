@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Control__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>is the number issued permanent (ie. locked), or overwritten? If overwritten, can it be only done once more by a permanent number or overwritten many times over?</inlineHelpText>
+    <label>Control</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Permanent</fullName>
+                <default>true</default>
+                <label>Permanent</label>
+            </value>
+            <value>
+                <fullName>Overwrite Once</fullName>
+                <default>false</default>
+                <label>Overwrite Once</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

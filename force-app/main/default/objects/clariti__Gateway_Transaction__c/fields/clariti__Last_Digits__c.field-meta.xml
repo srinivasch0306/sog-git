@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Last_Digits__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The last 4 digits of a card associated to the payment</description>
+    <externalId>false</externalId>
+    <label>Last Digits</label>
+    <length>4</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

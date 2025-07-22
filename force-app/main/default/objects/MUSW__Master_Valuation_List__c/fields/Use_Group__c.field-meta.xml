@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Group__c</fullName>
+    <label>Use Group</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A-1 Assembly, theaters, without stage</fullName>
+                <default>true</default>
+                <label>A-1 Assembly, theaters, without stage</label>
+            </value>
+            <value>
+                <fullName>A-1 Assembly, theaters, with stage</fullName>
+                <default>false</default>
+                <label>A-1 Assembly, theaters, with stage</label>
+            </value>
+            <value>
+                <fullName>A-2 Assembly, nightclubs</fullName>
+                <default>false</default>
+                <label>A-2 Assembly, nightclubs</label>
+            </value>
+            <value>
+                <fullName>A-2 Assembly, restaurants, bars, banquet halls</fullName>
+                <default>false</default>
+                <label>A-2 Assembly, restaurants, bars, banquet halls</label>
+            </value>
+            <value>
+                <fullName>A-3 Assembly, churches</fullName>
+                <default>false</default>
+                <label>A-3 Assembly, churches</label>
+            </value>
+            <value>
+                <fullName>A-3 Assembly, general, community halls, libraries, museums</fullName>
+                <default>false</default>
+                <label>A-3 Assembly, general, community halls, libraries, museums</label>
+            </value>
+            <value>
+                <fullName>A-4 Assembly, arenas</fullName>
+                <default>false</default>
+                <label>A-4 Assembly, arenas</label>
+            </value>
+            <value>
+                <fullName>B Business</fullName>
+                <default>false</default>
+                <label>B Business</label>
+            </value>
+            <value>
+                <fullName>E Educational</fullName>
+                <default>false</default>
+                <label>E Educational</label>
+            </value>
+            <value>
+                <fullName>F-1 Factory and industrial, moderate hazard</fullName>
+                <default>false</default>
+                <label>F-1 Factory and industrial, moderate hazard</label>
+            </value>
+            <value>
+                <fullName>F-2 Factory and industrial, low hazard</fullName>
+                <default>false</default>
+                <label>F-2 Factory and industrial, low hazard</label>
+            </value>
+            <value>
+                <fullName>H-1 High Hazard, explosives</fullName>
+                <default>false</default>
+                <label>H-1 High Hazard, explosives</label>
+            </value>
+            <value>
+                <fullName>H234 High Hazard</fullName>
+                <default>false</default>
+                <label>H234 High Hazard</label>
+            </value>
+            <value>
+                <fullName>H-5 HPM</fullName>
+                <default>false</default>
+                <label>H-5 HPM</label>
+            </value>
+            <value>
+                <fullName>I-1 Institutional, supervised environment</fullName>
+                <default>false</default>
+                <label>I-1 Institutional, supervised environment</label>
+            </value>
+            <value>
+                <fullName>I-2 Institutional, hospitals</fullName>
+                <default>false</default>
+                <label>I-2 Institutional, hospitals</label>
+            </value>
+            <value>
+                <fullName>I-2 Institutional, nursing homes</fullName>
+                <default>false</default>
+                <label>I-2 Institutional, nursing homes</label>
+            </value>
+            <value>
+                <fullName>I-3 Institutional, restrained</fullName>
+                <default>false</default>
+                <label>I-3 Institutional, restrained</label>
+            </value>
+            <value>
+                <fullName>I-4 Institutional, day care facilities</fullName>
+                <default>false</default>
+                <label>I-4 Institutional, day care facilities</label>
+            </value>
+            <value>
+                <fullName>M Mercantile</fullName>
+                <default>false</default>
+                <label>M Mercantile</label>
+            </value>
+            <value>
+                <fullName>R-1 Residential, hotels</fullName>
+                <default>false</default>
+                <label>R-1 Residential, hotels</label>
+            </value>
+            <value>
+                <fullName>R-2 Residential, multiple family</fullName>
+                <default>false</default>
+                <label>R-2 Residential, multiple family</label>
+            </value>
+            <value>
+                <fullName>R-3 Residential, one- and two-family</fullName>
+                <default>false</default>
+                <label>R-3 Residential, one- and two-family</label>
+            </value>
+            <value>
+                <fullName>R-4 Residential, care/assisted living facilities</fullName>
+                <default>false</default>
+                <label>R-4 Residential, care/assisted living facilities</label>
+            </value>
+            <value>
+                <fullName>S-1 Storage, moderate hazard</fullName>
+                <default>false</default>
+                <label>S-1 Storage, moderate hazard</label>
+            </value>
+            <value>
+                <fullName>S-2 Storage, low hazard</fullName>
+                <default>false</default>
+                <label>S-2 Storage, low hazard</label>
+            </value>
+            <value>
+                <fullName>U Utility, miscellaneous</fullName>
+                <default>false</default>
+                <label>U Utility, miscellaneous</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

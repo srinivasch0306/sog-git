@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>BasicGovArcGISOnline</label>
+    <protected>false</protected>
+    <values>
+        <field>MUSW__Access_Token_Url__c</field>
+        <value xsi:type="xsd:string">https://www.arcgis.com/sharing/rest/oauth2/token</value>
+    </values>
+    <values>
+        <field>MUSW__Auth_Url__c</field>
+        <value xsi:type="xsd:string">https://www.arcgis.com/sharing/rest/oauth2/authorize</value>
+    </values>
+    <values>
+        <field>MUSW__Key__c</field>
+        <value xsi:type="xsd:string">i10nUvTwzONpnugs</value>
+    </values>
+    <values>
+        <field>MUSW__Redirect_Url__c</field>
+        <value xsi:type="xsd:string">https://bgstaging.my.salesforce.com/services/authcallback/BasicGovArcGISOnline</value>
+    </values>
+    <values>
+        <field>MUSW__Rest_Setting_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>MUSW__Secret__c</field>
+        <value xsi:type="xsd:string">08ff6a4921e14baab62e915f3528a15a</value>
+    </values>
+</CustomMetadata>

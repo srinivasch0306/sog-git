@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__EndDateIsNotInFiscalYearRange</fullName>
+    <active>true</active>
+    <description>End Date Timeframe - End date can not occur on or before the Fiscal Year start date, and can not occur after the Fiscal Year end date.</description>
+    <errorConditionFormula>AND(
+        $CustomMetadata.clariti__FinancialsFeatureEnablementSettings__mdt.clariti__FiscalYearAndPeriodManagement.clariti__Enable__c,
+        OR(
+        ISNEW(),
+        ISCHANGED(clariti__EndDate__c),
+        ISCHANGED(clariti__FiscalYear__c)),
+        OR(
+        (clariti__EndDate__c &lt;=
+        clariti__FiscalYear__r.clariti__StartDate__c ),
+        (clariti__EndDate__c &gt;
+        clariti__FiscalYear__r.clariti__EndDate__c))
+        )</errorConditionFormula>
+    <errorDisplayField>clariti__EndDate__c</errorDisplayField>
+    <errorMessage>The selected End Date is outside of the related Fiscal Year date range.</errorMessage>
+</ValidationRule>

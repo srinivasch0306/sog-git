@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Hold_Validation_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(MUSW__Type__c, &quot;Hold&quot;),
+  NOT(ISPICKVAL(MUSW__Apply_To__c, &quot;Fields&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>MUSW__Apply_To__c</errorDisplayField>
+    <errorMessage>Holds can only apply to fields.</errorMessage>
+</ValidationRule>

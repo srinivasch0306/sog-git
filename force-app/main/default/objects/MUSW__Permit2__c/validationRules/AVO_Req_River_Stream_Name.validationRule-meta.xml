@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_River_Stream_Name</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+RecordType.DeveloperName = &apos;AVO_Agricultural_Water_Withdrawal_Application&apos;
+),
+ISPICKVAL(AVO_Pump_Source__c, &apos;Stream, creek, river or canal/ditch connected to that flowing water&apos;),
+ISBLANK(AVO_River_Stream_Name__c)
+)</errorConditionFormula>
+    <errorDisplayField>AVO_River_Stream_Name__c</errorDisplayField>
+    <errorMessage>Value is required.</errorMessage>
+</ValidationRule>

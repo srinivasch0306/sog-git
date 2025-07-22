@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permit_Condition</fullName>
+    <active>true</active>
+    <label>Permit Condition</label>
+    <picklistValues>
+        <picklist>AVO_Condition_Type__c</picklist>
+        <values>
+            <fullName>LOC Standard Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Standard Condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Flow_Measurement_Type__c</picklist>
+        <values>
+            <fullName>CFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Special_Condition_Category__c</picklist>
+        <values>
+            <fullName>Associated Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drought Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flint Frost Inspection Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frost Protection Dual Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frost Protection Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmission Line Right-of-way</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Construction Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Well Location Condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AVO_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Status__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MUSW__Type__c</picklist>
+        <values>
+            <fullName>EROSION CONTROL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FINAL GRADE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLOOD HAZARD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

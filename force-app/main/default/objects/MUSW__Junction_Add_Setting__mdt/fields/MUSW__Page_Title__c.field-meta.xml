@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Page_Title__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Title of the page you want to display to the end user. Left blank, it will read “Select records to associate with [the current record name].”</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If not provided, page will be called &apos;Select records to associate with the current [record name]&apos;</inlineHelpText>
+    <label>Page Title</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

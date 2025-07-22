@@ -1,0 +1,180 @@
+<apex:page controller="ViolationAddEditController" tabStyle="MUSW__Violation__c" id="p" action="{!initSetIEMode}">
+<apex:form id="f">
+    <apex:sectionHeader title="{!IF(ins.Name != null, 'Inspection', IF(parentObject = 'Permit', 'Permit', 'Parcel'))}" subtitle="{!IF(ins.Name != null, ins.Name, IF(parentObject = 'Permit', parentName, parcelName))}" description="Location: {!parcelAddress}" id="h">
+        <apex:pageMessages id="msg"/>
+    </apex:sectionHeader>
+    
+    <apex:pageblock title="New/Edit Violations" id="pb">
+        <apex:pageblockbuttons id="pbb">
+            <apex:outputPanel styleClass="btn" rendered="{!ins.Name != null}" id="saveBtn1" onclick="disableButtons(); document.body.style.cursor = 'progress'; SaveJS(false);">
+                Save &amp; Close Inspection
+            </apex:outputPanel>
+            <!--<apex:outputPanel styleClass="btn" rendered="{!ins.Name = null}"  id="saveBtn2" onclick="disableButtons(); document.body.style.cursor = 'progress'; SaveJS();">-->
+            <apex:outputPanel styleClass="btn" id="saveBtn2" onclick="disableButtons(); document.body.style.cursor = 'progress'; SaveJS(true);">
+                Save
+            </apex:outputPanel>
+            <apex:outputPanel styleClass="btn" onclick="document.body.style.cursor = 'progress'; RedirectBackJS();">
+                Cancel
+            </apex:outputPanel>
+            <apex:actionFunction name="SaveJS" action="{!save}" oncomplete="if ({!batchCalled}) { disableButtons(); WaitForBatchJS(); } else if ({!!saveErrord}) RedirectBackJS(); else { document.body.style.cursor = 'default'; enableButtons(); }" reRender="{!IF(!batchCalled && saveErrord, 'f', '')}">
+                <apex:param name="saveOnly" assignTo="{!saveOnly}" value=""/>
+            </apex:actionFunction>
+            <apex:actionFunction name="WaitForBatchJS" action="{!getBatchProgress}" oncomplete="if ({!!batchCompleted}) WaitForBatchJS(); else if ({!!batchErrord}) RedirectBackJS(); else { document.body.style.cursor = 'default'; enableButtons(); }" rerender="msg,pbsRel,pbsUnrel,pbsOthers"/>
+            <apex:actionFunction name="RedirectBackJS" action="{!cancel}" immediate="true"/>
+        </apex:pageblockbuttons>
+        
+        <apex:pageBlockSection title="Inspection" collapsible="false" rendered="{!ins.Name != null}">
+            <apex:inputField label="Number of days until the next Inspection is due" value="{!ins.Days_to_Next_Inspection__c}"/>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection title="Violations{!IF(parentObject != null, ' on '+parentObject+' '+parentName, '')}" columns="1" collapsible="false" rendered="{!ins.Name != null && parentName != null}" id="pbsRel">
+            <apex:pageBlockSection columns="2">
+                <apex:outputText label="Type" value="{!parentType}"/>
+                <apex:outputText label="Description" value="{!parentDesc}"/>
+                <apex:outputText label="Subtype" value="{!parentSubtype }"/>
+            </apex:pageBlockSection>
+            <apex:outputText rendered="{!ivRel.size = 0}">There are no open Violations on this Inspection for {!parentObject} {!parentName}. To add a new Violation click <b>New {!parentObject} Violation</b>.</apex:outputText>
+            <apex:outputText rendered="{!ivRel.size > 0}">The following is a list of all open Violations related to this Inspection on {!parentObject} {!parentName}.</apex:outputText>
+            <apex:variable value="{!0}" var="index"/>
+            <apex:pageBlockTable value="{!ivRel}" var="item" rendered="{!ivRel.size > 0}" id="pbtRel">
+                <apex:column headerValue="Action">
+                    <apex:commandLink action="{!removeRelated}" value="Del" immediate="true" reRender="pbsRel" rendered="{!item.Id = null}">
+                        <apex:param name="delIndex" assignTo="{!ivIndex}" value="{!index}"/>
+                    </apex:commandLink>
+                    <apex:variable var="index" value="{!index + 1}"/>
+                </apex:column>                
+                <!--changed to fieldset from map-->
+                <apex:repeat value="{!violationFields}" var="f" id="fs">
+                    <apex:column headerValue="{!f.label}" id="col">                      
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" rendered="{!f != 'MUSW__Type__c' && !CONTAINS(f, 'Comments') && f != 'Abatement_Requirement__c'}"/>
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" id="fldComments" rendered="{!CONTAINS(f, 'Comments')}"/>
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" id="fldAbatement" rendered="{!f = 'Abatement_Requirement__c'}"/>
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" id="fldType" onchange="showComments(this.value, this.id, {!index-1});" rendered="{!f = 'MUSW__Type__c'}"/>
+                    </apex:column>
+                </apex:repeat>
+                
+            </apex:pageBlockTable>
+            
+            <apex:outputPanel >
+                <apex:commandButton action="{!addRelated}" value="New {!parentObject} Violations" rerender="pbsRel" immediate="false"/>
+                <apex:inputText value="{!numRelRows}" size="2"/>
+            </apex:outputPanel>
+        </apex:pageBlockSection>
+        
+        <apex:outputText rendered="{!ins.Name = null && parcelName = 'No Parcel'}">You cannot add new Violations to this Parcel.</apex:outputText>
+        <apex:variable value="{!IF(ins.Name != null && parentName != null, 'Additional Violation', 'Violation')}" var="unrelatedTitle"/>
+        <apex:pageBlockSection title="{!unrelatedTitle}s" columns="1" collapsible="false" showHeader="{!ins.Name != null && parentName != null}" id="pbsUnrel" rendered="{!!CONTAINS($Profile.Name, 'Fire') && parcelName != 'No Parcel'}">
+            <apex:outputText rendered="{!parentName = null && ivUnrel.size = 0}">There are no open Violations on this Parcel. To add new Violations click <b>New {!unrelatedTitle}</b>.</apex:outputText>
+            <apex:outputText rendered="{!parentName != null && ivUnrel.size = 0}">There are no open Violations on this Inspection that are unrelated to the {!parentObject}. To add new unrelated Violations click <b>New {!unrelatedTitle}</b>.</apex:outputText>
+            <apex:outputText rendered="{!parentName != null && ivUnrel.size > 0}">The following is a list of all open Violations related to this Inspection but unrelated to the {!parentObject}.</apex:outputText>
+            <apex:variable value="{!0}" var="index"/>
+            <apex:pageBlockTable value="{!ivUnrel}" var="item" rendered="{!ivUnrel.size > 0}" id="pbtUnrel">
+                <apex:column headerValue="Action">
+                    <apex:commandLink action="{!removeUnrelated}" value="Del" immediate="true" reRender="pbsUnrel" rendered="{!item.Id = null}">
+                        <apex:param name="delIndex" assignTo="{!ivIndex}" value="{!index}"/>
+                    </apex:commandLink>
+                    <apex:variable var="index" value="{!index + 1}"/>
+                </apex:column>                
+                 <apex:repeat value="{!violationFields}" var="f" id="fs">
+                     <apex:column headerValue="{!f.label}" id="col">
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" rendered="{!f != 'MUSW__Type__c' && !CONTAINS(f, 'Comments') && f != 'Abatement_Requirement__c'}"/>
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" id="fldComments" rendered="{!CONTAINS(f, 'Comments')}"/>
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" id="fldAbatement" rendered="{!f = 'Abatement_Requirement__c'}"/>
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" id="fldType" onchange="showComments(this.value, this.id, {!index-1});" rendered="{!f = 'MUSW__Type__c'}"/>
+                     </apex:column>
+                </apex:repeat>
+                
+            </apex:pageBlockTable>
+            
+            <apex:outputPanel >
+                <apex:commandButton action="{!addUnrelated}" value="New {!unrelatedTitle}s" rerender="pbsUnrel" immediate="false"/>
+                <apex:inputText value="{!numUnrelRows}" size="2"/>
+            </apex:outputPanel>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection title="All Other Violations at {!parcelAddress}" columns="1" collapsible="false" id="pbsOthers" rendered="{!!isBlank(ivParcel) && !CONTAINS($Profile.Name, 'Fire')}">
+            <apex:outputText >The following is a list of all other open Violations on this Parcel.</apex:outputText>
+            <apex:variable value="{!0}" var="index"/>
+            <apex:pageBlockTable value="{!ivParcel}" var="item" rendered="{!ivParcel.size > 0}" id="pbtOthers">
+                <apex:column headerValue="Inspection">
+                    <apex:outputField value="{!item.MUSW__Inspection__r.Name}"/>
+                      <apex:variable var="index" value="{!index + 1}"/>
+                </apex:column>
+                <apex:column value="{!item.MUSW__Inspection__r.MUSW__Due_Date__c}" headerValue="Inspection Due Date"/>                
+                <apex:repeat value="{!violationFields}" var="f" id="fs">
+                    <apex:column headerValue="{!f.label}" id="col">
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" rendered="{!f != 'MUSW__Type__c' && !CONTAINS(f, 'Comments') && f != 'Abatement_Requirement__c'}"/>
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" id="fldComments" rendered="{!CONTAINS(f, 'Comments')}"/>
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" id="fldAbatement" rendered="{!f = 'Abatement_Requirement__c'}"/>
+                        <apex:inputField value="{!item.MUSW__Violation__r[f]}" id="fldType" onchange="showComments(this.value, this.id, {!index-1});" rendered="{!f = 'MUSW__Type__c'}"/>
+                    </apex:column>
+                </apex:repeat>
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageblock>
+    
+    <script>
+    function showComments(ordName, fldId, idx) {
+        if (ordName.length > 2) {
+            ViolationAddEditController.getOrdinanceDescription(ordName, function(result, event) {
+                if (event.status) {
+                    for (var i=0; i<10; i++) {
+                        var desc = null;
+                        var abat = null;
+                        if (document.getElementById(fldId.substr(0, fldId.indexOf(":fs:")+4)+i+":fldComments") != null) {
+                            desc = result.split("####")[0];
+                            document.getElementById(fldId.substr(0, fldId.indexOf(":fs:")+4)+i+":fldComments").value = desc;
+                            document.getElementById(fldId.substr(0, fldId.indexOf(":fs:")+4)+i+":fldComments").innerHTML = desc;
+                        }
+                        else if (document.getElementById(fldId.substr(0, fldId.indexOf(":fs:")+4)+i+":fldAbatement") != null) {
+                            abat = result.split("####")[1];
+                            document.getElementById(fldId.substr(0, fldId.indexOf(":fs:")+4)+i+":fldAbatement").value = abat;
+                            document.getElementById(fldId.substr(0, fldId.indexOf(":fs:")+4)+i+":fldAbatement").innerHTML = abat;
+                        }
+                        
+                        if (desc != null) {
+                            fillInViolationDescriptionJS(idx, desc);
+                        }
+                    }
+                }
+            });
+        }
+    }
+    
+    function disableButtons() {
+        if (document.getElementById('p:f:pb:pbb:saveBtn1') != null) {
+            document.getElementById('p:f:pb:pbb:saveBtn1').disabled = true;
+            document.getElementById('p:f:pb:pbb:saveBtn1').className = 'btnDisabled';
+            document.getElementById('p:f:pb:pbb:bottom:saveBtn1').disabled = true;
+            document.getElementById('p:f:pb:pbb:bottom:saveBtn1').className = 'btnDisabled';
+        }
+        if (document.getElementById('p:f:pb:pbb:saveBtn2') != null) {
+            document.getElementById('p:f:pb:pbb:saveBtn2').disabled = true;
+            document.getElementById('p:f:pb:pbb:saveBtn2').className = 'btnDisabled';
+            document.getElementById('p:f:pb:pbb:bottom:saveBtn2').disabled = true;
+            document.getElementById('p:f:pb:pbb:bottom:saveBtn2').className = 'btnDisabled';
+        }
+    }
+    
+    function enableButtons() {
+        if (document.getElementById('p:f:pb:pbb:saveBtn1') != null) {
+            document.getElementById('p:f:pb:pbb:saveBtn1').disabled = false;
+            document.getElementById('p:f:pb:pbb:saveBtn1').className = 'btn';
+            document.getElementById('p:f:pb:pbb:bottom:saveBtn1').disabled = false;
+            document.getElementById('p:f:pb:pbb:bottom:saveBtn1').className = 'btn';
+        }
+        if (document.getElementById('p:f:pb:pbb:saveBtn2') != null) {
+            document.getElementById('p:f:pb:pbb:saveBtn2').disabled = false;
+            document.getElementById('p:f:pb:pbb:saveBtn2').className = 'btn';
+            document.getElementById('p:f:pb:pbb:bottom:saveBtn2').disabled = false;
+            document.getElementById('p:f:pb:pbb:bottom:saveBtn2').className = 'btn';
+        }
+    }
+    </script>
+    
+    <apex:actionFunction name="fillInViolationDescriptionJS" action="{!fillInViolationDescription}" reRender="">
+        <apex:param name="idx" assignTo="{!ivIndex}" value=""/>
+        <apex:param name="cmm" assignTo="{!ivComments}" value=""/>
+    </apex:actionFunction>
+</apex:form>
+</apex:page>

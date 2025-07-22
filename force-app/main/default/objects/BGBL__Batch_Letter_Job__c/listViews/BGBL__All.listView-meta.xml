@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__All</fullName>
+    <columns>NAME</columns>
+    <columns>BGBL__Status__c</columns>
+    <columns>BGBL__Submit_DateTime__c</columns>
+    <columns>BGBL__Start_Time__c</columns>
+    <columns>BGBL__End_Time__c</columns>
+    <columns>BGBL__Batch_Letter__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

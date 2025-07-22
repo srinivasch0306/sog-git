@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Disposed</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(ISBLANK( AVO_Disposed_Date__c ), NOT(ISBLANK( AVO_Disposed_By_User__c ))),
+AND(ISBLANK(AVO_Disposed_By_User__c ), NOT(ISBLANK(AVO_Disposed_Date__c )))
+)</errorConditionFormula>
+    <errorMessage>Disposed By and Disposed Date must both be filled in.</errorMessage>
+</ValidationRule>

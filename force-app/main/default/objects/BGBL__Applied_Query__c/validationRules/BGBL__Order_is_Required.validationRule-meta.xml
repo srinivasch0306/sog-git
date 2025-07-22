@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Order_is_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(BGBL__Execution_Order__c, &quot;&quot;)</errorConditionFormula>
+    <errorMessage>Order is Required. Please indicate order in which this query should be run. If no other queries, indicate 1. If more than one, make sure each applied query is uniquely ordered (parents are first).</errorMessage>
+</ValidationRule>

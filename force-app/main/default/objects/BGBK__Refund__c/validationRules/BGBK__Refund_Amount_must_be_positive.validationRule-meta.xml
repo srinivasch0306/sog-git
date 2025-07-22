@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Refund_Amount_must_be_positive</fullName>
+    <active>true</active>
+    <errorConditionFormula>BGBK__Amount__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>BGBK__Amount__c</errorDisplayField>
+    <errorMessage>Refund Amount must be a valid positive amount.</errorMessage>
+</ValidationRule>

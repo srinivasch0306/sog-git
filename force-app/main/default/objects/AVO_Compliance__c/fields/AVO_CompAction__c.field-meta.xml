@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_CompAction__c</fullName>
+    <label>CompAction</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved AO Compliance Plan</fullName>
+                <default>false</default>
+                <label>Approved AO Compliance Plan</label>
+            </value>
+            <value>
+                <fullName>Approved CO Compliance Plan</fullName>
+                <default>false</default>
+                <label>Approved CO Compliance Plan</label>
+            </value>
+            <value>
+                <fullName>Approved NOV Compliance Plan</fullName>
+                <default>false</default>
+                <label>Approved NOV Compliance Plan</label>
+            </value>
+            <value>
+                <fullName>Case Closed</fullName>
+                <default>false</default>
+                <label>Case Closed</label>
+            </value>
+            <value>
+                <fullName>Declined AO Compliance Plan</fullName>
+                <default>false</default>
+                <label>Declined AO Compliance Plan</label>
+            </value>
+            <value>
+                <fullName>Declined CO Compliance Plan</fullName>
+                <default>false</default>
+                <label>Declined CO Compliance Plan</label>
+            </value>
+            <value>
+                <fullName>Declined NOV Compliance Plan</fullName>
+                <default>false</default>
+                <label>Declined NOV Compliance Plan</label>
+            </value>
+            <value>
+                <fullName>Fine Payment for Administrative Order</fullName>
+                <default>false</default>
+                <label>Fine Payment for Administrative Order</label>
+            </value>
+            <value>
+                <fullName>Fine Payment for Consent Order</fullName>
+                <default>false</default>
+                <label>Fine Payment for Consent Order</label>
+            </value>
+            <value>
+                <fullName>Initiate Case</fullName>
+                <default>false</default>
+                <label>Initiate Case</label>
+            </value>
+            <value>
+                <fullName>Issued Administrative Order</fullName>
+                <default>false</default>
+                <label>Issued Administrative Order</label>
+            </value>
+            <value>
+                <fullName>Issued Consent Order</fullName>
+                <default>false</default>
+                <label>Issued Consent Order</label>
+            </value>
+            <value>
+                <fullName>Issued Letter of Noncompliance</fullName>
+                <default>false</default>
+                <label>Issued Letter of Noncompliance</label>
+            </value>
+            <value>
+                <fullName>Issued Notice of Violation</fullName>
+                <default>false</default>
+                <label>Issued Notice of Violation</label>
+            </value>
+            <value>
+                <fullName>Issued Request for Information Letter</fullName>
+                <default>false</default>
+                <label>Issued Request for Information Letter</label>
+            </value>
+            <value>
+                <fullName>Non-Initialized Use Case Tracking</fullName>
+                <default>false</default>
+                <label>Non-Initialized Use Case Tracking</label>
+            </value>
+            <value>
+                <fullName>Ready To Permit</fullName>
+                <default>false</default>
+                <label>Ready To Permit</label>
+            </value>
+            <value>
+                <fullName>Recommended Administrative Order</fullName>
+                <default>false</default>
+                <label>Recommended Administrative Order</label>
+            </value>
+            <value>
+                <fullName>Recommended Compliance Case Closure</fullName>
+                <default>false</default>
+                <label>Recommended Compliance Case Closure</label>
+            </value>
+            <value>
+                <fullName>Recommended Consent Order</fullName>
+                <default>false</default>
+                <label>Recommended Consent Order</label>
+            </value>
+            <value>
+                <fullName>Recommended Notice of Violation</fullName>
+                <default>false</default>
+                <label>Recommended Notice of Violation</label>
+            </value>
+            <value>
+                <fullName>Recommended Request for Information Letter</fullName>
+                <default>false</default>
+                <label>Recommended Request for Information Letter</label>
+            </value>
+            <value>
+                <fullName>Re-Issued Administrative Order</fullName>
+                <default>false</default>
+                <label>Re-Issued Administrative Order</label>
+            </value>
+            <value>
+                <fullName>Re-Issued Consent Order</fullName>
+                <default>false</default>
+                <label>Re-Issued Consent Order</label>
+            </value>
+            <value>
+                <fullName>Re-Issued Notice of Violation</fullName>
+                <default>false</default>
+                <label>Re-Issued Notice of Violation</label>
+            </value>
+            <value>
+                <fullName>Re-Issued Request for Information Letter</fullName>
+                <default>false</default>
+                <label>Re-Issued Request for Information Letter</label>
+            </value>
+            <value>
+                <fullName>Site Visit</fullName>
+                <default>false</default>
+                <label>Site Visit</label>
+            </value>
+            <value>
+                <fullName>Site Visit Recommended</fullName>
+                <default>false</default>
+                <label>Site Visit Recommended</label>
+            </value>
+            <value>
+                <fullName>Site Visit Requested</fullName>
+                <default>false</default>
+                <label>Site Visit Requested</label>
+            </value>
+            <value>
+                <fullName>Submitted AO Compliance Plan</fullName>
+                <default>false</default>
+                <label>Submitted AO Compliance Plan</label>
+            </value>
+            <value>
+                <fullName>Submitted AO to Lewis Hays for Approval</fullName>
+                <default>false</default>
+                <label>Submitted AO to Lewis Hays for Approval</label>
+            </value>
+            <value>
+                <fullName>Submitted CO Compliance Plan</fullName>
+                <default>false</default>
+                <label>Submitted CO Compliance Plan</label>
+            </value>
+            <value>
+                <fullName>Submitted CO to Lewis Hays for Approval</fullName>
+                <default>false</default>
+                <label>Submitted CO to Lewis Hays for Approval</label>
+            </value>
+            <value>
+                <fullName>Submitted NOV Compliance Plan</fullName>
+                <default>false</default>
+                <label>Submitted NOV Compliance Plan</label>
+            </value>
+            <value>
+                <fullName>Submitted NOV to Lewis Hays for Approval</fullName>
+                <default>false</default>
+                <label>Submitted NOV to Lewis Hays for Approval</label>
+            </value>
+            <value>
+                <fullName>Submitted Response To Request for Information</fullName>
+                <default>false</default>
+                <label>Submitted Response To Request for Information</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

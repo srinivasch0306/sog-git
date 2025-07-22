@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Online_All_Licenses</fullName>
+    <columns>NAME</columns>
+    <columns>MUSW__Type__c</columns>
+    <columns>MUSW__Address__c</columns>
+    <columns>MUSW__Total_Balance__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>MUSW__Primary_Licensee__c</columns>
+    <columns>MUSW__Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Online All Licenses</label>
+</ListView>

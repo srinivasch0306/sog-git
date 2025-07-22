@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Building</fullName>
+        <default>false</default>
+        <label>Building</label>
+    </customValue>
+    <customValue>
+        <fullName>Electrical</fullName>
+        <default>false</default>
+        <label>Electrical</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Heater Replacement</fullName>
+        <default>false</default>
+        <label>Water Heater Replacement</label>
+    </customValue>
+    <customValue>
+        <fullName>Groundwater</fullName>
+        <default>false</default>
+        <label>Groundwater</label>
+    </customValue>
+    <customValue>
+        <fullName>Surface Water</fullName>
+        <default>false</default>
+        <label>Surface Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Well to Pond</fullName>
+        <default>false</default>
+        <label>Well to Pond</label>
+    </customValue>
+    <customValue>
+        <fullName>Plumbing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Plumbing</label>
+    </customValue>
+    <masterLabel>Permit Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

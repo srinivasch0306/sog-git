@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__FinancialEvent__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>The event which triggers the creation of journal entry items in the ledger accounts</inlineHelpText>
+    <label>Financial Event</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>InvoicePosted__e</fullName>
+                <default>false</default>
+                <label>Invoice Posted</label>
+            </value>
+            <value>
+                <fullName>InvoiceVoided__e</fullName>
+                <default>false</default>
+                <label>Invoice Voided</label>
+            </value>
+            <value>
+                <fullName>PaymentProcessed__e</fullName>
+                <default>false</default>
+                <label>Payment Processed</label>
+            </value>
+            <value>
+                <fullName>PaymentRefunded__e</fullName>
+                <default>false</default>
+                <label>Payment Refunded</label>
+            </value>
+            <value>
+                <fullName>PaymentVoided__e</fullName>
+                <default>false</default>
+                <label>Payment Voided</label>
+            </value>
+            <value>
+                <fullName>DepositTransferred__e</fullName>
+                <default>false</default>
+                <label>Deposit Transferred</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

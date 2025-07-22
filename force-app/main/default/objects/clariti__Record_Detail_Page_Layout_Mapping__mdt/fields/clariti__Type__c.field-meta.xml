@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The API Name of the picklist value from the Type Field of the Object configured in the Record Detail Object Type.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Type</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

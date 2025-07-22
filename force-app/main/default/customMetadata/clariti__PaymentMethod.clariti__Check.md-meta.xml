@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Check</label>
+    <protected>false</protected>
+    <values>
+        <field>clariti__EnableForCart__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>clariti__EnableForRefunds__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>clariti__MandatoryPaymentFields__c</field>
+        <value xsi:type="xsd:string">CheckNumber__c</value>
+    </values>
+    <values>
+        <field>clariti__OptionalPaymentFields__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__PaymentGatewayEvent__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__PaymentGatewayProcessorClass__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__PortalAccessible__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>clariti__ServiceFeeEnabled__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>clariti__ServiceFeeType__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__ServiceFeeValue__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

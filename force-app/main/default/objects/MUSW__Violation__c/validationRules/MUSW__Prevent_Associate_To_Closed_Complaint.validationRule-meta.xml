@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Prevent_Associate_To_Closed_Complaint</fullName>
+    <active>true</active>
+    <description>Prevent user from associating a violation to a closed complaint</description>
+    <errorConditionFormula>IF(OR(ISNEW(),ISCHANGED(MUSW__Complaint2__c)), ISPICKVAL(MUSW__Complaint2__r.MUSW__Status__c, &apos;Closed&apos;), false)</errorConditionFormula>
+    <errorDisplayField>MUSW__Complaint2__c</errorDisplayField>
+    <errorMessage>Cannot relate violation to a closed complaint</errorMessage>
+</ValidationRule>

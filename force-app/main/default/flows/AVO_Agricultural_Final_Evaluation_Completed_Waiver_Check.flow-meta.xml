@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_AG_SW_Pump_Information_Form_Waiver</name>
+        <label>Assign AG SW Pump Information Form Waiver</label>
+        <locationX>3350</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Waiver_Required</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.AVO_Waiver_Documents__c</assignToReference>
+            <operator>AddItem</operator>
+            <value>
+                <stringValue>Surface Water Pump Data Form</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_AG_Well_Data_Sheet_Waiver</name>
+        <label>Assign AG Well Data Sheet Waiver</label>
+        <locationX>2910</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Waiver_Required</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.AVO_Waiver_Documents__c</assignToReference>
+            <operator>AddItem</operator>
+            <value>
+                <stringValue>Agricultural Well Data Form</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Consolidated_Conservation_Plan_Waiver</name>
+        <label>Assign Consolidated Conservation Plan Waiver</label>
+        <locationX>1590</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Waiver_Required</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.AVO_Waiver_Documents__c</assignToReference>
+            <operator>AddItem</operator>
+            <value>
+                <stringValue>Conservation Plan</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Irrigation_Efficiency_Certification_Form_Waiver</name>
+        <label>Assign Irrigation Efficiency Certification Form Waiver</label>
+        <locationX>2470</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Waiver_Required</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.AVO_Waiver_Documents__c</assignToReference>
+            <operator>AddItem</operator>
+            <value>
+                <stringValue>Irrigation Efficiency Certificate Form</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Low_Flow_Guidance_Waiver</name>
+        <label>Assign Low Flow Guidance Waiver</label>
+        <locationX>3790</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Waiver_Required</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.AVO_Waiver_Documents__c</assignToReference>
+            <operator>AddItem</operator>
+            <value>
+                <stringValue>Surface Water Low Flow Plan</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Ownership_Document_Waiver</name>
+        <label>Assign Ownership Document Waiver</label>
+        <locationX>270</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Waiver_Required</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.AVO_Waiver_Documents__c</assignToReference>
+            <operator>AddItem</operator>
+            <value>
+                <stringValue>Ownership Document</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Waiver_Review_Required</name>
+        <label>Assign Waiver Review Required</label>
+        <locationX>50</locationX>
+        <locationY>1655</locationY>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.MUSW__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Required</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Waiver_Review</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Water_Reuse_Feasibility_Study_Waiver</name>
+        <label>Assign Water Reuse Feasibility Study Waiver</label>
+        <locationX>4230</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Waiver_Required</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.AVO_Waiver_Documents__c</assignToReference>
+            <operator>AddItem</operator>
+            <value>
+                <stringValue>Water Reuse Feasibility Study</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Water_Right_Agreement_Property_Waiver</name>
+        <label>Assign Water Right Agreement Property Waiver</label>
+        <locationX>1150</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Waiver_Required</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.AVO_Waiver_Documents__c</assignToReference>
+            <operator>AddItem</operator>
+            <value>
+                <stringValue>Water Right Agreement Property</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Well_Construction_Inspection_Form_Waiver</name>
+        <label>Assign Well Construction Inspection Form Waiver</label>
+        <locationX>710</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Waiver_Required</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.AVO_Waiver_Documents__c</assignToReference>
+            <operator>AddItem</operator>
+            <value>
+                <stringValue>Well Construction Inspection Form</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Well_Pad_Requirement_Waiver</name>
+        <label>Assign Well Pad Requirement Waiver</label>
+        <locationX>2030</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Waiver_Required</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Related_Waiver_Review.AVO_Waiver_Documents__c</assignToReference>
+            <operator>AddItem</operator>
+            <value>
+                <stringValue>Agricultural Well Pad Picture</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Permit_Approval</name>
+        <label>Set Permit Approval</label>
+        <locationX>314</locationX>
+        <locationY>1655</locationY>
+        <assignmentItems>
+            <assignToReference>Related_Permit.MUSW__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Permit Approval</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Permit</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Do_Any_Submissions_Require_Waiver</name>
+        <label>Do Any Submissions Require Waiver?</label>
+        <locationX>182</locationX>
+        <locationY>1547</locationY>
+        <defaultConnector>
+            <targetReference>Set_Permit_Approval</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Waiver Not Required</defaultConnectorLabel>
+        <rules>
+            <name>Waiver_Required</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Is_Waiver_Required</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Waiver_Review_Required</targetReference>
+            </connector>
+            <label>Waiver Required</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_AG_SW_Pump_Information_Form_Require_Waiver</name>
+        <label>Does AG SW Pump Information Form Require Waiver?</label>
+        <locationX>3482</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Require Waiver</defaultConnectorLabel>
+        <rules>
+            <name>Requires_Waiver_AG_SW_Pump_Information_Form</name>
+            <conditionLogic>(1 OR 2) AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surface Water</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Well to Pond</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.MUSW__Submission_DateTime__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Form_Assessment_Review.AVO_Request_Waiver_for_Pump_Data_Form__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_AG_SW_Pump_Information_Form_Waiver</targetReference>
+            </connector>
+            <label>Requires Waiver</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_AG_Well_Data_Sheet_Require_Waiver</name>
+        <label>Does AG Well Data Sheet Require Waiver?</label>
+        <locationX>3042</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Require Waiver</defaultConnectorLabel>
+        <rules>
+            <name>Requires_Waiver_AG_Well_Data_Sheet</name>
+            <conditionLogic>(1 OR 2) AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Groundwater</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Well to Pond</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.MUSW__Submission_DateTime__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Form_Assessment_Review.AVO_Request_Waiver_for_Well_Data_Form__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_AG_Well_Data_Sheet_Waiver</targetReference>
+            </connector>
+            <label>Requires Waiver</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Consolidated_Conservation_Plan_Require_Waiver</name>
+        <label>Does Consolidated Conservation Plan Require Waiver?</label>
+        <locationX>1722</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Require Waiver</defaultConnectorLabel>
+        <rules>
+            <name>Requires_Waiver_Consolidated_Conservation_Plan</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Is_Conservation_Plan_required__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.MUSW__Submission_DateTime__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Consolidated_Conservation_Plan_Waiver</targetReference>
+            </connector>
+            <label>Requires Waiver</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Irrigation_Efficiency_Certification_Form_Require_Waiver</name>
+        <label>Does Irrigation Efficiency Certification Form Require Waiver?</label>
+        <locationX>2602</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Require Waiver</defaultConnectorLabel>
+        <rules>
+            <name>Requires_Waiver_Irrigation_Efficiency_Certification_Form</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Irrigation_Efficiency_Form_required__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.MUSW__Submission_DateTime__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Irrigation_Efficiency_Certification_Form_Waiver</targetReference>
+            </connector>
+            <label>Requires Waiver</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Low_Flow_Guidance_Require_Waiver</name>
+        <label>Does Low Flow Guidance Require Waiver?</label>
+        <locationX>3922</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Require Waiver</defaultConnectorLabel>
+        <rules>
+            <name>Requires_Waiver_Low_Flow_Guidance</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Is_Low_Flow_Plan_required__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surface Water</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.MUSW__Submission_DateTime__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Form_Assessment_Review.AVO_Request_Waiver_for_Low_Flow_Plan__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Low_Flow_Guidance_Waiver</targetReference>
+            </connector>
+            <label>Requires Waiver</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Ownership_Document_Require_Waiver</name>
+        <label>Does Ownership Document Require Waiver?</label>
+        <locationX>402</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Require Waiver</defaultConnectorLabel>
+        <rules>
+            <name>Requires_Waiver_Ownership_Document</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.MUSW__Submission_DateTime__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Ownership_Document_Waiver</targetReference>
+            </connector>
+            <label>Requires Waiver</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Related_Permit_Exist</name>
+        <label>Does Related Permit Exist?</label>
+        <locationX>380</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Related_Permit_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Related_Permit</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Waiver_Review</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Water_Reuse_Feasibility_Study_Require_Waiver</name>
+        <label>Does Water Reuse Feasibility Study Require Waiver?</label>
+        <locationX>4362</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Require Waiver</defaultConnectorLabel>
+        <rules>
+            <name>Requires_Waiver_Water_Reuse_Feasibility_Study</name>
+            <conditionLogic>(1 OR 2) AND 3 AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Purpose_of_Water_Use__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Irrigation Golf Course</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Purpose_of_Water_Use__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Irrigation Athletic Field</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Water_Zones_Lowercase</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>coastal zone</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.MUSW__Submission_DateTime__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Water_Reuse_Feasibility_Study_Waiver</targetReference>
+            </connector>
+            <label>Requires Waiver</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If datafield Permit Type  == Surface Water or Well to Pond AND submission type Water Right Agreement Property does not have an uploaded date (not uploaded)</description>
+        <name>Does_Water_Right_Agreement_Property_Require_Waiver</name>
+        <label>Does Water Right Agreement Property Require Waiver?</label>
+        <locationX>1282</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Require Waiver</defaultConnectorLabel>
+        <rules>
+            <name>Requires_Waiver_Water_Right_Agreement_Property</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surface Water</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Well to Pond</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.MUSW__Submission_DateTime__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Water_Right_Agreement_Property_Waiver</targetReference>
+            </connector>
+            <label>Requires Waiver</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Well_Construction_Inspection_Form_Require_Waiver</name>
+        <label>Does Well Construction Inspection Form Require Waiver?</label>
+        <locationX>842</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Require Waiver</defaultConnectorLabel>
+        <rules>
+            <name>Requires_Waiver_Well_Construction_Inspection_Form</name>
+            <conditionLogic>(1 OR 2 OR (3 AND 4)) AND 5</conditionLogic>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Groundwater</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Well to Pond</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surface Water</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Is_Low_Flow_Plan_required__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.MUSW__Submission_DateTime__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Well_Construction_Inspection_Form_Waiver</targetReference>
+            </connector>
+            <label>Requires Waiver</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Well_Pad_Requirement_Require_Waiver</name>
+        <label>Does Well Pad Requirement Require Waiver?</label>
+        <locationX>2162</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Require Waiver</defaultConnectorLabel>
+        <rules>
+            <name>Requires_Waiver_Well_Pad_Requirement</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Groundwater</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Related_Permit.AVO_Permit_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Well to Pond</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.MUSW__Submission_DateTime__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Well_Pad_Requirement_Waiver</targetReference>
+            </connector>
+            <label>Requires Waiver</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Submission_Type_Check</name>
+        <label>Submission Type Check</label>
+        <locationX>2536</locationX>
+        <locationY>971</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Ownership_Document</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ownership Document</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_Ownership_Document_Require_Waiver</targetReference>
+            </connector>
+            <label>Ownership Document</label>
+        </rules>
+        <rules>
+            <name>Well_Construction_Inspection_Form</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Well Construction Inspection Form</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_Well_Construction_Inspection_Form_Require_Waiver</targetReference>
+            </connector>
+            <label>Well Construction Inspection Form</label>
+        </rules>
+        <rules>
+            <name>Water_Right_Agreement_Property</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Water Right Agreement Property</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_Water_Right_Agreement_Property_Require_Waiver</targetReference>
+            </connector>
+            <label>Water Right Agreement Property</label>
+        </rules>
+        <rules>
+            <name>Consolidated_Conservation_Plan</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Consolidated Conservation Plan</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_Consolidated_Conservation_Plan_Require_Waiver</targetReference>
+            </connector>
+            <label>Consolidated Conservation Plan</label>
+        </rules>
+        <rules>
+            <name>Well_Pad_Requirement</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Well Pad Requirement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_Well_Pad_Requirement_Require_Waiver</targetReference>
+            </connector>
+            <label>Well Pad Requirement</label>
+        </rules>
+        <rules>
+            <name>Irrigation_Efficiency_Certification_Form</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Irrigation Efficiency Certification Form</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_Irrigation_Efficiency_Certification_Form_Require_Waiver</targetReference>
+            </connector>
+            <label>Irrigation Efficiency Certification Form</label>
+        </rules>
+        <rules>
+            <name>AG_Well_Data_Sheet</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>AG Well Data Sheet</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_AG_Well_Data_Sheet_Require_Waiver</targetReference>
+            </connector>
+            <label>AG Well Data Sheet</label>
+        </rules>
+        <rules>
+            <name>AG_SW_Pump_Information_Form</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>AG SW Pump Information Form</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_AG_SW_Pump_Information_Form_Require_Waiver</targetReference>
+            </connector>
+            <label>AG SW Pump Information Form</label>
+        </rules>
+        <rules>
+            <name>Low_Flow_Guidance</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Low Flow Guidance</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_Low_Flow_Guidance_Require_Waiver</targetReference>
+            </connector>
+            <label>Low Flow Guidance</label>
+        </rules>
+        <rules>
+            <name>Water_Reuse_Feasibility_Study</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Related_Submissions.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Water Reuse Feasibility Study</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_Water_Reuse_Feasibility_Study_Require_Waiver</targetReference>
+            </connector>
+            <label>Water Reuse Feasibility Study</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Water_Zones_Lowercase</name>
+        <dataType>String</dataType>
+        <expression>LOWER( {!Related_Permit.AVO_County_Lookup__r.AVO_Water_Zones__c} )</expression>
+    </formulas>
+    <interviewLabel>AVO Final Evaluation Completed Waiver Check {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Agricultural Final Evaluation Completed Waiver Check</label>
+    <loops>
+        <name>Loop_Through_Related_Submissions</name>
+        <label>Loop Through Related Submissions</label>
+        <locationX>182</locationX>
+        <locationY>863</locationY>
+        <collectionReference>Submission_Collection</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Submission_Type_Check</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Do_Any_Submissions_Require_Waiver</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Conservation_Submissions</name>
+        <label>Get Related Submissions</label>
+        <locationX>182</locationX>
+        <locationY>755</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Through_Related_Submissions</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MUSW__Permit2__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <object>MUSW__Submission__c</object>
+        <outputReference>Submission_Collection</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>MUSW__Submission_DateTime__c</queriedFields>
+        <queriedFields>Name</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Form_Assessment_Review</name>
+        <label>Get Form Assessment Review</label>
+        <locationX>182</locationX>
+        <locationY>647</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Conservation_Submissions</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MUSW__Permit2__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Form Assessment Review</stringValue>
+            </value>
+        </filters>
+        <object>MUSW__Review__c</object>
+        <outputReference>Related_Form_Assessment_Review</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>AVO_Request_Waiver_for_Well_Data_Form__c</queriedFields>
+        <queriedFields>AVO_Request_Waiver_for_Pump_Data_Form__c</queriedFields>
+        <queriedFields>AVO_Request_Waiver_for_Low_Flow_Plan__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Related_Permit</name>
+        <label>Get Related Permit</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Does_Related_Permit_Exist</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3)</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Agricultural Water Withdrawal Permit</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Agricultural Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <object>MUSW__Permit2__c</object>
+        <outputReference>Related_Permit</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>MUSW__Status__c</queriedFields>
+        <queriedFields>AVO_Irrigation_Efficiency_Form_required__c</queriedFields>
+        <queriedFields>AVO_Is_Conservation_Plan_required__c</queriedFields>
+        <queriedFields>AVO_Is_Low_Flow_Plan_required__c</queriedFields>
+        <queriedFields>AVO_Permit_Type__c</queriedFields>
+        <queriedFields>AVO_Purpose_of_Water_Use__c</queriedFields>
+        <queriedFields>AVO_County_Lookup__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Waiver_Review</name>
+        <label>Get Waiver Review</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Form_Assessment_Review</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MUSW__Permit2__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MUSW__Permit2__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Waiver Review</stringValue>
+            </value>
+        </filters>
+        <object>MUSW__Review__c</object>
+        <outputReference>Related_Waiver_Review</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>MUSW__Status__c</queriedFields>
+        <queriedFields>AVO_Waiver_Documents__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Permit</name>
+        <label>Update Permit</label>
+        <locationX>314</locationX>
+        <locationY>1763</locationY>
+        <inputReference>Related_Permit</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Review_Pending_Waiver</name>
+        <label>Update Review Pending Waiver</label>
+        <locationX>50</locationX>
+        <locationY>1871</locationY>
+        <inputAssignments>
+            <field>MUSW__Status__c</field>
+            <value>
+                <stringValue>Pending Wavier Approval</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Waiver_Review</name>
+        <label>Update Waiver Review</label>
+        <locationX>50</locationX>
+        <locationY>1763</locationY>
+        <connector>
+            <targetReference>Update_Review_Pending_Waiver</targetReference>
+        </connector>
+        <inputReference>Related_Waiver_Review</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Related_Permit</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Final Evaluation Review</stringValue>
+            </value>
+        </filters>
+        <object>MUSW__Review__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>Alert_Message</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Conservation_Submission</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MUSW__Submission__c</objectType>
+    </variables>
+    <variables>
+        <name>Is_Waiver_Required</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <name>Related_Form_Assessment_Review</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MUSW__Review__c</objectType>
+    </variables>
+    <variables>
+        <name>Related_Permit</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MUSW__Permit2__c</objectType>
+    </variables>
+    <variables>
+        <name>Related_Waiver_Review</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MUSW__Review__c</objectType>
+    </variables>
+    <variables>
+        <name>Submission_Collection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MUSW__Submission__c</objectType>
+    </variables>
+</Flow>

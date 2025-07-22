@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_DateRev_Is_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ RecordType.Name = &apos;Agricultural Water Withdrawal Permit&apos;,
+ RecordType.Name = &apos;Agricultural Water Withdrawal Application&apos;,
+ RecordType.Name = &apos;Revision&apos;
+),
+ISBLANK(AVO_DateRev__c),
+ISPICKVAL( AVO_ApplicationRev__c , &apos;Yes&apos;),
+$Profile.Name &lt;&gt; &apos;AVO Customer Community Login&apos;
+)</errorConditionFormula>
+    <errorDisplayField>AVO_DateRev__c</errorDisplayField>
+    <errorMessage>The value is required when &apos;Application Reviewed&apos; is equal to &apos;Yes&apos;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Water_Conservation_Plan_Letter__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AVO_Permit_Check_32__c, &quot;Water use as provided herein will be subject to water conservation plans for Sub Region 3 designated by the Coastal Georgia Water &amp; Wastewater Permitting Plan for Managing Salt Water Intrusion in 2006, and the method of monitoring is specified in the submitted plans as conditioned by this Permit.&quot;, IF( AVO_Permit_Check_10__c, &quot;Under the special provisions of the Flint River Basin Water Development and Conservation Plan approved March 20, 2006, A WATER CONSERVATION PLAN IS REQUIRED. Based on the 2006 Flint River Basin Plan your withdrawal is located in an area designated as a Conservation Use area. A conservation planning form which must be completed and signed is enclosed. The water conservation plan remains a permanent condition of the permit.&quot;, null) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Water Conservation Plan</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

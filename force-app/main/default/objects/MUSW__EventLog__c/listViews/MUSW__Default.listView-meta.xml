@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Default</fullName>
+    <columns>NAME</columns>
+    <columns>MUSW__Apex_Code_Name__c</columns>
+    <columns>MUSW__MessageLong__c</columns>
+    <columns>MUSW__Type__c</columns>
+    <columns>MUSW__Severity__c</columns>
+    <columns>MUSW__User__c</columns>
+    <columns>MUSW__Time_Stamp__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Default</label>
+    <language>en_US</language>
+</ListView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__UserDoesNotHaveModThresholdBalancePerm</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(clariti__ThresholdBalance__c) &amp;&amp; NOT($Permission.clariti__ChangeThresholdBalance)</errorConditionFormula>
+    <errorDisplayField>clariti__ThresholdBalance__c</errorDisplayField>
+    <errorMessage>You do not have permission to edit the Cash Tray Threshold Balance.</errorMessage>
+</ValidationRule>

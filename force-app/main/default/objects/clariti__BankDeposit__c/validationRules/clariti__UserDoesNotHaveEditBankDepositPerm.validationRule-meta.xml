@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__UserDoesNotHaveEditBankDepositPerm</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(clariti__Status__c), &apos;Closed&apos;) &amp;&amp;
+!ISNEW() &amp;&amp;
+((!ISCHANGED(clariti__Status__c) &amp;&amp; $Permission.clariti__ManageBankDeposits) || !$Permission.clariti__ManageBankDeposits)</errorConditionFormula>
+    <errorMessage>You do not have permission to edit a closed Bank Deposit.</errorMessage>
+</ValidationRule>

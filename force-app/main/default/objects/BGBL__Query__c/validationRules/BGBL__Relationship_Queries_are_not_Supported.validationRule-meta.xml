@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Relationship_Queries_are_not_Supported</fullName>
+    <active>true</active>
+    <description>.NET letter app needs relationship queries to be defined explicitly</description>
+    <errorConditionFormula>OR(CONTAINS( BGBL__Object_Fields__c, &quot;(&quot;),CONTAINS(BGBL__Object_Fields__c, &quot;)&quot;))</errorConditionFormula>
+    <errorMessage>Relationship queries are not permitted with Letter Generator. Instead, create another letter query with this query as the parent to follow this one</errorMessage>
+</ValidationRule>

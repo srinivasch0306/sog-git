@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__LicenseeIsRequired</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND (MUSW__Primary_Licensee__c = null,  MUSW__Applicant_is_Licensee__c  = false,ISNEW(),$Profile.Name != &apos;CP Profile&apos;)</errorConditionFormula>
+    <errorMessage>Licensee is required.</errorMessage>
+</ValidationRule>

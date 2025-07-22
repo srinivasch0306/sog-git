@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__FloatCannotBeEmpty</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(clariti__Float__c)</errorConditionFormula>
+    <errorDisplayField>clariti__Float__c</errorDisplayField>
+    <errorMessage>The float amount cannot be empty. Please enter a value for the float amount.</errorMessage>
+</ValidationRule>

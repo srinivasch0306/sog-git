@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__UserDoesNotHaveEditClosedSessionPerm</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(clariti__Status__c , &apos;Closed&apos;) &amp;&amp; NOT($Permission.clariti__ManageCashierSessions)</errorConditionFormula>
+    <errorMessage>You do not have permission to edit a closed Cashier Session.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__RunAutomation</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>275</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Assess</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>{!URLFOR( &apos;/apex/MUSW__AutomationAssess&apos; ,null ,  [eid=MUSW__Permit__c.Id,parent=&quot;Permit&quot;, parentTable=&quot;MUSW__Permit__c&quot;, linkParcel=&quot;MUSW__Permit_Parcel__c&quot;, linkParcelName=&quot;Parcel&quot;, parentStreet=MUSW__Permit__c.MUSW__Job_Location_Street__c, parentCity=MUSW__Permit__c.MUSW__Job_Location_City__c , 
+parentPostZipCode=MUSW__Permit__c.MUSW__Job_Location_Post_Zip_Code__c, 
+parentUnit=MUSW__Permit__c.MUSW__Job_Location_Unit__c, 
+linkParcelParentIDField=&quot;MUSW__Permit__c&quot;, parentParcel=MUSW__Permit__c.MUSW__ParcelId__c, linkContact=&quot;MUSW__Permit_Contact__c&quot;, linkContactName=&quot;Contact&quot;, parentContact=MUSW__Permit__c.MUSW__ApplicantId__c, linkContactParentIDField=&quot;MUSW__Permit__c&quot;, linkContactType=&quot;Applicant&quot;, linkParcelContact=&quot;MUSW__Permit_Contact__c&quot;, 
+linkParcelContactName=&quot;Parcel Contact&quot;, 
+linkParcelContactParent=&quot;MUSW__Permit_Parcel__c&quot;, 
+linkParcelContactParentIDField=&quot;MUSW__Permit__c&quot;, 
+scope=&quot;FIN,STD&quot; ])}</url>
+    <width>400</width>
+</WebLink>

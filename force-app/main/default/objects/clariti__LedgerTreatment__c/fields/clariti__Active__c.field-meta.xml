@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Active__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>To deactivate the ledger treatment, clear the checkbox. This won’t affect existing journal entry items created via this ledger treatment</description>
+    <inlineHelpText>To deactivate the ledger treatment, clear the checkbox. This won’t affect existing journal entry items created via this ledger treatment</inlineHelpText>
+    <label>Active</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

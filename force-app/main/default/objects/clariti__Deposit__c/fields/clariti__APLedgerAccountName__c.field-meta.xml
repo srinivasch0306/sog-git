@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__APLedgerAccountName__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Name of the ledger account used for capturing accounts payable journal entries. A new ledger account will be created with this name if it does not already exist</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of the ledger account used for capturing accounts payable journal entries. A new ledger account will be created with this name if it does not already exist</inlineHelpText>
+    <label>AP Ledger Account Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

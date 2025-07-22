@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Print_File__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(OR(AND(BGBL__Print_File_Name__c == &quot;&quot;,BGBL__Print_File_Location__c ==&quot;&quot;),TEXT(BGBL__Status__c)!= &quot;Completed&quot;), &quot;-- not available --&quot;, 
+	IF(BGBL__Single_Letter_Job__c == true, HYPERLINK(BGBL__Print_File_Name__c , &quot;click to view&quot;, &quot;_top&quot;), 
+		IF(AND(BGBL__Print_File_Name__c != &quot;&quot;,BGBL__Print_File_Location__c ==&quot;&quot;),
+			IF(contains($Setup.BGBL__Letter_Single__c.BGBL__Letter_Request_Endpoint__c, &quot;dev&quot;), 
+				HYPERLINK(&quot;https://devletterbatch.mybasicgov.com/mergedoc/&quot; &amp; BGBL__Print_File_Name__c ,&quot;click to view&quot;, &quot;_top&quot;), 
+				IF(contains($Setup.BGBL__Letter_Single__c.BGBL__Letter_Request_Endpoint__c, &quot;test&quot;), 
+					HYPERLINK(&quot;https://testletterbatch.mybasicgov.com/mergedoc/&quot; &amp; BGBL__Print_File_Name__c ,&quot;click to view&quot;, &quot;_top&quot;), 
+					IF(contains($Setup.BGBL__Letter_Single__c.BGBL__Letter_Request_Endpoint__c, &quot;staging&quot;),
+						HYPERLINK(&quot;https://stagingletterbatch.mybasicgov.com/mergedoc/&quot; &amp; BGBL__Print_File_Name__c , &quot;click to view&quot;, &quot;_top&quot;), 
+						HYPERLINK(&quot;https://letterbatch.mybasicgov.com/mergedoc/&quot; &amp; BGBL__Print_File_Name__c , &quot;click to view&quot;, &quot;_top&quot;) 
+					) 
+				)
+			),
+			HYPERLINK(BGBL__Print_File_Location__c,&quot;click to view&quot;,&quot;_top&quot;)
+		)
+	) 
+)</formula>
+    <label>Print File</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,37 @@
+<!--
+    Lightning Aura Component shown on Permit Records as a Quick Action to add New Inspections.
+    @author Michael Chung
+    last modified by Michael Chung
+    @date 05/20/2021
+-->
+
+<aura:component Controller="AvoInspectionDataRetrieverController" implements="force:lightningQuickAction,force:hasRecordId,force:hasSObjectName">
+    <aura:attribute name="sObjectName" type="String" default="{!v.sObjectName}" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="options" type="List" default="" />
+    <aura:attribute name="inspectionValues" type="List" />
+    <aura:attribute name="loaded" type="Boolean" default="false" />
+
+    <!-- Handler to call function when page is loaded initially  -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <div class="content-wrapper">
+        <lightning:notificationsLibrary aura:id="notifLib"/>
+        <lightning:checkboxGroup name="inspectionType" label="Select Inspection Type(s)" value="{!v.inspectionValues}" placeholder="Select Inspection Type(s)" options="{!v.options }" />
+
+        <div class="create-button">
+            <aura:if isTrue="{!v.inspectionValues.length > 0}">
+                <lightning:button variant="brand-outline" label="Create Inspection(s)" title="Create Inspection(s)" onclick="{! c.handleCreation }"/>
+            </aura:if>
+            <aura:if isTrue="{!v.inspectionValues.length == 0}">
+                <lightning:button variant="brand-outline" label="Create Inspection(s)" title="Create Inspection(s)" disabled="true" />
+            </aura:if>
+
+            <aura:if isTrue="{! v.loaded }">
+                <div class="loadingInspections">
+                    <lightning:spinner alternativeText="Loading" />
+                </div>
+            </aura:if>
+        </div>
+    </div>
+</aura:component>

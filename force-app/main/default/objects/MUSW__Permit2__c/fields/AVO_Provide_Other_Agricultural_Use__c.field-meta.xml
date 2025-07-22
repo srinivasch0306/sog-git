@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Provide_Other_Agricultural_Use__c</fullName>
+    <description>If Selected Other Agricultural Use (Please provide the other Use details)</description>
+    <inlineHelpText>If Selected Other Agricultural Use (Please provide the other Use details)</inlineHelpText>
+    <label>Provide Other Agricultural Use</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

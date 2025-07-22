@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Attach_Letter</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>300</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Attach Letter</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>{!URLFOR( $SControl.MUSW__MailMergeInterface, MUSW__Permit2__c.Id, [recordID=MUSW__Permit2__c.Id, documentFolder=&quot;LGM - Permits Letter Templates&quot; ])}</url>
+    <width>500</width>
+</WebLink>

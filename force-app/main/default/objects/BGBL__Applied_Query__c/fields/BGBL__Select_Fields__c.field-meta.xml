@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Select_Fields__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Field values to display when giving user to choose one or many letter copies for. This field is case-sensitive and its values must be identical to the field API names. eg. MUSW__Contact__r.Name, MUSW__Contact__r.MailingStreet</inlineHelpText>
+    <label>Child Select Fields</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

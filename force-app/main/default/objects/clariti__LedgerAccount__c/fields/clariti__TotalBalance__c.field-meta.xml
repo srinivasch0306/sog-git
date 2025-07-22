@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__TotalBalance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Calculated based on Account Type. Debit - Credit for Assets and Expenses. Credit - Debit for Liabilities, Equity and Revenue.</description>
+    <formula>IF( TEXT(clariti__AccountType__c)  = &apos;Assets&apos; || TEXT(clariti__AccountType__c)  = &apos;Expenses&apos;, clariti__TotalDebitAmount__c - clariti__TotalCreditAmount__c, clariti__TotalCreditAmount__c - clariti__TotalDebitAmount__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Total of Debit Amount - Credit Amount</inlineHelpText>
+    <label>Total Balance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

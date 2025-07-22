@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_LOC_Expiring_Within_90_Days</fullName>
+    <columns>NAME</columns>
+    <columns>MUSW__Status__c</columns>
+    <columns>AVO_Letter_of_Concurrence_Expiration__c</columns>
+    <columns>AVO_LOC_Expiring_Within_90_Days__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AVO_LOC_Expiring_Within_90_Days__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Expiring LOC</label>
+</ListView>

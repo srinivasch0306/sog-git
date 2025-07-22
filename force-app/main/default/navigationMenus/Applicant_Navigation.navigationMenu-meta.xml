@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Community Portal</container>
+    <containerType>Network</containerType>
+    <label>Applicant Navigation</label>
+    <navigationMenuItem>
+        <label>Meters</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>My Meters</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/my-meters</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>New Meter Approval Application</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/meter-applications</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+</NavigationMenu>

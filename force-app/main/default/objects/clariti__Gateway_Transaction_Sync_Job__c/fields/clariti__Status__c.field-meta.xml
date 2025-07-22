@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Status</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>true</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Succeeded</fullName>
+                <default>false</default>
+                <label>Succeeded</label>
+            </value>
+            <value>
+                <fullName>With Errors</fullName>
+                <default>false</default>
+                <label>With Errors</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

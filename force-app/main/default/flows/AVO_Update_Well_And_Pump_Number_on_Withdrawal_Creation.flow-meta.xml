@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assigning_Ground_Water_Record_Count</name>
+        <label>Assigning Ground Water Record Count</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>RecordCount</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Get_With_Ground_Water_Withdrawals</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Ground_Water_Withdrawal</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assigning_Surface_Water_Record_Count</name>
+        <label>Assigning Surface Water Record Count</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>RecordCount</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Get_With_Surface_Water_Withdrawals</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Surface_Water_Withdrawal</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Checking_Withdrawal_Type</name>
+        <label>Checking Withdrawal Type</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Ground</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ground Water Withdrawal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.AVO_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ground Water Withdrawal Application</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_With_Ground_Water_Withdrawals</targetReference>
+            </connector>
+            <label>Ground Water</label>
+        </rules>
+        <rules>
+            <name>Surface_Water</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AVO_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surface Water Withdrawal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.AVO_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surface Water Withdrawal Application</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_With_Surface_Water_Withdrawals</targetReference>
+            </connector>
+            <label>Surface Water</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Pump_Name</name>
+        <dataType>String</dataType>
+        <expression>&quot;Pump &quot; + TEXT({!RecordCount})</expression>
+    </formulas>
+    <formulas>
+        <name>Well_Name</name>
+        <dataType>String</dataType>
+        <expression>&quot;Well &quot; + TEXT({!RecordCount})</expression>
+    </formulas>
+    <interviewLabel>AVO Update Well And Pump Number on Withdrawal Creation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Update Well And Pump Number on Withdrawal Creation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_With_Ground_Water_Withdrawals</name>
+        <label>Get With Ground Water Withdrawals</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assigning_Ground_Water_Record_Count</targetReference>
+        </connector>
+        <filterLogic>1 AND ( 2 OR 3 )</filterLogic>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AVO_Permit__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_With_Surface_Water_Withdrawals</name>
+        <label>Get With Surface Water Withdrawals</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assigning_Surface_Water_Record_Count</targetReference>
+        </connector>
+        <filterLogic>1 AND ( 2 OR 3 )</filterLogic>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AVO_Permit__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AVO_Withdrawals__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Ground_Water_Withdrawal</name>
+        <label>Update Ground Water Withdrawal</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>AVO_Well_Name__c</field>
+            <value>
+                <elementReference>Well_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AVO_Well_Number__c</field>
+            <value>
+                <elementReference>RecordCount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Surface_Water_Withdrawal</name>
+        <label>Update Surface Water Withdrawal</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>AVO_PumpNumber__c</field>
+            <value>
+                <elementReference>RecordCount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AVO_Surface_Water_Source__c</field>
+            <value>
+                <elementReference>Pump_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Checking_Withdrawal_Type</targetReference>
+        </connector>
+        <filterLogic>1 AND ( 2 OR 3 OR 4 OR 5 )</filterLogic>
+        <filters>
+            <field>AVO_Permit__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ground Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surface Water Withdrawal Application</stringValue>
+            </value>
+        </filters>
+        <object>AVO_Withdrawals__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>RecordCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+</Flow>

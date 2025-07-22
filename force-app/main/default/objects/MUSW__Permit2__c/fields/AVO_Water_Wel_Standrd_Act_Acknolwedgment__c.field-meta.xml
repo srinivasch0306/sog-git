@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Water_Wel_Standrd_Act_Acknolwedgment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>I understand that a well pad that meets the standards of the Water Well Standards Act (O.C.G.A. 12-5-134(1)(R)) must be installed on each well.</inlineHelpText>
+    <label>Water Well Standard Act Acknowledgment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

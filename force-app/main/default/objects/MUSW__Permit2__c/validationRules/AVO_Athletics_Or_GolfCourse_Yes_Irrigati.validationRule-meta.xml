@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Athletics_Or_GolfCourse_Yes_Irrigati</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND (
+ISPICKVAL( AVO_PurIR__c , &apos;Yes&apos;),
+ISPICKVAL( AVO_Athletics__c ,&apos;Yes&apos;),
+ISPICKVAL( AVO_Golf_Course__c ,&apos;Yes&apos;)),
+
+AND (
+ISBLANK(TEXT(AVO_PurIR__c)),
+ISPICKVAL( AVO_Athletics__c ,&apos;Yes&apos;),
+ISPICKVAL( AVO_Golf_Course__c ,&apos;Yes&apos;))
+
+)</errorConditionFormula>
+    <errorMessage>If Athletic or GolfCouse is Yes then  Irrigation must be No</errorMessage>
+</ValidationRule>

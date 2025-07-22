@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Deposit</label>
+    <protected>false</protected>
+    <values>
+        <field>clariti__AccountField__c</field>
+        <value xsi:type="xsd:string">clariti__Account__c</value>
+    </values>
+    <values>
+        <field>clariti__AmountField__c</field>
+        <value xsi:type="xsd:string">clariti__RequiredAmount__c</value>
+    </values>
+    <values>
+        <field>clariti__CartFieldSet__c</field>
+        <value xsi:type="xsd:string">DepositCartColumns</value>
+    </values>
+    <values>
+        <field>clariti__CartItemField__c</field>
+        <value xsi:type="xsd:string">clariti__Deposit__c</value>
+    </values>
+    <values>
+        <field>clariti__ObjectAPIName__c</field>
+        <value xsi:type="xsd:string">clariti__Deposit__c</value>
+    </values>
+    <values>
+        <field>clariti__OutstandingAmountField__c</field>
+        <value xsi:type="xsd:string">clariti__OutstandingAmount__c</value>
+    </values>
+    <values>
+        <field>clariti__ParentObjectField__c</field>
+        <value xsi:type="xsd:string">clariti__Permit2__c,clariti__License2__c,clariti__Application2__c,clariti__Account__c</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__OptionalPaymentFields__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is to capture the comma separated list of optional fields to be displayed when this payment method is selected in the cart journey.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Comma separated list of payment method specific payment fields to be captured as optional fields in the cart journey</inlineHelpText>
+    <label>Optional Payment Fields</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_What_is_the_Average_depth_of_you</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+OR(
+RecordType.DeveloperName = &apos;AVO_Agricultural_Water_Withdrawal_Application&apos;
+),
+OR(
+ISPICKVAL(AVO_Pump_Source__c, &apos;Pond or Reservoir lying on your property&apos; ), 
+ISPICKVAL(AVO_Pump_Source__c,&apos;Shared Pond, Lake or Reservoir not entirely on your property&apos;)) ,
+ISBLANK(AVO_Wat_is_the_Avrage_depth_of_your_pond__c)
+
+
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Wat_is_the_Avrage_depth_of_your_pond__c</errorDisplayField>
+    <errorMessage>Value is required</errorMessage>
+</ValidationRule>

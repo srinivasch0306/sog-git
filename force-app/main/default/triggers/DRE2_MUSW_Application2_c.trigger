@@ -1,0 +1,1 @@
+trigger DRE2_MUSW_Application2_c on MUSW__Application2__c (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_MUSW_Application2_c', new DRETriggerHandler()); }

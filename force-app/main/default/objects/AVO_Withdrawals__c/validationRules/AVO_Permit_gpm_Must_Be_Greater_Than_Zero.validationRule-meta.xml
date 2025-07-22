@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Permit_gpm_Must_Be_Greater_Than_Zero</fullName>
+    <active>true</active>
+    <description>Permit gpm value must be greater than zero.</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(AVO_Permit_gpm__c)),
+AVO_Permit_gpm__c &lt;= 0,
+$Profile.Name &lt;&gt; &apos;AVO Customer Community Login&apos;
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Permit_gpm__c</errorDisplayField>
+    <errorMessage>Value must be greater than zero.</errorMessage>
+</ValidationRule>

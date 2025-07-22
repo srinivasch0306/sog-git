@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Test_Query</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Test Query</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!requireScript(&quot;/soap/ajax/41.0/connection.js&quot;)}
+
+var qs = &quot;SELECT  {!BGBL__Query__c.BGBL__Object_Fields__c} FROM {!BGBL__Query__c.BGBL__Object_Name__c}&quot;; 
+//where
+qs += (&quot;{!BGBL__Query__c.BGBL__WHERE_Filter__c}&quot; != &quot;&quot;) ? &quot; WHERE {!BGBL__Query__c.BGBL__WHERE_Filter__c} &quot;:&quot;&quot;;
+//order by
+qs += (&quot;{!BGBL__Query__c.BGBL__ORDER_BY_Filter__c}&quot; != &quot;&quot;) ? &quot; ORDER BY &quot; + &quot;{!BGBL__Query__c.BGBL__ORDER_BY_Filter__c} &quot; + &quot;{!BGBL__Query__c.BGBL__ORDER_BY_Direction_Short__c}&quot;:&quot;&quot;;
+//limit
+qs += (&quot;{!BGBL__Query__c.BGBL__LIMIT_Filter__c}&quot; != &quot;&quot;) ? &quot; LIMIT &quot; + &quot;{!BGBL__Query__c.BGBL__LIMIT_Filter__c}&quot;: &quot;&quot;;
+
+
+try
+{
+result = sforce.connection.query(qs);
+records = result.getArray(&quot;records&quot;);
+alert(&quot;successfully returned &quot; + records.length + &quot; record(s)&quot;);
+}
+catch(e)
+{
+alert(&quot;Error: &quot; + e);
+}</url>
+</WebLink>

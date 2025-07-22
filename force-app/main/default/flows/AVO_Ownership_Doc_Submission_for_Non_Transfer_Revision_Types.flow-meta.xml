@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>AVO Ownership {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AVO Ownership Doc Submission for Non Transfer Revision Types</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Ownership_Verification_Submission</name>
+        <label>Create Ownership Verification Submission</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>MUSW__BG_File_Location_Type__c</field>
+            <value>
+                <stringValue>Salesforce</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MUSW__Permit2__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MUSW__Required__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MUSW__Status__c</field>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Get_Ownership_Document.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <object>MUSW__Submission__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Ownership_Document</name>
+        <label>Get Ownership Document</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Ownership_Verification_Submission</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ownership Document</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MUSW__Master_Submission_List__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Ownership_Document</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7 OR 8)</filterLogic>
+        <filters>
+            <field>MUSW__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MUSW__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Revision</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Transaction_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Modify Permit</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Transaction_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Relinquish Permit</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Transaction_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Update Permit</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Transaction_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Revoke Permit</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Transaction_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Correct Permit</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AVO_Transaction_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Consolidate Permit</stringValue>
+            </value>
+        </filters>
+        <object>MUSW__Permit2__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

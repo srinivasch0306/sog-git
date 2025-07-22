@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Types_of_Water_Source__c</fullName>
+    <label>Types of Water Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ground Water - Well pumps to irrigation and/or refills pond</fullName>
+                <default>false</default>
+                <label>Ground Water - Well pumps to irrigation and/or refills pond</label>
+            </value>
+            <value>
+                <fullName>Surface Water - Surface water pumps refill pond and/or pumps to irrigation</fullName>
+                <default>false</default>
+                <label>Surface Water - Surface water pumps refill pond and/or pumps to irrigation</label>
+            </value>
+            <value>
+                <fullName>Well-to-Pond - System includes both Well &amp; Surface water pumps</fullName>
+                <default>false</default>
+                <label>Well-to-Pond - System includes both Well &amp; Surface water pumps</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

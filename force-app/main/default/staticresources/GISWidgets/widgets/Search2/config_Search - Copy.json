@@ -1,0 +1,176 @@
+{
+  "zoomScale": 10000,
+  "shareResult": false,
+  "layers": [
+    {
+      "name": "Louisville Parcels",
+      "url": "http://gis.cityofelgin.net/arcgis/rest/services/Basemap_All_SF/MapServer/9",
+	  "type": "feature",
+      "expression": "OBJECTID LIKE '%[value]%'",
+      "textsearchlabel": "Number",
+      "textsearchhint": "Number",
+      "titlefield": null,
+      "linkfield": "",
+      "fields": {
+        "all": false,
+        "field": [
+	    {
+            "name": "OBJECTID",
+            "alias": "OBJECTID"
+        },
+		{
+            "name": "Shape",
+            "alias": "Shape"
+          },
+          {
+            "name": "PARCELID",
+            "alias": "PARCELID"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Louisville LandUse",
+      "url": "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer/1",
+	  "type": "feature",
+      "expression": "OBJECTID LIKE '%[value]%'",
+      "textsearchlabel": "Number",
+      "textsearchhint": "Number",
+      "titlefield": null,
+      "linkfield": "",
+      "fields": {
+        "all": false,
+        "field": [
+		  {
+            "name": "OBJECTID",
+            "alias": "OBJECTID"
+          },
+		  {
+            "name": "Shape",
+            "alias": "Shape"
+          },
+          {
+            "name": "LANDUSE_CODE",
+            "alias": "LANDUSE_CODE"
+          },
+          {
+            "name": "LANDUSE_NAME",
+            "alias": "LANDUSE_NAME"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Louisville Zoning",
+      "url": "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer/2",
+	  "type": "feature",
+      "expression": "OBJECTID LIKE '%[value]%'",
+      "textsearchlabel": "Number",
+      "textsearchhint": "Number",
+      "titlefield": null,
+      "linkfield": "",
+      "fields": {
+        "all": false,
+        "field": [
+		  {
+            "name": "OBJECTID",
+            "alias": "OBJECTID "
+          },
+		  {
+            "name": "Shape",
+            "alias": "Shape"
+          },
+          {
+            "name": "Unit",
+            "alias": "Unit"
+          },
+          {
+            "name": "ZONING_CODE",
+            "alias": "ZONING_CODE"
+          },
+          {
+            "name": "ZONING_NAME ,
+            "alias": "ZONING_NAME"
+          },
+          {
+            "name": "ZONING_TYPE",
+            "alias": "ZONING_TYPE"
+          }
+        ]
+      }
+    },
+	{
+      "name": "BG Inspection",
+      "url": "MUSW__Inspection__c",
+      "type": "basicgov",
+      "expression": "Number =",
+      "textsearchlabel": "Number",
+      "textsearchhint": "INS-0000123",
+      "titlefield": "Name",
+      "linkfield": "",
+      "fields": {
+        "all": false,
+        "field": []
+      }
+    },
+	{
+      "name": "BG Permit",
+      "url": "MUSW__Permit2__c",
+      "type": "basicgov",
+      "expression": "Number =",
+      "textsearchlabel": "Number",
+      "textsearchhint": "14-ELE-0003",
+      "titlefield": "Name",
+      "linkfield": "",
+      "fields": {
+        "all": false,
+        "field": []
+      }
+    }
+  ],
+  "symbols": {
+    "simplemarkersymbol": {
+      "type": "esriSMS",
+      "style": "esriSMSSquare",
+      "color": [
+        0,
+        128,
+        255,
+        170
+      ],
+      "size": 8,
+      "outline": {
+        "color": [
+          152,
+          230,
+          0,
+          255
+        ],
+        "width": 1
+      }
+    },
+    "picturemarkersymbol": {},
+    "simplelinesymbol": {},
+    "simplefillsymbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+        0,
+        128,
+        255,
+        170
+      ],
+      "outline": {
+	    "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+          0,
+          128,
+          255,
+          170
+        ],
+        "width": 1
+      }
+	}
+  }
+}

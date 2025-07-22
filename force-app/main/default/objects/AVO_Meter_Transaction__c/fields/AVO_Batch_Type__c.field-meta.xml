@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Batch_Type__c</fullName>
+    <label>Batch Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Batch Meter Entry</fullName>
+                <default>false</default>
+                <label>Batch Meter Entry</label>
+            </value>
+            <value>
+                <fullName>Batch Meter Reading</fullName>
+                <default>false</default>
+                <label>Batch Meter Reading</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

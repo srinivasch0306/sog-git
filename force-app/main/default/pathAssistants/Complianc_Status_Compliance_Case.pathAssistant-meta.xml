@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>AVO_Compliance__c</entityName>
+    <fieldName>AVO_CompStatus__c</fieldName>
+    <masterLabel>Complianc Status - Compliance Case</masterLabel>
+    <recordTypeName>AVO_Compliance_Case</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__All_Inspections</fullName>
+    <columns>NAME</columns>
+    <columns>MUSW__Type__c</columns>
+    <columns>MUSW__Priority__c</columns>
+    <columns>MUSW__Status__c</columns>
+    <columns>AVO_VerifyID__c</columns>
+    <columns>MUSW__Due_Date__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>MUSW__Geolocation__Latitude__s</columns>
+    <columns>MUSW__Geolocation__Longitude__s</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Well_Install_Type__c</fullName>
+    <label>Well Install Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Withdrawal</fullName>
+                <default>false</default>
+                <label>New Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Replacement Well</fullName>
+                <default>false</default>
+                <label>Replacement Well</label>
+            </value>
+            <value>
+                <fullName>Undocumented Well</fullName>
+                <default>false</default>
+                <label>Undocumented Well</label>
+            </value>
+            <value>
+                <fullName>Undocumented Pump</fullName>
+                <default>false</default>
+                <label>Undocumented Pump</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

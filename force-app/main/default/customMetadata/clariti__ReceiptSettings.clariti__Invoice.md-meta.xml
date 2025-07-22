@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Invoice</label>
+    <protected>false</protected>
+    <values>
+        <field>clariti__FieldSetToDisplay__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__FieldSetValueSeparator__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__LogoStaticResourceName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__OfficeAddress__c</field>
+        <value xsi:type="xsd:string">[Office Address Details]</value>
+    </values>
+    <values>
+        <field>clariti__OfficeEmail__c</field>
+        <value xsi:type="xsd:string">support@claritisoftware.com</value>
+    </values>
+    <values>
+        <field>clariti__OfficeFaxNumber__c</field>
+        <value xsi:type="xsd:string">[Office Fax Number]</value>
+    </values>
+    <values>
+        <field>clariti__OfficePhone__c</field>
+        <value xsi:type="xsd:string">[Office Phone Number]</value>
+    </values>
+    <values>
+        <field>clariti__OrgWideSenderEmailName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>clariti__Website__c</field>
+        <value xsi:type="xsd:string">www.claritisoftware.com</value>
+    </values>
+</CustomMetadata>

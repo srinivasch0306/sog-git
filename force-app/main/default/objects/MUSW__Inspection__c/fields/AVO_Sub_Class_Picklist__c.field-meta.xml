@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Sub_Class_Picklist__c</fullName>
+    <label>Sub Class Picklist</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Flow Meter Approval Needed</fullName>
+                <default>false</default>
+                <label>Flow Meter Approval Needed</label>
+            </value>
+            <value>
+                <fullName>New Meter Installation Assessment</fullName>
+                <default>false</default>
+                <label>New Meter Installation Assessment</label>
+            </value>
+            <value>
+                <fullName>Meter R&amp;R Assessment</fullName>
+                <default>false</default>
+                <label>Meter R&amp;R Assessment</label>
+            </value>
+            <value>
+                <fullName>Verify Meter Site Installation</fullName>
+                <default>false</default>
+                <label>Verify Meter Site Installation</label>
+            </value>
+            <value>
+                <fullName>Verify Meter XY &amp; Serial Number</fullName>
+                <default>false</default>
+                <label>Verify Meter XY &amp; Serial Number</label>
+            </value>
+            <value>
+                <fullName>Verify Owner Installed Meter</fullName>
+                <default>false</default>
+                <label>Verify Owner Installed Meter</label>
+            </value>
+            <value>
+                <fullName>Permit Audit</fullName>
+                <default>false</default>
+                <label>Permit Audit</label>
+            </value>
+            <value>
+                <fullName>Verify Source XY</fullName>
+                <default>false</default>
+                <label>Verify Source XY</label>
+            </value>
+            <value>
+                <fullName>Permit Well Construction Inspection</fullName>
+                <default>false</default>
+                <label>Permit Well Construction Inspection</label>
+            </value>
+            <value>
+                <fullName>Well Plugged and Abandoned Inspection</fullName>
+                <default>false</default>
+                <label>Well Plugged and Abandoned Inspection</label>
+            </value>
+            <value>
+                <fullName>Unpermitted Surface Water Withdrawal</fullName>
+                <default>false</default>
+                <label>Unpermitted Surface Water Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Unpermitted Groundwater Withdrawal</fullName>
+                <default>false</default>
+                <label>Unpermitted Groundwater Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Undocumented Acres</fullName>
+                <default>false</default>
+                <label>Undocumented Acres</label>
+            </value>
+            <value>
+                <fullName>Unused Surface Water Permit</fullName>
+                <default>false</default>
+                <label>Unused Surface Water Permit</label>
+            </value>
+            <value>
+                <fullName>5 Year - Unmeterable Permitted Withdrawals Notice</fullName>
+                <default>false</default>
+                <label>5 Year - Unmeterable Permitted Withdrawals Notice</label>
+            </value>
+            <value>
+                <fullName>1 Year - Owner Must Install Meter Notice</fullName>
+                <default>false</default>
+                <label>1 Year - Owner Must Install Meter Notice</label>
+            </value>
+            <value>
+                <fullName>Irrigation Efficiency Certification Requirement Violation</fullName>
+                <default>false</default>
+                <label>Irrigation Efficiency Certification Requirement Violation</label>
+            </value>
+            <value>
+                <fullName>Unmetered Permitted GW Withdrawal</fullName>
+                <default>false</default>
+                <label>Unmetered Permitted GW Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Unmetered Permitted SW Withdrawal</fullName>
+                <default>false</default>
+                <label>Unmetered Permitted SW Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Well Not Constructed To Specification</fullName>
+                <default>false</default>
+                <label>Well Not Constructed To Specification</label>
+            </value>
+            <value>
+                <fullName>Meter Tampering</fullName>
+                <default>false</default>
+                <label>Meter Tampering</label>
+            </value>
+            <value>
+                <fullName>Incomplete Meter Installation</fullName>
+                <default>false</default>
+                <label>Incomplete Meter Installation</label>
+            </value>
+            <value>
+                <fullName>Low Flow Protection Plan Violation</fullName>
+                <default>false</default>
+                <label>Low Flow Protection Plan Violation</label>
+            </value>
+            <value>
+                <fullName>Unused Well to Pond Permit</fullName>
+                <default>false</default>
+                <label>Unused Well to Pond Permit</label>
+            </value>
+            <value>
+                <fullName>Groundwater Pumping Over Permitted GPM Capacity</fullName>
+                <default>false</default>
+                <label>Groundwater Pumping Over Permitted GPM Capacity</label>
+            </value>
+            <value>
+                <fullName>Irrigating Acres Over Permit Capacity</fullName>
+                <default>false</default>
+                <label>Irrigating Acres Over Permit Capacity</label>
+            </value>
+            <value>
+                <fullName>Surface Water Pumping Over Permitted GPM Capacity</fullName>
+                <default>false</default>
+                <label>Surface Water Pumping Over Permitted GPM Capacity</label>
+            </value>
+            <value>
+                <fullName>Undocumented Groundwater Withdrawal</fullName>
+                <default>false</default>
+                <label>Undocumented Groundwater Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Undocumented Surface Water Withdrawal</fullName>
+                <default>false</default>
+                <label>Undocumented Surface Water Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Pump Completion Data Form Not Submitted</fullName>
+                <default>false</default>
+                <label>Pump Completion Data Form Not Submitted</label>
+            </value>
+            <value>
+                <fullName>Unused Groundwater Permit</fullName>
+                <default>false</default>
+                <label>Unused Groundwater Permit</label>
+            </value>
+            <value>
+                <fullName>Improper Plugging and Abandonment of Well - Permit</fullName>
+                <default>false</default>
+                <label>Improper Plugging and Abandonment of Well - Permit</label>
+            </value>
+            <value>
+                <fullName>Expired Letter of Concurrence</fullName>
+                <default>false</default>
+                <label>Expired Letter of Concurrence</label>
+            </value>
+            <value>
+                <fullName>New Permit NOV</fullName>
+                <default>false</default>
+                <label>New Permit NOV</label>
+            </value>
+            <value>
+                <fullName>Conservation Plan Not Submitted</fullName>
+                <default>false</default>
+                <label>Conservation Plan Not Submitted</label>
+            </value>
+            <value>
+                <fullName>Flow Meter Approval Form Not Submitted</fullName>
+                <default>false</default>
+                <label>Flow Meter Approval Form Not Submitted</label>
+            </value>
+            <value>
+                <fullName>Irrigation Efficiency Certification Not Submitted</fullName>
+                <default>false</default>
+                <label>Irrigation Efficiency Certification Not Submitted</label>
+            </value>
+            <value>
+                <fullName>Irrigation Water Conservation Plan Violation</fullName>
+                <default>false</default>
+                <label>Irrigation Water Conservation Plan Violation</label>
+            </value>
+            <value>
+                <fullName>Low Flow Protection Plan Not Submitted</fullName>
+                <default>false</default>
+                <label>Low Flow Protection Plan Not Submitted</label>
+            </value>
+            <value>
+                <fullName>Well Completion Data Form Not Submitted</fullName>
+                <default>false</default>
+                <label>Well Completion Data Form Not Submitted</label>
+            </value>
+            <value>
+                <fullName>Well Pad Construction Picture Not Submitted</fullName>
+                <default>false</default>
+                <label>Well Pad Construction Picture Not Submitted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

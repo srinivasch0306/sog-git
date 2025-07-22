@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>All Reviews</fullName>
+        <default>false</default>
+        <label>All Reviews</label>
+    </customValue>
+    <customValue>
+        <fullName>Any Review</fullName>
+        <default>false</default>
+        <label>Any Review</label>
+    </customValue>
+    <customValue>
+        <fullName>AG Program Manager Review</fullName>
+        <default>false</default>
+        <label>AG Program Manager Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Director Office Review</fullName>
+        <default>false</default>
+        <label>Director Office Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Evaluation of Withdrawal 1st Cut</fullName>
+        <default>false</default>
+        <label>Evaluation of Withdrawal 1st Cut</label>
+    </customValue>
+    <customValue>
+        <fullName>Evaluation of Withdrawal 2nd Cut</fullName>
+        <default>false</default>
+        <label>Evaluation of Withdrawal 2nd Cut</label>
+    </customValue>
+    <customValue>
+        <fullName>Irrigation Efficiency Cert Review</fullName>
+        <default>false</default>
+        <label>Irrigation Efficiency Cert Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Flow Protection Plan Review</fullName>
+        <default>false</default>
+        <label>Low Flow Protection Plan Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Special Appraisal</fullName>
+        <default>false</default>
+        <label>Special Appraisal</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Conservation Plan Review</fullName>
+        <default>false</default>
+        <label>Water Conservation Plan Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Reuse Visibility Study Review</fullName>
+        <default>false</default>
+        <label>Water Reuse Visibility Study Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Shed Manager Review</fullName>
+        <default>false</default>
+        <label>Water Shed Manager Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Supply Manager Review</fullName>
+        <default>false</default>
+        <label>Water Supply Manager Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Well Data Form Review</fullName>
+        <default>false</default>
+        <label>Well Data Form Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Completeness Review</fullName>
+        <default>false</default>
+        <label>Completeness Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Form Assessment Review</fullName>
+        <default>false</default>
+        <label>Form Assessment Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Withdrawal LOC Review</fullName>
+        <default>false</default>
+        <label>Withdrawal LOC Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Evaluation Review</fullName>
+        <default>false</default>
+        <label>Final Evaluation Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Waiver Review</fullName>
+        <default>false</default>
+        <label>Waiver Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Metering Review</fullName>
+        <default>false</default>
+        <label>Metering Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Ready for Approval Review</fullName>
+        <default>false</default>
+        <label>Ready for Approval Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Meter Installation Review</fullName>
+        <default>false</default>
+        <label>Meter Installation Review</label>
+    </customValue>
+    <customValue>
+        <fullName>GIS Review</fullName>
+        <default>false</default>
+        <label>GIS Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Pemit Management Review</fullName>
+        <default>false</default>
+        <label>Pemit Management Review</label>
+    </customValue>
+    <masterLabel>Avo Review Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

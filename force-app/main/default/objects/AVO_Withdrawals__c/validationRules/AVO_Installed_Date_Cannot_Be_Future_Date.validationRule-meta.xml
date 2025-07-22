@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Installed_Date_Cannot_Be_Future_Date</fullName>
+    <active>true</active>
+    <description>Installed date field cannot be set to a future date.</description>
+    <errorConditionFormula>AVO_Well_Installation_Date__c &gt;  TODAY()</errorConditionFormula>
+    <errorDisplayField>AVO_Well_Installation_Date__c</errorDisplayField>
+    <errorMessage>Date Cannot be in the Future.</errorMessage>
+</ValidationRule>

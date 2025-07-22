@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Account__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISNULL( MUSW__Permit2__c ), MUSW__Permit2__c = &quot;&quot;),
+IF(OR(ISNULL( MUSW__Application2__c ), MUSW__Application2__c = &quot;&quot;),
+IF(OR(ISNULL( MUSW__License2__c ), MUSW__License2__c = &quot;&quot;),
+&quot;&quot;,
+MUSW__License2__r.MUSW__Primary_Licensee__c ),
+MUSW__Application2__r.MUSW__Account__c ),
+MUSW__Permit2__r.MUSW__Account__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Related Account</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

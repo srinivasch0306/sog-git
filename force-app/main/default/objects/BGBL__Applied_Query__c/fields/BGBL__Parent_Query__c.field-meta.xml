@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Parent_Query__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Parent Query</label>
+    <referenceTo>BGBL__Query__c</referenceTo>
+    <relationshipLabel>Letter Applied Queries as Parent Query</relationshipLabel>
+    <relationshipName>Children_Queries</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Sections__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Comma separated list of Section Names from Page Layout.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Sections</label>
+    <length>1000</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

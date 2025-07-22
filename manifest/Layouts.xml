@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AVO_Compliance__c-Compliance Case</members>
+        <members>AVO_Compliance__c-Compliance Case Layout</members>
+        <members>AVO_Compliance__c-Compliance Layout</members>
+        <members>AVO_Compliance__c-Farmer Initiated Online Request</members>
+        <members>AVO_Compliance__c-Farmer Initiated Online Request for Community</members>
+        <members>AVO_Condition_Template__c-Condition Template Layout</members>
+        <members>AVO_County__c-County Layout</members>
+        <members>AVO_Exception_Logger__c-Avo Exception Logger Layout</members>
+        <members>AVO_Location__c-City</members>
+        <members>AVO_Location__c-County Information</members>
+        <members>AVO_Location__c-County Layout</members>
+        <members>AVO_Location__c-Location Layout</members>
+        <members>AVO_Meter_Codeset__c-Meter Codeset Layout</members>
+        <members>AVO_Meter_Codeset__c-Meter Make</members>
+        <members>AVO_Meter_Codeset__c-Meter Model</members>
+        <members>AVO_Meter_Transaction__c-AG Water Metering Installation</members>
+        <members>AVO_Meter_Transaction__c-AG Water Metering Installation Community</members>
+        <members>AVO_Meter_Transaction__c-Agricultural Flow Meter Approval</members>
+        <members>AVO_Meter_Transaction__c-Agricultural Flow Meter Approval Community</members>
+        <members>AVO_Meter_Transaction__c-Batch Meter Entry</members>
+        <members>AVO_Meter_Transaction__c-Batch Meter Entry Community</members>
+        <members>AVO_Meter_Transaction__c-Batch Meter Reading</members>
+        <members>AVO_Meter_Transaction__c-Batch Meter Reading Community</members>
+        <members>AVO_Meter_Transaction__c-Copy of Meter Replacement Installation Old</members>
+        <members>AVO_Meter_Transaction__c-Meter Allocation</members>
+        <members>AVO_Meter_Transaction__c-Meter Allocation Community</members>
+        <members>AVO_Meter_Transaction__c-Meter Application</members>
+        <members>AVO_Meter_Transaction__c-Meter Application Community</members>
+        <members>AVO_Meter_Transaction__c-Meter Entry</members>
+        <members>AVO_Meter_Transaction__c-Meter Entry Community</members>
+        <members>AVO_Meter_Transaction__c-Meter Maintenance Request</members>
+        <members>AVO_Meter_Transaction__c-Meter Maintenance Request Community</members>
+        <members>AVO_Meter_Transaction__c-Meter Reading</members>
+        <members>AVO_Meter_Transaction__c-Meter Reading Community</members>
+        <members>AVO_Meter_Transaction__c-Meter Replacement Installation</members>
+        <members>AVO_Meter_Transaction__c-Meter Replacement Installation Community</members>
+        <members>AVO_Meter_Transaction__c-Meter Transaction Layout</members>
+        <members>AVO_Meter_Transaction__c-Meter Update</members>
+        <members>AVO_Meter_Transaction__c-Meter Update Community</members>
+        <members>AVO_Meter_Withdrawal__c-Meter Withdrawal</members>
+        <members>AVO_Meter_Withdrawal__c-Meter Withdrawal Layout</members>
+        <members>AVO_Meter__c-Meter</members>
+        <members>AVO_Meter__c-Meter Portal</members>
+        <members>AVO_Process_State_Post_Actions__c-Email Action Layout</members>
+        <members>AVO_Process_State_Post_Actions__c-Event Action Layout</members>
+        <members>AVO_Process_State_Post_Actions__c-Fee Action Layout</members>
+        <members>AVO_Process_State_Post_Actions__c-Inspection Action Layout</members>
+        <members>AVO_Process_State_Post_Actions__c-Milestone Action Layout</members>
+        <members>AVO_Process_State_Post_Actions__c-Process State Transition Post Action Layout</members>
+        <members>AVO_Process_State_Post_Actions__c-Review Action Layout</members>
+        <members>AVO_Process_State_Post_Actions__c-Submission Action Layout</members>
+        <members>AVO_Process_State_Post_Actions__c-Task Action Layout</members>
+        <members>AVO_Process_State_Post_Actions__c-Update Instance Action Layout</members>
+        <members>AVO_Process_State_Transition_Stopper__c-Fee Stopper</members>
+        <members>AVO_Process_State_Transition_Stopper__c-Inspection Stopper</members>
+        <members>AVO_Process_State_Transition_Stopper__c-Process State Transition Stopper Layout</members>
+        <members>AVO_Process_State_Transition_Stopper__c-Review Stopper</members>
+        <members>AVO_Process_State_Transition_Trigger__c-Fee Trigger</members>
+        <members>AVO_Process_State_Transition_Trigger__c-InspectionTrigger</members>
+        <members>AVO_Process_State_Transition_Trigger__c-Process State Transition Trigger Layout</members>
+        <members>AVO_Process_State_Transition_Trigger__c-Review Trigger</members>
+        <members>AVO_Process_State_Transition_Trigger__c-State Transition Trigger Layout</members>
+        <members>AVO_Process_State_Transition_Trigger__c-Submission Trigger</members>
+        <members>AVO_Process_State_Transition_Trigger__c-Task Trigger</members>
+        <members>AVO_Process_State_Transition__c-Process State Transition Layout</members>
+        <members>AVO_Process_State_Transition__c-State Transition Layout</members>
+        <members>AVO_Process__c-Permit Process Layout</members>
+        <members>AVO_Process__c-Planning Application Process Layout</members>
+        <members>AVO_Process__c-Process Layout</members>
+        <members>AVO_SharePoint_File_Log__c-SharePoint File Log Layout</members>
+        <members>AVO_SharePoint_File__c-SharePoint File Layout</members>
+        <members>AVO_Site_Visit_Request__c-Site Visit Request Layout</members>
+        <members>AVO_Withdrawals__c-Ground Water Withdrawal Application</members>
+        <members>AVO_Withdrawals__c-Ground Water Withdrawal Application For Community</members>
+        <members>AVO_Withdrawals__c-Ground Water Withdrawal Information</members>
+        <members>AVO_Withdrawals__c-Ground Water Withdrawal Information For Community</members>
+        <members>AVO_Withdrawals__c-Ground Water Withdrawal Information Layout</members>
+        <members>AVO_Withdrawals__c-Surface Water Withdrawal Application</members>
+        <members>AVO_Withdrawals__c-Surface Water Withdrawal Application For Community</members>
+        <members>AVO_Withdrawals__c-Surface Water Withdrawal Information</members>
+        <members>AVO_Withdrawals__c-Surface Water Withdrawal Information For Community</members>
+        <members>AVO_Withdrawals__c-Withdrawal GIS Data</members>
+        <members>AVO_Withdrawals__c-Withdrawals Layout</members>
+        <members>Account-AVO Account Layout</members>
+        <members>Account-Account Layout</members>
+        <members>AccountBrand-Account Brand Layout</members>
+        <members>AccountContactRelation-Account Contact Relationship Layout</members>
+        <members>Asset-Asset Layout</members>
+        <members>AssetRelationship-Asset Relationship Layout</members>
+        <members>AuthorizationForm-Authorization Form Layout</members>
+        <members>AuthorizationFormConsent-Authorization Form Consent Layout</members>
+        <members>AuthorizationFormDataUse-Authorization Form Data Use Layout</members>
+        <members>AuthorizationFormText-Authorization Form Text Layout</members>
+        <members>Avocette_Settings__mdt-Avocette Settings Layout</members>
+        <members>BusinessBrand-Business Brand Layout</members>
+        <members>Campaign-Campaign Layout</members>
+        <members>CampaignMember-Campaign Member Page Layout</members>
+        <members>Case-Case Layout</members>
+        <members>CaseClose-Close Case Layout</members>
+        <members>CaseInteraction-Case Feed Layout</members>
+        <members>CollaborationGroup-Group Layout</members>
+        <members>CommunityMemberLayout-Community Member Layout</members>
+        <members>Contact-BG_Contact Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Contact-sog Contact Layout</members>
+        <members>ContactPointAddress-Contact Point Address Layout</members>
+        <members>ContactPointConsent-Contact Point Consent Layout</members>
+        <members>ContactPointEmail-Contact Point Email Layout</members>
+        <members>ContactPointPhone-Contact Point Phone Layout</members>
+        <members>ContactPointTypeConsent-Contact Point Type Consent Layout</members>
+        <members>ContentAsset-Asset File Layout</members>
+        <members>ContentVersion-Content Version Layout</members>
+        <members>Contract-Contract Layout</members>
+        <members>CspTrustedSite-Trusted URL Layout</members>
+        <members>Customer-Customer Layout</members>
+        <members>DataUseLegalBasis-Data Use Legal Basis Layout</members>
+        <members>DataUsePurpose-Data Use Purpose Layout</members>
+        <members>DelegatedAccount-External Managed Account Layout</members>
+        <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+        <members>EmailMessage-Email Message Layout</members>
+        <members>EnhancedLetterhead-Enhanced Letterhead Layout</members>
+        <members>Event-Event Layout</members>
+        <members>Fee_Item__c-Fee Item Layout</members>
+        <members>FeedItem-Feed Item Layout</members>
+        <members>FlowInterview-Flow Interview Layout</members>
+        <members>FlowRecord-Flow Layout</members>
+        <members>FlowRecordVersionOccurrence-%5F%5FMISSING LABEL%5F%5F PropertyFile - val FlowRecordVersionOccurrence not found in section StandardLayouts</members>
+        <members>Global-Global Layout</members>
+        <members>Individual-Individual Layout</members>
+        <members>Lead-Lead Layout</members>
+        <members>Location-Location Layout</members>
+        <members>MUSW__Comment__c-AVO Comment Layout</members>
+        <members>MUSW__Condition__c-Permit Condition</members>
+        <members>MUSW__Inspection__c-AG Permitting Site Verification Form</members>
+        <members>MUSW__Inspection__c-AG Permitting Site Verification Form For Community</members>
+        <members>MUSW__Inspection__c-Ag Site Inspection</members>
+        <members>MUSW__Inspection__c-Ag Site Inspection Community</members>
+        <members>MUSW__Inspection__c-Farmer Initiated Online Request</members>
+        <members>MUSW__Inspection__c-Farmer Initiated Online Request For Community</members>
+        <members>MUSW__Inspection__c-Groundwater Withdrawal Information</members>
+        <members>MUSW__Inspection__c-Inspection Community Page Layout</members>
+        <members>MUSW__Inspection__c-Meter %26 Telemetry Information</members>
+        <members>MUSW__Inspection__c-Site Visit Report</members>
+        <members>MUSW__Inspection__c-Site Visit Report for Community</members>
+        <members>MUSW__Inspection__c-Site Visit Request</members>
+        <members>MUSW__Inspection__c-Site Visit Request For Community</members>
+        <members>MUSW__Inspection__c-Surface Water Withdrawal Information</members>
+        <members>MUSW__Inspection__c-WWSA Inspection</members>
+        <members>MUSW__Inspection__c-WWSA Inspection For Community</members>
+        <members>MUSW__Inspection__c-Well Construction Inspection</members>
+        <members>MUSW__Inspection__c-Well Plug and Abandon Inspection</members>
+        <members>MUSW__Master_Fee_List__c-License Fees</members>
+        <members>MUSW__Master_Fee_List__c-Permit Fees</members>
+        <members>MUSW__Master_Inspection_List__c-Avo Master Inspection List Layout</members>
+        <members>MUSW__Master_Submission_List__c-Avo Master Submission List Layout</members>
+        <members>MUSW__Master_Submission_List__c-License Submissions</members>
+        <members>MUSW__Master_Submission_List__c-Permit Submissions</members>
+        <members>MUSW__Parcel__c-Parcel Portal Layout</members>
+        <members>MUSW__Permit2__c-AG Water Metering Installation Layout</members>
+        <members>MUSW__Permit2__c-Agricultural Surface Water Pump</members>
+        <members>MUSW__Permit2__c-Agricultural Surface Water Pump For Community</members>
+        <members>MUSW__Permit2__c-Agricultural Water Withdrawal Application</members>
+        <members>MUSW__Permit2__c-Agricultural Water Withdrawal Application For Community</members>
+        <members>MUSW__Permit2__c-Agricultural Water Withdrawal Permit</members>
+        <members>MUSW__Permit2__c-Agricultural Water Withdrawal Permit Layout</members>
+        <members>MUSW__Permit2__c-Agricultural Water Withdrawal Permit Layout For Community</members>
+        <members>MUSW__Permit2__c-Agricultural Well Pump</members>
+        <members>MUSW__Permit2__c-Agricultural Well Pump Community</members>
+        <members>MUSW__Permit2__c-Application for Permit Consolidation</members>
+        <members>MUSW__Permit2__c-Application for Permit Consolidation Community</members>
+        <members>MUSW__Permit2__c-Application to Modify or Transfer an Agricultural Water Withdrawal Permit</members>
+        <members>MUSW__Permit2__c-Application to Modify or Transfer an Agricultural Water Withdrawal Permit For Co</members>
+        <members>MUSW__Permit2__c-Cancellation Request</members>
+        <members>MUSW__Permit2__c-Cancellation Request For Community</members>
+        <members>MUSW__Permit2__c-MEP Community Layout</members>
+        <members>MUSW__Permit2__c-New Portal Agricultural Water Withdrawal Application</members>
+        <members>MUSW__Permit2__c-Permit Community Layout</members>
+        <members>MUSW__Permit2__c-Permit Relinquishment</members>
+        <members>MUSW__Permit2__c-Permit Relinquishment For Community</members>
+        <members>MUSW__Permit2__c-Undocumented Source Application</members>
+        <members>MUSW__Permit2__c-Well Plug And Abandonment</members>
+        <members>MUSW__Permit2__c-Well Plug And Abandonment For Community</members>
+        <members>MUSW__Permit2__c-Well and Pump Data</members>
+        <members>MUSW__Permit2__c-Well and Pump Data Community</members>
+        <members>MUSW__Review_Template__c-AVO Review Layout</members>
+        <members>MUSW__Review__c-AVO Review Layout</members>
+        <members>MUSW__Review__c-AVO Review Layout For Completeness Review Only</members>
+        <members>MUSW__Review__c-AVO Review Layout For Completeness Review Only Non Admin</members>
+        <members>MUSW__Review__c-AVO Review Layout For Withdrawal LOC Review Only</members>
+        <members>MUSW__Review__c-Final Evaluation Review</members>
+        <members>MUSW__Review__c-Form Assessment Review</members>
+        <members>MUSW__Review__c-Meter Installation Review</members>
+        <members>MUSW__Review__c-Site Visit Review</members>
+        <members>MUSW__Review__c-Waiver Review</members>
+        <members>MUSW__Review__c-Withdrawal LOC Review Layout</members>
+        <members>MUSW__Submission__c-Submission Layout For Community</members>
+        <members>MUSW__Work_Item__c-Building Community Layout</members>
+        <members>MUSW__Work_Item__c-Circuit Feeder Community Layout</members>
+        <members>MUSW__Work_Item__c-Electrical Community Layout</members>
+        <members>MUSW__Work_Item__c-Mechanical Community Layout</members>
+        <members>MUSW__Work_Item__c-Plumbing Community Layout</members>
+        <members>Macro-Macro Layout</members>
+        <members>Master_Event_List__c-Master Event List Layout</members>
+        <members>Master_Review_List__c-Master Review List Layout</members>
+        <members>Master_Task_List__c-Master Task List Layout</members>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>OpportunityLineItem-Opportunity Product Layout</members>
+        <members>Order-Order Layout</members>
+        <members>OrderItem-Order Product Layout</members>
+        <members>PersonAccount-Person Account Layout</members>
+        <members>Pricebook2-Price Book Layout</members>
+        <members>PricebookEntry-Price Book Entry Layout</members>
+        <members>ProcessException-Process Exception Layout</members>
+        <members>Product2-Product Layout</members>
+        <members>QuickText-Quick Text Layout</members>
+        <members>QuoteLineItem-Quote Line Item Layout</members>
+        <members>Recommendation-Recommendation Layout</members>
+        <members>Scorecard-Scorecard Layout</members>
+        <members>ScorecardAssociation-Scorecard Association Layout</members>
+        <members>ScorecardMetric-Scorecard Metric Layout</members>
+        <members>Seller-Seller Layout</members>
+        <members>SignupRequest-Signup Request Layout</members>
+        <members>Solution-Solution Layout</members>
+        <members>TEST_Parcels__x-TEST_Parcels Layout</members>
+        <members>Task-Task Layout</members>
+        <members>Toronto_Address_Points__x-Toronto_Address_Points Layout</members>
+        <members>User-User Layout</members>
+        <members>UserAlt-User Profile Layout</members>
+        <members>UserProvAccount-User Provisioning Account Layout</members>
+        <members>UserProvisioningLog-User Provisioning Log Layout</members>
+        <members>UserProvisioningRequest-User Provisioning Request Layout</members>
+        <members>WorkOrder-Work Order Layout</members>
+        <members>WorkOrderLineItem-Work Order Line Item Layout</members>
+        <members>avo_Cybersource_Transaction__c-Cybersource Transaction Layout</members>
+        <members>clariti__ArcGIS_Map_Viewer_Setting__mdt-clariti__ArcGIS Map Viewer Setting Layout</members>
+        <members>clariti__Document_Template__c-Document Template Compliance Document</members>
+        <members>clariti__Inline_Related_List_Setting__mdt-clariti__Inline Related List Setting Layout</members>
+        <members>clariti__Nested_Related_List_Setting__mdt-clariti__Nested Related List Setting Layout</members>
+        <members>property_parcel_polygons__x-property-parcel-polygons Layout</members>
+        <members>sf_devops__App_Config__mdt-sf_devops__App Config Layout</members>
+        <members>sf_devops__Async_Operation_Result__c-sf_devops__Async Operation Result Layout</members>
+        <members>sf_devops__Back_Sync__c-sf_devops__Back Sync Layout</members>
+        <members>sf_devops__Branch__c-sf_devops__Branch Layout</members>
+        <members>sf_devops__Change_Bundle_Install__c-sf_devops__Change Bundle Install Layout</members>
+        <members>sf_devops__Change_Bundle__c-sf_devops__Change Bundle Layout</members>
+        <members>sf_devops__Change_Submission__c-sf_devops__Change Submission Layout</members>
+        <members>sf_devops__Deploy_Component__c-sf_devops__Deploy Component Layout</members>
+        <members>sf_devops__Deployment_Result__c-sf_devops__Deployment Result Layout</members>
+        <members>sf_devops__Environment__c-sf_devops__Environment Layout</members>
+        <members>sf_devops__Hidden_Remote_Change__c-sf_devops__Hidden Remote Change Layout</members>
+        <members>sf_devops__Merge_Result__c-sf_devops__Merge Result Layout</members>
+        <members>sf_devops__Object_Activity__c-sf_devops__Object Activity Layout</members>
+        <members>sf_devops__Pipeline_Stage__c-sf_devops__Pipeline Stage Layout</members>
+        <members>sf_devops__Pipeline__c-sf_devops__Pipeline Layout</members>
+        <members>sf_devops__Remote_Change__c-sf_devops__Remote Change Layout</members>
+        <members>sf_devops__Service__mdt-sf_devops__Service Layout</members>
+        <members>sf_devops__Source_Member_Reference__c-sf_devops__Source Member Reference Layout</members>
+        <members>sf_devops__Submit_Component__c-sf_devops__Submit Component Layout</members>
+        <members>sf_devops__Vcs_Event__c-sf_devops__VCS Event Layout</members>
+        <members>sf_devops__Version__mdt-sf_devops__Version Layout</members>
+        <members>sf_devops__Work_Item_Promote__c-sf_devops__Work Item Promote Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>64.0</version>
+</Package>

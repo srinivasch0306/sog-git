@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Complaint__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Complaint</label>
+    <referenceTo>MUSW__Complaint__c</referenceTo>
+    <relationshipLabel>Animals</relationshipLabel>
+    <relationshipName>Complaint_Animals</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

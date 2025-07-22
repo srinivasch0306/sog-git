@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>City Council</fullName>
+        <default>false</default>
+        <label>City Council</label>
+    </customValue>
+    <masterLabel>Proceeding Bodies</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Solid_Set_Sprinkler_trajectory__c</fullName>
+    <inlineHelpText>Lower Trajectory angel reduces wind drift and evaporation.</inlineHelpText>
+    <label>Solid Set Sprinkler trajectory</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>6-degree trajectory (Full circle) gun(s)</fullName>
+                <default>false</default>
+                <label>6-degree trajectory (Full circle) gun(s)</label>
+            </value>
+            <value>
+                <fullName>6-degree trajectory (Part circle) gun(s)</fullName>
+                <default>false</default>
+                <label>6-degree trajectory (Part circle) gun(s)</label>
+            </value>
+            <value>
+                <fullName>12-degree trajectory (Full circle) gun(s)</fullName>
+                <default>false</default>
+                <label>12-degree trajectory (Full circle) gun(s)</label>
+            </value>
+            <value>
+                <fullName>12-degree trajectory (Part circle) gun(s)</fullName>
+                <default>false</default>
+                <label>12-degree trajectory (Part circle) gun(s)</label>
+            </value>
+            <value>
+                <fullName>27-degree trajectory (Full circle) gun(s)</fullName>
+                <default>false</default>
+                <label>27-degree trajectory (Full circle) gun(s)</label>
+            </value>
+            <value>
+                <fullName>27-degree trajectory (Part circle) gun(s)</fullName>
+                <default>false</default>
+                <label>27-degree trajectory (Part circle) gun(s)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

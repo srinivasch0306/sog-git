@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Incorrect_Longitude_And_Latitude</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+    MUSW__Geolocation__Longitude__s &gt; -80.75777,
+    MUSW__Geolocation__Longitude__s &lt; -85.60238,
+    MUSW__Geolocation__Latitude__s &gt; 34.997296,    
+    MUSW__Geolocation__Latitude__s &lt; 30.319872
+)</errorConditionFormula>
+    <errorDisplayField>MUSW__Geolocation__Latitude__s</errorDisplayField>
+    <errorMessage>The longitude or latitude values are incorrect. Please enter values within the boundaries of the State of Georgia.</errorMessage>
+</ValidationRule>

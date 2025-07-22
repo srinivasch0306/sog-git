@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Disposal_Method__c</fullName>
+    <label>Disposal Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Crushed</fullName>
+                <default>false</default>
+                <label>Crushed</label>
+            </value>
+            <value>
+                <fullName>Sold</fullName>
+                <default>false</default>
+                <label>Sold</label>
+            </value>
+            <value>
+                <fullName>Returned To Manufacturer</fullName>
+                <default>false</default>
+                <label>Returned To Manufacturer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

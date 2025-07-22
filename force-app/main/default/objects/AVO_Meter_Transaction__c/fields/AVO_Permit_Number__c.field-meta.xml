@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Permit_Number__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Permit Number</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>MUSW__Permit2__c.MUSW__Type__c</field>
+            <operation>notEqual</operation>
+            <value>Revision</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>MUSW__Permit2__c</referenceTo>
+    <relationshipLabel>Meter Transaction</relationshipLabel>
+    <relationshipName>Meter_Transaction_Permit_Number</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Primary_Zoning__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Geographic area for which this parcel is currently primarily zoned.</description>
+    <label>Primary Zoning</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>R1 - Residential Zoning Type I</fullName>
+                <default>false</default>
+                <label>R1 - Residential Zoning Type I</label>
+            </value>
+            <value>
+                <fullName>R2 - Residential Zoning Type II</fullName>
+                <default>false</default>
+                <label>R2 - Residential Zoning Type II</label>
+            </value>
+            <value>
+                <fullName>C1 - Commercial Zoning Type I</fullName>
+                <default>false</default>
+                <label>C1 - Commercial Zoning Type I</label>
+            </value>
+            <value>
+                <fullName>C2 - Commercial Zoning Type II</fullName>
+                <default>false</default>
+                <label>C2 - Commercial Zoning Type II</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

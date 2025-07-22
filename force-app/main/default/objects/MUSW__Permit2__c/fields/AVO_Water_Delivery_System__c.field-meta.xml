@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Water_Delivery_System__c</fullName>
+    <inlineHelpText>(Check all that apply)</inlineHelpText>
+    <label>Water Delivery System</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Buried PVC pipe (permanent)</fullName>
+                <default>false</default>
+                <label>Buried PVC pipe (permanent)</label>
+            </value>
+            <value>
+                <fullName>Portable PVC or aluminum pipe (above ground)</fullName>
+                <default>false</default>
+                <label>Portable PVC or aluminum pipe (above ground)</label>
+            </value>
+            <value>
+                <fullName>Pressure control accomplished by automated valves</fullName>
+                <default>false</default>
+                <label>Pressure control accomplished by automated valves</label>
+            </value>
+            <value>
+                <fullName>Pressure control accomplished by manual valves</fullName>
+                <default>false</default>
+                <label>Pressure control accomplished by manual valves</label>
+            </value>
+            <value>
+                <fullName>Tubing installation either above ground or less than 3 inches in the ground</fullName>
+                <default>false</default>
+                <label>Tubing installation either above ground or less than 3 inches in the ground</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

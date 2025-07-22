@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckList</fullName>
+    <availability>online</availability>
+    <description>Check List for Permit</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>CheckList</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/BGCK/QuestionChecklist2.app?pid={!MUSW__Permit2__c.Id}</url>
+</WebLink>

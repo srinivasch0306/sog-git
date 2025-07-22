@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__EffectiveDateIsNotInFiscalPeriodRange</fullName>
+    <active>true</active>
+    <errorConditionFormula>$CustomMetadata.clariti__FinancialsFeatureEnablementSettings__mdt.clariti__FiscalYearAndPeriodManagement.clariti__Enable__c &amp;&amp; !ISBLANK(clariti__FiscalPeriod__c) &amp;&amp; (clariti__EffectiveDate__c &lt; clariti__FiscalPeriod__r.clariti__StartDate__c || clariti__EffectiveDate__c &gt; clariti__FiscalPeriod__r.clariti__EndDate__c)</errorConditionFormula>
+    <errorDisplayField>clariti__EffectiveDate__c</errorDisplayField>
+    <errorMessage>The selected Effective Date is outside of the related Fiscal Period date range.</errorMessage>
+</ValidationRule>

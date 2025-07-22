@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__LedgerTreatmentCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>clariti__Active__c</fields>
+    <fields>clariti__ProcessingOrder__c</fields>
+    <fields>clariti__LedgerRule__c</fields>
+    <fields>clariti__TransactionDescription__c</fields>
+    <label>Ledger Treatment Compact Layout</label>
+</CompactLayout>

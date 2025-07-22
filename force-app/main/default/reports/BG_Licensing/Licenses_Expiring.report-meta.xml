@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>MUSW__License2__c.MUSW__Primary_Licensee__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__License2__c.MUSW__Issue_Date__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__License2__c.MUSW__Renewal_Date__c</field>
+    </columns>
+    <columns>
+        <field>MUSW__License2__c.MUSW__Expiration_Date__c</field>
+    </columns>
+    <description>Licenses Expiring (Next Month) - sorted by Type</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MUSW__License2__c.MUSW__Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Expiring Licenses</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MUSW__License2__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MUSW__License2__c.MUSW__Expiration_Date__c</dateColumn>
+        <interval>INTERVAL_NEXTMONTH</interval>
+    </timeFrameFilter>
+</Report>

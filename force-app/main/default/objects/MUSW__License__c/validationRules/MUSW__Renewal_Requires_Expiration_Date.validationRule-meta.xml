@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Renewal_Requires_Expiration_Date</fullName>
+    <active>true</active>
+    <description>Before renewing, a license is first required to be expired</description>
+    <errorConditionFormula>AND(NOT(ISNULL(MUSW__Renewal_Date__c)), ISNULL(MUSW__Expiration_Date__c ))</errorConditionFormula>
+    <errorMessage>License must be expiring before being renewed. Enter expiration date.</errorMessage>
+</ValidationRule>

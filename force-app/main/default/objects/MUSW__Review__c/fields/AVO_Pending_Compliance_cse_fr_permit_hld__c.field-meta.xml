@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Pending_Compliance_cse_fr_permit_hld__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Pending Compliance case for permit holde</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

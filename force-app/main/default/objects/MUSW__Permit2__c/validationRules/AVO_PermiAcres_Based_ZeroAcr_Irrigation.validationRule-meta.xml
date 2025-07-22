@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_PermiAcres_Based_ZeroAcr_Irrigation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  TEXT(MUSW__Type__c) &lt;&gt; &quot;Undocumented Source&quot;,
+  TEXT(AVO_ZeroAcreage__c) = &quot;Yes&quot;,
+  AVO_Permitted_Acres__c &lt;&gt; 0,
+  $Profile.Name &lt;&gt; &quot;AVO Customer Community Login&quot;
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Permitted_Acres__c</errorDisplayField>
+    <errorMessage>Permitted Acres must be 0 when Zero Acre Permit is set to Yes.</errorMessage>
+</ValidationRule>

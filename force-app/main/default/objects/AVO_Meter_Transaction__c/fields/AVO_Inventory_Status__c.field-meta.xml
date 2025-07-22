@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Inventory_Status__c</fullName>
+    <label>Inventory Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allocated</fullName>
+                <default>false</default>
+                <label>Allocated</label>
+            </value>
+            <value>
+                <fullName>Dead On Site</fullName>
+                <default>false</default>
+                <label>Dead On Site</label>
+            </value>
+            <value>
+                <fullName>Deleted</fullName>
+                <default>false</default>
+                <label>Deleted</label>
+            </value>
+            <value>
+                <fullName>Disposal Approved</fullName>
+                <default>false</default>
+                <label>Disposal Approved</label>
+            </value>
+            <value>
+                <fullName>Disposed Meter - Dead/Scrapped</fullName>
+                <default>false</default>
+                <label>Disposed Meter - Dead/Scrapped</label>
+            </value>
+            <value>
+                <fullName>Double Metered</fullName>
+                <default>false</default>
+                <label>Double Metered</label>
+            </value>
+            <value>
+                <fullName>Duplicate Installation</fullName>
+                <default>false</default>
+                <label>Duplicate Installation</label>
+            </value>
+            <value>
+                <fullName>Installed Meter</fullName>
+                <default>false</default>
+                <label>Installed Meter</label>
+            </value>
+            <value>
+                <fullName>Meter Retrieved - Pending Disposal</fullName>
+                <default>false</default>
+                <label>Meter Retrieved - Pending Disposal</label>
+            </value>
+            <value>
+                <fullName>Meter Retrieved - To Be Reused</fullName>
+                <default>false</default>
+                <label>Meter Retrieved - To Be Reused</label>
+            </value>
+            <value>
+                <fullName>Meter Update</fullName>
+                <default>false</default>
+                <label>Meter Update</label>
+            </value>
+            <value>
+                <fullName>Missing Meter</fullName>
+                <default>false</default>
+                <label>Missing Meter</label>
+            </value>
+            <value>
+                <fullName>Pending Disposal</fullName>
+                <default>false</default>
+                <label>Pending Disposal</label>
+            </value>
+            <value>
+                <fullName>Pending Disposal Coliation</fullName>
+                <default>false</default>
+                <label>Pending Disposal Coliation</label>
+            </value>
+            <value>
+                <fullName>Ready in Warehouse</fullName>
+                <default>false</default>
+                <label>Ready in Warehouse</label>
+            </value>
+            <value>
+                <fullName>Require Retrieval</fullName>
+                <default>false</default>
+                <label>Require Retrieval</label>
+            </value>
+            <value>
+                <fullName>Undocumented Meter</fullName>
+                <default>false</default>
+                <label>Undocumented Meter</label>
+            </value>
+            <value>
+                <fullName>Failed</fullName>
+                <default>false</default>
+                <label>Failed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

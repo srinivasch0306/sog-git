@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtype__c</fullName>
+    <label>Subtype</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>MUSW__Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+                <label>Restaurant</label>
+            </value>
+            <value>
+                <fullName>Liquor</fullName>
+                <default>false</default>
+                <label>Liquor</label>
+            </value>
+            <value>
+                <fullName>Funeral Home</fullName>
+                <default>false</default>
+                <label>Funeral Home</label>
+            </value>
+            <value>
+                <fullName>Single Family Home</fullName>
+                <default>false</default>
+                <label>Single Family Home</label>
+            </value>
+            <value>
+                <fullName>Multi Family Dwelling</fullName>
+                <default>false</default>
+                <label>Multi Family Dwelling</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Restaurant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Liquor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Funeral Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rental</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Single Family Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rental</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Multi Family Dwelling</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

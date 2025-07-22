@@ -1,0 +1,38 @@
+<!--
+    Lightning Aura Component shown on Permit/Application Records as a Quick Action to add a New Fee with a specified quantity.
+    @author Michael Chung
+    last modified by Michael Chung
+    @date 05/20/2021
+-->
+
+<aura:component Controller="AvoFeeDataRetrieverController" implements="force:lightningQuickAction,force:hasRecordId,force:hasSObjectName">
+    <aura:attribute name="sObjectName" type="String" default="{!v.sObjectName}" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="options" type="List" default="" />
+    <aura:attribute name="loaded" type="Boolean" default="false" />
+    <aura:attribute name="quantity" type="Integer" default="1" />
+
+    <!-- Handler to call function when page is loaded initially  -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <div class="content-wrapper">
+        <div class="feeOptions">
+            <lightning:select aura:id="select" name="feeSelect" label="Select Fee Type" required="true">
+                <aura:iteration items="{!v.options}" var="option">
+                    <option value="{!option.value}" text="{!option.label}" />
+                </aura:iteration>
+            </lightning:select>
+
+            <lightning:input aura:id="quantity" value="{! v.quantity }" name="quantity" label="Quantity" />
+        </div>
+        <div class="create-button">
+            <lightning:button variant="brand-outline" label="Create Fee(s)" title="Create Fee(s)" onclick="{! c.handleCreation }"/>
+
+            <aura:if isTrue="{! v.loaded }">
+                <div class="loadingFees">
+                    <lightning:spinner alternativeText="Loading" />
+                </div>
+            </aura:if>
+        </div>
+    </div>
+</aura:component>

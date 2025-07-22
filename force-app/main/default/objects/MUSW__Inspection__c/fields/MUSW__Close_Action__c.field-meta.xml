@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Close_Action__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Actions or conditions in which the inspection is closed.</description>
+    <inlineHelpText>Select the action taken to close the inspection.</inlineHelpText>
+    <label>Completed Action</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unfounded</fullName>
+                <default>false</default>
+                <label>Unfounded</label>
+            </value>
+            <value>
+                <fullName>No Access</fullName>
+                <default>false</default>
+                <label>No Access</label>
+            </value>
+            <value>
+                <fullName>Verbal Warning</fullName>
+                <default>false</default>
+                <label>Verbal Warning</label>
+            </value>
+            <value>
+                <fullName>Advisory Letter</fullName>
+                <default>false</default>
+                <label>Advisory Letter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

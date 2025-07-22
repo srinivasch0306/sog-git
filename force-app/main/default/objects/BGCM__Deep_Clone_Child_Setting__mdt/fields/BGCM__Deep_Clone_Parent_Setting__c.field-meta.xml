@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGCM__Deep_Clone_Parent_Setting__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Deep Clone Parent Setting for this cloned child related list.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>The Deep Clone Parent Setting for this cloned child related list.</inlineHelpText>
+    <label>Deep Clone Parent Setting</label>
+    <referenceTo>BGCM__Deep_Clone_Parent_Setting__mdt</referenceTo>
+    <relationshipLabel>Deep Clone Child Settings</relationshipLabel>
+    <relationshipName>Deep_Clone_Child_Settings</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

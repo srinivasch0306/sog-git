@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Waived_Amount_greater_than_Amount</fullName>
+    <active>true</active>
+    <errorConditionFormula>MUSW__Amount__c &lt; MUSW__Amount_Waived__c</errorConditionFormula>
+    <errorMessage>Can not waive more than Amount</errorMessage>
+</ValidationRule>

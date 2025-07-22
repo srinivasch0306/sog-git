@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGCM__Auto_Rule_requires_Source_Type_Field</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(BGCM__Mode__c, &apos;Auto&apos;), ISNULL(BGCM__Source_Type_Fields__c),UPPER(Name)!=&apos;DEFAULT&apos;)</errorConditionFormula>
+    <errorMessage>Auto Numbers require at least one Source Type Field</errorMessage>
+</ValidationRule>

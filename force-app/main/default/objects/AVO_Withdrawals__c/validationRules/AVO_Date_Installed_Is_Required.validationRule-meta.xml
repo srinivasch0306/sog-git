@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Date_Installed_Is_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+RecordType.Name = &apos;Surface Water Withdrawal Application&apos;,
+RecordType.Name = &apos;Surface Water Withdrawal&apos;
+),
+NOT(ISNEW()),
+ISBLANK(AVO_Date_Installed__c),
+ISPICKVAL( AVO_Permit__r.MUSW__Status__c, &apos;Final Evaluation&apos;) 
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Date_Installed__c</errorDisplayField>
+    <errorMessage>The field Installation Date is required If the Permit status is in &apos;Final Evaluation&apos;.</errorMessage>
+</ValidationRule>

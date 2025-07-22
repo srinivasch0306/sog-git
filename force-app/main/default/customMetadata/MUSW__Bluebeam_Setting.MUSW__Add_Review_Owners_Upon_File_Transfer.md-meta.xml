@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Add Review Owners Upon File Transfer</label>
+    <protected>false</protected>
+    <values>
+        <field>MUSW__Checkbox__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>MUSW__Description__c</field>
+        <value xsi:type="xsd:string">Controls whether users who are set as the owners of Review records related to the parent record are added to the linked Project or Session upon transfer of files to Bluebeam.</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Refresh_Financials</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>300</height>
+    <isResizable>true</isResizable>
+    <linkType>sControl</linkType>
+    <masterLabel>Refresh $</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <scontrol>BGBK__FinancialRefresh</scontrol>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <width>400</width>
+</WebLink>

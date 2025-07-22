@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Planning_Review_Queue</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>MUSW__Status__c</columns>
+    <columns>MUSW__Type__c</columns>
+    <columns>MUSW__Due_Date__c</columns>
+    <columns>MUSW__Application2__c</columns>
+    <columns>MUSW__Project2__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>MUSW__Application2__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>MUSW__Project2__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Planning Review Queue</label>
+</ListView>

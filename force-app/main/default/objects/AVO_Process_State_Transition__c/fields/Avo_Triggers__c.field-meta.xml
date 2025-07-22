@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avo_Triggers__c</fullName>
+    <label>Triggers</label>
+    <summaryForeignKey>AVO_Process_State_Transition_Trigger__c.Avo_Process_State_Transition__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

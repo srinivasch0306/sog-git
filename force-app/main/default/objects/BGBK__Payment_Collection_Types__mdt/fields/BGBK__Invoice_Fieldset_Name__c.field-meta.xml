@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Invoice_Fieldset_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Invoice Fieldset API Name determines what invoice columns are displayed in the Payable Items list to be added to the Items List on the ItemSearch page.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Invoice Fieldset API Name determines what invoice columns are displayed in the Payable Items list to be added to the Items List on the ItemSearch page. This needs to be set only if invoices need to be listed in the Payable Items.</inlineHelpText>
+    <label>Invoice Fieldset Name</label>
+    <length>80</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

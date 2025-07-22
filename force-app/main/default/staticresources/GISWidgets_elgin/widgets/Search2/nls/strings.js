@@ -1,0 +1,33 @@
+define({
+  root: {
+    selectFeatures: "By Shape",
+    selectByAttribute: "By Attribute",
+    results: "Results",
+    searchLayer: "Search layer",
+    selectFeaturesBy: "Select features by",
+	searchDrawBuffer: "Select search buffer",
+    search: "Search",
+    clear: "Clear",
+    point: "Point",
+    line: "Line",
+    polyline: "Polyline",
+    freehandPolyline: "Freehand Polyline",
+    triangle: "Triangle",
+    extent: "Extent",
+    circle: "Circle",
+    ellipse: "Ellipse",
+    polygon: "Polygon",
+    freehandPolygon: "Freehand Polygon",
+    featuresSelected: "Features selected: ",
+    noResults: "No results",
+    searchError:"Search failed !",
+    searchResult:"Search result",
+	distanceUnits: "Distance Units",
+    kilometers: "Kilometers",
+    miles: "Miles",
+    meters: "Meters",
+    feet: "Feet",
+    yards: "Yards"
+  },
+  "zh-cn": true
+});

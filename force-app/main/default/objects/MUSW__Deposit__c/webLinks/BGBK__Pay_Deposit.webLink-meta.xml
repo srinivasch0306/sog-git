@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Pay_Deposit</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Pay Deposit</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/BGBK__DepositPay?retURL=/{!MUSW__Deposit__c.Id}&amp;depositId={!MUSW__Deposit__c.Id}&amp;id={!BLANKVALUE(MUSW__Deposit__c.MUSW__AccountId__c, MUSW__Deposit__c.MUSW__Permit2Id__c)}</url>
+</WebLink>

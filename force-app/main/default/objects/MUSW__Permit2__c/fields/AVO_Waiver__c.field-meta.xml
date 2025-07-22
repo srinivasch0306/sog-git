@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Waiver__c</fullName>
+    <label>Waiver</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agricultural well data form</fullName>
+                <default>false</default>
+                <label>Agricultural well data form</label>
+            </value>
+            <value>
+                <fullName>Meter Installation Approval</fullName>
+                <default>false</default>
+                <label>Meter Installation Approval</label>
+            </value>
+            <value>
+                <fullName>Agricultural Well pad Picture</fullName>
+                <default>false</default>
+                <label>Agricultural Well pad Picture</label>
+            </value>
+            <value>
+                <fullName>Well Construction Inspection form</fullName>
+                <default>false</default>
+                <label>Well Construction Inspection form</label>
+            </value>
+            <value>
+                <fullName>Surface Water low flow plan</fullName>
+                <default>false</default>
+                <label>Surface Water low flow plan</label>
+            </value>
+            <value>
+                <fullName>Well plug and abandon form</fullName>
+                <default>false</default>
+                <label>Well plug and abandon form</label>
+            </value>
+            <value>
+                <fullName>Pending Compliance case for permit holder</fullName>
+                <default>false</default>
+                <label>Pending Compliance case for permit holder</label>
+            </value>
+            <value>
+                <fullName>Surface water pump data form</fullName>
+                <default>false</default>
+                <label>Surface water pump data form</label>
+            </value>
+            <value>
+                <fullName>Water use conservation Plan</fullName>
+                <default>false</default>
+                <label>Water use conservation Plan</label>
+            </value>
+            <value>
+                <fullName>Irrigation efficiency certificate form</fullName>
+                <default>false</default>
+                <label>Irrigation efficiency certificate form</label>
+            </value>
+            <value>
+                <fullName>Water reuse feasibility study</fullName>
+                <default>false</default>
+                <label>Water reuse feasibility study</label>
+            </value>
+            <value>
+                <fullName>Water right agreement Property Ownership document</fullName>
+                <default>false</default>
+                <label>Water right agreement Property Ownership document</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

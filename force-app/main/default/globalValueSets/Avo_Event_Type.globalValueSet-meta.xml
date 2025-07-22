@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>30 Day Planning Commission Meeting</fullName>
+        <default>false</default>
+        <label>30 Day Planning Commission Meeting</label>
+    </customValue>
+    <customValue>
+        <fullName>30 Day Planning Commission Meeting for Special Use</fullName>
+        <default>false</default>
+        <label>30 Day Planning Commission Meeting for Special Use</label>
+    </customValue>
+    <customValue>
+        <fullName>30 Day Planning Commission Meeting for Variance</fullName>
+        <default>false</default>
+        <label>30 Day Planning Commission Meeting for Variance</label>
+    </customValue>
+    <customValue>
+        <fullName>90 Day Planning Commission Meeting</fullName>
+        <default>false</default>
+        <label>90 Day Planning Commission Meeting</label>
+    </customValue>
+    <customValue>
+        <fullName>90 Day Planning Commission Meeting for Special Use</fullName>
+        <default>false</default>
+        <label>90 Day Planning Commission Meeting for Special Use</label>
+    </customValue>
+    <customValue>
+        <fullName>90 Day Planning Commission Meeting for Variance</fullName>
+        <default>false</default>
+        <label>90 Day Planning Commission Meeting for Variance</label>
+    </customValue>
+    <customValue>
+        <fullName>HPC Meeting</fullName>
+        <default>false</default>
+        <label>HPC Meeting</label>
+    </customValue>
+    <customValue>
+        <fullName>M&amp;C Agenda Review Meeting</fullName>
+        <default>false</default>
+        <label>M&amp;C Agenda Review Meeting</label>
+    </customValue>
+    <customValue>
+        <fullName>M&amp;C Voting Session Meeting</fullName>
+        <default>false</default>
+        <label>M&amp;C Voting Session Meeting</label>
+    </customValue>
+    <customValue>
+        <fullName>Mayor and Commission Meeting</fullName>
+        <default>false</default>
+        <label>Mayor and Commission Meeting</label>
+    </customValue>
+    <customValue>
+        <fullName>Mayor and Commission Meeting for Special Use</fullName>
+        <default>false</default>
+        <label>Mayor and Commission Meeting for Special Use</label>
+    </customValue>
+    <customValue>
+        <fullName>Mayor and Commission Meeting for Variance</fullName>
+        <default>false</default>
+        <label>Mayor and Commission Meeting for Variance</label>
+    </customValue>
+    <customValue>
+        <fullName>Planning Commission Meeting</fullName>
+        <default>false</default>
+        <label>Planning Commission Meeting</label>
+    </customValue>
+    <customValue>
+        <fullName>Plan Review Meeting</fullName>
+        <default>false</default>
+        <label>Plan Review Meeting</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Hearing</fullName>
+        <default>false</default>
+        <label>Public Hearing</label>
+    </customValue>
+    <customValue>
+        <fullName>Staff Conference</fullName>
+        <default>false</default>
+        <label>Staff Conference</label>
+    </customValue>
+    <masterLabel>Avo Event Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

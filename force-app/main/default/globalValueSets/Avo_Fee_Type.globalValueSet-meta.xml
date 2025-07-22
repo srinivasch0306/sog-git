@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>All Fees</fullName>
+        <default>false</default>
+        <label>All Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Any Fee</fullName>
+        <default>false</default>
+        <label>Any Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Fee</fullName>
+        <default>false</default>
+        <label>Application Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Fine</fullName>
+        <default>false</default>
+        <label>Fine</label>
+    </customValue>
+    <customValue>
+        <fullName>Manual Fee</fullName>
+        <default>false</default>
+        <label>Manual Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Plan Review</fullName>
+        <default>false</default>
+        <label>	Plan Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Administration Review Fee (Hours)</fullName>
+        <default>false</default>
+        <label>Administration Review Fee (Hours)</label>
+    </customValue>
+    <customValue>
+        <fullName>Amendment or Extension Permit</fullName>
+        <default>false</default>
+        <label>Amendment or Extension Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Deposit</fullName>
+        <default>false</default>
+        <label>Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>Gate Access Permit (Annual)</fullName>
+        <default>false</default>
+        <label>Gate Access Permit (Annual)</label>
+    </customValue>
+    <customValue>
+        <fullName>Good Neighbor Access Permit</fullName>
+        <default>false</default>
+        <label>Good Neighbor Access Permit</label>
+    </customValue>
+    <customValue>
+        <fullName>Helicopter Landing Zone (Days)</fullName>
+        <default>false</default>
+        <label>Helicopter Landing Zone (Days)</label>
+    </customValue>
+    <customValue>
+        <fullName>Inspection Fee (Weeks)</fullName>
+        <default>false</default>
+        <label>Inspection Fee (Weeks)</label>
+    </customValue>
+    <customValue>
+        <fullName>Large-Scale Project Fees</fullName>
+        <default>false</default>
+        <label>Large-Scale Project Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Penalty for Unauthorized Access/Encroachment (Days)</fullName>
+        <default>false</default>
+        <label>Penalty for Unauthorized Access/Encroachment (Days)</label>
+    </customValue>
+    <customValue>
+        <fullName>Penalty for Violating Permit Conditions (Days)</fullName>
+        <default>false</default>
+        <label>Penalty for Violating Permit Conditions (Days)</label>
+    </customValue>
+    <customValue>
+        <fullName>Professional Review Fee (Hours)</fullName>
+        <default>false</default>
+        <label>Professional Review Fee (Hours)</label>
+    </customValue>
+    <customValue>
+        <fullName>Review Fee</fullName>
+        <default>false</default>
+        <label>Review Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Staff Cost Fee</fullName>
+        <default>false</default>
+        <label>Staff Cost Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Temporary Park Use Fee (Days)</fullName>
+        <default>false</default>
+        <label>Temporary Park Use Fee (Days)</label>
+    </customValue>
+    <customValue>
+        <fullName>Review Fee - Major</fullName>
+        <default>false</default>
+        <label>Review Fee - Major</label>
+    </customValue>
+    <customValue>
+        <fullName>Review Fee - Minor</fullName>
+        <default>false</default>
+        <label>Review Fee - Minor</label>
+    </customValue>
+    <masterLabel>Avo Fee Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,1 @@
+trigger DRE2_MUSW_Comment_c on MUSW__Comment__c (after insert, before update, before delete, after undelete) { BGCM.TriggerManager.execute('DRE2_MUSW_Comment_c', new DRETriggerHandler()); }

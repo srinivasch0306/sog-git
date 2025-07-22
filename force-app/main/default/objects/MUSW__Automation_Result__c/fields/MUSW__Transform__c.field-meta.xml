@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Transform__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Instructions for applied result records before being saved. This allows more than 1 record to be applied within a single group.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>eg. &lt;repeat&gt;MUSW__Fee__c&lt;/repeat&gt;</inlineHelpText>
+    <label>Transform</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

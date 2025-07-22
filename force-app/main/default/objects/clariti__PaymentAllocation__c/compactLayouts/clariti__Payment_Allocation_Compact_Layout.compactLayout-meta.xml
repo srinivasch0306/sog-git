@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__Payment_Allocation_Compact_Layout</fullName>
+    <fields>clariti__TransactionDate__c</fields>
+    <fields>clariti__AllocationAmount__c</fields>
+    <label>Payment Allocation Compact Layout</label>
+</CompactLayout>

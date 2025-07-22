@@ -1,0 +1,27 @@
+/* 
+    Style sheet for the Clone Process Lightning Component
+    @author Jason Li
+    last modified by Jason Li
+    @date 06/21/2021
+*/
+
+.THIS.content-wrapper {
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    border: 2px;
+}
+
+.THIS .create-button {
+    position: sticky;
+    top: 0;
+}
+
+.THIS .loading{
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    width: 55px;
+    vertical-align: middle;
+    white-space: nowrap;
+}

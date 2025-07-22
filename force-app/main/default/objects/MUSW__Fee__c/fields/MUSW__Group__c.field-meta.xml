@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Group__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Deprecated</description>
+    <label>Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Group 1</fullName>
+                <default>false</default>
+                <label>Group 1</label>
+            </value>
+            <value>
+                <fullName>Group 2</fullName>
+                <default>false</default>
+                <label>Group 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

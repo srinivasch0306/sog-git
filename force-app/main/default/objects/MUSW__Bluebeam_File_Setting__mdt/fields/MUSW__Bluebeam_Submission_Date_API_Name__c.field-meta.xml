@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Bluebeam_Submission_Date_API_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The API name of the field that is updated when the submission file(s) is uploaded.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>The API name of the field that is updated when the submission file(s) is uploaded.</inlineHelpText>
+    <label>Bluebeam_Submission Date API Name</label>
+    <length>80</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

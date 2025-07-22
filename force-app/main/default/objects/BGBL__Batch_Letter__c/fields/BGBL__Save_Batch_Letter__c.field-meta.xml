@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__Save_Batch_Letter__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Create and save large stitched file on server. Cannot be unchecked if also not Attaching</inlineHelpText>
+    <label>Save Large Batch File</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

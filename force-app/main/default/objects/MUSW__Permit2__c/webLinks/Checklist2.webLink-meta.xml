@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Checklist2</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Checklist2</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/lightning/cmp/BGCK__ QuestionChecklistComponent?pid={!MUSW__Permit2__c.Id}</url>
+</WebLink>

@@ -1,0 +1,1632 @@
+{
+  "editor": {
+    "enableUndoRedo": true,
+    "toolbarVisible": true,
+    "toolbarOptions": {
+      "mergeVisible": true,
+      "cutVisible": true,
+      "reshapeVisible": true
+    },
+    "useFilterEdit": true,
+    "autoApplyEditWhenGeometryIsMoved": true,
+    "snappingTolerance": 15,
+    "popupTolerance": 5,
+    "stickyMoveTolerance": 0,
+	"basicgovLayerInfos": [
+    {
+        "basicgovLayer": {
+          "id": "MUSW__Parcel__c"
+        },
+    "label": "Parcel",
+        "disableGeometryUpdate": false
+    },
+	  {
+        "basicgovLayer": {
+          "id": "MUSW__Inspection__c"
+        },
+		"label": "Inspection",
+        "disableGeometryUpdate": false
+	  }
+	],
+    "layerInfos": [
+	  {
+        "featureLayer": {
+          "id": "AddressesElgin_4091"
+        },
+        "disableGeometryUpdate": false,
+        "fieldInfos": [
+          {
+            "fieldName": "FID",
+            "label": "FID",
+            "isEditable": null,
+            "visible": false
+          },
+          {
+            "fieldName": "Address",
+            "label": "Address",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STPrefix",
+            "label": "STPrefix",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STName",
+            "label": "STName",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STType",
+            "label": "STType",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Unit",
+            "label": "Unit",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "City",
+            "label": "City",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "State",
+            "label": "State",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ZipCode",
+            "label": "ZipCode",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FULL_ADR",
+            "label": "FULL_ADR",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "EditDate",
+            "label": "EditDate",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "EditUser",
+            "label": "EditUser",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "POINT_X",
+            "label": "POINT_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "POINT_Y",
+            "label": "POINT_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Lat",
+            "label": "Lat",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Long",
+            "label": "Long",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LOCID",
+            "label": "LOCID",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Parcel_Num",
+            "label": "Parcel_Num",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "COUNTY",
+            "label": "COUNTY",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "OWNER_NAME",
+            "label": "OWNER_NAME",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "OWNER_ADDR",
+            "label": "OWNER_ADDR",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "OWNER_CITY",
+            "label": "OWNER_CITY",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "OWNER_STAT",
+            "label": "OWNER_STAT",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "OWNER_ZIPC",
+            "label": "OWNER_ZIPC",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Township",
+            "label": "Township",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "School_Dis",
+            "label": "School_Dis",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Library_Di",
+            "label": "Library_Di",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "TIF_Distri",
+            "label": "TIF_Distri",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SSA_Distri",
+            "label": "SSA_Distri",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Historic_D",
+            "label": "Historic_D",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Zoning",
+            "label": "Zoning",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Conditiona",
+            "label": "Conditiona",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Current_La",
+            "label": "Current_La",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Leaf_Distr",
+            "label": "Leaf_Distr",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "US_Rep_Dis",
+            "label": "US_Rep_Dis",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "State_Sena",
+            "label": "State_Sena",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "State_Rep_",
+            "label": "State_Rep_",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "County_Boa",
+            "label": "County_Boa",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Street_Typ",
+            "label": "Street_Typ",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Relation_T",
+            "label": "Relation_T",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Enterprise",
+            "label": "Enterprise",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "River_Edge",
+            "label": "River_Edge",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Code_Distr",
+            "label": "Code_Distr",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Census_Blo",
+            "label": "Census_Blo",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Subdivisio",
+            "label": "Subdivisio",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Census_Tra",
+            "label": "Census_Tra",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Trash_Coll",
+            "label": "Trash_Coll",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "created_us",
+            "label": "created_us",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "created_da",
+            "label": "created_da",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "last_edite",
+            "label": "last_edite",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "last_edi_1",
+            "label": "last_edi_1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SF_ID",
+            "label": "SF_ID",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Location_R",
+            "label": "Location_R",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Sewer_Reca",
+            "label": "Sewer_Reca",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Ord_Recapt",
+            "label": "Ord_Recapt",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Police_Bea",
+            "label": "Police_Bea",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Police_Sub",
+            "label": "Police_Sub",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Police_Rop",
+            "label": "Police_Rop",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Fire_Distr",
+            "label": "Fire_Distr",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Fire_Quadr",
+            "label": "Fire_Quadr",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "DutchLapSi",
+            "label": "DutchLapSi",
+            "isEditable": true,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "featureLayer": {
+          "id": "StreetsCook_4929"
+        },
+        "disableGeometryUpdate": false,
+        "fieldInfos": [
+          {
+            "fieldName": "FID",
+            "label": "FID",
+            "isEditable": null,
+            "visible": false
+          },
+          {
+            "fieldName": "UNIQUEID",
+            "label": "UNIQUEID",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "TYPE",
+            "label": "TYPE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "MAJORROAD",
+            "label": "MAJORROAD",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LADDRFROM",
+            "label": "LADDRFROM",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LADDRTO",
+            "label": "LADDRTO",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "RADDRFROM",
+            "label": "RADDRFROM",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "RADDRTO",
+            "label": "RADDRTO",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPRD",
+            "label": "STNAMEPRD",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPRM",
+            "label": "STNAMEPRM",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPRT",
+            "label": "STNAMEPRT",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAME",
+            "label": "STNAME",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPOT",
+            "label": "STNAMEPOT",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPOD",
+            "label": "STNAMEPOD",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPOM",
+            "label": "STNAMEPOM",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FULLSTNA",
+            "label": "FULLSTNA",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FULSTNAAB",
+            "label": "FULSTNAAB",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPRD1",
+            "label": "STNAMEPRD1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPRM1",
+            "label": "STNAMEPRM1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPRT1",
+            "label": "STNAMEPRT1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAME1",
+            "label": "STNAME1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPOT1",
+            "label": "STNAMEPOT1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPOD1",
+            "label": "STNAMEPOD1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "STNAMEPOM1",
+            "label": "STNAMEPOM1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FULLSTNA1",
+            "label": "FULLSTNA1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FULSTNAAB1",
+            "label": "FULSTNAAB1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HONSTNAME",
+            "label": "HONSTNAME",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HONSTNAME1",
+            "label": "HONSTNAME1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "DEDICATED_",
+            "label": "DEDICATED_",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LCITY",
+            "label": "LCITY",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "RCITY",
+            "label": "RCITY",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LUSPSST",
+            "label": "LUSPSST",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "RUSPSST",
+            "label": "RUSPSST",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ZIPL",
+            "label": "ZIPL",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ZIPR",
+            "label": "ZIPR",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HWYTYPE",
+            "label": "HWYTYPE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HWYNO",
+            "label": "HWYNO",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FULLHINA",
+            "label": "FULLHINA",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HWYTYPE1",
+            "label": "HWYTYPE1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HWYNO1",
+            "label": "HWYNO1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FULLHINA1",
+            "label": "FULLHINA1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HWYTYPE2",
+            "label": "HWYTYPE2",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HWYNO2",
+            "label": "HWYNO2",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FULLHINA2",
+            "label": "FULLHINA2",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HWYTYPE3",
+            "label": "HWYTYPE3",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HWYNO3",
+            "label": "HWYNO3",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FULLHINA3",
+            "label": "FULLHINA3",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "RTE_HRCHY",
+            "label": "RTE_HRCHY",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "GRADE_SEP",
+            "label": "GRADE_SEP",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FROM_GRADE",
+            "label": "FROM_GRADE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "TO_GRADE",
+            "label": "TO_GRADE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SURFACE",
+            "label": "SURFACE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SPDLIMIT",
+            "label": "SPDLIMIT",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LENGTH",
+            "label": "LENGTH",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "MINUTE",
+            "label": "MINUTE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ONEWAY",
+            "label": "ONEWAY",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HTRESTRC",
+            "label": "HTRESTRC",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LONGITUDE",
+            "label": "LONGITUDE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LATITUDE",
+            "label": "LATITUDE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "UNIVRSLDT",
+            "label": "UNIVRSLDT",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CFCCCODE",
+            "label": "CFCCCODE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "GNISMUNIL",
+            "label": "GNISMUNIL",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "GNISMUNIR",
+            "label": "GNISMUNIR",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "GNISTWP",
+            "label": "GNISTWP",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "GNISCNTY",
+            "label": "GNISCNTY",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "GNISSTATE",
+            "label": "GNISSTATE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "COORDACCU",
+            "label": "COORDACCU",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "EDITOR",
+            "label": "EDITOR",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "EDITTIME",
+            "label": "EDITTIME",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "EDITTYPE",
+            "label": "EDITTYPE",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "REVIEWER_I",
+            "label": "REVIEWER_I",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "REVIEW_DAT",
+            "label": "REVIEW_DAT",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "OPSTATUS",
+            "label": "OPSTATUS",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ANOMALY",
+            "label": "ANOMALY",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "MSAGSTAT",
+            "label": "MSAGSTAT",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "PWA_COMMEN",
+            "label": "PWA_COMMEN",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "OrthoYear",
+            "label": "OrthoYear",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "safeZone",
+            "label": "safeZone",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "safeZoneEn",
+            "label": "safeZoneEn",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Shape_STLe",
+            "label": "Shape_STLe",
+            "isEditable": true,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "featureLayer": {
+          "url": "https://services3.arcgis.com/3VfZSNcjuPi50OQp/arcgis/rest/services/ParcelsKane/FeatureServer/0"
+        },
+        "disableGeometryUpdate": false,
+        "fieldInfos": [
+          {
+            "fieldName": "FID",
+            "label": "FID",
+            "isEditable": null,
+            "visible": true
+          },
+          {
+            "fieldName": "PIN",
+            "label": "PIN",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "PIN_1",
+            "label": "PIN_1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "GNIS",
+            "label": "GNIS",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Township",
+            "label": "Township",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "TaxCode",
+            "label": "TaxCode",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "UseCode",
+            "label": "UseCode",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "TaxName",
+            "label": "TaxName",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SiteAddres",
+            "label": "SiteAddres",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SiteCity",
+            "label": "SiteCity",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SiteState",
+            "label": "SiteState",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SiteZip",
+            "label": "SiteZip",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CurrentGro",
+            "label": "CurrentGro",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LegalDesc",
+            "label": "LegalDesc",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "MailingAdd",
+            "label": "MailingAdd",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "MailingA_1",
+            "label": "MailingA_1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "MailingCit",
+            "label": "MailingCit",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "MailingSta",
+            "label": "MailingSta",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "MailingZip",
+            "label": "MailingZip",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "DocNo",
+            "label": "DocNo",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "DocDate",
+            "label": "DocDate",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "HouseNumbe",
+            "label": "HouseNumbe",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "NumberSuff",
+            "label": "NumberSuff",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "PreDir",
+            "label": "PreDir",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Street",
+            "label": "Street",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Municipali",
+            "label": "Municipali",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ParkDist",
+            "label": "ParkDist",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "FireDist",
+            "label": "FireDist",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SchoolDist",
+            "label": "SchoolDist",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LibraryDis",
+            "label": "LibraryDis",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SSA",
+            "label": "SSA",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "TIF",
+            "label": "TIF",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CollegeDis",
+            "label": "CollegeDis",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CemeteryDi",
+            "label": "CemeteryDi",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SolidWaste",
+            "label": "SolidWaste",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Sanitary",
+            "label": "Sanitary",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Conserve",
+            "label": "Conserve",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Airport",
+            "label": "Airport",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Ambulance",
+            "label": "Ambulance",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "County",
+            "label": "County",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ForestPres",
+            "label": "ForestPres",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Enterprise",
+            "label": "Enterprise",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Mosquito",
+            "label": "Mosquito",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "TwpTaxed",
+            "label": "TwpTaxed",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "TwpHighway",
+            "label": "TwpHighway",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Water",
+            "label": "Water",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Drainage",
+            "label": "Drainage",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CBDist",
+            "label": "CBDist",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CBName",
+            "label": "CBName",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Shape_Leng",
+            "label": "Shape_Leng",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "VersionNum",
+            "label": "VersionNum",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ParcelSize",
+            "label": "ParcelSize",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Shape_STAr",
+            "label": "Shape_STAr",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Shape_STLe",
+            "label": "Shape_STLe",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_X",
+            "label": "CENTROID_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_Y",
+            "label": "CENTROID_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_X",
+            "label": "CENTROID_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_Y",
+            "label": "CENTROID_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_X",
+            "label": "CENTROID_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_Y",
+            "label": "CENTROID_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_X",
+            "label": "CENTROID_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_Y",
+            "label": "CENTROID_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_X",
+            "label": "CENTROID_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_Y",
+            "label": "CENTROID_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_X",
+            "label": "CENTROID_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_Y",
+            "label": "CENTROID_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_X",
+            "label": "CENTROID_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_Y",
+            "label": "CENTROID_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_X",
+            "label": "CENTROID_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_Y",
+            "label": "CENTROID_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_X",
+            "label": "INSIDE_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "INSIDE_Y",
+            "label": "INSIDE_Y",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_X",
+            "label": "CENTROID_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_Y",
+            "label": "CENTROID_Y",
+            "isEditable": true,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "featureLayer": {
+          "id": "ParcelsCook_5183"
+        },
+        "disableGeometryUpdate": true,
+        "fieldInfos": [
+          {
+            "fieldName": "FID",
+            "label": "FID",
+            "isEditable": null,
+            "visible": true
+          },
+          {
+            "fieldName": "pin10",
+            "label": "pin10",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "upper_elev",
+            "label": "upper_elev",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "taxcode",
+            "label": "taxcode",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "pinsa",
+            "label": "pinsa",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "lower_elev",
+            "label": "lower_elev",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "pin14",
+            "label": "pin14",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "pinac",
+            "label": "pinac",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "pinu",
+            "label": "pinu",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "pina",
+            "label": "pina",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "survey_cal",
+            "label": "survey_cal",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "shape_star",
+            "label": "shape_star",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "job_no",
+            "label": "job_no",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "parceltype",
+            "label": "parceltype",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "shape_stle",
+            "label": "shape_stle",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "pinp",
+            "label": "pinp",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "pinb",
+            "label": "pinb",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ParcelSize",
+            "label": "ParcelSize",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Shape_ST_1",
+            "label": "Shape_ST_1",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Shape_ST_2",
+            "label": "Shape_ST_2",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_X",
+            "label": "CENTROID_X",
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CENTROID_Y",
+            "label": "CENTROID_Y",
+            "isEditable": true,
+            "visible": true
+          }
+        ]
+      }
+    ]
+  }
+}

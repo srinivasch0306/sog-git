@@ -1,0 +1,1 @@
+@isTest private class DRE2Test_MUSW_Fee_Payment_c { @isTest static void insertUpdateDelete() { DRE.DRETestExternalManager.run('MUSW__Fee_Payment__c'); } }

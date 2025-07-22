@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Maintenance_Requests_Not_Allocated</fullName>
+    <columns>NAME</columns>
+    <columns>AVO_Maintenance_Batch_ID__c</columns>
+    <columns>AVO_Maintenance_Type__c</columns>
+    <columns>AVO_Maintenance_Status__c</columns>
+    <columns>AVO_County__c</columns>
+    <columns>AVO_Model__c</columns>
+    <columns>AVO_Meter_ID__c</columns>
+    <columns>AVO_Old_Meter_ID__c</columns>
+    <columns>AVO_Specialist__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>AVO_Meter_Transaction__c.Meter_Maintenance_Request</value>
+    </filters>
+    <filters>
+        <field>AVO_Maintenance_Status__c</field>
+        <operation>equals</operation>
+        <value>Pending Specialist Allocation</value>
+    </filters>
+    <label>Maintenance Requests Not Allocated</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

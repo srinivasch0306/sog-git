@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Operator__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Specifies what comparison operation the table field filter evaluated against the value.</description>
+    <label>Operator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&gt;</fullName>
+                <default>false</default>
+                <label>&gt;</label>
+            </value>
+            <value>
+                <fullName>&gt;=</fullName>
+                <default>false</default>
+                <label>&gt;=</label>
+            </value>
+            <value>
+                <fullName>=</fullName>
+                <default>true</default>
+                <label>=</label>
+            </value>
+            <value>
+                <fullName>&lt;</fullName>
+                <default>false</default>
+                <label>&lt;</label>
+            </value>
+            <value>
+                <fullName>&lt;=</fullName>
+                <default>false</default>
+                <label>&lt;=</label>
+            </value>
+            <value>
+                <fullName>!=</fullName>
+                <default>false</default>
+                <label>!=</label>
+            </value>
+            <value>
+                <fullName>IN</fullName>
+                <default>false</default>
+                <label>IN</label>
+            </value>
+            <value>
+                <fullName>CONTAINS</fullName>
+                <default>false</default>
+                <label>CONTAINS</label>
+            </value>
+            <value>
+                <fullName>NOT IN</fullName>
+                <default>false</default>
+                <label>NOT IN</label>
+            </value>
+            <value>
+                <fullName>NOT CONTAINS</fullName>
+                <default>false</default>
+                <label>NOT CONTAINS</label>
+            </value>
+            <value>
+                <fullName>IS CHANGED</fullName>
+                <default>false</default>
+                <label>IS CHANGED</label>
+            </value>
+            <value>
+                <fullName>NOT CHANGED</fullName>
+                <default>false</default>
+                <label>NOT CHANGED</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

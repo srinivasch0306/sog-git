@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>test_review</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>test review</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>https://gdnr--dev.sandbox.lightning.force.com/lightning/o/MUSW__Review__c/new?navigationLocation=LIST_VIEW&amp;saveNewUrl=%2Fa1F%2Fe&amp;nooverride=true&amp;useRecordTypeCheck=true&amp;inContextOfRef=1.eyJ0eXBlIjoic3RhbmRhcmRfX29iamVjdFBhZ2UiLCJhdHRyaWJ1dGVzIjp7Im9iamVjdEFwaU5hbWUiOiJNVVNXX19SZXZpZXdfX2MiLCJhY3Rpb25OYW1lIjoibGlzdCJ9LCJzdGF0ZSI6eyJmaWx0ZXJOYW1lIjoiMDBCM0MwMDAwMDJxdUoxVUFJIn19&amp;count=1</url>
+</WebLink>

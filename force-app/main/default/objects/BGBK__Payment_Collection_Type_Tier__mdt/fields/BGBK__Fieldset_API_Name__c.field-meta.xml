@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Fieldset_API_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>API name of the fieldset for the object in this tier</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Specify the Fieldset API name for the object in this tier. If left empty queries for name and search field only.</inlineHelpText>
+    <label>Fieldset API Name</label>
+    <length>80</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

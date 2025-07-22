@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Public_Access__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This Basemap is publicly accessible</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Setting this true means this basemap service and its layers should have public access in the GIS Server as well as in Salesforce</inlineHelpText>
+    <label>Public Access</label>
+    <type>Checkbox</type>
+</CustomField>

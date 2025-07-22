@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__OutOfBalanceJournalEntryItems</fullName>
+    <columns>NAME</columns>
+    <columns>clariti__CreditAmount__c</columns>
+    <columns>clariti__DebitAmount__c</columns>
+    <columns>clariti__Account__c</columns>
+    <columns>clariti__CashierSession__c</columns>
+    <columns>clariti__EffectiveDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>clariti__CashierSession__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Out of Balance Journal Entry Items</label>
+</ListView>

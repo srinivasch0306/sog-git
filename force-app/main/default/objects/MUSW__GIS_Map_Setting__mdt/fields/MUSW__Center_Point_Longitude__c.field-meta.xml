@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Center_Point_Longitude__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Default geolocation longitude for the center point for the map to zoom to.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Please provide geolocation longitude (upto 2 decimal points) for the default center point for the map to zoom to. This is required only when webmap is not being used.
+Example: -123.13</inlineHelpText>
+    <label>Center Point Longitude</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

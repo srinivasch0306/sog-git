@@ -1,0 +1,1 @@
+@isTest private class DRE2Test_MUSW_License2_c { @isTest static void insertUpdateDelete() { DRE.DRETestExternalManager.run('MUSW__License2__c'); } }

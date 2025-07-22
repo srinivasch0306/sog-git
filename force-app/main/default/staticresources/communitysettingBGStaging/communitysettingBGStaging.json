@@ -1,0 +1,279 @@
+{
+	"paymentConfirmation" : {
+		"cartPrintPage" : "bgcc__CommunityReceiptTemplate",
+		"emailTemplateName" : "Cart Payment Receipt"
+	}, 
+	"objectConfigs" : [
+		{
+			"objectName" : "MUSW__Permit2__c",
+			"displayStatuses": [
+				{
+					"actualValue" : "Pending",
+					"displayValue" : "In Progress"
+				},
+				{
+					"actualValue" : "Submitted",
+					"displayValue" : "Completed"
+				},
+				{
+					"actualValue" : "Cancelled",
+					"displayValue" : "Abandoned"
+				}
+			],
+			"configurationStatuses": {
+				"start": "Pending",
+				"submit": "Submitted",
+				"abandon": "Cancelled"
+			},
+			"actionStatuses": [
+				{
+					"actionName" : "PAY",
+					"statuses" : ["Pending Payment", "Submitted", "Issued"],
+					"linkText" : "Pay Now"
+				},
+				{
+					"actionName" : "VIEW",
+					"statuses" : ["Submitted", "Final Review", "Pending Payment"],
+					"linkText" : "View"
+				},
+				{
+					"actionName" : "EDIT",
+					"statuses" : ["Pending", "Started by Community User"],
+					"linkText" : "Continue"
+				},
+				{
+					"actionName" : "DEL",
+					"statuses" : ["Pending", "Started by Community User"],
+					"linkText" : "Delete"
+				},
+				{
+					"actionName" : "DOWNLOAD",
+					"statuses" : ["Issued"],
+					"linkText" : "Download Document"
+				},
+				{
+					"actionName" : "SCHEDULE_INSPECTION",
+					"statuses" : ["Issued"],
+					"linkText": "Request Inspection"
+				},
+				{
+					"actionName" : "APPLY_SUB_PERMIT",
+					"statuses" : ["Pending", "Submitted"],
+					"linkText" : "Apply for Sub-Permit"
+				}
+
+			],
+			"applicationTypes" : [
+				{
+					"types" : [
+						{
+							"type" : "Building", 
+							"subtypes" : [
+								"Electrical",
+								"Mechanical",
+								"Plumbing"
+							]
+						}
+					]
+				}  
+			],
+			"stagesHelpText" : [
+				{
+					"stageHeading" : "Information",
+					"helpText" : ""
+				},
+				{
+					"stageHeading" : "Applicant Information",
+					"helpText" : ""
+				},
+				{
+					"stageHeading" : "Work Items Details",
+					"helpText" : "Do you have more items or details to add? Click Add Another and after you enter the details, click Save. Do you want to remove the item details that you just added? Click Edit and then click Cancel beside the item that you want to remove. The estimated total cost for all the Work Items and Details specified here."
+				},
+				{
+					"stageHeading" : "Parcel",
+					"helpText" : "Enter the full or a portion of the address (Unit #, Street # or Street Name) and click Search. From the list of returned results, click Select beside your address. If you are unable to find the parcel, then contact us @YOUR_COMPANY_EMAIL"
+				},
+				{
+					"stageHeading" : "Select Your Work Items",
+					"helpText" : "This is a 2-step process. First, select all the Work Items that apply and click Next. Then, click Edit to specify details relevant to the Work Items and click Save. "
+				},
+				{
+					"stageHeading" : "Submit Documents",
+					"helpText" : "Ensure that you submit documents that fall under the supported File Types and Sizes.  You must submit documents marked as *Required. You may submit additional documents that are not listed but you deem necessary for your application. If your document size is very large then you can split the document into mutiple documents of smaller sizes and attach these under the Additional Documents. Do Not upload Password Protected documents. "
+				},
+				{
+					"stageHeading" : "Work Description",
+					"helpText" : ""
+				},
+				{
+					"stageHeading" : "Confirmation",
+					"helpText" : "Review the details of your application.  If you need to modify details in any section, click Edit in the section header. An estimated Total Fee is shown here (Including Taxes and Other charges).  "
+				}
+			],
+			"stageConfig" : {
+				"relatedListStages" : [
+					{
+						"relatedObjectName" : "MUSW__Work_Item__c",
+						"stages" : [
+							{
+								"stageTitle" : "Select Your Work Items",
+								"stageFactoryClass" : "WorkItemSelectionStageFactory"
+							},
+							{
+								"stageTitle" : "Work Item Details",
+								"stageFactoryClass" : "WorkItemDetailStageFactory"
+							}
+						]
+					},
+					{
+						"relatedObjectName" : "MUSW__Submission__c",
+						"stages" : [
+							{
+								"stageTitle" : "Submit Documents",
+								"stageFactoryClass" : "SubmissionStageFactory"
+							}
+						]
+					}
+				]
+			},
+			"postSubmissionStages": [
+				{
+					"stageTitle" : "Application Summary",
+					"stageFactoryClass" : "bgcc.ApplicationSummaryStageFactory",
+					"displayStatuses" : ["Submitted", "Pending Payment"]
+				},
+				{
+					"stageTitle" : "Submissions",
+					"stageFactoryClass" : "bgcc.SubmissionActionStageFactory",
+					"displayStatuses" : ["Submitted","Pending Payment"]
+				}
+			]
+		},
+		{
+			"objectName" : "MUSW__License2__c",
+			"displayStatuses": [
+				{
+					"actualValue" : "Pending",
+					"displayValue" : "In Progress"
+				},
+				{
+					"actualValue" : "Submitted",
+					"displayValue" : "Completed"
+				},
+				{
+					"actualValue" : "Cancelled",
+					"displayValue" : "Abandoned"
+				}
+			],
+			"configurationStatuses": {
+				"start": "Pending",
+				"submit": "Submitted",
+				"abandon": "Cancelled"
+			},
+			"actionStatuses": [
+				{
+					"actionName" : "PAY",
+					"statuses" : ["Pending Payment"],
+					"linkText" : "Pay Now"
+				},
+				{
+					"actionName" : "VIEW",
+					"statuses" : ["Submitted", "Final Review", "Pending Payment"],
+					"linkText" : "View"
+				},
+				{
+					"actionName" : "EDIT",
+					"statuses" : ["Pending", "Started by Community User"],
+					"linkText" : "Continue"
+				},
+				{
+					"actionName" : "DEL",
+					"statuses" : ["Pending", "Started by Community User"],
+					"linkText" : "Delete"
+				}
+			],
+			"applicationTypes" : [],
+			"stagesHelpText" : [
+				{
+					"stageHeading" : "Information",
+					"helpText" : "Some help text for information stage!"
+				},
+				{
+					"stageHeading" : "Applicant Information",
+					"helpText" : "Some help text for applicant information stage! Some help text for information stage! Some help text for information stage! Some help text for information stage! Some help text for information stage! Some help text for information stage! Some help text for information stage!"
+				},
+				{
+					"stageHeading" : "Submit Documents",
+					"helpText" : ""
+				}
+			],
+			"stageConfig" : {
+				"relatedListStages" : [
+					{
+						"relatedObjectName" : "MUSW__Submission__c",
+						"stages" : [
+							{
+								"stageTitle" : "Submit Documents",
+								"stageFactoryClass" : "SubmissionStageFactory"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"objectName" : "MUSW__Application2__c",
+			"displayStatuses": [
+				{
+					"actualValue" : "Pending",
+					"displayValue" : "In Progress"
+				},
+				{
+					"actualValue" : "Submitted",
+					"displayValue" : "Completed"
+				},
+				{
+					"actualValue" : "Cancelled",
+					"displayValue" : "Abandoned"
+				}
+			],
+			"configurationStatuses": {
+				"start": "Pending",
+				"submit": "Submitted",
+				"abandon": "Cancelled"
+			},
+			"actionStatuses": [
+				{
+					"actionName" : "PAY",
+					"statuses" : ["Pending"],
+					"linkText" : "Pay Now"
+				}
+			],
+			"applicationTypes" : [
+				{
+					"types" : [
+						{
+							"type" : "Site_Plan"
+						}
+					]
+				}  
+			],
+			"stagesHelpText" : [],
+			"stageConfig" : {
+				"relatedListStages" : []
+			}
+		},
+		{
+			"objectName" : "Account",
+			"displayStatuses": [],
+			"configurationStatuses": {},
+			"actionStatuses": [],
+			"applicationTypes" : [],
+			"stagesHelpText" : [],
+			"stageConfig" : {
+				"relatedListStages" : []
+			}
+		}
+	]
+}

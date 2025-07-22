@@ -1,0 +1,91 @@
+{
+  "distanceUnits": [{
+    "unit": "FEET",
+    "abbr": "ft"
+  }, {
+    "unit": "METERS",
+    "abbr": "m"
+  }, {
+    "unit": "YARDS",
+    "abbr": "yd"
+  }],
+  "showLegend": true,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "EnableOrDisablePopup": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": false,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+  
+    "ParcelsKane_5388" : {
+      "display" : true
+    },
+    "ParcelsCook_683" : {
+      "display" : true
+    },
+    "StreetsCook_8830" : {
+      "display" : true
+    },
+    "StreetsKane_980" : {
+      "display" : true
+    },
+    "AddressesElgin" : {
+      "display" : true
+    }
+  },
+  "layers": [
+	{
+	 "url": "https://maps.mybasicgov.com/arcgis/rest/services/Vancouver/MapServer/2",
+	 "label": "Charging Stations",
+	 "type": "feature",
+	 "fieldInfos": [
+	 {
+	 "fieldName": "address",
+	 "label": "Address",
+	 "visible": true
+	 }, {
+	 "fieldName": "shape",
+	 "label": "Shape",
+	 "visible": true
+	 }
+	 ]
+	},
+	{
+	 "url": "https://maps.mybasicgov.com/arcgis/rest/services/Vancouver/MapServer/0",
+	 "label": "Water Hydrants",
+	 "type": "feature",
+	 "fieldInfos": [
+	 {
+	 "fieldName": "street_num",
+	 "label": "Street Number",
+	 "visible": true
+	 }, {
+	 "fieldName": "street",
+	 "label": "Street",
+	 "visible": true
+	 }
+	 ]
+	},
+    {
+      "url": "MUSW__Permit2__c",
+      "label": "BG Permit2",
+      "type": "basicgov",
+      "iconPath": "images/Favourite.png"
+    },
+    {
+      "url": "MUSW__Inspection__c",
+      "label": "BG Inspection",
+      "type": "basicgov",
+      "iconPath": ""
+    },
+    {
+      "url" : "Well__c",
+      "label" : "Wells",
+      "type" : "basicgov",
+      "iconPath" : ""
+    }
+  ]
+}

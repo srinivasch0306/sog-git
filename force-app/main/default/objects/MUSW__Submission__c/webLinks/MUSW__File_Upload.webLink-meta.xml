@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__File_Upload</fullName>
+    <availability>online</availability>
+    <description>Upload and delete files related to a list of submission records</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Upload Files</masterLabel>
+    <openType>sidebar</openType>
+    <page>MUSW__FileUpload</page>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+</WebLink>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Geolocation__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Compound field containing the latitude and longitude for the address.</description>
+    <displayLocationInDecimal>true</displayLocationInDecimal>
+    <inlineHelpText>Provide the latitude and longitude for the address.</inlineHelpText>
+    <label>Geolocation</label>
+    <required>false</required>
+    <scale>9</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Location</type>
+</CustomField>

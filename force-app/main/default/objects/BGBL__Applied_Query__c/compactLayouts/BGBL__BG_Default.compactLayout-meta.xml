@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBL__BG_Default</fullName>
+    <fields>Name</fields>
+    <fields>BGBL__Object_Name_Alias__c</fields>
+    <fields>BGBL__Batch_Letter__c</fields>
+    <fields>CreatedById</fields>
+    <label>Letter Applied Query Default</label>
+</CompactLayout>

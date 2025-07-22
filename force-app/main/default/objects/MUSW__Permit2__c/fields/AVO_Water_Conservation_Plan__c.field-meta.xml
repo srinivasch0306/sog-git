@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Water_Conservation_Plan__c</fullName>
+    <label>Water Conservation Plan</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Center Pivot and Lateral Move Systems</fullName>
+                <default>false</default>
+                <label>Center Pivot and Lateral Move Systems</label>
+            </value>
+            <value>
+                <fullName>Drip and Micro Systems</fullName>
+                <default>false</default>
+                <label>Drip and Micro Systems</label>
+            </value>
+            <value>
+                <fullName>Traveler and Big-Gun Systems</fullName>
+                <default>false</default>
+                <label>Traveler and Big-Gun Systems</label>
+            </value>
+            <value>
+                <fullName>Solid-set Sprinkler Systems</fullName>
+                <default>false</default>
+                <label>Solid-set Sprinkler Systems</label>
+            </value>
+            <value>
+                <fullName>Golf Course and Turf Systems</fullName>
+                <default>false</default>
+                <label>Golf Course and Turf Systems</label>
+            </value>
+            <value>
+                <fullName>All Systems</fullName>
+                <default>false</default>
+                <label>All Systems</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

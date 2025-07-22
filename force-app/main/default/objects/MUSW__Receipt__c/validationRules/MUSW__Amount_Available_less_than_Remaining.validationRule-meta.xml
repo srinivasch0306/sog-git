@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Amount_Available_less_than_Remaining</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(  MUSW__Amount_Tendered__c  ),(PRIORVALUE(MUSW__Amount_Tendered__c) - MUSW__Amount_Tendered__c) + ( BLANKVALUE(MUSW__Amount_Rejected__c,0)  - BLANKVALUE(PRIORVALUE(MUSW__Amount_Rejected__c),0)  ) &gt;  PRIORVALUE(MUSW__Amount_Available__c))</errorConditionFormula>
+    <errorMessage>Cannot adjust Receipt Amount greater than what is Remaining. Increase Receipt or reduce Rejected Amount or increase Available Amount (delete payments)</errorMessage>
+</ValidationRule>

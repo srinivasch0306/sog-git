@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Req_Sprinkler_Package</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+OR(
+RecordType.DeveloperName = &apos;AVO_Agricultural_Water_Withdrawal_Application&apos;, RecordType.DeveloperName = &apos;Application_to_Modify_or_Transfer_an_Agricultural_Water_Withdrawal_Permit&apos;
+),
+ISPICKVAL(AVO_Water_Conservation_Plan__c, &apos;Center Pivot and Lateral Move Systems&apos;) , ISBLANK(TEXT(AVO_Sprinkler_Package__c))
+
+
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Sprinkler_Package__c</errorDisplayField>
+    <errorMessage>Select Sprinkler Package</errorMessage>
+</ValidationRule>

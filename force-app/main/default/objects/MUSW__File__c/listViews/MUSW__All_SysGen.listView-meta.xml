@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__All_SysGen</fullName>
+    <columns>NAME</columns>
+    <columns>MUSW__Attachment__c</columns>
+    <columns>MUSW__SysGen__c</columns>
+    <columns>MUSW__OwnerName__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>MUSW__ObjectId__c</columns>
+    <columns>MUSW__ParentName__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MUSW__SysGen__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>All - SysGen</label>
+</ListView>

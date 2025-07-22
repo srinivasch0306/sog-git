@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Value_Check_Syntax</fullName>
+    <active>true</active>
+    <description>Check syntax</description>
+    <errorConditionFormula>OR( 
+ ISBLANK(MUSW__Value__c), 
+ CONTAINS(MUSW__Value__c, &quot;&lt;content&quot;) 
+     &amp;&amp; !REGEX(MUSW__Value__c, &apos;[a-zA-Z\\s\\d]*(&lt;content(\\s+\\w+=&quot;?[\\w\\s]+&quot;?)*&gt;\\w+(\\.\\w+){1,2}&lt;/content&gt;)?[a-zA-Z\\s\\d]*&apos;) 
+     &amp;&amp; !REGEX(MUSW__Value__c, &apos;[a-zA-Z\\s\\d]*(&lt;content-diff(\\s+\\w+=&quot;?[\\w\\s]+&quot;?)*&gt;\\w+(\\.\\w+){1,2}&lt;/content-diff&gt;)?[a-zA-Z\\s\\d]*&apos;), 
+/*
+ CONTAINS(MUSW__Value__c, &quot;{!&quot;) 
+    &amp;&amp; !REGEX(MUSW__Value__c,&apos;[a-zA-Z\\s\\d]*(\\{\\!\\$?\\w+(\\.\\w+){1,2\\)?[a-zA-Z\\s\\d]*&apos;), 
+*/
+ CONTAINS(MUSW__Value__c, &quot;&lt;today&quot;) &amp;&amp; !REGEX(MUSW__Value__c, &apos;&lt;today(\\s+\\w+=&quot;?[\\w\\s]+&quot;?)*/&gt;&apos;), 
+ CONTAINS(MUSW__Value__c, &quot;&lt;now&quot;) &amp;&amp; !REGEX(MUSW__Value__c, &apos;&lt;now/&gt;&apos;), 
+ CONTAINS(MUSW__Value__c, &quot;&lt;user&quot;) &amp;&amp; !REGEX(MUSW__Value__c, &apos;&lt;user/&gt;&apos;), 
+ CONTAINS(MUSW__Value__c, &quot;&lt;formula&quot;) &amp;&amp; !REGEX(MUSW__Value__c, &apos;&lt;formula&gt;.*&lt;/formula&gt;&apos;), 
+ ISPICKVAL(MUSW__Action_Type__c,&quot;Add Letter&quot;) &amp;&amp; !REGEX(MUSW__Value__c, &apos;&lt;letter(\\s+\\w+=&quot;?[\\w\\s]+&quot;?)*/&gt;&apos;), 
+ ISPICKVAL(MUSW__Action_Type__c,&quot;Send Email&quot;) &amp;&amp; !REGEX(MUSW__Value__c, &apos;&lt;email(\\s+\\w+=&quot;?[\\w\\s]+&quot;?)*/&gt;&apos;), 
+ ISPICKVAL(MUSW__Action_Type__c,&quot;Email Report&quot;) &amp;&amp; !REGEX(MUSW__Value__c, &apos;&lt;report(\\s+\\w+=&quot;?[\\w\\s]+&quot;?)*/&gt;&apos;) 
+)</errorConditionFormula>
+    <errorDisplayField>MUSW__Value__c</errorDisplayField>
+    <errorMessage>Invalid Result Value syntax for selected Action Type</errorMessage>
+</ValidationRule>

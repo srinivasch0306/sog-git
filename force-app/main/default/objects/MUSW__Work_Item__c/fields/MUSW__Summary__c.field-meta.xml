@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Summary__c</fullName>
+    <defaultValue>$RecordType.DeveloperName</defaultValue>
+    <deprecated>false</deprecated>
+    <description>a field carries work item summaries which concat important fields altogether</description>
+    <label>Summary</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

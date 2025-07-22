@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Restrict_Transfer_of_Closed_Permits</fullName>
+    <active>true</active>
+    <description>Prevent Transfer of Closed Permits with Revoked or Relinquished Status.</description>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(AVO_Permit_Number_to_Modify_or_Transfer__c)),
+  TEXT(AVO_Permit_Number_to_Modify_or_Transfer__r.MUSW__Status__c) = &quot;Closed&quot;,
+  ISPICKVAL(MUSW__Type__c,&apos;Application to Modify or Transfer an Agricultural Water Withdrawal Permit&apos;),
+  OR(
+    ISPICKVAL(AVO_Permit_Number_to_Modify_or_Transfer__r.AVO_Permit_Closed_Status__c, &quot;Revoked&quot;),
+    ISPICKVAL(AVO_Permit_Number_to_Modify_or_Transfer__r.AVO_Permit_Closed_Status__c, &quot;Relinquished&quot;)
+  )
+)</errorConditionFormula>
+    <errorMessage>This permit has been closed and cannot be transferred.</errorMessage>
+</ValidationRule>

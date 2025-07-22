@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Old_meter_serial_number_Condition</fullName>
+    <active>false</active>
+    <description>If (Installation Type = &apos;Replacement&apos; OR &apos;Retrieval&apos;):
+AND Old Meter Serial Number = blank
+Then this validation will trigger.</description>
+    <errorConditionFormula>AND(
+				OR(
+								ISPICKVAL(AVO_Installation_Type__c,&apos;Replacement&apos;),
+								ISPICKVAL(AVO_Installation_Type__c,&apos;Retrieval&apos; )
+				),
+				
+				RecordType.Name = &quot;AG Water Metering Installation&quot;,
+				ISBLANK(AVO_Old_Meter_Serial_Number__c)
+)</errorConditionFormula>
+    <errorDisplayField>AVO_Old_Meter_Serial_Number__c</errorDisplayField>
+    <errorMessage>Old Meter Serial Number is required</errorMessage>
+</ValidationRule>

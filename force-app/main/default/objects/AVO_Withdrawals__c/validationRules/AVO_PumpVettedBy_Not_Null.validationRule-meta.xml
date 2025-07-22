@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_PumpVettedBy_Not_Null</fullName>
+    <active>true</active>
+    <description>Requires PumpVettedBy field if PumpVetted = &quot;Yes&quot;.</description>
+    <errorConditionFormula>AND(
+OR(
+RecordType.DeveloperName = &quot;Surface_Water_Withdrawal&quot;,
+RecordType.DeveloperName = &quot;Surface_Water_Withdrawal_Application&quot;
+),
+ISBLANK(AVO_PumpVettedBy__c),
+ISPICKVAL(AVO_PumpVetted__c, &quot;Yes&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>AVO_PumpVetted__c</errorDisplayField>
+    <errorMessage>Value is required.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Standard_Comment</fullName>
+    <active>true</active>
+    <label>Standard Comment</label>
+    <picklistValues>
+        <picklist>MUSW__Code__c</picklist>
+        <values>
+            <fullName>2006 IBC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2006 IPMC</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>2006 IRC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

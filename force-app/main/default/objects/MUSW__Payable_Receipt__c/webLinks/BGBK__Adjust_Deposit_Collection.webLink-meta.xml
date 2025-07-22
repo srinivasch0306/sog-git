@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGBK__Adjust_Deposit_Collection</fullName>
+    <availability>online</availability>
+    <description>Adjust on Payable Receipt</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Adjust Deposit Collection</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/apex/BGBK__PayableReceiptRefund?id={!MUSW__Deposit__c.Id}&amp;action=Adjust</url>
+</WebLink>

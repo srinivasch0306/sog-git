@@ -1,0 +1,136 @@
+{ 
+  "distanceUnits": [{
+    "unit": "KILOMETERS",
+    "abbr": "km"
+  }, {
+    "unit": "MILES",
+    "abbr": "mi"
+  }, {
+    "unit": "METERS",
+    "abbr": "m"
+  }, {
+    "unit": "FEET",
+    "abbr": "ft"
+  }, {
+    "unit": "YARDS",
+    "abbr": "yd"
+  }],
+  "esriSRUnitType": [{
+    "unit": "KILOMETERS",
+    "value": "9036"
+  }, {
+    "unit": "MILES",
+    "value": "9035"
+  }, {
+    "unit": "METERS",
+    "value": "9001"
+  }, {
+    "unit": "FEET",
+    "value": "9002"
+  }, {
+    "unit": "YARDS",
+    "value": "109002"
+  }],
+  "zoomScale": 10000,
+  "autozoomtoresults": true,
+  "layers": [
+    {
+      "name": "City of Vancouver Owned Buildings",
+      "url": "https://services3.arcgis.com/qrcTTRTwUoS8N47o/ArcGIS/rest/services/COV_Owned_Buildings/FeatureServer/0",
+	  "type": "feature",
+	  "bgObject": "MUSW__Parcel__c",
+	  "shareResult": true,
+      "addToAttrib": true,
+      "expression": "Ownership LIKE '%[value]%'",
+      "textsearchlabel": "Ownership",
+      "textsearchhint": "Ownership",
+      "titlefield": null,
+      "linkfield": "",
+      "fields": {
+        "all": false,
+        "field": 
+        [
+          {
+            "name": "Ownership",
+            "alias": "Ownership",
+            "bgField": "MUSW__Parcel_Number__c"
+          }
+        ]
+      }
+    },
+	{
+      "name": "Inspection",
+      "url": "MUSW__Inspection__c",
+      "type": "basicgov",
+      "expression": "Number =",
+      "textsearchlabel": "Number",
+      "textsearchhint": "INS-0000123",
+      "titlefield": "Name",
+      "linkfield": "",
+      "fields": {
+        "all": false,
+        "field": []
+      }
+  },
+	{
+      "name": "Permit",
+      "url": "MUSW__Permit2__c",
+      "type": "basicgov",
+      "expression": "Number =",
+      "textsearchlabel": "Number",
+      "textsearchhint": "14-ELE-0003",
+      "titlefield": "Name",
+      "linkfield": "",
+	  "iconPath" : "images/Favourite.png",
+      "fields": {
+        "all": false,
+        "field": []
+      }
+    }
+  ],
+  "symbols": {
+    "simplemarkersymbol": {
+      "type": "esriSMS",
+      "style": "esriSMSSquare",
+      "color": [
+        0,
+        128,
+        255,
+        170
+      ],
+      "size": 8,
+      "outline": {
+        "color": [
+          152,
+          230,
+          0,
+          255
+        ],
+        "width": 1
+      }
+    },
+    "picturemarkersymbol": {},
+    "simplelinesymbol": {},
+    "simplefillsymbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+        0,
+        128,
+        255,
+        170
+      ],
+      "outline": {
+	    "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+          0,
+          128,
+          255,
+          170
+        ],
+        "width": 1
+      }
+	  }
+  }
+}

@@ -1,0 +1,34 @@
+<div>
+  <div class="layers-section" data-dojo-attach-point="layersSection">
+    <div class=" layer-title">${nls.titleLayers}</div>
+    <table class="layers-list">
+      <tr>
+        <td>
+          <div class="layers-body-wrapper">
+            <table class="layers-list-table">
+              <tbody class="layers-list-body" data-dojo-attach-point="layerListTable"></tbody>      
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+	<div class="layer-title" style="float:left;">${nls.titleBGLayers}</div>
+	<!-- Below code is to add single checkbox to turn on/off routing--> 
+	<!--<div style="margin-top:14px; float:right;">
+		<div class="div-select"><input type="checkbox" id="routecb" value="route"></div>
+		<div class="div-content">Route</div>
+	</div>-->
+	<table class="layers-list">
+      <tr>
+        <td>
+          <div class="layers-body-wrapper">
+            <table class="layers-list-table">
+              <tbody class="layers-list-body" data-dojo-attach-point="bgLayerListTable"></tbody>      
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div style="position:absolute; overflow:hidden; background-color: white;" data-dojo-type="jimu/dijit/LoadingShelter" data-dojo-attach-point="shelter" data-dojo-props="hidden:true"></div>
+</div>

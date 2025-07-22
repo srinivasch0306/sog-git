@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MUSW__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Deprecated. Refer to the MUSW__Complaint2 object.</description>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Working</fullName>
+                <default>false</default>
+                <label>Working</label>
+            </value>
+            <value>
+                <fullName>In Violation - Warning</fullName>
+                <default>false</default>
+                <label>In Violation - Warning</label>
+            </value>
+            <value>
+                <fullName>In Violation - Notice</fullName>
+                <default>false</default>
+                <label>In Violation - Notice</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>In Citation</fullName>
+                <default>false</default>
+                <label>In Citation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVO_Meter_Reader__c</fullName>
+    <label>Meter Reader</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alexander McLean</fullName>
+                <default>false</default>
+                <label>Alexander McLean</label>
+            </value>
+            <value>
+                <fullName>Antonio Fleming</fullName>
+                <default>false</default>
+                <label>Antonio Fleming</label>
+            </value>
+            <value>
+                <fullName>BAKER IRRIGATION INC</fullName>
+                <default>false</default>
+                <label>BAKER IRRIGATION INC</label>
+            </value>
+            <value>
+                <fullName>Chase Cline</fullName>
+                <default>false</default>
+                <label>Chase Cline</label>
+            </value>
+            <value>
+                <fullName>Cristina Pounds</fullName>
+                <default>false</default>
+                <label>Cristina Pounds</label>
+            </value>
+            <value>
+                <fullName>Ethan Bundrick</fullName>
+                <default>false</default>
+                <label>Ethan Bundrick</label>
+            </value>
+            <value>
+                <fullName>GFC</fullName>
+                <default>false</default>
+                <label>GFC</label>
+            </value>
+            <value>
+                <fullName>Hannah Denton</fullName>
+                <default>false</default>
+                <label>Hannah Denton</label>
+            </value>
+            <value>
+                <fullName>Heather Brown</fullName>
+                <default>false</default>
+                <label>Heather Brown</label>
+            </value>
+            <value>
+                <fullName>IRRIGATION PLUS</fullName>
+                <default>false</default>
+                <label>IRRIGATION PLUS</label>
+            </value>
+            <value>
+                <fullName>Jacob Elliott</fullName>
+                <default>false</default>
+                <label>Jacob Elliott</label>
+            </value>
+            <value>
+                <fullName>Jesstin Chandler</fullName>
+                <default>false</default>
+                <label>Jesstin Chandler</label>
+            </value>
+            <value>
+                <fullName>Justin Walls</fullName>
+                <default>false</default>
+                <label>Justin Walls</label>
+            </value>
+            <value>
+                <fullName>Lance Wyant</fullName>
+                <default>false</default>
+                <label>Lance Wyant</label>
+            </value>
+            <value>
+                <fullName>Lee Wright</fullName>
+                <default>false</default>
+                <label>Lee Wright</label>
+            </value>
+            <value>
+                <fullName>Marjie Roquemore</fullName>
+                <default>false</default>
+                <label>Marjie Roquemore</label>
+            </value>
+            <value>
+                <fullName>Matthew Barton</fullName>
+                <default>false</default>
+                <label>Matthew Barton</label>
+            </value>
+            <value>
+                <fullName>Michael Martin</fullName>
+                <default>false</default>
+                <label>Michael Martin</label>
+            </value>
+            <value>
+                <fullName>OWNER</fullName>
+                <default>false</default>
+                <label>OWNER</label>
+            </value>
+            <value>
+                <fullName>Rebecca Rehee</fullName>
+                <default>false</default>
+                <label>Rebecca Rehee</label>
+            </value>
+            <value>
+                <fullName>Shannon Parrish</fullName>
+                <default>false</default>
+                <label>Shannon Parrish</label>
+            </value>
+            <value>
+                <fullName>SHOEMAKER IRRIGATION</fullName>
+                <default>false</default>
+                <label>SHOEMAKER IRRIGATION</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

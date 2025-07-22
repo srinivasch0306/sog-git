@@ -1,0 +1,1 @@
+@isTest private class DRE2Test_Account { @isTest static void insertUpdateDelete() { DRE.DRETestExternalManager.run('Account'); } }

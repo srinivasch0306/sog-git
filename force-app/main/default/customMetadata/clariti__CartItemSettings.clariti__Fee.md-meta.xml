@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Fee__c</label>
+    <protected>false</protected>
+    <values>
+        <field>clariti__AccountField__c</field>
+        <value xsi:type="xsd:string">MUSW__Permit2__r.MUSW__Account__r.Id,MUSW__License2__r.MUSW__Primary_Licensee__r.Id,MUSW__Complaint2__r.MUSW__Responsible_Party__r.Id,MUSW__Application2__r.MUSW__Account__r.Id,AVO_Compliance__r.AVO_Account__r.Id,MUSW__Account__r.Id</value>
+    </values>
+    <values>
+        <field>clariti__AmountField__c</field>
+        <value xsi:type="xsd:string">MUSW__Amount__c</value>
+    </values>
+    <values>
+        <field>clariti__CartFieldSet__c</field>
+        <value xsi:type="xsd:string">FeeCartColumns</value>
+    </values>
+    <values>
+        <field>clariti__CartItemField__c</field>
+        <value xsi:type="xsd:string">Fee__c</value>
+    </values>
+    <values>
+        <field>clariti__ObjectAPIName__c</field>
+        <value xsi:type="xsd:string">MUSW__Fee__c</value>
+    </values>
+    <values>
+        <field>clariti__OutstandingAmountField__c</field>
+        <value xsi:type="xsd:string">MUSW__Outstanding_Fee__c</value>
+    </values>
+    <values>
+        <field>clariti__ParentObjectField__c</field>
+        <value xsi:type="xsd:string">MUSW__Permit2__r.Id,MUSW__License2__r.Id,MUSW__Complaint2__r.Id,MUSW__Application2__r.Id,MUSW__Account__r.Id,AVO_Compliance__r.Id</value>
+    </values>
+</CustomMetadata>

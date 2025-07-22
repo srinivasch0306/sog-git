@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>clariti__CashDepositsSubmittedForReview</fullName>
+    <columns>NAME</columns>
+    <columns>clariti__Status__c</columns>
+    <columns>clariti__TotalBalance__c</columns>
+    <columns>clariti__CashierSession__c</columns>
+    <columns>clariti__RejectionNotes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>clariti__Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <label>Cash Deposits Submitted for Review</label>
+</ListView>

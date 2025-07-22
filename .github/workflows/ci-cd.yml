@@ -52,9 +52,9 @@ jobs:
         displayName: 'Prepare changed metadata'
         shell: cmd
 
-      # Step 4: Login using web auth
+      # Step 4: Web Login to UatOrg (only works locally)
       - script: |
-          echo Logging into Salesforce using web auth...
+          echo Logging into Salesforce using web login...
           sf org login web --set-default --alias UatOrg
         displayName: 'Web Login to UatOrg'
         shell: pwsh

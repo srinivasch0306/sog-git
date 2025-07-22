@@ -1,0 +1,47 @@
+trigger:
+  branches:
+    include:
+      - main
+
+jobs:
+  - job: deploy
+    displayName: 'Deploy changed components to Salesforce'
+    pool:
+      name: 'Default'
+
+    steps:
+      # Step 1: Checkout the repository
+      - checkout: self
+        displayName: 'Checkout repository'
+
+      
+      # Step 4: Get changed files between commits
+      - script: |
+          echo "Getting list of changed files..."
+          git fetch origin
+          export OLD_COMMIT=$(git rev-parse HEAD~1)
+          export NEW_COMMIT=$(git rev-parse HEAD)
+          echo "Old Commit: $OLD_COMMIT"
+          echo "New Commit: $NEW_COMMIT"
+
+          git diff --name-only $OLD_COMMIT $NEW_COMMIT > changed_files.txt
+          echo "Changed files:"
+          cat changed_files.txt
+        displayName: 'Detect changed files'
+
+      # Step 5: Filter only deployable metadata from changed files
+      - script: |
+          echo "Filtering metadata components..."
+          mkdir changed-metadata
+          while IFS= read -r file; do
+            if [[ "$file" == force-app/* && -f "$file" ]]; then
+              mkdir -p "changed-metadata/$(dirname "$file")"
+              cp "$file" "changed-metadata/$file"
+            fi
+          done < changed_files.txt
+
+          ls changed-metadata
+        displayName: 'Prepare changed metadata'
+        displayName: 'Commit and push changes'
+        env:
+          GITHUB_TOKEN: $(GITHUB_TOKEN)

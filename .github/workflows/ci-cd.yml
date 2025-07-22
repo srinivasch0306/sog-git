@@ -5,33 +5,30 @@ trigger:
 
 jobs:
   - job: deploy
-    displayName: 'Deploy changed components to Salesforce'
+    displayName: 'Deploy Changed Components to Salesforce'
     pool:
-      name: 'Default'
+      vmImage: 'ubuntu-latest'  # Use Ubuntu for Bash support
 
     steps:
-      # Step 1: Checkout the repository
       - checkout: self
-        displayName: 'Checkout repository'
+        displayName: 'Checkout Repository'
 
-      # Step 2: Get changed files between commits
       - script: |
           echo "Getting list of changed files..."
           git fetch origin
-          export OLD_COMMIT=$(git rev-parse HEAD~1)
-          export NEW_COMMIT=$(git rev-parse HEAD)
+          OLD_COMMIT=$(git rev-parse HEAD~1)
+          NEW_COMMIT=$(git rev-parse HEAD)
           echo "Old Commit: $OLD_COMMIT"
           echo "New Commit: $NEW_COMMIT"
 
           git diff --name-only $OLD_COMMIT $NEW_COMMIT > changed_files.txt
           echo "Changed files:"
           cat changed_files.txt
-        displayName: 'Detect changed files'
+        displayName: 'Detect Changed Files'
 
-      # Step 3: Filter only deployable metadata from changed files
       - script: |
-          echo "Filtering metadata components..."
-          mkdir changed-metadata
+          echo "Filtering deployable metadata components..."
+          mkdir -p changed-metadata
           while IFS= read -r file; do
             if [[ "$file" == force-app/* && -f "$file" ]]; then
               mkdir -p "changed-metadata/$(dirname "$file")"
@@ -41,4 +38,14 @@ jobs:
 
           echo "Changed metadata files:"
           find changed-metadata
-        displayName: 'Prepare changed metadata'
+        displayName: 'Prepare Changed Metadata'
+
+      - script: |
+          echo "Authenticating to UAT Org..."
+          sfdx auth:web:login --setalias UatOrg --instanceurl https://taruitsolutions-6e-dev-ed.develop.my.salesforce.com
+        displayName: 'Authenticate to UAT Org'
+
+      - script: |
+          echo "Deploying changed metadata to UAT Org..."
+          sf project deploy start --source-dir changed-metadata --target-org UatOrg --ignore-warnings
+        displayName: 'Deploy to UAT Org'

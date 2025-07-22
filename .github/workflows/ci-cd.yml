@@ -14,8 +14,7 @@ jobs:
       - checkout: self
         displayName: 'Checkout repository'
 
-      
-      # Step 4: Get changed files between commits
+      # Step 2: Get changed files between commits
       - script: |
           echo "Getting list of changed files..."
           git fetch origin
@@ -29,7 +28,7 @@ jobs:
           cat changed_files.txt
         displayName: 'Detect changed files'
 
-      # Step 5: Filter only deployable metadata from changed files
+      # Step 3: Filter only deployable metadata from changed files
       - script: |
           echo "Filtering metadata components..."
           mkdir changed-metadata
@@ -40,8 +39,6 @@ jobs:
             fi
           done < changed_files.txt
 
-          ls changed-metadata
+          echo "Changed metadata files:"
+          find changed-metadata
         displayName: 'Prepare changed metadata'
-        displayName: 'Commit and push changes'
-        env:
-          GITHUB_TOKEN: $(GITHUB_TOKEN)

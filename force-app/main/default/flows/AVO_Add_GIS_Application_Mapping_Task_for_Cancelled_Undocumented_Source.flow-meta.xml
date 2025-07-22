@@ -9,12 +9,6 @@
         <actionType>quickAction</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
-            <name>contextId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
             <name>Subject</name>
             <value>
                 <elementReference>Get_Task.Name</elementReference>

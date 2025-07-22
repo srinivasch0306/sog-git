@@ -1,26 +1,40 @@
-name: Detect Changed Files
-
-on:
-  push:
-    branches:
+trigger:
+  branches:
+    include:
       - main
 
+pool:
+  name: 'Default'
+
 jobs:
-  detect-changes:
-    runs-on: AVI0124
+- job: deploy
+  displayName: 'Deploy changed components to Salesforce'
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+  steps:
+  - checkout: self
+    displayName: 'Checkout repository'
 
-      - name: Show recent commits
-        run: |
-          echo "Latest 2 commits:"
-          git log -n 2 --oneline
+  - script: |
+      echo "Getting list of changed files..."
+      git fetch origin
+      export OLD_COMMIT=$(git rev-parse HEAD~1)
+      export NEW_COMMIT=$(git rev-parse HEAD)
+      echo "Old Commit: $OLD_COMMIT"
+      echo "New Commit: $NEW_COMMIT"
+      git diff --name-only $OLD_COMMIT $NEW_COMMIT > changed_files.txt
+      echo "Changed files:"
+      cat changed_files.txt
+    displayName: 'Detect changed files'
 
-      - name: Detect changed files
-        run: |
-          echo "Comparing HEAD^ and HEAD..."
-          git diff --name-status HEAD^ HEAD > changed_files.txt
-          echo "Changed files:"
-          cat changed_files.txt
+  - script: |
+      echo "Filtering metadata components..."
+      mkdir -p changed-metadata
+      while IFS= read -r file; do
+        if [[ "$file" == force-app/* && -f "$file" ]]; then
+          mkdir -p "changed-metadata/$(dirname "$file")"
+          cp "$file" "changed-metadata/$file"
+        fi
+      done < changed_files.txt
+      echo "Filtered files:"
+      find changed-metadata
+    displayName: 'Prepare changed metadata'

@@ -3,38 +3,51 @@ trigger:
     include:
       - main
 
-pool:
-  name: 'Default'
-
 jobs:
-- job: deploy
-  displayName: 'Deploy changed components to Salesforce'
+  - job: deploy
+    displayName: 'Deploy changed components to Salesforce'
+    pool:
+      name: 'Default'
 
-  steps:
-  - checkout: self
-    displayName: 'Checkout repository'
+    steps:
+      # Step 1: Checkout the repository
+      - checkout: self
+        displayName: 'Checkout repository'
 
-  - script: |
-      echo "Getting list of changed files..."
-      git fetch origin
-      export OLD_COMMIT=$(git rev-parse HEAD~1)
-      export NEW_COMMIT=$(git rev-parse HEAD)
-      echo "Old Commit: $OLD_COMMIT"
-      echo "New Commit: $NEW_COMMIT"
-      git diff --name-only $OLD_COMMIT $NEW_COMMIT > changed_files.txt
-      echo "Changed files:"
-      cat changed_files.txt
-    displayName: 'Detect changed files'
+      # Step 2: Detect changed files
+      - script: |
+          echo "Getting list of changed files..."
+          git fetch origin
+          for /f %%i in ('git rev-parse HEAD~1') do set OLD_COMMIT=%%i
+          for /f %%i in ('git rev-parse HEAD') do set NEW_COMMIT=%%i
 
-  - script: |
-      echo "Filtering metadata components..."
-      mkdir -p changed-metadata
-      while IFS= read -r file; do
-        if [[ "$file" == force-app/* && -f "$file" ]]; then
-          mkdir -p "changed-metadata/$(dirname "$file")"
-          cp "$file" "changed-metadata/$file"
-        fi
-      done < changed_files.txt
-      echo "Filtered files:"
-      find changed-metadata
-    displayName: 'Prepare changed metadata'
+          echo Old Commit: %OLD_COMMIT%
+          echo New Commit: %NEW_COMMIT%
+
+          git diff --name-only %OLD_COMMIT% %NEW_COMMIT% > changed_files.txt
+          echo Changed files:
+          type changed_files.txt
+        displayName: 'Detect changed files'
+
+      # Step 3: Prepare changed metadata
+      - script: |
+          echo "Filtering metadata components..."
+          mkdir changed-metadata
+          for /f "delims=" %%f in (changed_files.txt) do (
+            echo Checking %%f
+            echo %%f | findstr /r "^force-app\\" >nul
+            if !errorlevel! == 0 (
+              if exist %%f (
+                mkdir changed-metadata\%%~dpf >nul 2>&1
+                xcopy /Y /I %%f changed-metadata\%%f
+              )
+            )
+          )
+          dir changed-metadata /s
+        displayName: 'Prepare changed metadata'
+
+      # Step 4: Deploy to UatOrg
+      - script: |
+          echo "Deploying to UatOrg..."
+          sf project deploy start --source-dir changed-metadata --target-org UatOrg
+        displayName: 'Deploy to UatOrg'

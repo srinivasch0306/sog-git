@@ -7,13 +7,6 @@
         <label>Add Condition to Collection</label>
         <locationX>314</locationX>
         <locationY>1322</locationY>
-        <assignmentItems>
-            <assignToReference>Condition_Collection</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Condition_Variable</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Go_Through_Single_Condition_Template_From_Filter</targetReference>
         </connector>

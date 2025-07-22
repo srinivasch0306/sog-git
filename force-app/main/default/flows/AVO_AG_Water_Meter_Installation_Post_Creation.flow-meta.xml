@@ -7,13 +7,6 @@
         <label>Add Current Meter Reading To Collection</label>
         <locationX>50</locationX>
         <locationY>1919</locationY>
-        <assignmentItems>
-            <assignToReference>Meter_Reading_Collection</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Meter_Reading_Current</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Create_Meter_Reading_Records</targetReference>
         </connector>
